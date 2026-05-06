@@ -12,6 +12,7 @@ output/
 *.jpg
 !assets/*.png
 !assets/*.jpg
+!cover.jpg
 .venv/
 venv/
 .DS_Store
