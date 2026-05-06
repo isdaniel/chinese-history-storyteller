@@ -37,7 +37,7 @@ creds = flow.run_local_server(
 )
 
 print("\n" + "=" * 60)
-print("✅ 授權完成,複製下面的 refresh_token 設成 GitHub secret YOUTUBE_REFRESH_TOKEN:")
+print("授權完成,複製下面的 refresh_token 設成 GitHub secret YOUTUBE_REFRESH_TOKEN:")
 print("=" * 60)
 print(creds.refresh_token)
 print("=" * 60)

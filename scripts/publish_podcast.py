@@ -46,16 +46,24 @@ def build_rss(out_path: Path) -> None:
     fg.load_extension("podcast")
 
     title = env("PODCAST_TITLE", "中文歷史說書")
+    base_url = env("PODCAST_BASE_URL", "https://example.com").rstrip("/")
+    author_name = env("PODCAST_AUTHOR", "Storyteller")
+    author_email = env("PODCAST_EMAIL", "noreply@example.com")
+    cover_url = env("PODCAST_COVER_URL", f"{base_url}/cover.jpg", required=False)
+
     fg.title(title)
-    fg.author({"name": env("PODCAST_AUTHOR", "Storyteller"),
-               "email": env("PODCAST_EMAIL", "noreply@example.com")})
-    fg.link(href=env("PODCAST_BASE_URL", "https://example.com"), rel="alternate")
+    fg.author({"name": author_name, "email": author_email})
+    fg.link(href=base_url, rel="alternate")
     fg.language(env("PODCAST_LANGUAGE", "zh-tw"))
-    fg.description("AI 說書頻道,深度解析中華歷史、世界文明與科技史。每週兩集,涵蓋三國、明清、科技公司興衰與失落文明。")
+    fg.description("AI 說書頻道,深度解析中華歷史、世界文明與科技史。每天一集,涵蓋三國、明清、科技公司興衰與失落文明。")
     fg.podcast.itunes_category(env("PODCAST_CATEGORY", "History"))
     fg.podcast.itunes_explicit("no")
-    fg.podcast.itunes_author(env("PODCAST_AUTHOR", "Storyteller"))
+    fg.podcast.itunes_author(author_name)
     fg.podcast.itunes_summary("AI 自動製作的中文歷史說書 Podcast")
+    fg.podcast.itunes_owner(name=author_name, email=author_email)
+    fg.podcast.itunes_type("episodic")
+    if cover_url:
+        fg.podcast.itunes_image(cover_url)
 
     for entry in sorted(log_data["published"], key=lambda x: x["published_at"]):
         fe = fg.add_entry()
@@ -67,6 +75,8 @@ def build_rss(out_path: Path) -> None:
         fe.pubDate(format_datetime(pub_dt))
         fe.podcast.itunes_duration(entry.get("duration_str", "10:00"))
         fe.podcast.itunes_explicit("no")
+        if cover_url:
+            fe.podcast.itunes_image(cover_url)
 
     fg.rss_file(str(out_path), pretty=True)
     log.info("RSS 已寫入 %s (%d 集)", out_path, len(log_data["published"]))

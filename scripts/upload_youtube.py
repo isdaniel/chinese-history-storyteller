@@ -28,7 +28,7 @@ def get_credentials() -> Credentials:
 
 def build_description(script: dict, timings: dict) -> str:
     base = script.get("description", "")
-    chapters = ["\n\n📖 章節時間軸:"]
+    chapters = ["\n\n 章節時間軸:"]
     for sec in timings["sections"]:
         m = int(sec["start"] // 60)
         s = int(sec["start"] % 60)
@@ -78,7 +78,7 @@ def main(episode_id: int) -> int:
 
     video_id = response["id"]
     url = f"https://youtu.be/{video_id}"
-    log.info("✅ 完成: %s", url)
+    log.info(" 完成: %s", url)
 
     # 寫回 episode dir
     info_path = ep_dir / "youtube_info.json"

@@ -2,7 +2,7 @@ name: Keep YouTube Token Alive
 
 on:
   schedule:
-    # refresh token 
+    # refresh token
     - cron: '0 0 */5 * *'
   workflow_dispatch:
 
@@ -29,12 +29,12 @@ jobs:
           body=$(echo "$response" | head -n -1)
           code=$(echo "$response" | tail -n 1)
           if [ "$code" = "200" ]; then
-            echo "✅ Token still valid"
+            echo " Token still valid"
           else
-            echo "❌ Token invalid (HTTP $code): $body"
+            echo " Token invalid (HTTP $code): $body"
             if [ -n "${{ secrets.DISCORD_WEBHOOK_URL }}" ]; then
               curl -s -H "Content-Type: application/json" \
-                -d "{\"content\":\"🔴 YouTube refresh token 失效,請重跑 get_youtube_refresh_token.py 並更新 secret\"}" \
+                -d "{\"content\":\" YouTube refresh token 失效,請重跑 get_youtube_refresh_token.py 並更新 secret\"}" \
                 "${{ secrets.DISCORD_WEBHOOK_URL }}" || true
             fi
             exit 1

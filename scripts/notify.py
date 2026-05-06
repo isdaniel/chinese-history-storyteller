@@ -13,10 +13,10 @@ def main(episode_id: int) -> int:
     yt_url = (load_json(ep_dir / "youtube_info.json").get("url")
               if (ep_dir / "youtube_info.json").exists() else "(未上傳)")
     msg = (
-        f"🎬 **新集數已發布**\n"
-        f"📺 {script['title']}\n"
-        f"🔗 YouTube: {yt_url}\n"
-        f"🎙️ Podcast: 已更新 RSS feed"
+        f" **新集數已發布**\n"
+        f" {script['title']}\n"
+        f" YouTube: {yt_url}\n"
+        f" Podcast: 已更新 RSS feed"
     )
     notify_discord(msg)
     log.info(msg)

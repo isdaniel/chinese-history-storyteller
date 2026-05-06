@@ -84,41 +84,41 @@ jobs:
       - name: Install Python deps
         run: pip install -r requirements.txt
 
-      - name: 1️⃣ 生成腳本 (Azure OpenAI GPT)
+      - name: 生成腳本 (Azure OpenAI GPT)
         working-directory: scripts
         run: python generate_script.py
 
-      - name: 2️⃣ 生成插畫 (gpt-image-2)
+      - name: 生成插畫 (gpt-image-2)
         working-directory: scripts
         run: python generate_images.py
 
-      - name: 3️⃣ TTS 語音合成 (Azure Speech)
+      - name: TTS 語音合成 (Azure Speech)
         working-directory: scripts
         run: python synthesize_speech.py
 
-      - name: 4️⃣ 影片合成 (FFmpeg)
+      - name: 影片合成 (FFmpeg)
         working-directory: scripts
         run: python build_video.py
 
-      - name: 5️⃣ 上傳 YouTube
+      - name: 上傳 YouTube
         working-directory: scripts
         run: python upload_youtube.py
 
-      - name: 6️⃣ 發布 Podcast (Azure Blob + RSS)
+      - name: 發布 Podcast (Azure Blob + RSS)
         working-directory: scripts
         run: python publish_podcast.py
 
-      - name: 7️⃣ 通知 Discord
+      - name: 通知 Discord
         if: always()
         working-directory: scripts
         run: python notify.py
         continue-on-error: true
 
-      - name: 🚨 失敗時通知 (refresh token 過期等)
+      - name: 失敗時通知 (refresh token 過期等)
         if: failure() && env.DISCORD_WEBHOOK_URL != ''
         run: |
           curl -s -H "Content-Type: application/json" -d "{
-            \"content\": \"🔴 **Storyteller pipeline failed** — run ${{ github.run_id }}\\n如果是 401 / invalid_grant,代表 YouTube refresh token 失效,請重跑 \`scripts/get_youtube_refresh_token.py\` 重新授權並更新 GitHub secret \`YOUTUBE_REFRESH_TOKEN\`。\\nLog: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}\"
+            \"content\": \"**Storyteller pipeline failed** — run ${{ github.run_id }}\\n如果是 401 / invalid_grant,代表 YouTube refresh token 失效,請重跑 \`scripts/get_youtube_refresh_token.py\` 重新授權並更新 GitHub secret \`YOUTUBE_REFRESH_TOKEN\`。\\nLog: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}\"
           }" "$DISCORD_WEBHOOK_URL" || true
 
       - name: Commit & Push 更新後的 RSS 與 log
@@ -127,7 +127,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add podcast.xml data/published_log.json
           if ! git diff --cached --quiet; then
-            git commit -m "📻 Publish episode ${EPISODE_ID:-unknown}"
+            git commit -m "Publish episode ${EPISODE_ID:-unknown}"
             git push
           else
             echo "No changes to commit."

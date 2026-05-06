@@ -30,7 +30,9 @@ def setup_logging(name: str) -> logging.Logger:
 
 
 def env(key: str, default: str | None = None, required: bool = True) -> str:
-    val = os.environ.get(key, default)
+    val = os.environ.get(key)
+    if not val:  # treat unset and empty-string the same (GitHub Actions secrets that aren't set become "")
+        val = default
     if required and not val:
         raise RuntimeError(f"Missing required env var: {key}")
     return val or ""

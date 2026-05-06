@@ -1,12 +1,12 @@
-# 📋 手動設定步驟 (一次性,約 3-4 小時)
+# 手動設定步驟 (一次性,約 3-4 小時)
 
 這份文件是**必須親自完成的步驟**,因為涉及帳號註冊、OAuth 授權、付款設定。完成後 Pipeline 就能完全自動運作。
 
-> ⚠️ 建議按順序進行,有些步驟有依賴關係。
+> 建議按順序進行,有些步驟有依賴關係。
 
 ---
 
-## 📌 全部清單 (打勾追蹤進度)
+## 全部清單 (打勾追蹤進度)
 
 - [ ] **A. Azure 訂閱與資源**
   - [ ] A1. 開通 Azure 訂閱
@@ -38,10 +38,10 @@
 2. 用 Microsoft 帳號登入,新用戶有 $200 USD 試用額度 + 12 個月免費服務
 3. 建立後記下 **Subscription ID**
 
-### A2. Azure OpenAI 資源 ⚠️ 需先申請存取權
+### A2. Azure OpenAI 資源  需先申請存取權
 
 > **重要**:Azure OpenAI 需要先申請,通常 1-2 工作天核准。
-> ⚠️ Tenant policy 通常會強制 `disableLocalAuth=true` (停用 API Key),所以本專案改用 **Entra ID (token-based auth)**,見 A5。
+> Tenant policy 通常會強制 `disableLocalAuth=true` (停用 API Key),所以本專案改用 **Entra ID (token-based auth)**,見 A5。
 
 1. 申請存取:https://aka.ms/oai/access
    - 填申請表 → 等核准 email
@@ -67,22 +67,22 @@
 
 6. API version: 用 `2024-10-21` (穩定版)
 
-> 📝 **az cli 一鍵建立** (跳過 Portal):
+> **az cli 一鍵建立** (跳過 Portal):
 > ```bash
 > az group create --name rg-storyteller --location swedencentral
 > az cognitiveservices account create \
->   --name openai-storyteller-{你的暱稱}-{亂數} \
->   --resource-group rg-storyteller \
->   --location swedencentral --kind OpenAI --sku S0 \
->   --custom-domain openai-storyteller-{你的暱稱}-{亂數} --yes
+> --name openai-storyteller-{你的暱稱}-{亂數} \
+> --resource-group rg-storyteller \
+> --location swedencentral --kind OpenAI --sku S0 \
+> --custom-domain openai-storyteller-{你的暱稱}-{亂數} --yes
 > az cognitiveservices account deployment create \
->   --name openai-storyteller-{你的暱稱}-{亂數} -g rg-storyteller \
->   --deployment-name gpt-5-mini --model-name gpt-5-mini --model-version 2025-08-07 \
->   --model-format OpenAI --sku-name GlobalStandard --sku-capacity 10
+> --name openai-storyteller-{你的暱稱}-{亂數} -g rg-storyteller \
+> --deployment-name gpt-5-mini --model-name gpt-5-mini --model-version 2025-08-07 \
+> --model-format OpenAI --sku-name GlobalStandard --sku-capacity 10
 > az cognitiveservices account deployment create \
->   --name openai-storyteller-{你的暱稱}-{亂數} -g rg-storyteller \
->   --deployment-name gpt-image-2 --model-name gpt-image-2 --model-version 2026-04-21 \
->   --model-format OpenAI --sku-name GlobalStandard --sku-capacity 2
+> --name openai-storyteller-{你的暱稱}-{亂數} -g rg-storyteller \
+> --deployment-name gpt-image-2 --model-name gpt-image-2 --model-version 2026-04-21 \
+> --model-format OpenAI --sku-name GlobalStandard --sku-capacity 2
 > ```
 
 ### A3. Azure Speech Service
@@ -115,7 +115,7 @@
 6. 公開 URL base 是 `https://{帳戶名}.blob.core.windows.net/podcast-episodes`
    - 設為 secret `AZURE_BLOB_PUBLIC_URL_BASE`
 
-> 💡 **CORS 設定** (避免某些 Podcast app 抓不到):
+> **CORS 設定** (避免某些 Podcast app 抓不到):
 > 進 Storage account → 左側「資源共用 (CORS)」→ Blob service → 加一筆:
 > Origins=`*`, Methods=`GET, HEAD`, Allowed headers=`*`, Max age=`3600`
 
@@ -190,7 +190,7 @@
    - 應用程式名稱: `YouTube Storyteller`
    - 使用者支援電子郵件: 你的 email
    - 範圍: 加入 `https://www.googleapis.com/auth/youtube.upload`
-   - 測試使用者: **加入你自己的 Gmail** ⚠️ 不加會 403
+   - 測試使用者: **加入你自己的 Gmail**  不加會 403
    - 發布狀態: 保持 **Testing** (refresh token 會 7 天過期),或申請成 Production (永久)
 2. 「API 與服務」→ **「憑證」** → 「+ 建立憑證」→ **OAuth 用戶端 ID**:
    - 應用程式類型: **桌面應用程式**
@@ -214,7 +214,7 @@
 5. 回到 Playground Step 2 → 點 **Exchange authorization code for tokens**
 6. 看到 `Refresh token: 1//0g...` → 複製 → secret `YOUTUBE_REFRESH_TOKEN`
 
-> ⚠️ 如果 OAuth 同意畫面是 Testing 狀態,refresh token 會 7 天過期。
+> 如果 OAuth 同意畫面是 Testing 狀態,refresh token 會 7 天過期。
 > 解法:把 OAuth 同意畫面切到 **Production** (需提交 app verification,但只用自己 = scope 限制下不需正式驗證)。
 
 ### B5. 本地驗證 (選用,確認 token 可用)
@@ -245,7 +245,7 @@ print(y.channels().list(part='snippet',mine=True).execute())
 2. Source: 選 `Deploy from a branch`,Branch: `main` / `(root)`
 3. 儲存後等 1 分鐘,你的 RSS URL 會是:
    ```
-   https://你的帳號.github.io/chinese-history-storyteller/podcast.xml
+   https://帳號.github.io/chinese-history-storyteller/podcast.xml
    ```
 4. 把這個 URL 設為 secret `PODCAST_BASE_URL` (拿掉 `/podcast.xml` 那段)
 
@@ -259,7 +259,7 @@ print(y.channels().list(part='snippet',mine=True).execute())
 4. 確認沒問題 → Submit
 5. 審核 1-7 天,核准後會有 Apple Podcasts URL
 
-> 💡 **首次提交前要先有至少一集真的可播放的音檔在 RSS 裡**,先手動跑一次 pipeline 產出第一集。
+> **首次提交前要先有至少一集真的可播放的音檔在 RSS 裡**,先手動跑一次 pipeline 產出第一集。
 
 ### C3. Spotify for Podcasters
 1. 前往 https://podcasters.spotify.com/
@@ -296,32 +296,32 @@ GitHub repo → **Settings → Secrets and variables → Actions → New reposit
 
 | Secret Name | 來源 |
 |------------|------|
-| ☐ `AZURE_CLIENT_ID` | A5 (App Registration appId) |
-| ☐ `AZURE_TENANT_ID` | A5 (`az account show --query tenantId`) |
-| ☐ `AZURE_SUBSCRIPTION_ID` | A5 (`az account show --query id`) |
-| ☐ `AZURE_OPENAI_ENDPOINT` | A2 |
-| ☐ `AZURE_OPENAI_GPT_DEPLOYMENT` | A2 (`gpt-5-mini`) |
-| ☐ `AZURE_OPENAI_IMAGE_DEPLOYMENT` | A2 (`gpt-image-2`) |
-| ☐ `AZURE_OPENAI_API_VERSION` | A2 (`2024-10-21`) |
-| ☐ `AZURE_SPEECH_REGION` | A3 (`eastus`) |
-| ☐ `AZURE_SPEECH_RESOURCE_ID` | A3 (Speech resource ARM id) |
-| ☐ `AZURE_SPEECH_VOICE` | 自訂 (`zh-CN-YunjianNeural` 推薦) |
-| ☐ `AZURE_STORAGE_CONNECTION_STRING` | A4 |
-| ☐ `AZURE_STORAGE_CONTAINER` | A4 (`podcast-episodes`) |
-| ☐ `AZURE_BLOB_PUBLIC_URL_BASE` | A4 (`https://...blob.core.windows.net/podcast-episodes`) |
-| ☐ `YOUTUBE_CLIENT_ID` | B3 |
-| ☐ `YOUTUBE_CLIENT_SECRET` | B3 |
-| ☐ `YOUTUBE_REFRESH_TOKEN` | B4 |
-| ☐ `YOUTUBE_CHANNEL_ID` | B1 |
-| ☐ `PODCAST_TITLE` | 自訂 (`中文歷史說書`) |
-| ☐ `PODCAST_AUTHOR` | 自訂 (你的名字) |
-| ☐ `PODCAST_EMAIL` | 自訂 |
-| ☐ `PODCAST_BASE_URL` | C1 (`https://你帳號.github.io/chinese-history-storyteller`) |
-| ☐ `PODCAST_LANGUAGE` | `zh-tw` |
-| ☐ `PODCAST_CATEGORY` | `History` |
-| ☐ `DISCORD_WEBHOOK_URL` | (選用) |
+|  `AZURE_CLIENT_ID` | A5 (App Registration appId) |
+|  `AZURE_TENANT_ID` | A5 (`az account show --query tenantId`) |
+|  `AZURE_SUBSCRIPTION_ID` | A5 (`az account show --query id`) |
+|  `AZURE_OPENAI_ENDPOINT` | A2 |
+|  `AZURE_OPENAI_GPT_DEPLOYMENT` | A2 (`gpt-5-mini`) |
+|  `AZURE_OPENAI_IMAGE_DEPLOYMENT` | A2 (`gpt-image-2`) |
+|  `AZURE_OPENAI_API_VERSION` | A2 (`2024-10-21`) |
+|  `AZURE_SPEECH_REGION` | A3 (`eastus`) |
+|  `AZURE_SPEECH_RESOURCE_ID` | A3 (Speech resource ARM id) |
+|  `AZURE_SPEECH_VOICE` | 自訂 (`zh-CN-YunjianNeural` 推薦) |
+|  `AZURE_STORAGE_CONNECTION_STRING` | A4 |
+|  `AZURE_STORAGE_CONTAINER` | A4 (`podcast-episodes`) |
+|  `AZURE_BLOB_PUBLIC_URL_BASE` | A4 (`https://...blob.core.windows.net/podcast-episodes`) |
+|  `YOUTUBE_CLIENT_ID` | B3 |
+|  `YOUTUBE_CLIENT_SECRET` | B3 |
+|  `YOUTUBE_REFRESH_TOKEN` | B4 |
+|  `YOUTUBE_CHANNEL_ID` | B1 |
+|  `PODCAST_TITLE` | 自訂 (`中文歷史說書`) |
+|  `PODCAST_AUTHOR` | 自訂 (你的名字) |
+|  `PODCAST_EMAIL` | 自訂 |
+|  `PODCAST_BASE_URL` | C1 (`https://你帳號.github.io/chinese-history-storyteller`) |
+|  `PODCAST_LANGUAGE` | `zh-tw` |
+|  `PODCAST_CATEGORY` | `History` |
+|  `DISCORD_WEBHOOK_URL` | (選用) |
 
-> ⚠️ 注意:本專案改用 Entra ID,**不再需要** `AZURE_OPENAI_KEY` 與 `AZURE_SPEECH_KEY` secrets。如果你之前的 secrets 還有,可保留(不會被讀取)或刪除。
+> 注意:本專案改用 Entra ID,**不再需要** `AZURE_OPENAI_KEY` 與 `AZURE_SPEECH_KEY` secrets。如果你之前的 secrets 還有,可保留(不會被讀取)或刪除。
 
 ### D3. 首次手動觸發測試
 1. GitHub repo → **Actions** tab
@@ -331,7 +331,7 @@ GitHub repo → **Settings → Secrets and variables → Actions → New reposit
 4. 等 ~10-15 分鐘
 5. 檢查:
    - YouTube Studio 是否有新影片
-   - Repo 是否多了一個 commit `📻 Publish episode 1`
+   - Repo 是否多了一個 commit ` Publish episode 1`
    - `data/published_log.json` 是否新增一筆
    - `podcast.xml` 是否有 item
 
@@ -349,7 +349,7 @@ GitHub repo → **Settings → Secrets and variables → Actions → New reposit
 
 ---
 
-## 🔥 完成後檢查清單
+## 完成後檢查清單
 
 - [ ] 第一集已成功上傳 YouTube (unlisted)
 - [ ] `podcast.xml` 已透過 GitHub Pages 公開可訪問
@@ -360,7 +360,7 @@ GitHub repo → **Settings → Secrets and variables → Actions → New reposit
 
 ---
 
-## 💡 之後的維運
+## 之後的維運
 
 | 頻率 | 事項 | 時間 |
 |------|------|------|
@@ -373,7 +373,7 @@ GitHub repo → **Settings → Secrets and variables → Actions → New reposit
 
 ---
 
-## 🆘 常見錯誤
+## 常見錯誤
 
 | 錯誤 | 原因 | 解法 |
 |------|------|------|

@@ -118,7 +118,7 @@ def main(episode_id: int) -> int:
         "-c:a", "aac", "-b:a", "192k", "-shortest", str(final),
     ], check=True)
 
-    log.info("✅ 完成: %s", final)
+    log.info(" 完成: %s", final)
 
     # 清理中間檔
     for c in clips:
