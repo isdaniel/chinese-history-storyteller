@@ -1,0 +1,144 @@
+name: Publish Episode
+
+on:
+  schedule:
+    # 台灣時間每天早上 7:00 (UTC -8h = 前一天 23:00)
+    - cron: '0 23 * * *'
+  workflow_dispatch:
+    inputs:
+      privacy:
+        description: 'YouTube 隱私 (public/unlisted/private)'
+        required: false
+        default: 'unlisted'
+        type: choice
+        options:
+          - public
+          - unlisted
+          - private
+
+permissions:
+  contents: write   # 為了 commit 更新後的 podcast.xml + log
+  id-token: write   # OIDC 換 Azure token
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    env:
+      AZURE_OPENAI_ENDPOINT: ${{ secrets.AZURE_OPENAI_ENDPOINT }}
+      AZURE_OPENAI_GPT_DEPLOYMENT: ${{ secrets.AZURE_OPENAI_GPT_DEPLOYMENT }}
+      AZURE_OPENAI_IMAGE_DEPLOYMENT: ${{ secrets.AZURE_OPENAI_IMAGE_DEPLOYMENT }}
+      AZURE_OPENAI_API_VERSION: ${{ secrets.AZURE_OPENAI_API_VERSION }}
+      AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+      AZURE_SPEECH_RESOURCE_ID: ${{ secrets.AZURE_SPEECH_RESOURCE_ID }}
+      AZURE_SPEECH_CUSTOM_DOMAIN: ${{ secrets.AZURE_SPEECH_CUSTOM_DOMAIN }}
+      AZURE_SPEECH_VOICE: ${{ secrets.AZURE_SPEECH_VOICE }}
+      AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
+      AZURE_STORAGE_CONTAINER: ${{ secrets.AZURE_STORAGE_CONTAINER }}
+      AZURE_BLOB_PUBLIC_URL_BASE: ${{ secrets.AZURE_BLOB_PUBLIC_URL_BASE }}
+      YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+      YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+      YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+      YOUTUBE_CHANNEL_ID: ${{ secrets.YOUTUBE_CHANNEL_ID }}
+      YOUTUBE_PRIVACY: ${{ inputs.privacy || 'public' }}
+      PODCAST_TITLE: ${{ secrets.PODCAST_TITLE }}
+      PODCAST_AUTHOR: ${{ secrets.PODCAST_AUTHOR }}
+      PODCAST_EMAIL: ${{ secrets.PODCAST_EMAIL }}
+      PODCAST_BASE_URL: ${{ secrets.PODCAST_BASE_URL }}
+      PODCAST_LANGUAGE: ${{ secrets.PODCAST_LANGUAGE }}
+      PODCAST_CATEGORY: ${{ secrets.PODCAST_CATEGORY }}
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Azure login (OIDC)
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install FFmpeg + 中文字型
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-noto-cjk
+          # 驗證 ffmpeg 含 libx264 (build_video.py 需要)
+          ffmpeg -hide_banner -encoders 2>/dev/null | grep -q libx264 || {
+            echo "ERROR: ffmpeg without libx264 — install ffmpeg-full or build with --enable-libx264"
+            exit 1
+          }
+          ffmpeg -version | head -1
+          fc-list :lang=zh | head -3 || echo "WARN: no Chinese fonts detected"
+
+      - name: Install Python deps
+        run: pip install -r requirements.txt
+
+      - name: 1️⃣ 生成腳本 (Azure OpenAI GPT)
+        working-directory: scripts
+        run: python generate_script.py
+
+      - name: 2️⃣ 生成插畫 (gpt-image-2)
+        working-directory: scripts
+        run: python generate_images.py
+
+      - name: 3️⃣ TTS 語音合成 (Azure Speech)
+        working-directory: scripts
+        run: python synthesize_speech.py
+
+      - name: 4️⃣ 影片合成 (FFmpeg)
+        working-directory: scripts
+        run: python build_video.py
+
+      - name: 5️⃣ 上傳 YouTube
+        working-directory: scripts
+        run: python upload_youtube.py
+
+      - name: 6️⃣ 發布 Podcast (Azure Blob + RSS)
+        working-directory: scripts
+        run: python publish_podcast.py
+
+      - name: 7️⃣ 通知 Discord
+        if: always()
+        working-directory: scripts
+        run: python notify.py
+        continue-on-error: true
+
+      - name: 🚨 失敗時通知 (refresh token 過期等)
+        if: failure() && env.DISCORD_WEBHOOK_URL != ''
+        run: |
+          curl -s -H "Content-Type: application/json" -d "{
+            \"content\": \"🔴 **Storyteller pipeline failed** — run ${{ github.run_id }}\\n如果是 401 / invalid_grant,代表 YouTube refresh token 失效,請重跑 \`scripts/get_youtube_refresh_token.py\` 重新授權並更新 GitHub secret \`YOUTUBE_REFRESH_TOKEN\`。\\nLog: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}\"
+          }" "$DISCORD_WEBHOOK_URL" || true
+
+      - name: Commit & Push 更新後的 RSS 與 log
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add podcast.xml data/published_log.json
+          if ! git diff --cached --quiet; then
+            git commit -m "📻 Publish episode ${EPISODE_ID:-unknown}"
+            git push
+          else
+            echo "No changes to commit."
+          fi
+
+      - name: Upload artifacts (debug)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: episode-debug-${{ github.run_id }}
+          path: |
+            output/
+            !output/**/*.mp4
+          retention-days: 7

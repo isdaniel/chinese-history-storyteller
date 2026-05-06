@@ -1,0 +1,41 @@
+name: Keep YouTube Token Alive
+
+on:
+  schedule:
+    # refresh token 
+    - cron: '0 0 */5 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Refresh YouTube token
+        env:
+          CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          set -e
+          response=$(curl -s -w "\n%{http_code}" -X POST https://oauth2.googleapis.com/token \
+            -d "client_id=${CLIENT_ID}" \
+            -d "client_secret=${CLIENT_SECRET}" \
+            -d "refresh_token=${REFRESH_TOKEN}" \
+            -d "grant_type=refresh_token")
+          body=$(echo "$response" | head -n -1)
+          code=$(echo "$response" | tail -n 1)
+          if [ "$code" = "200" ]; then
+            echo "✅ Token still valid"
+          else
+            echo "❌ Token invalid (HTTP $code): $body"
+            if [ -n "${{ secrets.DISCORD_WEBHOOK_URL }}" ]; then
+              curl -s -H "Content-Type: application/json" \
+                -d "{\"content\":\"🔴 YouTube refresh token 失效,請重跑 get_youtube_refresh_token.py 並更新 secret\"}" \
+                "${{ secrets.DISCORD_WEBHOOK_URL }}" || true
+            fi
+            exit 1
+          fi

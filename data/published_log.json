@@ -1,0 +1,4 @@
+{
+  "_comment": "已發布的集數記錄。每次 pipeline 執行後會自動 append 一筆。",
+  "published": []
+}
