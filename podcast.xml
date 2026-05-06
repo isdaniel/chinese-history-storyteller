@@ -2,15 +2,31 @@
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
     <title>中文歷史說書</title>
-    <link>https://danielshih.github.io/chinese-history-storyteller</link>
-    <description>說書頻道,深度解析中華歷史、世界文明與科技史。每週兩集,涵蓋三國、明清、科技公司興衰與失落文明。</description>
+    <link>https://isdaniel.github.io/chinese-history-storyteller</link>
+    <description>AI 說書頻道,深度解析中華歷史、世界文明與科技史。每天一集,涵蓋三國、明清、科技公司興衰與失落文明。</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 06 May 2026 08:25:06 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2026 16:10:15 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
+    <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
     <itunes:explicit>no</itunes:explicit>
-    <itunes:summary>自動製作的中文歷史說書 Podcast</itunes:summary>
+    <itunes:owner>
+      <itunes:name>Storyteller</itunes:name>
+      <itunes:email>noreply@example.com</itunes:email>
+    </itunes:owner>
+    <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
+    <itunes:type>episodic</itunes:type>
+    <item>
+      <title>三國真相：諸葛亮真的那麼神嗎？史實 vs 演義的五大差距</title>
+      <description>諸葛亮在民間與小說中近乎神化，但史料與演義有多大落差？本片以北伐評價、治蜀政績、空城計、木牛流馬與身後評價為脈絡，拆解五大常見誤解，還原更貼近史實的諸葛亮。00:00 開場與問題提出 01:40 一、北伐的真相 04:20 二、治蜀的政績 07:00 三、空城計虛實 09:10 四、木牛流馬的技術 11:00 五、身後評價與現代啟示</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0001.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0001.mp3" length="6960429" type="audio/mpeg"/>
+      <pubDate>Wed, 06 May 2026 16:10:15 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>04:49</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
   </channel>
 </rss>

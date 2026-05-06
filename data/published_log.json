@@ -1,4 +1,25 @@
 {
   "_comment": "已發布的集數記錄。每次 pipeline 執行後會自動 append 一筆。",
-  "published": []
+  "published": [
+    {
+      "id": 1,
+      "published_at": "2026-05-06T16:10:15.624857+00:00",
+      "title": "三國真相：諸葛亮真的那麼神嗎？史實 vs 演義的五大差距",
+      "description": "諸葛亮在民間與小說中近乎神化，但史料與演義有多大落差？本片以北伐評價、治蜀政績、空城計、木牛流馬與身後評價為脈絡，拆解五大常見誤解，還原更貼近史實的諸葛亮。00:00 開場與問題提出 01:40 一、北伐的真相 04:20 二、治蜀的政績 07:00 三、空城計虛實 09:10 四、木牛流馬的技術 11:00 五、身後評價與現代啟示",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0001.mp3",
+      "youtube_url": "https://youtu.be/vjG3dmA_v8E",
+      "size_bytes": 6960429,
+      "duration_str": "04:49",
+      "tags": [
+        "諸葛亮",
+        "三國史實",
+        "三國演義",
+        "北伐",
+        "空城計",
+        "木牛流馬",
+        "治蜀政績",
+        "歷史反思"
+      ]
+    }
+  ]
 }
