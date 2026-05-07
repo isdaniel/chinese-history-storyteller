@@ -20,6 +20,26 @@
         "治蜀政績",
         "歷史反思"
       ]
+    },
+    {
+      "id": 2,
+      "published_at": "2026-05-07T00:23:10.760267+00:00",
+      "title": "Nokia 帝國的隕落：從世界第一到消失的十年",
+      "description": "Nokia 從功能手機霸主到被 iPhone、Android 改寫命運的過程，一場技術、決策與時代節奏錯位的教科書級案例。前 100 字摘要：本片回溯塞班系統的結構性問題、iPhone 的生態衝擊、三位關鍵 CEO 的決策節點、與微軟收購的最後一幕，提出現代企業與個人的實務反思。 00:00 開場與導引\n02:00 塞班的崛起與內部結構\n04:30 iPhone 的震撼與使用者期待變化\n07:00 CEO 決策與組織文化轉折\n09:30 MeeGo、Nokia N 系列與錯過的機會\n11:30 微軟戰略、收購經過與後果\n13:00 Nokia 在地化與今日殘影\n14:30 現代啟示與結語",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0002.mp3",
+      "youtube_url": "https://youtu.be/0qPv1sv413Q",
+      "size_bytes": 10154925,
+      "duration_str": "07:03",
+      "tags": [
+        "Nokia",
+        "科技史",
+        "塞班",
+        "iPhone",
+        "微軟收購",
+        "企業決策",
+        "手機產業",
+        "教訓與反思"
+      ]
     }
   ]
 }
