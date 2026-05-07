@@ -125,6 +125,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull
           git add podcast.xml data/published_log.json
           if ! git diff --cached --quiet; then
             git commit -m "Publish episode ${EPISODE_ID:-unknown}"
