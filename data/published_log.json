@@ -20,6 +20,46 @@
         "治蜀政績",
         "歷史反思"
       ]
+    },
+    {
+      "id": 2,
+      "published_at": "2026-05-07T00:23:10.760267+00:00",
+      "title": "Nokia 帝國的隕落：從世界第一到消失的十年",
+      "description": "Nokia 從功能手機霸主到被 iPhone、Android 改寫命運的過程，一場技術、決策與時代節奏錯位的教科書級案例。前 100 字摘要：本片回溯塞班系統的結構性問題、iPhone 的生態衝擊、三位關鍵 CEO 的決策節點、與微軟收購的最後一幕，提出現代企業與個人的實務反思。 00:00 開場與導引\n02:00 塞班的崛起與內部結構\n04:30 iPhone 的震撼與使用者期待變化\n07:00 CEO 決策與組織文化轉折\n09:30 MeeGo、Nokia N 系列與錯過的機會\n11:30 微軟戰略、收購經過與後果\n13:00 Nokia 在地化與今日殘影\n14:30 現代啟示與結語",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0002.mp3",
+      "youtube_url": "https://youtu.be/0qPv1sv413Q",
+      "size_bytes": 10154925,
+      "duration_str": "07:03",
+      "tags": [
+        "Nokia",
+        "科技史",
+        "塞班",
+        "iPhone",
+        "微軟收購",
+        "企業決策",
+        "手機產業",
+        "教訓與反思"
+      ]
+    },
+    {
+      "id": 3,
+      "published_at": "2026-05-08T00:04:58.650065+00:00",
+      "title": "失落的樓蘭古國：絲路上消逝的沙海文明",
+      "description": "樓蘭，曾經坐落於塔里木盆地東北邊緣的綠洲城邦，在絲路上閃爍過短暫而璀璨的光芒。本片帶您穿越千年沙海，重訪樓蘭的地理、考古、傳說與消失之謎。前半段梳理發現與遺址，後半段探討氣候與人為交織的滅亡原因，最後提出對現代環境與文明脆弱性的反思。\n\n00:00 開場引題 01:30 樓蘭地理與交通位置 03:20 樓蘭城邦生活想像 05:10 樓蘭美女與文獻記載 07:00 考古發現與出土文物 09:00 突然消失的可能原因 10:00 氣候變遷與人類選擇 11:00 現代啟示與反思",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0003.mp3",
+      "youtube_url": "https://youtu.be/oxEg-xehp7A",
+      "size_bytes": 9263277,
+      "duration_str": "06:25",
+      "tags": [
+        "樓蘭",
+        "絲路",
+        "考古",
+        "氣候變遷",
+        "古代文明",
+        "塔里木盆地",
+        "樓蘭美女",
+        "消失的城市"
+      ]
     }
   ]
 }
