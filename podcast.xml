@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 07 May 2026 00:23:10 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 00:04:58 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,18 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>失落的樓蘭古國：絲路上消逝的沙海文明</title>
+      <description>樓蘭，曾經坐落於塔里木盆地東北邊緣的綠洲城邦，在絲路上閃爍過短暫而璀璨的光芒。本片帶您穿越千年沙海，重訪樓蘭的地理、考古、傳說與消失之謎。前半段梳理發現與遺址，後半段探討氣候與人為交織的滅亡原因，最後提出對現代環境與文明脆弱性的反思。
+
+00:00 開場引題 01:30 樓蘭地理與交通位置 03:20 樓蘭城邦生活想像 05:10 樓蘭美女與文獻記載 07:00 考古發現與出土文物 09:00 突然消失的可能原因 10:00 氣候變遷與人類選擇 11:00 現代啟示與反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0003.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0003.mp3" length="9263277" type="audio/mpeg"/>
+      <pubDate>Fri, 08 May 2026 00:04:58 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>06:25</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Nokia 帝國的隕落：從世界第一到消失的十年</title>
       <description>Nokia 從功能手機霸主到被 iPhone、Android 改寫命運的過程，一場技術、決策與時代節奏錯位的教科書級案例。前 100 字摘要：本片回溯塞班系統的結構性問題、iPhone 的生態衝擊、三位關鍵 CEO 的決策節點、與微軟收購的最後一幕，提出現代企業與個人的實務反思。 00:00 開場與導引
