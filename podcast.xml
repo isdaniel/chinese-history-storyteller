@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 08 May 2026 00:04:58 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 21:59:32 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>曹操真的是奸雄嗎？重新認識三國最被誤解的男人</title>
+      <description>摘要：打破「奸雄」刻板印象，從治世能力、屯田制、唯才是舉到赤壁之敗與文學成就，帶你用新的視角看曹操。本文以史實為基礎，呈現一位既有政治手腕、也有文化才情的複雜人物。章節時間軸（預留）：00:00 引言；01:40 少年與崛起；03:20 治世之能臣；05:00 屯田制與民生；07:00 唯才是舉；09:00 赤壁之敗分析；11:00 文學與人格；12:30 現代啟示與反思。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0004.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0004.mp3" length="7873965" type="audio/mpeg"/>
+      <pubDate>Fri, 08 May 2026 21:59:32 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>05:28</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>失落的樓蘭古國：絲路上消逝的沙海文明</title>
       <description>樓蘭，曾經坐落於塔里木盆地東北邊緣的綠洲城邦，在絲路上閃爍過短暫而璀璨的光芒。本片帶您穿越千年沙海，重訪樓蘭的地理、考古、傳說與消失之謎。前半段梳理發現與遺址，後半段探討氣候與人為交織的滅亡原因，最後提出對現代環境與文明脆弱性的反思。
