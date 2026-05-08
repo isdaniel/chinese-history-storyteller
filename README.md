@@ -67,7 +67,7 @@ terraform apply
 - 建 OAuth 2.0 client (Desktop app)
 - 跑 `python scripts/get_youtube_refresh_token.py` 拿 `refresh_token`
 
-### 步驟 5: 灌 GitHub Secrets
+### 步驟 5: GitHub Secrets
 
 PowerShell:
 ```powershell
@@ -93,6 +93,8 @@ gh secret set DISCORD_WEBHOOK_URL     -R $REPO -b "https://discord.com/api/webho
 gh secret list -R $REPO
 ```
 
+如果改了 secrets 來源 (例如 storage key 輪換、redeploy 換新 endpoint),重跑 `set_github_secrets.ps1` 同步到 GitHub。
+
 ### 步驟 6: 首次手動觸發測試
 1. 進到 GitHub repo → **Actions** tab
 2. 選 **Publish Episode** workflow
@@ -102,30 +104,10 @@ gh secret list -R $REPO
 
 ---
 
-## 重複部署 / 修改資源
-
-只要改 Terraform 重 apply 就好:
-```bash
-cd infra
-terraform plan
-terraform apply
-```
-
-state 在 Azure 不在本機,可在任何裝置上 `terraform init` 接續操作 (前提是有 RBAC)。
-
-如果改了 secrets 來源 (例如 storage key 輪換、redeploy 換新 endpoint),重跑 `set_github_secrets.ps1` 同步到 GitHub。
-
----
-
 ## 常見問題
 
 ### Azure login (OIDC) 失敗 — `Not all values are present. Ensure 'client-id' and 'tenant-id' are supplied`
 GitHub repo 的 secrets 沒設好。跑 `gh secret list -R OWNER/REPO` 確認 14 個 Azure secrets 都在,不在的話跑 `.\scripts\set_github_secrets.ps1`。
-
-### Azure login (OIDC) 失敗 — `AADSTS70021: No matching federated identity record`
-Federated credential 的 subject 跟實際 GitHub repo 對不上。
-- 在 `terraform.tfvars` 確認 `github_repo = "OWNER/REPO"` 跟你 push 的 repo 一致
-- `terraform apply` 重建 federated credentials
 
 ### YouTube 401 / `invalid_grant`
 refresh token 失效 (Testing 模式 7 天閒置會過期)。重跑 `python scripts/get_youtube_refresh_token.py` 拿新的,然後 `gh secret set YOUTUBE_REFRESH_TOKEN -R OWNER/REPO -b "<新的 token>"`。Workflow 已配置失敗時自動發 Discord 通知 (如有設 webhook)。
@@ -133,8 +115,7 @@ refresh token 失效 (Testing 模式 7 天閒置會過期)。重跑 `python scri
 ### `gpt-image-2` `DeploymentNotFound`
 你的 Azure OpenAI 不在支援區域。`gpt-image-2` 只在 Sweden Central / East US 2 / West US 3 開放。Terraform 預設用 Sweden Central。
 
-### 本機 `terraform output` 拿到舊資料
-PATH 中可能有舊版 terraform。確認 `terraform version` >= 1.5,需要 import block 與 backend 支援。
+確認 `terraform version` >= 1.5,需要 import block 與 backend 支援。
 
 ---
 
@@ -156,47 +137,6 @@ PATH 中可能有舊版 terraform。確認 `terraform version` >= 1.5,需要 imp
 - 控制發布頻率,避免被判定為 Content Farm
 - 第 8 段強制包含「現代啟示」原創觀點
 
----
-
-## 本地測試
-
-不一定要在 GitHub 上跑,你也可以本機測試 (前提:terraform 已 apply、az login 過):
-
-```bash
-pip install -r requirements.txt
-
-# 從 terraform output 取出環境變數 (Linux/Mac/git-bash)
-cd infra
-export AZURE_OPENAI_ENDPOINT=$(terraform output -raw azure_openai_endpoint)
-export AZURE_OPENAI_GPT_DEPLOYMENT=$(terraform output -raw azure_openai_gpt_deployment)
-export AZURE_OPENAI_IMAGE_DEPLOYMENT=$(terraform output -raw azure_openai_image_deployment)
-export AZURE_OPENAI_API_VERSION="2024-10-21"
-export AZURE_SPEECH_REGION=$(terraform output -raw azure_speech_region)
-export AZURE_SPEECH_RESOURCE_ID=$(terraform output -raw azure_speech_resource_id)
-export AZURE_SPEECH_CUSTOM_DOMAIN=$(terraform output -raw azure_speech_custom_domain)
-export AZURE_SPEECH_VOICE="zh-CN-YunjianNeural"
-export AZURE_STORAGE_CONNECTION_STRING=$(terraform output -raw azure_storage_connection_string)
-export AZURE_STORAGE_CONTAINER=$(terraform output -raw azure_storage_container)
-export AZURE_BLOB_PUBLIC_URL_BASE=$(terraform output -raw azure_blob_public_url_base)
-cd ..
-
-# 跑單集
-cd scripts
-python generate_script.py
-# 印出 EPISODE_ID=1,後續腳本接著跑:
-EPISODE_ID=1 python generate_images.py
-EPISODE_ID=1 python synthesize_speech.py
-EPISODE_ID=1 python build_video.py
-EPISODE_ID=1 python upload_youtube.py    # 真的會上傳!先把 YOUTUBE_PRIVACY=private
-EPISODE_ID=1 python publish_podcast.py
-```
-
-Windows PowerShell 把 `export` 改 `$env:VAR=...`、`$()` 改 `(terraform output -raw ...)`, 可以下載某集 output 資料夾來檢查腳本品質、替換不滿意的圖片再重跑 `build_video.py`。
-
-### 出錯時的 debug
-- GitHub Actions 失敗時會自動上傳 `output/` 資料夾為 artifact (保留 7 天,不含 mp4)
-- 看 Actions log 找到失敗在哪一步
-- 大部分問題是金鑰過期、RBAC 沒生效、或 Azure 配額用完
 
 ### 內容調校
 - **不滿意 GPT 產出**:改 `templates/script_prompt.txt`
