@@ -30,12 +30,14 @@ def build_prompt(topic: dict) -> str:
     # 目標影片長度 8~10 分鐘:把 queue 設定的 length_min clamp 到此區間
     # (queue 內既有資料多為 11~15 分,直接用會超過上限)
     length_min = resolve_length_min(topic)
-    # 校準: zh-CN-YunjianNeural + narration-professional + rate=-8% 實測約 145 字/分
-    # (前四集設 220 字/分,實測長度只有目標的 40~50%)
-    # 為避免 LLM 又縮水,再加 15% buffer 拉高目標下限
-    chars_per_min = 145
+    # 校準歷史:
+    #   v1 (前 4 集): 220 字/分 → LLM 給字不足,實際 4~7 分鐘
+    #   v2 (ep5):    145 字/分 + prompt 強制下限 → LLM 給滿 1540 字,實測 5:17
+    #                從 ep5 CI log 反推真實語速 = 1540/317.3*60 = 291 字/分
+    #   v3 (本次):   chars_per_min=291 (實測值),buffer 拉到 1.15 對抗 LLM 略低於目標的傾向
+    chars_per_min = int(env("CHARS_PER_MIN", "291"))
     target_chars = int(length_min * chars_per_min * 1.15)
-    min_chars = int(length_min * chars_per_min * 0.95)
+    min_chars = int(length_min * chars_per_min * 1.00)
     return template.format(
         title=topic["title"],
         category=topic["category"],
@@ -61,8 +63,8 @@ def generate(topic: dict) -> dict:
 
     log.info("呼叫 Azure OpenAI (deployment=%s) 生成腳本…", deployment)
     # gpt-5-mini 是 reasoning model:max_completion_tokens 同時涵蓋 reasoning tokens 與輸出
-    # 校準後 10 分鐘約 1700 字 ≈ 2.5K tokens 輸出,留 ~13K reasoning 餘裕
-    target_tokens = max(16000, int(resolve_length_min(topic) * 1600))
+    # 校準後 9 分鐘目標 ~3000 字 ≈ 4.5K tokens 輸出,留 ~15K reasoning 餘裕
+    target_tokens = max(20000, int(resolve_length_min(topic) * 2400))
     resp = client.chat.completions.create(
         model=deployment,
         messages=[
@@ -88,9 +90,11 @@ def generate(topic: dict) -> dict:
 
     # 字數檢查:旁白總字數應接近目標,否則影片會明顯短於 length_min
     length_min = resolve_length_min(topic)
-    expected_min_chars = int(length_min * 145 * 0.85)
+    chars_per_min = int(env("CHARS_PER_MIN", "291"))
+    expected_min_chars = int(length_min * chars_per_min * 0.95)
     total_chars = sum(len(s.get("narration", "")) for s in script["sections"])
-    log.info("旁白總字數 %d (目標下限 %d, %d 分鐘)", total_chars, expected_min_chars, length_min)
+    log.info("旁白總字數 %d (目標下限 %d, %d 分鐘 @ %d 字/分)",
+             total_chars, expected_min_chars, length_min, chars_per_min)
     if total_chars < expected_min_chars:
         log.warning(
             "旁白字數 %d 低於下限 %d,預計影片長度將短於 %d 分鐘",

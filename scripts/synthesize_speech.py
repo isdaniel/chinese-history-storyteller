@@ -29,10 +29,14 @@ def make_ssml(text: str, voice: str) -> str:
             .replace("<", "&lt;")
             .replace(">", "&gt;")
     )
+    # rate 預設 -8% (ep1~ep5 一致),可由 TTS_RATE env 覆寫做 A/B 測試。
+    # ep5 實測: -8% 下 zh-CN-YunjianNeural 約 291 字/分。
+    # 若改 -15% 預估降至 ~268 字/分,但需要實測驗證。
+    rate = os.environ.get("TTS_RATE", "-8%")
     return f"""<speak version='1.0' xml:lang='zh-CN' xmlns:mstts='https://www.w3.org/2001/mstts'>
 <voice name='{voice}'>
 <mstts:express-as style='narration-professional'>
-<prosody rate='-8%' pitch='-2%'>{safe}</prosody>
+<prosody rate='{rate}' pitch='-2%'>{safe}</prosody>
 </mstts:express-as>
 </voice></speak>"""
 

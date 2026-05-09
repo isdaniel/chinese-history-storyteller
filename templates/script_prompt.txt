@@ -5,7 +5,7 @@
 【題材】{title}
 【類別】{category}
 【關鍵重點】{key_points}
-【目標長度】約 {length_min} 分鐘 (中文 TTS 旁白語速約每分鐘 145 字)
+【目標長度】約 {length_min} 分鐘 (中文 TTS 旁白語速約每分鐘 290 字)
 【總字數要求】narration 全部加總 **必須介於 {min_chars} ~ {target_chars} 字** (這是硬性下限,低於 {min_chars} 字會被退件)
 
 # 撰寫要求
