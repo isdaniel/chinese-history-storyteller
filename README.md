@@ -26,6 +26,140 @@
 - **State**: Remote backend in Azure Storage (`stgsttftateaihistory/tfstate`),use_azuread_auth=true
 - **Pipeline**: GitHub Actions 排程 + workflow_dispatch 手動觸發
 
+### 服務清單
+
+```yaml
+github_actions:
+  workflows:
+    - publish.yml:           # 主 pipeline,每天 21:00 UTC + 手動觸發
+        jobs: [publish, replenish]
+    - token-keepalive.yml:   # 每 5 天 ping 一次 YouTube refresh token
+azure:
+  resource_group: rg-storyteller
+  cognitive_services:
+    azure_openai (Sweden Central, S0, local_auth=false):
+      - gpt-5-mini       (GlobalStandard 10K TPM) - 寫稿 / 補題
+      - gpt-image-2      (GlobalStandard 2 RPM)   - 插畫 / 封面
+    azure_speech (East US, F0, local_auth=false):
+      - zh-CN-YunjianNeural (預設) - 中文 TTS
+  storage:
+    stgstoryteller<suffix>:
+      container: podcast-episodes (blob-level public read) - mp3 enclosure
+  entra_id:
+    app_registration: github-storyteller-pipeline
+    federated_credentials: [refs/heads/main, environment:production]
+    rbac:
+      - Cognitive Services OpenAI User @ openai
+      - Cognitive Services User        @ speech
+external:
+  google: YouTube Data API v3 (OAuth refresh_token)
+  discord: webhook (失敗 / 完成 / 補題通知)
+  github_pages: 託管 podcast.xml 與 cover.jpg
+infra_as_code:
+  terraform:
+    backend: azurerm (stgsttftateaihistory/tfstate, use_azuread_auth)
+    files: main.tf, variables.tf, outputs.tf, versions.tf
+data:
+  topics_queue.json:    待發布題材 (低於 21 集自動補題)
+  published_log.json:   已發布記錄 (RSS 與去重來源)
+```
+
+### 完整執行流程圖
+
+```mermaid
+flowchart TB
+    subgraph Trigger["Trigger"]
+        CRON[["cron: 0 21 * * *<br/>(台灣 05:00)"]]
+        MANUAL[["workflow_dispatch<br/>privacy 選項"]]
+        KEEPALIVE[["cron: 0 0 */5 * *<br/>token keep-alive"]]
+    end
+
+    subgraph Auth["Auth (OIDC + Entra ID)"]
+        OIDC[/"GitHub OIDC token"/]
+        FIC["Federated Credential<br/>repo:.../main"]
+        SP["Service Principal<br/>github-storyteller-pipeline"]
+        OIDC -->|exchange| FIC --> SP
+    end
+
+    subgraph PublishJob["job: publish (ubuntu-latest, 60min)"]
+        direction TB
+        S1["1. generate_script.py<br/>pick_next_topic() to script.json"]
+        S2["2. generate_images.py<br/>img_01..08.png"]
+        S3["3. synthesize_speech.py<br/>audio_*.mp3 + timings.json"]
+        S4["4. build_video.py<br/>FFmpeg + libx264 + Noto CJK<br/>final.mp4 (1080p, Ken Burns)"]
+        S5["5. upload_youtube.py<br/>Data API v3 resumable upload"]
+        S6["6. publish_podcast.py<br/>Blob upload + RSS rebuild"]
+        S7["7. notify.py (Discord)"]
+        S8["8. git commit podcast.xml<br/>+ data/published_log.json"]
+        S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7 --> S8
+    end
+
+    subgraph ReplenishJob["job: replenish (needs publish)"]
+        R1["count_remaining_topics()"]
+        R2{{"剩餘 < 21<br/>且無 open PR?"}}
+        R3["replenish_topics.py<br/>+100 題"]
+        R4["peter-evans/create-pull-request<br/>label: replenish-topics"]
+        R1 --> R2 -->|yes| R3 --> R4
+        R2 -->|no| RSKIP["Discord 通知 skip"]
+    end
+
+    subgraph AzureAI["Azure (Sweden Central / East US)"]
+        OPENAI["Azure OpenAI<br/>gpt-5-mini"]
+        IMG["Azure OpenAI<br/>gpt-image-2"]
+        TTS["Azure Speech<br/>YunjianNeural"]
+        BLOB["Storage Account<br/>podcast-episodes/"]
+    end
+
+    subgraph External["External"]
+        YT["YouTube Data API v3"]
+        GPAGES["GitHub Pages<br/>podcast.xml / cover.jpg"]
+        APPLE["Apple/Spotify Podcasts<br/>(訂閱 RSS)"]
+        DISCORD["Discord Webhook"]
+        GOOG["oauth2.googleapis.com"]
+    end
+
+    subgraph Data["Repo State"]
+        TQ[("data/topics_queue.json")]
+        PL[("data/published_log.json")]
+        PXML[("podcast.xml")]
+    end
+
+    CRON --> PublishJob
+    MANUAL --> PublishJob
+    KEEPALIVE --> GOOG
+
+    PublishJob -.OIDC.-> Auth
+    SP -->|RBAC token| OPENAI
+    SP -->|RBAC token| IMG
+    SP -->|AAD to authToken| TTS
+
+    TQ --> S1
+    PL --> S1
+    S1 -->|chat.completions| OPENAI
+    S2 -->|images.generate| IMG
+    S3 -->|SSML synth| TTS
+    S5 -->|refresh_token| YT
+    S6 -->|connection_string| BLOB
+    S6 --> PXML
+    S6 --> PL
+    S6 --> BLOB
+    BLOB --> APPLE
+    GPAGES --> APPLE
+    PXML -.commit.-> GPAGES
+    S7 --> DISCORD
+    R3 -->|chat.completions| OPENAI
+    R4 -.PR.-> TQ
+
+    classDef azure fill:#0078D4,stroke:#fff,color:#fff
+    classDef ext fill:#34A853,stroke:#fff,color:#fff
+    classDef data fill:#F9AB00,stroke:#000,color:#000
+    classDef trig fill:#9334E6,stroke:#fff,color:#fff
+    class OPENAI,IMG,TTS,BLOB,SP,FIC azure
+    class YT,GPAGES,APPLE,DISCORD,GOOG ext
+    class TQ,PL,PXML data
+    class CRON,MANUAL,KEEPALIVE trig
+```
+
 ---
 
 ## 快速部署 (新環境從零開始)
