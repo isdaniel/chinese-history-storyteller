@@ -80,6 +80,26 @@
         "文學成就",
         "歷史反思"
       ]
+    },
+    {
+      "id": 5,
+      "published_at": "2026-05-09T21:45:03.992071+00:00",
+      "title": "Intel 與 AMD 的五十年戰爭：從創業年代到 Ryzen 復活",
+      "description": "50 年的晶片戰爭，如何改寫電腦的心臟？Intel 與 AMD 的競爭，既是技術演進的推手，也是商業與法律角力的舞台。摘要：從 1969 年 AMD 的誕生，到 1990 年代 K6 與 Athlon 的突圍，再到 Bulldozer 的挫敗與 2017 年 Ryzen 的復活，這是一段關於設計哲學、製程節奏與生態布局的長期博弈。章節時間戳（預留）：00:00 開場鉤子；01:10 創業與背景；02:40 K6 的憑藉；04:10 Athlon 的反超；05:40 千禧年後的拉鋸；07:10 Bulldozer 的失敗；08:20 Ryzen 的回歸；09:00 現代啟示與反思。",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0005.mp3",
+      "youtube_url": "https://youtu.be/mT-kSKQe87Y",
+      "size_bytes": 7615917,
+      "duration_str": "05:17",
+      "tags": [
+        "Intel",
+        "AMD",
+        "CPU 歷史",
+        "Ryzen",
+        "Athlon",
+        "K6",
+        "Bulldozer",
+        "半導體競爭"
+      ]
     }
   ]
 }
