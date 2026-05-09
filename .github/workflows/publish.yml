@@ -18,6 +18,7 @@ on:
 permissions:
   contents: write   # 為了 commit 更新後的 podcast.xml + log
   id-token: write   # OIDC 換 Azure token
+  pull-requests: write  # replenish job 開 PR 需要
 
 jobs:
   publish:
@@ -142,3 +143,128 @@ jobs:
             output/
             !output/**/*.mp4
           retention-days: 7
+
+  replenish:
+    name: Replenish topics queue
+    needs: publish
+    if: success()
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    permissions:
+      contents: write
+      id-token: write
+      pull-requests: write
+
+    env:
+      AZURE_OPENAI_ENDPOINT: ${{ secrets.AZURE_OPENAI_ENDPOINT }}
+      AZURE_OPENAI_GPT_DEPLOYMENT: ${{ secrets.AZURE_OPENAI_GPT_DEPLOYMENT }}
+      AZURE_OPENAI_API_VERSION: ${{ secrets.AZURE_OPENAI_API_VERSION }}
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      LOW_THRESHOLD: '21'
+      REPLENISH_COUNT: '100'
+
+    steps:
+      - name: Checkout (latest main with publish commit)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Check remaining topics
+        id: check
+        working-directory: scripts
+        run: |
+          remaining=$(python -c "from common import count_remaining_topics; print(count_remaining_topics())")
+          echo "remaining=$remaining" >> "$GITHUB_OUTPUT"
+          echo "Topics queue 剩餘: $remaining (閾值 $LOW_THRESHOLD)"
+          if [ "$remaining" -ge "$LOW_THRESHOLD" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check existing replenish PR
+        id: pr_check
+        if: steps.check.outputs.skip == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # 查詢已 open 的 replenish PR (同 label),避免堆疊
+          existing=$(gh pr list --label replenish-topics --state open --json number --jq 'length')
+          echo "existing_open_prs=$existing" >> "$GITHUB_OUTPUT"
+          if [ "$existing" -gt "0" ]; then
+            echo "已有 $existing 個 open replenish PR,跳過本次補題。"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Azure login (OIDC)
+        if: steps.check.outputs.skip == 'false' && steps.pr_check.outputs.skip == 'false'
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Install Python deps
+        if: steps.check.outputs.skip == 'false' && steps.pr_check.outputs.skip == 'false'
+        run: pip install -r requirements.txt
+
+      - name: 產生新題目 (Azure OpenAI)
+        if: steps.check.outputs.skip == 'false' && steps.pr_check.outputs.skip == 'false'
+        working-directory: scripts
+        run: python replenish_topics.py --count "$REPLENISH_COUNT"
+
+      - name: 開 PR (peter-evans/create-pull-request)
+        if: steps.check.outputs.skip == 'false' && steps.pr_check.outputs.skip == 'false'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: replenish-topics/run-${{ github.run_id }}
+          base: main
+          commit-message: "chore: replenish topics queue (+${{ env.REPLENISH_COUNT }} topics)"
+          title: "補充題材庫 +${{ env.REPLENISH_COUNT }} 題 (剩餘 ${{ steps.check.outputs.remaining }} 集)"
+          labels: replenish-topics,automated
+          body: |
+            ## 自動補題
+
+            目前 `topics_queue.json` 剩餘 **${{ steps.check.outputs.remaining }}** 集 (低於閾值 ${{ env.LOW_THRESHOLD }}),
+            自動透過 `scripts/replenish_topics.py` 用 Azure OpenAI 產生 ${{ env.REPLENISH_COUNT }} 筆新題目。
+
+            ### Review 重點
+            - 標題是否吸引人、有 hook
+            - `category` 四類是否均衡
+            - 是否有與既有題目重複或太相近 (script 已做 title 字面去重,但近似主題仍需人工判斷)
+            - 是否有政治敏感、史實爭議大或不適合的題目
+            - `id` 是否連號、不與既有衝突
+            - 每題 `key_points` 5 個、`tags` 3~4 個、`length_min: 9`
+
+            觸發 run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+      - name: 通知 Discord (skip)
+        if: |
+          (steps.check.outputs.skip == 'true' || steps.pr_check.outputs.skip == 'true')
+          && env.DISCORD_WEBHOOK_URL != ''
+        run: |
+          if [ "${{ steps.check.outputs.skip }}" = "true" ]; then
+            msg="Replenish skipped: 題材庫剩 ${{ steps.check.outputs.remaining }} 集,尚未到閾值 $LOW_THRESHOLD。"
+          else
+            msg="Replenish skipped: 已有 open replenish PR (${{ steps.pr_check.outputs.existing_open_prs }} 個),請先 review/merge。"
+          fi
+          curl -s -H "Content-Type: application/json" -d "{\"content\":\"$msg\"}" "$DISCORD_WEBHOOK_URL" || true
+
+      - name: 通知 Discord (PR 已開)
+        if: |
+          steps.check.outputs.skip == 'false' && steps.pr_check.outputs.skip == 'false'
+          && env.DISCORD_WEBHOOK_URL != ''
+        run: |
+          msg="Replenish PR 已開:剩餘 ${{ steps.check.outputs.remaining }} 集,新增 $REPLENISH_COUNT 題待 review → ${{ github.server_url }}/${{ github.repository }}/pulls?q=is:pr+is:open+label:replenish-topics"
+          curl -s -H "Content-Type: application/json" -d "{\"content\":\"$msg\"}" "$DISCORD_WEBHOOK_URL" || true

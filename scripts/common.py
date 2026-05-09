@@ -56,15 +56,37 @@ def get_episode_dir(episode_id: int) -> Path:
 
 
 def pick_next_topic() -> dict:
-    """從 queue 取下一個未發布題材。"""
+    """從 queue 取下一個未發布題材。剩餘量低於閾值時發 Discord 警告。"""
     queue = load_json(DATA_DIR / "topics_queue.json")
     log = load_json(DATA_DIR / "published_log.json")
     published_ids = {entry["id"] for entry in log["published"]}
 
-    for topic in queue["topics"]:
-        if topic["id"] not in published_ids:
-            return topic
-    raise RuntimeError("題材庫已用盡 — 請更新 topics_queue.json")
+    remaining = [t for t in queue["topics"] if t["id"] not in published_ids]
+    if not remaining:
+        notify_discord(
+            "chinese-history-storyteller: 題材庫已用盡!\n"
+            "請執行 `python scripts/replenish_topics.py` 補新題目,或手動編輯 data/topics_queue.json"
+        )
+        raise RuntimeError("題材庫已用盡 — 請更新 topics_queue.json")
+
+    threshold = int(os.environ.get("TOPIC_LOW_THRESHOLD", "21"))
+    if len(remaining) <= threshold:
+        msg = (
+            f"chinese-history-storyteller: 題材庫剩 {len(remaining)} 集 (閾值 {threshold})。\n"
+            "請盡快執行 `python scripts/replenish_topics.py` 補新題目。"
+        )
+        logging.getLogger("pick_next_topic").warning(msg)
+        notify_discord(msg)
+
+    return remaining[0]
+
+
+def count_remaining_topics() -> int:
+    """回傳 queue 中尚未發布的題目數 (供 workflow 判斷是否要補題)。"""
+    queue = load_json(DATA_DIR / "topics_queue.json")
+    log = load_json(DATA_DIR / "published_log.json")
+    published_ids = {entry["id"] for entry in log["published"]}
+    return sum(1 for t in queue["topics"] if t["id"] not in published_ids)
 
 
 def mark_published(episode_id: int, info: dict) -> None:

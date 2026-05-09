@@ -65,7 +65,15 @@ def build_rss(out_path: Path) -> None:
     if cover_url:
         fg.podcast.itunes_image(cover_url)
 
-    for entry in sorted(log_data["published"], key=lambda x: x["published_at"]):
+    # RSS 截尾:只放最近 N 集 (預設 100)。Podcast 客戶端會緩存舊集,
+    # feed 過大會拖慢新訂閱者的初次抓取。
+    max_episodes = int(env("RSS_MAX_EPISODES", "100", required=False) or "100")
+    all_published = sorted(
+        log_data["published"], key=lambda x: x["published_at"], reverse=True,
+    )
+    recent = all_published[:max_episodes]
+    # FeedGenerator 預設按加入順序輸出,改回舊→新加入,讓最新集出現在 feed 頂端
+    for entry in reversed(recent):
         fe = fg.add_entry()
         fe.id(entry["audio_url"])
         fe.title(entry["title"])
@@ -79,7 +87,10 @@ def build_rss(out_path: Path) -> None:
             fe.podcast.itunes_image(cover_url)
 
     fg.rss_file(str(out_path), pretty=True)
-    log.info("RSS 已寫入 %s (%d 集)", out_path, len(log_data["published"]))
+    log.info(
+        "RSS 已寫入 %s (%d / %d 集,上限 %d)",
+        out_path, len(recent), len(all_published), max_episodes,
+    )
 
 
 def main(episode_id: int) -> int:
