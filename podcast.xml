@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 09 May 2026 21:45:03 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 23:58:23 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -19,13 +19,13 @@
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
     <item>
-      <title>Intel 與 AMD 的五十年戰爭：從創業年代到 Ryzen 復活</title>
-      <description>50 年的晶片戰爭，如何改寫電腦的心臟？Intel 與 AMD 的競爭，既是技術演進的推手，也是商業與法律角力的舞台。摘要：從 1969 年 AMD 的誕生，到 1990 年代 K6 與 Athlon 的突圍，再到 Bulldozer 的挫敗與 2017 年 Ryzen 的復活，這是一段關於設計哲學、製程節奏與生態布局的長期博弈。章節時間戳（預留）：00:00 開場鉤子；01:10 創業與背景；02:40 K6 的憑藉；04:10 Athlon 的反超；05:40 千禧年後的拉鋸；07:10 Bulldozer 的失敗；08:20 Ryzen 的回歸；09:00 現代啟示與反思。</description>
+      <title>Intel 與 AMD 的五十年戰爭：從創業到復活的CPU霸權之路</title>
+      <description>五十年來的晶片戰爭，並非只有速度和核心數，更是策略、研發與市場的角力史。摘要：本片以 1969 年 AMD 創立為起點，穿越 K6 的突圍、Athlon 的逆襲、Bulldozer 的挫敗，到 Ryzen 的東山再起，還原一場科技產業的長期競爭與啟示。章節時間戳（預留）：00:00 開場鉤子 / 01:00 AMD 創業背景 / 03:00 x86 生態與 Intel 優勢 / 05:00 K6 與市場突圍 / 07:00 Athlon 反超與技術攻勢 / 09:00 Bulldozer 設計失誤 / 11:00 Ryzen 復活與生態回歸 / 13:00 現代啟示與反思</description>
       <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0005.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0005.mp3" length="7615917" type="audio/mpeg"/>
-      <pubDate>Sat, 09 May 2026 21:45:03 +0000</pubDate>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0005.mp3" length="11345517" type="audio/mpeg"/>
+      <pubDate>Sat, 09 May 2026 23:58:23 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>05:17</itunes:duration>
+      <itunes:duration>07:52</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
     <item>
