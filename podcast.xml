@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 09 May 2026 23:58:23 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2026 21:53:39 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>馬雅文明為何一夜消失？五大假說完整解密</title>
+      <description>馬雅城邦一度繁榮，卻在古典期後半突然衰敗。這段影片前百字摘要：我們從乾旱、戰爭、階級崩潰、環境破壞到現代後裔，逐一拆解五大假說，並以考古與氣候證據比對真相，帶你走進石頭與泥土裡的歷史與教訓。章節時間預留：00:00 開場與背景；01:10 假說一 乾旱；03:00 假說二 戰爭；04:50 假說三 階級崩潰；06:30 假說四 環境破壞；08:20 假說五 現代後裔與反思；10:00 結語與現代啟示。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0006.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0006.mp3" length="14644269" type="audio/mpeg"/>
+      <pubDate>Sun, 10 May 2026 21:53:39 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>10:10</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Intel 與 AMD 的五十年戰爭：從創業到復活的CPU霸權之路</title>
       <description>五十年來的晶片戰爭，並非只有速度和核心數，更是策略、研發與市場的角力史。摘要：本片以 1969 年 AMD 創立為起點，穿越 K6 的突圍、Athlon 的逆襲、Bulldozer 的挫敗，到 Ryzen 的東山再起，還原一場科技產業的長期競爭與啟示。章節時間戳（預留）：00:00 開場鉤子 / 01:00 AMD 創業背景 / 03:00 x86 生態與 Intel 優勢 / 05:00 K6 與市場突圍 / 07:00 Athlon 反超與技術攻勢 / 09:00 Bulldozer 設計失誤 / 11:00 Ryzen 復活與生態回歸 / 13:00 現代啟示與反思</description>
