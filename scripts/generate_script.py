@@ -36,6 +36,7 @@ def build_prompt(topic: dict) -> str:
     #                從 ep5 CI log 反推真實語速 = 1540/317.3*60 = 291 字/分
     #   v3 (本次):   chars_per_min=291 (實測值),buffer 拉到 1.15 對抗 LLM 略低於目標的傾向
     chars_per_min = int(env("CHARS_PER_MIN", "291"))
+    sections = int(env("SECTIONS_PER_EPISODE", "8"))
     target_chars = int(length_min * chars_per_min * 1.15)
     min_chars = int(length_min * chars_per_min * 1.00)
     return template.format(
@@ -45,8 +46,10 @@ def build_prompt(topic: dict) -> str:
         length_min=length_min,
         target_chars=target_chars,
         min_chars=min_chars,
-        chars_per_section=target_chars // 8,
-        min_chars_per_section=min_chars // 8,
+        sections=sections,
+        last_section=sections,
+        chars_per_section=target_chars // sections,
+        min_chars_per_section=min_chars // sections,
     )
 
 
@@ -85,7 +88,7 @@ def generate(topic: dict) -> dict:
         )
     script = json.loads(content)
 
-    if "sections" not in script or len(script["sections"]) < 6:
+    if "sections" not in script or len(script["sections"]) < max(4, int(env("SECTIONS_PER_EPISODE", "8")) - 2):
         raise RuntimeError(f"腳本格式錯誤,sections 不足: {script.keys()}")
 
     # 字數檢查:旁白總字數應接近目標,否則影片會明顯短於 length_min
