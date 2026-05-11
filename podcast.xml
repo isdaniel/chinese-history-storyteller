@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 10 May 2026 21:53:39 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2026 22:13:25 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>司馬懿：隱忍四十年，從朝堂到高平陵的最強老狐狸</title>
+      <description>司馬懿，東漢末年出身世家，表面謹慎隱忍，實則步步為營。這支影片從他的早年謠傳、在曹魏朝堂的沉浮、與諸葛亮的對峙、直到高平陵之變與奪權路線，鋪陳出一位政治軍事雙面手的形象，並在結尾提出對現代人的反思。前段摘要在120字內概覽主線：年少隱忍與謠傳、輔佐曹丕篡漢、三度北伐與諸葛亮對峙、249 年高平陵之變奪權、其子孫建立西晉。後段列出章節時間戳（預留），便於剪輯與觀眾快速跳看。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0007.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0007.mp3" length="12889197" type="audio/mpeg"/>
+      <pubDate>Mon, 11 May 2026 22:13:25 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>08:57</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>馬雅文明為何一夜消失？五大假說完整解密</title>
       <description>馬雅城邦一度繁榮，卻在古典期後半突然衰敗。這段影片前百字摘要：我們從乾旱、戰爭、階級崩潰、環境破壞到現代後裔，逐一拆解五大假說，並以考古與氣候證據比對真相，帶你走進石頭與泥土裡的歷史與教訓。章節時間預留：00:00 開場與背景；01:10 假說一 乾旱；03:00 假說二 戰爭；04:50 假說三 階級崩潰；06:30 假說四 環境破壞；08:20 假說五 現代後裔與反思；10:00 結語與現代啟示。</description>
