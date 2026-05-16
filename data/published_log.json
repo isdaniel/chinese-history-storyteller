@@ -200,6 +200,26 @@
         "歷史解析",
         "政變研究"
       ]
+    },
+    {
+      "id": 11,
+      "published_at": "2026-05-16T22:04:23.835838+00:00",
+      "title": "Sony 的失落 30 年：從 Walkman 的光輝到迷失的科技巨人",
+      "description": "摘要：一部從 1979 年 Walkman 的革命起點到近年重整旗鼓的歷史敘事。影片檢視 Betamax 的教訓、部門內鬥如何削弱創新、蘋果與數位浪潮的衝擊，以及 Sony 近年的復興路徑。透過歷史脈絡與商業啟示，帶你看見一家老牌科技公司如何在光榮與挫敗間求新求變。 章節時間戳（預留）：00:00 引子與 Walkman 神話 / 01:10 Betamax 的慘敗 / 02:40 部門與文化的內耗 / 04:10 蘋果崛起與數位轉型 / 05:40 2000s 的迷失策略 / 07:10 近年復興跡象 / 08:30 現代啟示與反思",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0011.mp3",
+      "youtube_url": "https://youtu.be/ueaXI14LjJI",
+      "size_bytes": 14306733,
+      "duration_str": "09:56",
+      "tags": [
+        "Sony",
+        "Walkman",
+        "Betamax",
+        "科技史",
+        "企業失敗",
+        "蘋果",
+        "商業啟示",
+        "產品設計"
+      ]
     }
   ]
 }

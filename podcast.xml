@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 14 May 2026 23:28:22 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 22:04:23 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>Sony 的失落 30 年：從 Walkman 的光輝到迷失的科技巨人</title>
+      <description>摘要：一部從 1979 年 Walkman 的革命起點到近年重整旗鼓的歷史敘事。影片檢視 Betamax 的教訓、部門內鬥如何削弱創新、蘋果與數位浪潮的衝擊，以及 Sony 近年的復興路徑。透過歷史脈絡與商業啟示，帶你看見一家老牌科技公司如何在光榮與挫敗間求新求變。 章節時間戳（預留）：00:00 引子與 Walkman 神話 / 01:10 Betamax 的慘敗 / 02:40 部門與文化的內耗 / 04:10 蘋果崛起與數位轉型 / 05:40 2000s 的迷失策略 / 07:10 近年復興跡象 / 08:30 現代啟示與反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0011.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0011.mp3" length="14306733" type="audio/mpeg"/>
+      <pubDate>Sat, 16 May 2026 22:04:23 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>09:56</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>玄武門之變：李世民弒兄奪位的 24 小時 深入解析</title>
       <description>玄武門之變，是唐朝歷史上一道難以迴避的分水嶺。摘要：本文以時間軸重構那場發生在開國皇帝李淵與其子之間的突變，聚焦太子李建成與秦王李世民的權力角力、玄武門的埋伏細節，以及李淵退位與貞觀之治的形成。影片以嚴謹史料為主，並在爭議處標註「據傳」或「一說」，兼具畫面感與現代啟示。章節（預留時間戳）：0:00 引子與背景 / 1:10 太子與秦王的權力結構 / 2:40 朝廷與軍事力量分布 / 4:10 玄武門的準備與埋伏 / 5:40 那一日的24小時重構 / 7:10 李淵的退位與朝局變化 / 8:20 貞觀之治的開端與反思 / 9:00 現代啟示與結語</description>
