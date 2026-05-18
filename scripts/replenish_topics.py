@@ -53,6 +53,8 @@ def call_llm(prompt: str, n: int) -> list:
         azure_ad_token_provider=token_provider,
         api_version=env("AZURE_OPENAI_API_VERSION", "2024-10-21"),
         azure_endpoint=env("AZURE_OPENAI_ENDPOINT"),
+        max_retries=5,
+        timeout=300.0,
     )
     deployment = env("AZURE_OPENAI_GPT_DEPLOYMENT", "gpt-5-mini")
     log.info("呼叫 %s 產 %d 筆題目…", deployment, n)

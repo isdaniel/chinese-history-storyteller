@@ -105,6 +105,14 @@ def notify_discord(message: str) -> None:
         return
     try:
         import requests
-        requests.post(webhook, json={"content": message}, timeout=10)
+        from retry import with_backoff
+
+        def _post() -> None:
+            r = requests.post(webhook, json={"content": message}, timeout=10)
+            r.raise_for_status()
+
+        # Discord webhook 有 per-route rate limit;失敗不阻塞主流程,但盡力重試
+        with_backoff(_post, max_attempts=3, base_sec=2.0, max_sec=15.0,
+                     jitter_sec=1.0, op_name="discord webhook")
     except Exception:
         pass

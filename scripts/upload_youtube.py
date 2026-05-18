@@ -8,9 +8,11 @@ from pathlib import Path
 
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
 from googleapiclient.http import MediaFileUpload
 
 from common import env, get_episode_dir, load_json, setup_logging
+from retry import with_backoff
 
 log = setup_logging("upload_youtube")
 
@@ -70,9 +72,19 @@ def main(episode_id: int) -> int:
                              chunksize=8 * 1024 * 1024, resumable=True)
     request = youtube.videos().insert(part="snippet,status", body=body, media_body=media)
 
+    # YouTube resumable upload:每個 chunk 可能個別失敗 (5xx/429),包 backoff
+    # HttpError 帶 resp.status,with_backoff 會自動判斷是否為可重試
     response = None
     while response is None:
-        status, response = request.next_chunk()
+        status, response = with_backoff(
+            request.next_chunk,
+            max_attempts=5,
+            base_sec=2.0,
+            max_sec=60.0,
+            jitter_sec=3.0,
+            retry_on=(HttpError, ConnectionError, TimeoutError, OSError),
+            op_name="youtube chunk upload",
+        )
         if status:
             log.info("已上傳 %d%%", int(status.progress() * 100))
 

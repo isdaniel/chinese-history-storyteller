@@ -16,6 +16,7 @@ import azure.cognitiveservices.speech as speechsdk
 from azure.identity import DefaultAzureCredential
 
 from common import env, get_episode_dir, load_json, save_json, setup_logging
+from retry import with_backoff
 
 log = setup_logging("synthesize_speech")
 
@@ -45,17 +46,24 @@ def synthesize_section(text: str, out_path: Path, voice: str, speech_cfg) -> flo
     speech_cfg.set_speech_synthesis_output_format(
         speechsdk.SpeechSynthesisOutputFormat.Audio48Khz192KBitRateMonoMp3
     )
-    audio_cfg = speechsdk.audio.AudioOutputConfig(filename=str(out_path))
-    synth = speechsdk.SpeechSynthesizer(speech_config=speech_cfg, audio_config=audio_cfg)
-    result = synth.speak_ssml_async(make_ssml(text, voice)).get()
 
-    if result.reason != speechsdk.ResultReason.SynthesizingAudioCompleted:
-        details = ""
-        if result.reason == speechsdk.ResultReason.Canceled:
-            cd = result.cancellation_details
-            details = f"reason={cd.reason} code={cd.error_code} details={cd.error_details}"
-        raise RuntimeError(f"TTS 失敗: {result.reason} {details}")
-    return result.audio_duration.total_seconds() if result.audio_duration else 0.0
+    def _do() -> float:
+        audio_cfg = speechsdk.audio.AudioOutputConfig(filename=str(out_path))
+        synth = speechsdk.SpeechSynthesizer(speech_config=speech_cfg, audio_config=audio_cfg)
+        result = synth.speak_ssml_async(make_ssml(text, voice)).get()
+
+        if result.reason != speechsdk.ResultReason.SynthesizingAudioCompleted:
+            details = ""
+            if result.reason == speechsdk.ResultReason.Canceled:
+                cd = result.cancellation_details
+                details = f"reason={cd.reason} code={cd.error_code} details={cd.error_details}"
+            # 統一拋 RuntimeError;retry helper 無 status 就視為可重試
+            raise RuntimeError(f"TTS 失敗: {result.reason} {details}")
+        return result.audio_duration.total_seconds() if result.audio_duration else 0.0
+
+    # Speech SDK 沒有內建 retry;F0 tier 偶爾 throttle 或 transient 失敗時自己退避
+    return with_backoff(_do, max_attempts=4, base_sec=3.0, max_sec=30.0,
+                        jitter_sec=2.0, op_name=f"TTS {out_path.name}")
 
 
 def concat_mp3(parts: list, out_path: Path) -> None:
@@ -91,9 +99,14 @@ def main(episode_id: int) -> int:
     # Exchange AAD token for short-lived Speech authToken via custom-subdomain endpoint.
     # SDK auth_token expects the short-lived token directly when paired with region.
     issue_url = f"https://{custom_domain}.cognitiveservices.azure.com/sts/v1.0/issueToken"
-    r = requests.post(issue_url, headers={"Authorization": f"Bearer {aad_token}"}, timeout=10)
-    r.raise_for_status()
-    auth_token = r.text
+
+    def _issue_token() -> str:
+        r = requests.post(issue_url, headers={"Authorization": f"Bearer {aad_token}"}, timeout=10)
+        r.raise_for_status()
+        return r.text
+
+    auth_token = with_backoff(_issue_token, max_attempts=4, base_sec=2.0, max_sec=20.0,
+                              jitter_sec=2.0, op_name="Speech STS issueToken")
     speech_cfg = speechsdk.SpeechConfig(auth_token=auth_token, region=region)
 
     timings = []

@@ -44,6 +44,8 @@ def main() -> int:
         azure_ad_token_provider=token_provider,
         api_version=os.environ.get("AZURE_OPENAI_API_VERSION", "2024-10-21"),
         azure_endpoint=os.environ["AZURE_OPENAI_ENDPOINT"],
+        max_retries=5,
+        timeout=180.0,
     )
     deployment = os.environ.get("AZURE_OPENAI_IMAGE_DEPLOYMENT", "gpt-image-2")
 

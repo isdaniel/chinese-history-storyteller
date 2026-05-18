@@ -57,10 +57,14 @@ def generate(topic: dict) -> dict:
     token_provider = get_bearer_token_provider(
         DefaultAzureCredential(), "https://cognitiveservices.azure.com/.default"
     )
+    # max_retries=5:SDK 內建會 honor 429 的 Retry-After header 做指數退避
+    # timeout=300:gpt-5-mini reasoning 可能跑很久,給寬裕上限
     client = AzureOpenAI(
         azure_ad_token_provider=token_provider,
         api_version=env("AZURE_OPENAI_API_VERSION", "2024-10-21"),
         azure_endpoint=env("AZURE_OPENAI_ENDPOINT"),
+        max_retries=5,
+        timeout=300.0,
     )
     deployment = env("AZURE_OPENAI_GPT_DEPLOYMENT", "gpt-5-mini")
 
