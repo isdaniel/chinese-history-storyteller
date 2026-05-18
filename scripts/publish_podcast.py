@@ -12,7 +12,6 @@ from email.utils import format_datetime
 from pathlib import Path
 
 from azure.storage.blob import BlobServiceClient, ContentSettings
-from azure.core.pipeline.policies import RetryPolicy
 from feedgen.feed import FeedGenerator
 from mutagen.mp3 import MP3
 
@@ -20,19 +19,8 @@ from common import (
     DATA_DIR, PROJECT_ROOT, env, get_episode_dir, load_json, mark_published,
     save_json, setup_logging,
 )
-from retry import with_backoff
 
 log = setup_logging("publish_podcast")
-
-
-def _make_blob_service(conn: str) -> BlobServiceClient:
-    # azure-storage-blob 內建 retry,但明確設定 total_retries 與 backoff 讓行為可預測
-    retry_policy = RetryPolicy(
-        retry_total=5,
-        retry_backoff_factor=2.0,
-        retry_backoff_max=60,
-    )
-    return BlobServiceClient.from_connection_string(conn, retry_policy=retry_policy)
 
 
 def upload_audio(episode_id: int, audio_path: Path) -> str:
@@ -41,20 +29,14 @@ def upload_audio(episode_id: int, audio_path: Path) -> str:
     base_url = env("AZURE_BLOB_PUBLIC_URL_BASE")
     blob_name = f"ep{episode_id:04d}.mp3"
 
-    svc = _make_blob_service(conn)
+    svc = BlobServiceClient.from_connection_string(conn)
     blob_client = svc.get_blob_client(container=container, blob=blob_name)
     log.info("上傳 %s → blob %s", audio_path.name, blob_name)
-
-    def _upload() -> None:
-        with open(audio_path, "rb") as f:
-            blob_client.upload_blob(
-                f, overwrite=True,
-                content_settings=ContentSettings(content_type="audio/mpeg"),
-            )
-
-    # 外層再包一次 backoff:SDK retry 處理 transient HTTP,外層處理整個 upload 流程失敗
-    with_backoff(_upload, max_attempts=3, base_sec=5.0, max_sec=60.0,
-                 jitter_sec=3.0, op_name="blob upload")
+    with open(audio_path, "rb") as f:
+        blob_client.upload_blob(
+            f, overwrite=True,
+            content_settings=ContentSettings(content_type="audio/mpeg"),
+        )
     return f"{base_url.rstrip('/')}/{blob_name}"
 
 
