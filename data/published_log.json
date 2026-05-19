@@ -260,6 +260,26 @@
         "史書研究",
         "歷史反思"
       ]
+    },
+    {
+      "id": 14,
+      "published_at": "2026-05-19T22:34:19.178763+00:00",
+      "title": "微軟的逆襲：從險象環生到雲端稱霸（Ballmer 到 Nadella）",
+      "description": "微軟如何從接近崩潰的危機中轉身，重返科技巔峰？本片以細膩旁白與視覺化場景，重構 Ballmer 時代的低潮、錯失行動浪潮、以及 Nadella 上任後的結構性改革與雲端、人工智慧投資策略。前段濃縮關鍵節點，後段解析對企業與個人的現代啟示。 00:00 引言與背景 01:10 Ballmer 時代的崛起與迷失 03:40 錯過行動革命的關鍵 06:20 Nadella 登場與文化改革 08:50 Azure 的崛起與商業模式 11:30 AI 投資與未來佈局 14:00 現代啟示與結語",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0014.mp3",
+      "youtube_url": "https://youtu.be/knhSa61mE3o",
+      "size_bytes": 14270445,
+      "duration_str": "09:54",
+      "tags": [
+        "微軟",
+        "科技史",
+        "Nadella",
+        "Azure",
+        "Ballmer",
+        "人工智慧",
+        "雲端",
+        "企業轉型"
+      ]
     }
   ]
 }
