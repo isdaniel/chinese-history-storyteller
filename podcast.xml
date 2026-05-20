@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 19 May 2026 22:34:19 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 22:38:42 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>亞特蘭提斯真的存在過嗎？柏拉圖的世紀之謎與現代解讀</title>
+      <description>柏拉圖筆下的神祕島國：真實史實還是哲學寓言？本片在古典文本、考古發現與各種假說之間梳理線索，帶您穿越古希臘、地中海與火山灰沉積，探討桑托里尼、塔耳特索斯與虛構說的來龍去脈，並提出現代啟示。章節時間戳（預留）：00:00 開場與問題提出 01:10 柏拉圖文本解析 03:20 解讀歷史脈絡 05:00 各種地理與考古假說 06:40 桑托里尼與米諾斯文明 07:50 虛構說與哲學意涵 08:40 現代啟示與反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0015.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0015.mp3" length="11779245" type="audio/mpeg"/>
+      <pubDate>Wed, 20 May 2026 22:38:42 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>08:10</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>微軟的逆襲：從險象環生到雲端稱霸（Ballmer 到 Nadella）</title>
       <description>微軟如何從接近崩潰的危機中轉身，重返科技巔峰？本片以細膩旁白與視覺化場景，重構 Ballmer 時代的低潮、錯失行動浪潮、以及 Nadella 上任後的結構性改革與雲端、人工智慧投資策略。前段濃縮關鍵節點，後段解析對企業與個人的現代啟示。 00:00 引言與背景 01:10 Ballmer 時代的崛起與迷失 03:40 錯過行動革命的關鍵 06:20 Nadella 登場與文化改革 08:50 Azure 的崛起與商業模式 11:30 AI 投資與未來佈局 14:00 現代啟示與結語</description>
