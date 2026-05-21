@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 20 May 2026 22:38:42 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 22:30:17 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>鄭和下西洋：被遺忘的中國海上霸權（從寶船到非洲）</title>
+      <description>摘要：明代鄭和七次下西洋，巨型寶船劃破印度洋，抵達東南亞、南亞直到東非海岸，展現一段被後世忽視的海上霸權與交流史。本片梳理寶船規模、七下西洋路徑、在非洲的足跡、明朝海禁政策與航海中止的原因，並反思這段史事對今日的啟示。章節時間戳（預留）：00:00 引子與背景 01:00 寶船規模想像 02:30 七下西洋總覽 04:20 非洲沿岸的足跡 05:50 與外邦的互動與禮儀 07:10 海禁政策與朝廷內部角力 08:20 為何最終停止 09:00 現代啟示與反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0016.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0016.mp3" length="12958317" type="audio/mpeg"/>
+      <pubDate>Thu, 21 May 2026 22:30:17 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>08:59</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>亞特蘭提斯真的存在過嗎？柏拉圖的世紀之謎與現代解讀</title>
       <description>柏拉圖筆下的神祕島國：真實史實還是哲學寓言？本片在古典文本、考古發現與各種假說之間梳理線索，帶您穿越古希臘、地中海與火山灰沉積，探討桑托里尼、塔耳特索斯與虛構說的來龍去脈，並提出現代啟示。章節時間戳（預留）：00:00 開場與問題提出 01:10 柏拉圖文本解析 03:20 解讀歷史脈絡 05:00 各種地理與考古假說 06:40 桑托里尼與米諾斯文明 07:50 虛構說與哲學意涵 08:40 現代啟示與反思</description>
