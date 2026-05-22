@@ -320,6 +320,26 @@
         "古代航海",
         "非洲足跡"
       ]
+    },
+    {
+      "id": 17,
+      "published_at": "2026-05-22T22:18:41.469477+00:00",
+      "title": "Blockbuster 的滅亡：錯失收購 Netflix 的代價",
+      "description": "一段從錄影帶時代到串流世代的企業興衰史，探究 Blockbuster 如何在巔峰時錯失轉型機會，與 Netflix 的早期接觸變成商業轉捩點。前100字摘要：從 1985 年的小店到全球近 9,000 間門市，從租片霸主到 2010 年申請破產，這是一個關於選擇、文化與網路變革的故事。章節時間戳（預留）：00:00 開場鉤子；01:10 創業背景與早期擴張；02:40 巔峰時代與經營模式；04:20 Netflix 的提案與決策；05:50 串流時代的崛起；07:10 走向破產的關鍵錯誤；08:20 現代啟示與結語。",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0017.mp3",
+      "youtube_url": "https://youtu.be/2O2ZLiAhgU4",
+      "size_bytes": 16334253,
+      "duration_str": "11:20",
+      "tags": [
+        "Blockbuster",
+        "Netflix",
+        "科技史",
+        "企業策略",
+        "串流革命",
+        "商業失誤",
+        "1985-2010",
+        "數位轉型"
+      ]
     }
   ]
 }
