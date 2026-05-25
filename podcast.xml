@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 24 May 2026 22:04:38 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 22:22:04 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,17 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>Tesla 的崛起：從瀕臨破產到電動車霸主—創新、磨難與全球擴張</title>
+      <description>摘要：本片回溯 Tesla 如何從一台 Roadster 的夢想出發，經歷 Model S 的技術革命、深陷產能地獄，再靠 Model 3 扭轉命運，最終走向全球擴張。透過時間脈絡與關鍵人物決策，呈現電動車產業變革的歷史意義與當代啟示。
+章節時間戳（預留）：00:00 開場與主題引導 01:10 Roadster 的誕生 03:00 Model S 的革命與設計 04:40 產能地獄與資金壓力 06:20 Model 3 的救命策略 07:50 全球工廠與市場擴張 08:40 現代啟示與結語</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0020.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0020.mp3" length="15202989" type="audio/mpeg"/>
+      <pubDate>Mon, 25 May 2026 22:22:04 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>10:33</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>崇禎之死：大明王朝最後24小時 — 帝國終幕的真相與啟示</title>
       <description>崇禎帝亡於煤山，李自成攻入北京，太子流亡，遺詔與南明興起；本片重構最後24小時的時間軸與人心風景，從史料與傳聞交織的碎片裡，探問歷史如何落幕與續篇如何開始。

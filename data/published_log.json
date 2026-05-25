@@ -380,6 +380,26 @@
         "歷史紀錄片",
         "王朝興亡"
       ]
+    },
+    {
+      "id": 20,
+      "published_at": "2026-05-25T22:22:04.003375+00:00",
+      "title": "Tesla 的崛起：從瀕臨破產到電動車霸主—創新、磨難與全球擴張",
+      "description": "摘要：本片回溯 Tesla 如何從一台 Roadster 的夢想出發，經歷 Model S 的技術革命、深陷產能地獄，再靠 Model 3 扭轉命運，最終走向全球擴張。透過時間脈絡與關鍵人物決策，呈現電動車產業變革的歷史意義與當代啟示。\n章節時間戳（預留）：00:00 開場與主題引導 01:10 Roadster 的誕生 03:00 Model S 的革命與設計 04:40 產能地獄與資金壓力 06:20 Model 3 的救命策略 07:50 全球工廠與市場擴張 08:40 現代啟示與結語",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0020.mp3",
+      "youtube_url": "https://youtu.be/1Nb1X0gZeig",
+      "size_bytes": 15202989,
+      "duration_str": "10:33",
+      "tags": [
+        "Tesla",
+        "電動車史",
+        "Elon Musk",
+        "Model S",
+        "Model 3",
+        "Roadster",
+        "產能地獄",
+        "電動化轉型"
+      ]
     }
   ]
 }
