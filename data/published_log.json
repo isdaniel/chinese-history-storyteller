@@ -440,6 +440,26 @@
         "唐朝",
         "歷史反思"
       ]
+    },
+    {
+      "id": 23,
+      "published_at": "2026-05-28T22:46:37.815424+00:00",
+      "title": "Yahoo 的崩潰：三次買下 Google 的可能與一個帝國的沒落",
+      "description": "Yahoo 的興起與衰落，是一則關於時代風口、決策與機運的教科書。從1994 年兩位斯坦福學生的閃念，到屹立一時的入口網站，再到錯失 Google 與 Facebook、Marissa Mayer 的賭注與 Verizon 賤賣，這是一段科技帝國如何在機會與誤判間崩解的故事。前100字摘要：探究關鍵時間點、重大收購決策與經營文化的錯配，還原哪些錯失成為無可回頭的分水嶺。 00:00 開場與核心提問 01:10 1994 年的誕生與早期願景 03:20 入口網站時代的黃金策略 05:10 三次錯失 Google 的脈絡（含爭議標示） 07:20 錯過 Facebook 與搜尋廣告的變局 09:00 Marissa Mayer 的改革與內部拉扯 11:10 Verizon 收購與品牌終章 12:50 現代啟示與對觀眾的反思",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0023.mp3",
+      "youtube_url": "https://youtu.be/4BjFNTmwfSc",
+      "size_bytes": 12600621,
+      "duration_str": "08:45",
+      "tags": [
+        "Yahoo",
+        "科技史",
+        "創業",
+        "Google",
+        "Marissa Mayer",
+        "Verizon",
+        "1994",
+        "網路經濟"
+      ]
     }
   ]
 }

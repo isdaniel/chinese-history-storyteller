@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 27 May 2026 22:45:30 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 22:46:37 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>Yahoo 的崩潰：三次買下 Google 的可能與一個帝國的沒落</title>
+      <description>Yahoo 的興起與衰落，是一則關於時代風口、決策與機運的教科書。從1994 年兩位斯坦福學生的閃念，到屹立一時的入口網站，再到錯失 Google 與 Facebook、Marissa Mayer 的賭注與 Verizon 賤賣，這是一段科技帝國如何在機會與誤判間崩解的故事。前100字摘要：探究關鍵時間點、重大收購決策與經營文化的錯配，還原哪些錯失成為無可回頭的分水嶺。 00:00 開場與核心提問 01:10 1994 年的誕生與早期願景 03:20 入口網站時代的黃金策略 05:10 三次錯失 Google 的脈絡（含爭議標示） 07:20 錯過 Facebook 與搜尋廣告的變局 09:00 Marissa Mayer 的改革與內部拉扯 11:10 Verizon 收購與品牌終章 12:50 現代啟示與對觀眾的反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0023.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0023.mp3" length="12600621" type="audio/mpeg"/>
+      <pubDate>Thu, 28 May 2026 22:46:37 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>08:45</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>唐太宗李世民的另一面：被史官美化的真相</title>
       <description>摘要：帝王光環之下，真相常被歷史書寫塑形。本片從篡改起居注、玄武門之變、逼父讓位，到晚年求仙與歷史評價，試圖還原一位更複雜的李世民。帶您看見史官如何塑造傳奇，也提醒歷史判讀的謹慎。 章節時間戳（預留）：00:00 開場與命題／01:30 背景與家世／03:30 玄武門與弒兄之謎／05:30 逼父讓位的政治算計／07:30 起居注與史官的筆墨／09:30 晚年求仙與政策偏差／11:30 歷史評價的兩面／13:30 現代啟示與結語</description>
