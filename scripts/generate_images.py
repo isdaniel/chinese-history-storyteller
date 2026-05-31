@@ -16,6 +16,7 @@ from azure.identity import DefaultAzureCredential, get_bearer_token_provider
 from openai import AzureOpenAI
 
 from common import env, get_episode_dir, load_json, setup_logging
+from retry import with_backoff
 
 log = setup_logging("generate_images")
 
@@ -83,6 +84,7 @@ def main(episode_id: int) -> int:
     )
     deployment = env("AZURE_OPENAI_IMAGE_DEPLOYMENT", "gpt-image-2")
 
+    fallback_count = 0
     for section in script["sections"]:
         idx = section["section_id"]
         out_path = ep_dir / f"img_{idx:02d}.png"
@@ -93,24 +95,47 @@ def main(episode_id: int) -> int:
         prompt = section["image_prompt"] + STYLE_SUFFIX
         log.info("[%d] 生成插畫…", idx)
         try:
-            resp = client.images.generate(
-                model=deployment,
-                prompt=prompt,
-                n=1,
-                size="1536x1024",
-                quality="medium",
+            # 雙層保險:SDK 內 max_retries=5 已處理 ~1 分鐘內的 429/5xx;
+            # 這層再加 3 次外層重試 (base 60s, max 240s),覆蓋 RPM 視窗或區域短暫斷線
+            # (Azure gpt-image-2 GlobalStandard 2 RPM,單次失敗後 60~240s 重試剛好錯開視窗)
+            def _do_generate():
+                return client.images.generate(
+                    model=deployment,
+                    prompt=prompt,
+                    n=1,
+                    size="1536x1024",
+                    quality="medium",
+                )
+
+            resp = with_backoff(
+                _do_generate,
+                max_attempts=3,
+                base_sec=60.0,
+                max_sec=240.0,
+                jitter_sec=15.0,
+                op_name=f"image gen [{idx}]",
             )
             b64 = resp.data[0].b64_json
             img_bytes = base64.b64decode(b64)
             out_path.write_bytes(img_bytes)
             log.info("[%d] 已存 %s (%d KB)", idx, out_path.name, len(img_bytes) // 1024)
         except Exception as e:
-            log.error("[%d] 失敗: %s — 改用 fallback", idx, e)
+            log.error("[%d] 兩層重試後仍失敗: %s — 改用 fallback", idx, e)
             _write_fallback(out_path)
+            fallback_count += 1
 
         sleep_sec = THROTTLE_BASE_SEC + random.uniform(0, THROTTLE_JITTER_SEC)
         log.info("[%d] throttle sleep %.1fs", idx, sleep_sec)
         time.sleep(sleep_sec)
+
+    total = len(script["sections"])
+    if fallback_count > 0:
+        log.warning(
+            "[FALLBACK ALERT] %d/%d 張插畫使用 fallback 圖片,影片將含預設棕色背景",
+            fallback_count, total,
+        )
+    else:
+        log.info("全部 %d 張插畫生成成功", total)
 
     return 0
 
