@@ -500,6 +500,26 @@
         "清朝史",
         "歷史謎團"
       ]
+    },
+    {
+      "id": 26,
+      "published_at": "2026-06-01T00:09:01.155904+00:00",
+      "title": "BlackBerry 的覆滅：從商務神器到消失的鍵盤王國",
+      "description": "摘要：曾經每個辦公室桌上、每位主管口袋裡的那一台小黑機，如何在十年內從不可取代變成邊緣記憶？本片回顧 BlackBerry 的崛起與覆滅：實體鍵盤的神話、商務生態、iPhone 的衝擊、系統陳舊與市場退出，並從中抽取對現代科技的反思。\n章節時間戳（預留）：\n00:00 Hook 與導入\n01:10 RIM 與 BlackBerry 的崛起\n03:40 實體鍵盤與商務文化\n06:20 iPhone 衝擊與轉捩點\n09:00 系統與生態的裂縫\n11:30 逐步退出市場的關鍵決策\n14:20 後續授權與品牌殘影\n16:00 現代啟示與反思",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0026.mp3",
+      "youtube_url": "https://youtu.be/Z1JZOAKFH3c",
+      "size_bytes": 13317165,
+      "duration_str": "09:14",
+      "tags": [
+        "BlackBerry",
+        "科技史",
+        "智慧型手機",
+        "RIM",
+        "實體鍵盤",
+        "iPhone",
+        "商務文化",
+        "產品教訓"
+      ]
     }
   ]
 }
