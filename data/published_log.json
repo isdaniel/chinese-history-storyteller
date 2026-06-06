@@ -620,6 +620,26 @@
         "歷史旁白",
         "財富權力"
       ]
+    },
+    {
+      "id": 32,
+      "published_at": "2026-06-06T22:13:02.552407+00:00",
+      "title": "蘋果差點倒閉：從至暗時刻到 iMac 重生（Steve Jobs 回歸）",
+      "description": "蘋果如何從瀕臨破產、產品線混亂與現金見底的邊緣，因為 Steve Jobs 的回歸與一連串決策，重建生命力並推出改變世代的 iMac？前 100 字摘要：本片回到 1985 至 1998 年間的關鍵節點，梳理 Jobs 被逐出、公司內部的產品與策略混亂、1997 年傳聞中的「剩餘 90 天現金」、收購 NeXT 與 Jobs 回歸、以及 iMac 如何成為救命稻草。章節時間戳（預留）：00:00 開場與鉤子／02:00 1985 年的分裂／04:00 90 年代的多人治理與產品線／06:00 1996-1997 的財務危機／08:30 NeXT 收購與 Jobs 回歸／11:00 產品與組織的重整／13:30 iMac 的推出與市場反應／16:00 現代啟示與結語",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0032.mp3",
+      "youtube_url": "https://youtu.be/B6NZOhazToA",
+      "size_bytes": 16344621,
+      "duration_str": "11:21",
+      "tags": [
+        "Apple歷史",
+        "Steve Jobs",
+        "iMac",
+        "NeXT",
+        "科技史",
+        "公司重整",
+        "1990s",
+        "商業啟示"
+      ]
     }
   ]
 }
