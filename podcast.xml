@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 06 Jun 2026 22:13:02 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 22:15:28 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>瑪雅曆法與2012迷思：長紀年、誤讀與科學真相</title>
+      <description>2012年世界末日預言，源自一套古老的瑪雅長紀年曆，卻被現代誤讀與媒體放大。前100字摘要：本片梳理長紀年曆的結構、常見誤譯、天文學上的意義與NASA的澄清，還原事件脈絡，並探討現代迷思如何生成。章節時間戳（預留）：00:00 Hook／01:20 長紀年基礎／03:40 文化與誤譯／06:00 天文觀測意義／08:20 NASA闢謠／10:00 流行文化醞釀／12:30 現代啟示</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0033.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0033.mp3" length="12558573" type="audio/mpeg"/>
+      <pubDate>Sun, 07 Jun 2026 22:15:28 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>08:43</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>蘋果差點倒閉：從至暗時刻到 iMac 重生（Steve Jobs 回歸）</title>
       <description>蘋果如何從瀕臨破產、產品線混亂與現金見底的邊緣，因為 Steve Jobs 的回歸與一連串決策，重建生命力並推出改變世代的 iMac？前 100 字摘要：本片回到 1985 至 1998 年間的關鍵節點，梳理 Jobs 被逐出、公司內部的產品與策略混亂、1997 年傳聞中的「剩餘 90 天現金」、收購 NeXT 與 Jobs 回歸、以及 iMac 如何成為救命稻草。章節時間戳（預留）：00:00 開場與鉤子／02:00 1985 年的分裂／04:00 90 年代的多人治理與產品線／06:00 1996-1997 的財務危機／08:30 NeXT 收購與 Jobs 回歸／11:00 產品與組織的重整／13:30 iMac 的推出與市場反應／16:00 現代啟示與結語</description>
