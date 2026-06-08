@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 07 Jun 2026 22:15:28 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2026 22:38:01 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>戊戌變法103天：光緒的最後一搏與帝國的裂痕</title>
+      <description>103天的豪賭，從宮廷密談到兵權博弈，清朝能否在現代化浪潮中自救？本片以嚴謹史料與場景化旁白，重構康有為與光緒皇帝推動百日維新的過程、袁世凱的告密、慈禧太后反撲，以及六君子就義的悲歌。前100字摘要：在1898年的北京，一場被稱為百日維新的改革，究竟是時代的早晨還是帝國的悲歌？本片帶你回到光緒朝廳堂、御花園與獄中，探看那一段103天如何改寫近代中國的命運。章節時間戳（預留，依剪輯調整）00:00 引子與背景00:50 康有為與維新思想03:10 光緒的嘗試05:20 袁世凱的告密07:00 慈禧政變08:30 六君子與善後10:10 現代啟示</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0034.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0034.mp3" length="14084973" type="audio/mpeg"/>
+      <pubDate>Mon, 08 Jun 2026 22:38:01 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>09:46</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>瑪雅曆法與2012迷思：長紀年、誤讀與科學真相</title>
       <description>2012年世界末日預言，源自一套古老的瑪雅長紀年曆，卻被現代誤讀與媒體放大。前100字摘要：本片梳理長紀年曆的結構、常見誤譯、天文學上的意義與NASA的澄清，還原事件脈絡，並探討現代迷思如何生成。章節時間戳（預留）：00:00 Hook／01:20 長紀年基礎／03:40 文化與誤譯／06:00 天文觀測意義／08:20 NASA闢謠／10:00 流行文化醞釀／12:30 現代啟示</description>
