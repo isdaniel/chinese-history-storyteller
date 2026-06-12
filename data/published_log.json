@@ -740,6 +740,26 @@
         "軍費腐敗",
         "近代化教訓"
       ]
+    },
+    {
+      "id": 38,
+      "published_at": "2026-06-12T22:37:12.578303+00:00",
+      "title": "IBM 的轉型奇蹟：從大型主機到雲端與 AI 的重生",
+      "description": "IBM 如何在硬體王朝瓦解後完成企業級轉型？本片回顧大型主機時代、PC 革命衝擊、Lou Gerstner 的改革，以及賣 PC 給聯想與投入 AI／雲端的關鍵決策。前100字摘要：透過歷史脈絡與企業內部變革，解構 IBM 從製造業巨人到服務與軟體生態的轉變，揭示組織生存的策略與啟示。章節時間戳（預留）：00:00 序幕與主題；01:10 大型主機的黃金時代；02:40 PC 革命的衝擊；04:20 1990s 危機與文化問題；06:00 Gerstner 的拯救；07:40 出售 PC 給聯想；08:40 AI 與雲端的新賭注；09:40 現代啟示與反思。",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0038.mp3",
+      "youtube_url": "https://youtu.be/EmhfvRHyPZo",
+      "size_bytes": 13059117,
+      "duration_str": "09:04",
+      "tags": [
+        "IBM",
+        "企業轉型",
+        "科技史",
+        "Lou Gerstner",
+        "大型主機",
+        "雲端",
+        "AI",
+        "聯想"
+      ]
     }
   ]
 }
