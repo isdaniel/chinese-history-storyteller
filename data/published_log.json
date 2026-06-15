@@ -800,6 +800,26 @@
         "酷吏",
         "稱帝建周"
       ]
+    },
+    {
+      "id": 41,
+      "published_at": "2026-06-15T23:09:20.315453+00:00",
+      "title": "Facebook 的黑暗面：從哈佛宿舍到 Cambridge Analytica - 一個社群帝國的興衰啟示",
+      "description": "從哈佛宿舍的原始程式碼到全球政治操弄的暗流，這是一則關於社群帝國如何崛起並暴露裂痕的故事。影片回顧創立糾紛、關鍵併購、劍橋分析醜聞、轉型元宇宙與近年的 Threads 角力，帶你看見科技巨獸背後的權力、道德與監管問題。首段濃縮核心事件，隨後分八章逐步展開，適合關心科技、政治與社會影響的觀眾。\n\n00:00 Hook 引子與主題概覽\n01:05 哈佛宿舍與創立糾紛\n02:40 Eduardo Saverin 與創辦權爭議\n04:20 WhatsApp 收購與全球戰略\n06:10 劍橋分析：資料、心理與選舉\n08:30 元宇宙押注與品牌重塑\n10:20 Threads：社群再起或重複舊錯\n12:00 當代監管與企業責任反思\n13:20 現代啟示與觀眾反思",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0041.mp3",
+      "youtube_url": "https://youtu.be/7lg86LPT9M8",
+      "size_bytes": 10625517,
+      "duration_str": "07:22",
+      "tags": [
+        "Facebook",
+        "CambridgeAnalytica",
+        "Meta",
+        "WhatsApp",
+        "社群媒體史",
+        "劍橋分析",
+        "元宇宙",
+        "Threads"
+      ]
     }
   ]
 }
