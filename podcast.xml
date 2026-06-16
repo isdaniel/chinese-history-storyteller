@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 15 Jun 2026 23:09:20 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 23:04:46 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,25 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>百慕達三角：科學如何看透那片被神話籠罩的海域</title>
+      <description>摘要：百慕達三角長久以來被視為不可解的海域，本片以科學為鏡，梳理失蹤事件、理論提出與統計數據，帶你從傳說回到證據。前半段回顧經典案例與傳聞，後半段拆解甲烷氣泡、磁異常等假設，並以流量與事故統計做比較，最後給出現代啟示。
+
+00:00 開場與引子
+01:10 經典失蹤事件回顧：Flight 19、USS Cyclops 等
+03:40 傳說與大眾想像的形成
+05:20 甲烷氣泡與海水密度理論解析
+07:00 磁異常與導航誤差的科學檢視
+08:30 流量統計與事故率比較
+09:40 科學闢謠與仍待解的問題
+11:00 現代啟示與反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0042.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0042.mp3" length="12307437" type="audio/mpeg"/>
+      <pubDate>Tue, 16 Jun 2026 23:04:46 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>08:32</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Facebook 的黑暗面：從哈佛宿舍到 Cambridge Analytica - 一個社群帝國的興衰啟示</title>
       <description>從哈佛宿舍的原始程式碼到全球政治操弄的暗流，這是一則關於社群帝國如何崛起並暴露裂痕的故事。影片回顧創立糾紛、關鍵併購、劍橋分析醜聞、轉型元宇宙與近年的 Threads 角力，帶你看見科技巨獸背後的權力、道德與監管問題。首段濃縮核心事件，隨後分八章逐步展開，適合關心科技、政治與社會影響的觀眾。
