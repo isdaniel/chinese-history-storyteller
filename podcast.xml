@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 19 Jun 2026 02:50:09 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 22:17:28 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>亞歷山大圖書館：人類最大知識寶庫如何消失 — 從光榮到失落，再到重生</title>
+      <description>亞歷山大圖書館曾是古代世界的知識中心，數十萬捲軸、學者雲集，卻在多次衝突與意外中逐步消失。這段影片以史實為基礎，回溯收藏規模、凱撒大火與後續焚毀爭議，並探討失落書籍的文化代價與現代重建的意義。 00:00 開場與引子 01:10 圖書館的誕生與鼠神庇護 03:00 收藏規模與藏書管理 05:10 凱撒大火與第一波毀滅 07:00 多次焚毀與歷史爭議 09:20 失落作品的文化空缺 11:30 中世紀的轉折與一說 13:20 現代重建：亞歷山大圖書館復興 15:00 給觀眾的反思與現代啟示</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0045.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0045.mp3" length="15949485" type="audio/mpeg"/>
+      <pubDate>Fri, 19 Jun 2026 22:17:28 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>11:04</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>GoPro 的黃金與隕落：極限運動相機霸主之路</title>
       <description>從衝浪板上拍下第一道浪花，到全球電視節目與臉書上瘋傳的極限視角，GoPro 曾是行動影像的代名詞。本片以時間為脈絡，回顧 GoPro 如何從南加州衝浪文化崛起、登上公開市場巔峰，再因無人機、手機與市場變局遭遇挫折，最後如何用品牌、軟體與訂閱服務尋找新生。前半段聚焦事件與時間軸，後半段分析策略與現代啟示。章節預留時間戳：00:00 起承轉合 02:00 衝浪起家 04:00 上市巔峰 06:00 無人機失敗 07:30 手機衝擊 08:30 求生策略 09:00 給觀眾的反思。</description>
