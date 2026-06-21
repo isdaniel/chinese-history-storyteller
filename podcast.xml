@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 20 Jun 2026 22:19:19 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2026 22:24:54 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>從藍鳥到X：馬斯克收購 Twitter 的內幕與啟示</title>
+      <description>2022 年，科技圈一場收購引爆全球媒體：埃隆·馬斯克以約 440 億美元完成 Twitter 收購，從裁員浪潮、廣告主撤離，到品牌改名為 X，以及推動訂閱付費模式，這段轉變重塑了社群平台的經營框架與公共討論空間。加入我們，重回那一年關鍵場景，聆聽數據背後的人性與權力角力。 00:00 開場與引子 01:10 Twitter 的黃金時代 03:05 馬斯克的入場與出價 05:00 法律與財務拉鋸 06:40 裁員與企業文化震盪 07:30 廣告生態崩解與商業模式轉型 08:40 X 改名、訂閱與未來啟示</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0047.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0047.mp3" length="10488429" type="audio/mpeg"/>
+      <pubDate>Sun, 21 Jun 2026 22:24:54 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>07:16</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>斧聲燭影的千年謎案：趙匡胤離奇暴斃與金匱之盟</title>
       <description>摘要：從陳橋兵變到杯酒釋兵權，從怒濤般的建國步履到康莊死寂的皇宮夜晚，趙匡胤的一生像極了史書裡的戲劇化鏡頭；而他在976年的突然暴斃，至今仍是史學界與民間傳說交織的未解之謎。影片用史實梳理、文獻考證與畫面化旁白，帶你重回北宋開國歲月，探討權力過渡的可能性與倫理反思。章節時間戳（預留）：00:00 開場鉤子與主題引入 01:10 陳橋兵變的現場重構 02:40 建國後的軍權布局與杯酒釋兵權 04:20 皇權內外：趙匡胤的統治風格 05:50 暴斃當夜的史料與傳說 07:20 金匱之盟與王朝繼承的疑雲 08:40 趙光義繼位的步驟與政治意涵 09:40 現代啟示與結語，留下反思</description>
