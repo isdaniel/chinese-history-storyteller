@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 21 Jun 2026 22:24:54 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2026 22:48:50 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>羅馬帝國的滅亡：不是一夜之間的真相</title>
+      <description>羅馬帝國的衰亡，常被簡化為「一夜之間」的崩解，但事實上是一連串政治、軍事、社會與疾病交織的長期過程。本片將拆解分裂、蠻族入侵、內部腐敗與瘟疫等關鍵因素，並說明東羅馬如何延續千年。章節時間軸預留：00:00 序幕 / 01:10 分裂的開始 / 03:40 蠻族浪潮 / 06:10 內部腐敗 / 08:40 瘟疫與社會震盪 / 11:10 西羅馬最後歲月 / 13:30 東羅馬的存續 / 15:50 現代啟示。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0048.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0048.mp3" length="14184621" type="audio/mpeg"/>
+      <pubDate>Mon, 22 Jun 2026 22:48:50 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>09:51</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>從藍鳥到X：馬斯克收購 Twitter 的內幕與啟示</title>
       <description>2022 年，科技圈一場收購引爆全球媒體：埃隆·馬斯克以約 440 億美元完成 Twitter 收購，從裁員浪潮、廣告主撤離，到品牌改名為 X，以及推動訂閱付費模式，這段轉變重塑了社群平台的經營框架與公共討論空間。加入我們，重回那一年關鍵場景，聆聽數據背後的人性與權力角力。 00:00 開場與引子 01:10 Twitter 的黃金時代 03:05 馬斯克的入場與出價 05:00 法律與財務拉鋸 06:40 裁員與企業文化震盪 07:30 廣告生態崩解與商業模式轉型 08:40 X 改名、訂閱與未來啟示</description>
