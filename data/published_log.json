@@ -980,6 +980,26 @@
         "史學思辨",
         "歷史旁白"
       ]
+    },
+    {
+      "id": 50,
+      "published_at": "2026-06-24T22:25:01.014782+00:00",
+      "title": "Netflix 的賭博：從 DVD 出租店到串流帝國的崛起",
+      "description": "摘要：一個 1997 年的 DVD 出租點，如何賭上一切改變娛樂史？本片重述 Netflix 的創業勇氣、Blockbuster 的一念之差、以及串流與原創如何重塑全球觀影。章節時間戳僅供參考。\n00:00 引子與創業背景\n01:20 郵寄 DVD 與商業模式\n03:40 與 Blockbuster 的交鋒（據傳）\n05:50 技術轉型：從郵寄到串流\n07:30 原創內容的賭注\n09:00 全球擴張與當代啟示",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0050.mp3",
+      "youtube_url": "https://youtu.be/CWmPi5pWL_k",
+      "size_bytes": 14096493,
+      "duration_str": "09:47",
+      "tags": [
+        "Netflix",
+        "科技史",
+        "串流媒體",
+        "Blockbuster",
+        "原創內容",
+        "數位轉型",
+        "創業故事",
+        "全球擴張"
+      ]
     }
   ]
 }
