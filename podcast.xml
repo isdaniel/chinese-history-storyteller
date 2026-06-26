@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 25 Jun 2026 22:33:44 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2026 22:18:01 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>建文帝下落之謎：從靖難之役到鄭和的搜尋（揭秘消失的皇帝）</title>
+      <description>摘要：建文帝朱允炆在靖難之役後突然消失，南京被破、史料斷裂，流傳出出家、海外等多種說法，鄭和下西洋也被視為搜尋的一部分。本片梳理史實、還原畫面、評估各種論點，並提出現代反思。章節：00:00 開場勾引｜02:00 靖難之役回顧｜04:00 南京破城與史料斷裂｜06:00 出家說與地方傳說｜08:00 海外說與朝貢航線｜10:00 鄭和搜尋的可能性｜12:00 各派說法評估｜14:00 現代啟示與結語</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0052.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0052.mp3" length="12326445" type="audio/mpeg"/>
+      <pubDate>Fri, 26 Jun 2026 22:18:01 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>08:33</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>成吉思汗的征服：從草原統一到史上最大帝國（簡史與啟示）</title>
       <description>成吉思汗如何從一個被逐出部落的少年，築起史上最大連續帝國？本片帶你回到12至13世紀的蒙古草原與中亞戰場，解析統一蒙古、西征花剌子模、軍事創新、版圖規模與深遠遺產。前100字摘要：從鐵蹄與弓弩之間，看見制度、情報與物流如何構成持久征服；既是暴力的勝利，也是組織與制度的革命。章節時間戳（預留）：00:00 開場與導引；01:10 蒙古草原的少年與宿命；03:20 統一之路；05:40 西征花剌子模；07:50 軍事創新與組織；10:10 版圖與治理；12:30 遺產與影響；14:20 現代啟示與反思。</description>
