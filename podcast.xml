@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 26 Jun 2026 22:18:01 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2026 22:09:18 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>PayPal 黑幫：矽谷最強創業團隊的崛起與影響（Musk、Thiel 到 eBay 收購）</title>
+      <description>從矽谷車庫到全球支付舞台，PayPal 黑幫如何改寫科技創業規則與人脈生態？本片回溯 1998-2002 年 PayPal 的創立、內部鬥爭、2002 年被 eBay 收購的關鍵，以及其成員如何在 Tesla、SpaceX、LinkedIn、YouTube 等項目發揮長遠影響。前 100 字摘要：透過人物、場景與決策的微觀刻畫，揭示一群工程師與創業家的雄心與手法，並探討他們如何形塑後矽谷時代的創業文化。 章節時間戳（預留）：00:00 開場與背景｜01:10 早期創業與技術｜02:40 團隊文化與衝突｜04:10 eBay 收購過程｜05:40 Musk、Thiel 的分歧與合作｜07:10 成員去向：Tesla、SpaceX、LinkedIn、YouTube｜08:00 影響力與現代啟示｜09:00 結語與反思。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0053.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0053.mp3" length="12053421" type="audio/mpeg"/>
+      <pubDate>Sat, 27 Jun 2026 22:09:18 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>08:22</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>建文帝下落之謎：從靖難之役到鄭和的搜尋（揭秘消失的皇帝）</title>
       <description>摘要：建文帝朱允炆在靖難之役後突然消失，南京被破、史料斷裂，流傳出出家、海外等多種說法，鄭和下西洋也被視為搜尋的一部分。本片梳理史實、還原畫面、評估各種論點，並提出現代反思。章節：00:00 開場勾引｜02:00 靖難之役回顧｜04:00 南京破城與史料斷裂｜06:00 出家說與地方傳說｜08:00 海外說與朝貢航線｜10:00 鄭和搜尋的可能性｜12:00 各派說法評估｜14:00 現代啟示與結語</description>
