@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 28 Jun 2026 22:10:06 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 22:21:24 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>李白真的是劍客嗎？詩仙不為人知的另一面</title>
+      <description>詩仙李白，除了千古詩篇之外，是否也握過刀劍、涉入血腥？本片以史料為根，以傳說為枝，梳理李白的劍術傳聞、殺人傳說、宮廷際遇與那個醉臨江上的傳奇結局，試圖還原一個更立體的李白。前段回顧史實與人物脈絡；中段檢視劍術、詭異傳說與政治失意；末段提出現代啟示，反思英雄與文人的邊界。 00:00 開場與議題導入 01:30 李白早年與江湖形象 03:40 劍術傳聞與文獻審視 06:20 殺人傳說的來源與真相 08:50 政治失意與被放逐的經過 11:10 賜金放還與宮廷關係 13:20 醉死撈月：傳說與可能的真相 15:40 現代啟示與結語</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0055.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0055.mp3" length="12366189" type="audio/mpeg"/>
+      <pubDate>Mon, 29 Jun 2026 22:21:24 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>08:35</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>波斯帝國的興衰：被忽視的古代超級強權</title>
       <description>摘要：從居魯士大帝的鐵血與仁政，到波斯版圖的頂峰、希波戰爭的拉鋸、亞歷山大東征的終局，再到薩珊王朝的復興與終焉。本片帶你穿梭千年沙場與宮殿，重探那個塑造歐亞古代秩序的帝國，以及它留給今日的啟示。章節：00:00 開場與居魯士大帝；01:15 帝國擴張與行政體系；02:50 希波戰爭與波斯的挑戰；04:30 霸業頂峰與多元治理；06:10 亞歷山大東征與滅亡；07:30 薩珊王朝的復興；08:40 波斯文化與宗教傳承；09:30 現代啟示與反思。</description>
