@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 30 Jun 2026 22:23:29 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2026 22:29:20 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>黑死病：改變歐洲的14世紀大瘟疫與現代啟示</title>
+      <description>1347 到 1351 年席捲歐洲的黑死病，不只是疾病，更是改寫社會、經濟與文化的斷裂點。摘要：從黑海港口的傳入、城鎮與鄉村的崩壞、到勞動力短缺催生新秩序，這場瘟疫如何促成文藝復興的土壤，以及對今日公共衛生與社會正義的提醒。章節時間戳（預留）：00:00 開場與黑海起源｜01:10 傳播路徑與生物學｜02:40 致死規模與城市風景｜04:10 社會崩潰與宗教反應｜05:40 經濟重組與勞動力變遷｜07:10 文藝復興的連結｜08:10 現代啟示與反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0057.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0057.mp3" length="10753965" type="audio/mpeg"/>
+      <pubDate>Wed, 01 Jul 2026 22:29:20 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>07:28</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>AOL 與時代華納：史上最失敗的併購案（從千億夢想到分家教訓）</title>
       <description>摘要：2000 年那場被視為網路時代里程碑的併購，AOL 與時代華納合併案以約一千八百億美元的估值震撼全球，卻在泡沫破裂與文化衝突中走向崩解，最終於 2009 年分家。本片從交易前的狂熱、交割後的現實，到連年的財務減損與經營迷失，還原那場併購如何成為警世案例。章節時間（預留）：00:00 Hook / 01:10 併購前夜 / 03:20 交易細節 / 05:10 泡沫與文化衝突 / 07:00 財報與減損 / 08:40 分家與啟示 / 10:00 現代反思。</description>
