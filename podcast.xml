@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 01 Jul 2026 22:29:20 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2026 22:13:30 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>永樂大典之謎：世界最大百科全書的失落與殘篇</title>
+      <description>永樂大典，明永樂年間完成的百科奇書，曾號稱「天下之書」。本片帶您回到十五世紀的紫禁城、藏書樓與戰亂煙雲，追索正本何去何從、副本散佚與現存殘本的蛛絲馬跡，並探討歷史遺失給今人的啟示。章節時間軸（預留）00:00 開場與編纂背景 01:15 編纂規模與內容概觀 03:30 正本與交存爭議 05:10 嘉靖陪葬說與其他傳言 06:40 清代與民國間的散佚 08:00 現存殘本與國際流散 09:20 現代啟示與反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0058.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0058.mp3" length="10079469" type="audio/mpeg"/>
+      <pubDate>Thu, 02 Jul 2026 22:13:30 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>06:59</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>黑死病：改變歐洲的14世紀大瘟疫與現代啟示</title>
       <description>1347 到 1351 年席捲歐洲的黑死病，不只是疾病，更是改寫社會、經濟與文化的斷裂點。摘要：從黑海港口的傳入、城鎮與鄉村的崩壞、到勞動力短缺催生新秩序，這場瘟疫如何促成文藝復興的土壤，以及對今日公共衛生與社會正義的提醒。章節時間戳（預留）：00:00 開場與黑海起源｜01:10 傳播路徑與生物學｜02:40 致死規模與城市風景｜04:10 社會崩潰與宗教反應｜05:40 經濟重組與勞動力變遷｜07:10 文藝復興的連結｜08:10 現代啟示與反思</description>
