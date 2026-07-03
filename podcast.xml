@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 02 Jul 2026 22:13:30 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2026 22:12:11 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>張居正改革：挽救大明王朝的最後機會（萬曆新政解密）</title>
+      <description>張居正如何用一套制度，讓瀕臨崩潰的明朝喘息？本片用史實還原萬曆初年的變局，剖析一條鞭法、考成法與萬曆新政的設計、困境與後果。前100字摘要：張居正（1525-1582）在萬曆初年統籌朝政，推行稅制與官制改革，短期內提高財政效率、壓制派系，但也引發官僚與地主的強烈反彈，死後遭抄家，改革遺產被部分逆轉。章節時間戳（占位）：0:00 開場鉤子；1:10 張居正的時代背景；2:30 一條鞭法的內涵；4:00 考成法與官僚管理；5:40 萬曆新政的運作；7:00 死後抄家與政治報復；8:10 改革長短期影響；8:50 現代啟示與反思。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0059.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0059.mp3" length="12010221" type="audio/mpeg"/>
+      <pubDate>Fri, 03 Jul 2026 22:12:11 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>08:20</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>永樂大典之謎：世界最大百科全書的失落與殘篇</title>
       <description>永樂大典，明永樂年間完成的百科奇書，曾號稱「天下之書」。本片帶您回到十五世紀的紫禁城、藏書樓與戰亂煙雲，追索正本何去何從、副本散佚與現存殘本的蛛絲馬跡，並探討歷史遺失給今人的啟示。章節時間軸（預留）00:00 開場與編纂背景 01:15 編纂規模與內容概觀 03:30 正本與交存爭議 05:10 嘉靖陪葬說與其他傳言 06:40 清代與民國間的散佚 08:00 現存殘本與國際流散 09:20 現代啟示與反思</description>
