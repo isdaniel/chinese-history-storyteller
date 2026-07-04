@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 03 Jul 2026 22:12:11 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2026 22:03:41 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>Uber 的瘋狂十年：從 App 到全球出行帝國｜崛起、風暴與盈利路徑</title>
+      <description>從 2009 年的一個手機 App，到席捲全球的出行巨獸，這是 Uber 的瘋狂十年與轉型故事。摘要：創辦、抗爭、內部醜聞、上市與營運轉向，穿插監管與技術競賽。影片將帶您回到舊金山的深夜街頭，看到司機、乘客與資本如何重塑城市移動。章節時間戳（預留）：00:00 引子與背景；01:15 2009 創業始末；02:50 早期擴張戰略；04:30 與監管和計程車的衝突；06:10 技術線與多角化（Eats、無人車）；07:40 Kalanick 的爭議與董事會動盪；09:10 上市與財務轉型；11:00 現代啟示與反思。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0060.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0060.mp3" length="13514733" type="audio/mpeg"/>
+      <pubDate>Sat, 04 Jul 2026 22:03:41 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>09:23</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>張居正改革：挽救大明王朝的最後機會（萬曆新政解密）</title>
       <description>張居正如何用一套制度，讓瀕臨崩潰的明朝喘息？本片用史實還原萬曆初年的變局，剖析一條鞭法、考成法與萬曆新政的設計、困境與後果。前100字摘要：張居正（1525-1582）在萬曆初年統籌朝政，推行稅制與官制改革，短期內提高財政效率、壓制派系，但也引發官僚與地主的強烈反彈，死後遭抄家，改革遺產被部分逆轉。章節時間戳（占位）：0:00 開場鉤子；1:10 張居正的時代背景；2:30 一條鞭法的內涵；4:00 考成法與官僚管理；5:40 萬曆新政的運作；7:00 死後抄家與政治報復；8:10 改革長短期影響；8:50 現代啟示與反思。</description>
