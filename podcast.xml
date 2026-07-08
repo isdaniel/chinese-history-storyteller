@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 07 Jul 2026 22:21:16 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 22:19:28 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>古埃及圖坦卡門墓的詛咒真相：歷史、謠言與科學解讀</title>
+      <description>摘要：1922 年圖坦卡門墓被發現後，圍繞法老詛咒的傳說迅速在全球發酵。本文以考古記錄、當時報導與近代科學研究為線索，分解「詛咒神話」與可能的自然成因，探討死亡傳聞如何被新聞放大，以及我們從中能取得的現代啟示。章節時間戳（預留）：00:00 Hook 與背景介紹；01:10 1922 年發掘現場；02:40 卡納封爵的死亡與媒體；04:20 詛咒傳說的起源與流變；05:50 墓室內的物質與微生物線索；07:20 科學研究與真菌毒素假說；08:40 綜合評估；09:10 現代啟示與反思。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0064.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0064.mp3" length="16879149" type="audio/mpeg"/>
+      <pubDate>Wed, 08 Jul 2026 22:19:28 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>11:43</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Airbnb 的崛起：把陌生人請進家門的革命</title>
       <description>一張氣墊床、三個創辦人，如何改寫旅宿生態、挑戰傳統飯店與監管？本片從氣墊床起家、早期掙扎到全球擴張，再到疫情重創與上市之路，梳理 Airbnb 的商業邏輯與制度創新，並探討對當代居住與信任的啟示。 00:00 開場與主題引言 01:30 氣墊床的起源故事 03:30 早期募資與生死掙扎 06:00 平台設計與信任機制 08:30 全球擴張的策略 11:00 疫情衝擊與轉型 13:30 上市之路與後續挑戰 16:00 現代啟示與反思</description>
