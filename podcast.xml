@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 08 Jul 2026 22:19:28 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 22:28:29 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>鴉片戰爭：大清帝國的轉折點與啟示</title>
+      <description>本片回溯1839至1842年間，鴉片戰爭如何改寫大清帝國的命運：從林則徐銷煙開始，到英軍北上、南京條約簽訂、香港割讓，最後審視長期的後續衝擊與現代啟示。前100字摘要：一場關於主權、貿易與文化碰撞的衝突，不僅是軍事失敗，更是體制、觀念與世界秩序轉變的見證。章節時間戳（預留）：0:00 開場與背景、1:10 林則徐銷煙、2:40 英國動機、4:20 英軍北上、5:50 戰場與簽約、7:10 南京條約與割讓、8:20 戰後影響、9:00 現代啟示。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0065.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0065.mp3" length="9672813" type="audio/mpeg"/>
+      <pubDate>Thu, 09 Jul 2026 22:28:29 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>06:43</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>古埃及圖坦卡門墓的詛咒真相：歷史、謠言與科學解讀</title>
       <description>摘要：1922 年圖坦卡門墓被發現後，圍繞法老詛咒的傳說迅速在全球發酵。本文以考古記錄、當時報導與近代科學研究為線索，分解「詛咒神話」與可能的自然成因，探討死亡傳聞如何被新聞放大，以及我們從中能取得的現代啟示。章節時間戳（預留）：00:00 Hook 與背景介紹；01:10 1922 年發掘現場；02:40 卡納封爵的死亡與媒體；04:20 詛咒傳說的起源與流變；05:50 墓室內的物質與微生物線索；07:20 科學研究與真菌毒素假說；08:40 綜合評估；09:10 現代啟示與反思。</description>
