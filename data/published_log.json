@@ -1300,6 +1300,26 @@
         "近代中國轉型",
         "歷史啟示"
       ]
+    },
+    {
+      "id": 66,
+      "published_at": "2026-07-10T22:09:13.978883+00:00",
+      "title": "WeWork 神話破滅：從 480 億到歸零的真相（Adam Neumann、軟銀與 S‑1 案）",
+      "description": "摘要：這是關於 WeWork 如何從矚目獨角獸變成商業教材的故事。從 Adam Neumann 的創業魅力、S‑1 曝光的黑歷史、軟銀的豪賭到 IPO 破局與最終重整與破產，這段傳奇包含對創業與資本的深刻提醒。\n章節時間預留：\n0:00 Hook 與背景\n1:10 Adam Neumann 的創世敘事\n2:40 WeWork 的商業模式與擴張\n4:15 S‑1 曝光與公司治理問題\n6:00 軟銀的豪賭與估值泡沫\n7:30 2019 IPO 失敗與後續協議\n8:40 2023 破產與企業重組\n10:00 現代啟示與觀眾反思",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0066.mp3",
+      "youtube_url": "https://youtu.be/KS2w1s1xbTc",
+      "size_bytes": 16564653,
+      "duration_str": "11:30",
+      "tags": [
+        "WeWork",
+        "Adam Neumann",
+        "軟銀",
+        "創業史",
+        "S-1",
+        "IPO 失敗",
+        "商業史",
+        "企業治理"
+      ]
     }
   ]
 }
