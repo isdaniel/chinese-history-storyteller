@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 11 Jul 2026 21:56:11 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 21:54:26 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>光緒之死：慈禧死前一天的離奇巧合，砒霜之謎與現代檢驗</title>
+      <description>摘要：清朝末年的兩場死亡，像極了歷史留下的未解謎題——光緒皇帝在瀛台囚禁中的死亡，緊接著慈禧太后病逝，現代屍檢發現砒霜疑雲。本片梳理史料、還原當時場景，並探討現代化驗如何改寫可能的真相。章節時間戳（預留）：0:00 開場與背景；1:10 瀛台囚禁的日常；2:20 死亡當晚的記錄與矛盾；3:50 砒霜中毒的科學發現；5:30 現代屍檢與爭議；6:50 可能的兇手與動機；8:10 歷史意義與現代啟示；9:00 結語與反思。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0068.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0068.mp3" length="10539693" type="audio/mpeg"/>
+      <pubDate>Sun, 12 Jul 2026 21:54:26 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>07:19</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>印加帝國的落幕：168名西班牙人如何改寫歷史</title>
       <description>印加帝國如何在短短數十年內崩解？本片探討：皮薩羅的南美征服、卡哈馬卡之戰的驚變、內戰如何削弱帝國、天花的致命一擊，以及馬丘比丘留下的沉默見證。透過史料與地景，重建那個時代的張力與啟示。
