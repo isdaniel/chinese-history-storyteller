@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 12 Jul 2026 21:54:26 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 22:01:14 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>魏忠賢：從賭徒到九千歲——大明朝最強太監的權力之路</title>
+      <description>魏忠賢如何從一名無名太監、嗜賭成性的人物，躋身天子的近臣，最後成為掌控朝政的「九千歲」？本片以嚴謹史料呈現東林黨爭、遍立生祠與崇禎時代的清算，追尋一條權力膨脹與滅亡的路徑，並反思個人與制度的脆弱性。章節時間預留：00:00 開場與序幕；01:10 出身與早年賭徒身影；02:40 崛起與宦官集團；04:20 東林黨爭的激化；05:50 遍立生祠與祭祀政治；07:20 崇禎登基與清算前奏；08:30 明亡之兆與結語；09:00 現代啟示與反思。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0069.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0069.mp3" length="13243437" type="audio/mpeg"/>
+      <pubDate>Mon, 13 Jul 2026 22:01:14 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>09:11</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>光緒之死：慈禧死前一天的離奇巧合，砒霜之謎與現代檢驗</title>
       <description>摘要：清朝末年的兩場死亡，像極了歷史留下的未解謎題——光緒皇帝在瀛台囚禁中的死亡，緊接著慈禧太后病逝，現代屍檢發現砒霜疑雲。本片梳理史料、還原當時場景，並探討現代化驗如何改寫可能的真相。章節時間戳（預留）：0:00 開場與背景；1:10 瀛台囚禁的日常；2:20 死亡當晚的記錄與矛盾；3:50 砒霜中毒的科學發現；5:30 現代屍檢與爭議；6:50 可能的兇手與動機；8:10 歷史意義與現代啟示；9:00 結語與反思。</description>
