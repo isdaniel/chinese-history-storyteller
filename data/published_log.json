@@ -1380,6 +1380,26 @@
         "權力與腐敗",
         "歷史啟示"
       ]
+    },
+    {
+      "id": 70,
+      "published_at": "2026-07-14T21:59:54.962324+00:00",
+      "title": "血液的謊言：Elizabeth Holmes、Theranos 與科技光環的崩落",
+      "description": "摘要：從矽谷新星到備受推崇的女創辦人，Elizabeth Holmes 與 Theranos 承諾用一滴血改變醫療，卻以欺騙換來億萬資金與名聲。華爾街日報揭露風暴、監管與司法追究，一場科技與倫理的懸疑劇逐步攤牌。影片回溯事件脈絡、關鍵人物與審判結果，並從此案反思創新、資本與真相的關係。\n\n章節預留時間戳：\n00:00 Hook 與背景\n01:10 矽谷新星的崛起\n02:40 驗血神話的宣傳機制\n04:10 華爾街日報的揭發\n05:40 公司內部與監管裂縫\n07:00 審判與有罪判決\n08:10 11 年徒刑與後續影響\n09:00 現代啟示與反思",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0070.mp3",
+      "youtube_url": "https://youtu.be/GH46Qvuw_TU",
+      "size_bytes": 8766765,
+      "duration_str": "06:05",
+      "tags": [
+        "Theranos",
+        "Elizabeth Holmes",
+        "科技史",
+        "矽谷",
+        "醫療創新",
+        "企業詐欺",
+        "John Carreyrou",
+        "企業倫理"
+      ]
     }
   ]
 }

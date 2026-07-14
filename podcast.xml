@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 13 Jul 2026 22:01:14 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 21:59:54 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,26 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>血液的謊言：Elizabeth Holmes、Theranos 與科技光環的崩落</title>
+      <description>摘要：從矽谷新星到備受推崇的女創辦人，Elizabeth Holmes 與 Theranos 承諾用一滴血改變醫療，卻以欺騙換來億萬資金與名聲。華爾街日報揭露風暴、監管與司法追究，一場科技與倫理的懸疑劇逐步攤牌。影片回溯事件脈絡、關鍵人物與審判結果，並從此案反思創新、資本與真相的關係。
+
+章節預留時間戳：
+00:00 Hook 與背景
+01:10 矽谷新星的崛起
+02:40 驗血神話的宣傳機制
+04:10 華爾街日報的揭發
+05:40 公司內部與監管裂縫
+07:00 審判與有罪判決
+08:10 11 年徒刑與後續影響
+09:00 現代啟示與反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0070.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0070.mp3" length="8766765" type="audio/mpeg"/>
+      <pubDate>Tue, 14 Jul 2026 21:59:54 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>06:05</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>魏忠賢：從賭徒到九千歲——大明朝最強太監的權力之路</title>
       <description>魏忠賢如何從一名無名太監、嗜賭成性的人物，躋身天子的近臣，最後成為掌控朝政的「九千歲」？本片以嚴謹史料呈現東林黨爭、遍立生祠與崇禎時代的清算，追尋一條權力膨脹與滅亡的路徑，並反思個人與制度的脆弱性。章節時間預留：00:00 開場與序幕；01:10 出身與早年賭徒身影；02:40 崛起與宦官集團；04:20 東林黨爭的激化；05:50 遍立生祠與祭祀政治；07:20 崇禎登基與清算前奏；08:30 明亡之兆與結語；09:00 現代啟示與反思。</description>
