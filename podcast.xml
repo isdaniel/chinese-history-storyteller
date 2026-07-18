@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 17 Jul 2026 21:58:05 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 21:54:36 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>奧林匹亞之光：從宙斯祭典到現代奧運的千年旅程</title>
+      <description>奧運的起源，不只是競技，而是一場獻給神祇的祭典與城邦榮耀的競演。前100字摘要：本片帶您走進古希臘奧林匹亞，從公元前八世紀的宙斯祭典，到裸體競技的文化意義、項目如何隨時代演變、羅馬帝國的壓制與廢除，最後抵達近代復興的路徑與反思。章節時間戳（預留）：00:00 開場鉤子｜01:10 宙斯祭典的起源｜03:00 裸體競技的意涵｜05:00 競賽項目的發展｜07:20 城邦與國際化｜09:30 羅馬時代的衝擊｜11:10 近代復辦的契機｜13:40 現代啟示與反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0074.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0074.mp3" length="13141485" type="audio/mpeg"/>
+      <pubDate>Sat, 18 Jul 2026 21:54:36 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>09:07</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Zoom 的疫情奇蹟：從華人工程師到遠端時代的崛起與後疫情省思</title>
       <description>摘要：一個華人創辦人的遠見，如何在全球疫情中催生出一款改變工作與社交方式的軟體？本片回顧 Zoom 的創業脈絡、疫情期間股價暴漲與安全爭議，以及後疫情時代的衰退與啟示。
