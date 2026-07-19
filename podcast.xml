@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 18 Jul 2026 21:54:36 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2026 21:55:45 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>雍正帝的特務系統：粘竿處與血滴子之謎｜奏摺、暗殺與史料真相</title>
+      <description>摘要：雍正時期的權力操作，常被濃霧與傳說包裹。從奏摺制度的密報機制，到官方或民間流傳的粘竿處與「血滴子」暗器之說，本片嘗試在嚴謹的史料與可視化敘事之間，拆解傳奇與真相。將帶你穿越紫禁城密院、奉天書房與地方道台的奏摺往返，探看何以謠言能成為政治工具，以及我們該如何以史為鑑。 時間章節（預留）：00:00 引子與問題提出 01:20 粘竿處的組織輪廓 03:10 奏摺制度與密報網 05:00 血滴子傳說的起源與流變 06:40 暗殺與政治鬥爭的實際案例 08:10 史料考證的方法與困境 09:50 現代啟示與反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0075.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0075.mp3" length="10965357" type="audio/mpeg"/>
+      <pubDate>Sun, 19 Jul 2026 21:55:45 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>07:36</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>奧林匹亞之光：從宙斯祭典到現代奧運的千年旅程</title>
       <description>奧運的起源，不只是競技，而是一場獻給神祇的祭典與城邦榮耀的競演。前100字摘要：本片帶您走進古希臘奧林匹亞，從公元前八世紀的宙斯祭典，到裸體競技的文化意義、項目如何隨時代演變、羅馬帝國的壓制與廢除，最後抵達近代復興的路徑與反思。章節時間戳（預留）：00:00 開場鉤子｜01:10 宙斯祭典的起源｜03:00 裸體競技的意涵｜05:00 競賽項目的發展｜07:20 城邦與國際化｜09:30 羅馬時代的衝擊｜11:10 近代復辦的契機｜13:40 現代啟示與反思</description>
