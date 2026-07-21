@@ -1520,6 +1520,26 @@
         "歷史評價",
         "中國近代化"
       ]
+    },
+    {
+      "id": 77,
+      "published_at": "2026-07-21T22:08:27.190649+00:00",
+      "title": "Slack 的逆襲：從遊戲公司到企業通訊霸主（Glitch、成長與被收購）",
+      "description": "從一款失敗的遊戲，誕生出改變企業溝通的巨人——Slack。這是一個關於轉型、工具思維與商業競爭的故事。前半段回溯 Glitch 遊戲與 Tiny Speck 的內部工具如何成形；後半段聚焦 Slack 的快速成長、面對 Microsoft Teams 的挑戰，以及被 Salesforce 收購的關鍵時刻。章節時間戳（預留）：0:00 引子與背景；1:10 Glitch 的誕生與挫敗；2:40 內部工具的萌芽；4:10 Slack 正式推出與成長；5:40 與大型企業競爭；7:10 Salesforce 收購與整合；8:20 現代啟示與反思。",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0077.mp3",
+      "youtube_url": "https://youtu.be/OivzCSFxff0",
+      "size_bytes": 11061549,
+      "duration_str": "07:40",
+      "tags": [
+        "Slack",
+        "Glitch",
+        "Stewart Butterfield",
+        "企業通訊",
+        "Salesforce 收購",
+        "Microsoft Teams",
+        "tech history",
+        "轉型故事"
+      ]
     }
   ]
 }
