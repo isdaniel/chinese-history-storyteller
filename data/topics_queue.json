@@ -7,105 +7,3515 @@
     "mystery": "歷史謎團"
   },
   "topics": [
-    {"id": 1, "title": "三國真相:諸葛亮真的那麼神嗎?史實 vs 演義的五大差距", "category": "chinese_history", "tags": ["三國","諸葛亮","蜀漢"], "length_min": 12, "key_points": ["北伐評價","治蜀政績","空城計虛實","木牛流馬真相","身後評價"]},
-    {"id": 2, "title": "Nokia 帝國的隕落:從世界第一到消失的十年", "category": "tech_history", "tags": ["科技","Nokia","商業"], "length_min": 14, "key_points": ["塞班系統失誤","iPhone 衝擊","CEO 決策","微軟收購","現況"]},
-    {"id": 3, "title": "失落的樓蘭古國:絲路上消失的神秘文明", "category": "world_civilization", "tags": ["考古","絲路","樓蘭"], "length_min": 11, "key_points": ["地理位置","突然消失原因","樓蘭美女","考古發現","氣候變遷"]},
-    {"id": 4, "title": "曹操真的是奸雄嗎?重新認識三國最被誤解的男人", "category": "chinese_history", "tags": ["三國","曹操"], "length_min": 13, "key_points": ["治世之能臣","屯田制","唯才是舉","赤壁之敗","文學成就"]},
-    {"id": 5, "title": "Intel 與 AMD 的五十年戰爭:CPU 霸權爭奪戰", "category": "tech_history", "tags": ["科技","CPU","晶片"], "length_min": 15, "key_points": ["1969 創業","K6 突圍","Athlon 反超","Bulldozer 失敗","Ryzen 復活"]},
-    {"id": 6, "title": "馬雅文明為何一夜消失?五大假說全解析", "category": "world_civilization", "tags": ["馬雅","考古","失落文明"], "length_min": 12, "key_points": ["乾旱說","戰爭說","階級崩潰","環境破壞","現代後裔"]},
-    {"id": 7, "title": "司馬懿:隱忍 40 年扳倒曹魏的最強老狐狸", "category": "chinese_history", "tags": ["三國","司馬懿"], "length_min": 13, "key_points": ["裝病拒曹操","與孔明對峙","高平陵之變","奪權路線","西晉建立"]},
-    {"id": 8, "title": "Kodak 的死亡:第一個發明數位相機卻被它殺死", "category": "tech_history", "tags": ["科技","Kodak","商業"], "length_min": 12, "key_points": ["1975 發明數位相機","保護底片業務","錯失轉型","破產 2012","教訓"]},
-    {"id": 9, "title": "古羅馬一日生活:你不知道的 2000 年前日常", "category": "world_civilization", "tags": ["羅馬","古代生活"], "length_min": 11, "key_points": ["公共浴場","羅馬大餐","奴隸制","娛樂競技","公寓生活"]},
-    {"id": 10, "title": "玄武門之變:李世民弒兄奪位的 24 小時", "category": "chinese_history", "tags": ["唐朝","李世民"], "length_min": 13, "key_points": ["太子建成","秦王勢力","玄武門埋伏","李淵退位","貞觀之治"]},
-    {"id": 11, "title": "Sony 的失落 30 年:從 Walkman 到迷失的科技巨人", "category": "tech_history", "tags": ["Sony","日本科技"], "length_min": 14, "key_points": ["Walkman 神話","Betamax 慘敗","部門內鬥","蘋果衝擊","近年復興"]},
-    {"id": 12, "title": "龐貝城的最後一天:火山爆發前 24 小時實錄", "category": "world_civilization", "tags": ["龐貝","火山","羅馬"], "length_min": 12, "key_points": ["維蘇威噴發","居民逃難","屍體保存","壁畫藝術","考古重現"]},
-    {"id": 13, "title": "雍正暴斃之謎:被丹藥毒死還是被刺殺?", "category": "mystery", "tags": ["清朝","雍正","謎團"], "length_min": 13, "key_points": ["呂四娘傳說","丹藥中毒","過勞死","史書沉默","歷史定位"]},
-    {"id": 14, "title": "微軟的逆襲:從幾乎倒閉到全球第一", "category": "tech_history", "tags": ["微軟","Nadella"], "length_min": 14, "key_points": ["Ballmer 時代低谷","錯失移動","Nadella 改革","Azure 雲端","AI 投資"]},
-    {"id": 15, "title": "亞特蘭提斯真的存在過嗎?柏拉圖的世紀之謎", "category": "mystery", "tags": ["亞特蘭提斯","失落文明"], "length_min": 12, "key_points": ["柏拉圖記載","各種假說","桑托里尼","考古證據","虛構說"]},
-    {"id": 16, "title": "鄭和下西洋:被遺忘的中國海上霸權", "category": "chinese_history", "tags": ["明朝","鄭和"], "length_min": 13, "key_points": ["寶船規模","七下西洋","非洲足跡","海禁政策","為何停止"]},
-    {"id": 17, "title": "Blockbuster 的滅亡:錯失收購 Netflix 的代價", "category": "tech_history", "tags": ["商業","Netflix"], "length_min": 11, "key_points": ["1985 創業","巔峰 9000 店","Netflix 提案","串流崛起","2010 破產"]},
-    {"id": 18, "title": "金字塔到底怎麼蓋的?最新考古發現", "category": "world_civilization", "tags": ["埃及","金字塔"], "length_min": 12, "key_points": ["奴隸說破除","內部斜坡","水力運石","工人村發現","建造時間"]},
-    {"id": 19, "title": "崇禎之死:大明王朝最後 24 小時", "category": "chinese_history", "tags": ["明朝","崇禎"], "length_min": 14, "key_points": ["李自成攻城","太子流亡","煤山自縊","殉國遺詔","南明餘緒"]},
-    {"id": 20, "title": "Tesla 的崛起:從破產邊緣到電動車霸主", "category": "tech_history", "tags": ["Tesla","Musk"], "length_min": 14, "key_points": ["Roadster 誕生","Model S 革命","產能地獄","Model 3 救命","全球擴張"]},
-    {"id": 21, "title": "成吉思汗的死因之謎:七種說法哪個是真?", "category": "mystery", "tags": ["蒙古","成吉思汗"], "length_min": 13, "key_points": ["墜馬說","西夏公主說","瘟疫說","暗殺說","秘葬陵墓"]},
-    {"id": 22, "title": "唐太宗李世民的另一面:被史官美化的真相", "category": "chinese_history", "tags": ["唐朝","李世民"], "length_min": 13, "key_points": ["篡改起居注","殺兄逼父","晚年昏庸","求仙丹","歷史評價"]},
-    {"id": 23, "title": "Yahoo 的崩潰:本可以三次買下 Google 的科技帝國", "category": "tech_history", "tags": ["Yahoo","網路"], "length_min": 12, "key_points": ["1994 創業","拒絕收購 Google","錯失 Facebook","Marissa Mayer","Verizon 賤賣"]},
-    {"id": 24, "title": "斯巴達 300 勇士的真相:電影沒告訴你的事", "category": "world_civilization", "tags": ["希臘","戰爭","斯巴達"], "length_min": 12, "key_points": ["其實有上千人","戰術細節","波斯軍力","三天激戰","歷史影響"]},
-    {"id": 25, "title": "雍正是被篡位的嗎?九子奪嫡的真實內幕", "category": "mystery", "tags": ["清朝","雍正","奪位"], "length_min": 14, "key_points": ["遺詔真偽","十四改于四","年羹堯隆科多","康熙真意","現代研究"]},
-    {"id": 26, "title": "BlackBerry 的覆滅:曾經人手一台的智慧型手機霸主", "category": "tech_history", "tags": ["BlackBerry","手機"], "length_min": 12, "key_points": ["實體鍵盤神話","商務神器","iPhone 衝擊","系統陳舊","退出市場"]},
-    {"id": 27, "title": "復活節島巨石像:他們是怎麼搬動的?", "category": "mystery", "tags": ["復活節島","考古"], "length_min": 11, "key_points": ["摩艾石像","製作工藝","運輸假說","文明崩潰","環境警示"]},
-    {"id": 28, "title": "明朝覆滅的真正原因:小冰河期改變了中國", "category": "chinese_history", "tags": ["明朝","氣候"], "length_min": 13, "key_points": ["氣候異常","農業崩潰","農民起義","財政破產","滿清入關"]},
-    {"id": 29, "title": "Atari 大崩盤:電子遊戲產業差點消失的 1983", "category": "tech_history", "tags": ["遊戲","Atari"], "length_min": 12, "key_points": ["ET 遊戲災難","新墨西哥掩埋","產業崩潰","任天堂崛起","現代回響"]},
-    {"id": 30, "title": "拿破崙的最後賭注:滑鐵盧戰役完整解析", "category": "world_civilization", "tags": ["拿破崙","戰爭"], "length_min": 14, "key_points": ["百日王朝","威靈頓","布呂歇爾","關鍵失誤","流放聖赫勒拿"]},
-    {"id": 31, "title": "和珅的千億家產:中國史上最大貪官如何鍊金", "category": "chinese_history", "tags": ["清朝","和珅"], "length_min": 13, "key_points": ["乾隆寵信","斂財手段","家產規模","嘉慶抄家","歷史評價"]},
-    {"id": 32, "title": "蘋果差點倒閉:Steve Jobs 回歸前的至暗時刻", "category": "tech_history", "tags": ["蘋果","Jobs"], "length_min": 14, "key_points": ["Jobs 被趕走","產品線混亂","90 天現金","NeXT 收購","iMac 救命"]},
-    {"id": 33, "title": "瑪雅曆法 2012:世界末日預言的真相", "category": "mystery", "tags": ["馬雅","預言"], "length_min": 11, "key_points": ["長紀年曆","誤譯誤讀","天文學意義","NASA 闢謠","現代迷思"]},
-    {"id": 34, "title": "戊戌變法 103 天:光緒皇帝的最後一搏", "category": "chinese_history", "tags": ["清朝","變法"], "length_min": 13, "key_points": ["康有為","百日維新","袁世凱告密","慈禧政變","六君子就義"]},
-    {"id": 35, "title": "Google 的誕生:兩個史丹佛學生改變世界", "category": "tech_history", "tags": ["Google","網路"], "length_min": 13, "key_points": ["PageRank 演算法","車庫創業","拒絕被收購","廣告模式","壟斷之路"]},
-    {"id": 36, "title": "通古斯大爆炸:1908 年俄羅斯的神秘巨響", "category": "mystery", "tags": ["俄羅斯","謎團"], "length_min": 11, "key_points": ["爆炸規模","隕石說","彗星說","反物質說","至今無定論"]},
-    {"id": 37, "title": "甲午戰爭:北洋艦隊覆滅的真相", "category": "chinese_history", "tags": ["清朝","戰爭"], "length_min": 14, "key_points": ["艦隊建設","軍費被挪用","黃海海戰","威海衛之圍","馬關條約"]},
-    {"id": 38, "title": "IBM 的轉型奇蹟:從硬體巨人到雲端服務", "category": "tech_history", "tags": ["IBM","商業"], "length_min": 13, "key_points": ["大型主機時代","PC 革命衝擊","Gerstner 改革","賣 PC 給聯想","AI 投資"]},
-    {"id": 39, "title": "巨石陣的真實用途:墓地、神殿還是天文台?", "category": "world_civilization", "tags": ["英國","考古"], "length_min": 11, "key_points": ["建造時間","巨石來源","各種理論","新發現遺址","儀式功能"]},
-    {"id": 40, "title": "武則天:中國唯一女皇帝的權力之路", "category": "chinese_history", "tags": ["唐朝","武則天"], "length_min": 14, "key_points": ["從才人到皇后","廢王立武","酷吏政治","稱帝建周","無字碑"]},
-    {"id": 41, "title": "Facebook 的黑暗面:從哈佛宿舍到 Cambridge Analytica", "category": "tech_history", "tags": ["Facebook","Meta"], "length_min": 13, "key_points": ["創立糾紛","WhatsApp 收購","劍橋分析","元宇宙押注","Threads"]},
-    {"id": 42, "title": "百慕達三角:科學能解釋的「神秘」海域", "category": "mystery", "tags": ["百慕達","海洋"], "length_min": 11, "key_points": ["失蹤事件","甲烷氣泡說","磁異常","流量統計","科學闢謠"]},
-    {"id": 43, "title": "張騫通西域:改變世界的絲路第一人", "category": "chinese_history", "tags": ["漢朝","絲路"], "length_min": 12, "key_points": ["匈奴俘虜","13 年才返國","二次出使","物產交流","歷史影響"]},
-    {"id": 44, "title": "GoPro 的黃金與隕落:極限運動相機霸主之路", "category": "tech_history", "tags": ["GoPro","商業"], "length_min": 11, "key_points": ["衝浪起家","上市巔峰","無人機失敗","手機衝擊","求生策略"]},
-    {"id": 45, "title": "亞歷山大圖書館:人類最大知識寶庫如何消失", "category": "world_civilization", "tags": ["希臘","埃及"], "length_min": 12, "key_points": ["收藏規模","凱撒大火","多次焚毀","失落書籍","現代重建"]},
-    {"id": 46, "title": "趙匡胤離奇暴斃:斧聲燭影的千年謎案", "category": "mystery", "tags": ["宋朝","謎團"], "length_min": 13, "key_points": ["陳橋兵變","杯酒釋兵權","暴斃當夜","金匱之盟","趙光義繼位"]},
-    {"id": 47, "title": "Twitter 變 X:Musk 收購背後的故事", "category": "tech_history", "tags": ["Twitter","Musk"], "length_min": 12, "key_points": ["440 億收購","裁員 80%","廣告主撤離","X 改名","訂閱模式"]},
-    {"id": 48, "title": "羅馬帝國的滅亡:不是一夜之間的真相", "category": "world_civilization", "tags": ["羅馬","帝國"], "length_min": 14, "key_points": ["分裂東西","蠻族入侵","內部腐敗","瘟疫","東羅馬延續"]},
-    {"id": 49, "title": "南宋滅亡:崖山之後再無中華?", "category": "chinese_history", "tags": ["宋朝","蒙古"], "length_min": 14, "key_points": ["蒙古南侵","襄陽之戰","文天祥","崖山海戰","十萬殉國"]},
-    {"id": 50, "title": "Netflix 的賭博:DVD 出租店如何稱霸串流", "category": "tech_history", "tags": ["Netflix","串流"], "length_min": 13, "key_points": ["1997 創業","Blockbuster 拒絕","串流轉型","原創內容","全球擴張"]},
-    {"id": 51, "title": "成吉思汗的征服:史上最大帝國如何建立", "category": "world_civilization", "tags": ["蒙古","成吉思汗"], "length_min": 14, "key_points": ["統一蒙古","西征花剌子模","版圖規模","軍事創新","遺產"]},
-    {"id": 52, "title": "建文帝下落之謎:朱棣篡位後消失的皇帝", "category": "mystery", "tags": ["明朝","建文帝"], "length_min": 12, "key_points": ["靖難之役","南京破城","出家說","海外說","鄭和搜尋"]},
-    {"id": 53, "title": "PayPal 黑幫:矽谷最強創業團隊的故事", "category": "tech_history", "tags": ["PayPal","矽谷"], "length_min": 13, "key_points": ["Musk Thiel","eBay 收購","Tesla SpaceX","LinkedIn YouTube","影響力"]},
-    {"id": 54, "title": "波斯帝國的興衰:被忽視的古代超級強權", "category": "world_civilization", "tags": ["波斯","帝國"], "length_min": 13, "key_points": ["居魯士大帝","版圖最大","希波戰爭","亞歷山大東征","薩珊王朝"]},
-    {"id": 55, "title": "李白真的是劍客嗎?詩仙不為人知的另一面", "category": "chinese_history", "tags": ["唐朝","李白"], "length_min": 12, "key_points": ["劍術造詣","殺人傳說","政治失意","賜金放還","醉死撈月"]},
-    {"id": 56, "title": "AOL 與時代華納:史上最失敗的併購案", "category": "tech_history", "tags": ["AOL","商業"], "length_min": 12, "key_points": ["2000 千億併購","泡沫破裂","文化衝突","巨額減損","2009 分家"]},
-    {"id": 57, "title": "黑死病:改變歐洲歷史的 14 世紀大瘟疫", "category": "world_civilization", "tags": ["瘟疫","歐洲"], "length_min": 13, "key_points": ["黑海起源","死亡 1/3 歐洲人","社會崩潰","文藝復興","現代啟示"]},
-    {"id": 58, "title": "永樂大典之謎:世界最大百科全書下落何方", "category": "mystery", "tags": ["明朝","典籍"], "length_min": 11, "key_points": ["編纂規模","正本失蹤","副本下落","嘉靖陪葬說","現存殘本"]},
-    {"id": 59, "title": "張居正改革:挽救大明王朝的最後機會", "category": "chinese_history", "tags": ["明朝","改革"], "length_min": 13, "key_points": ["一條鞭法","考成法","萬曆新政","死後抄家","改革意義"]},
-    {"id": 60, "title": "Uber 的瘋狂十年:從 App 到全球出行帝國", "category": "tech_history", "tags": ["Uber","共享經濟"], "length_min": 13, "key_points": ["2009 創業","全球擴張","Kalanick 醜聞","上市","盈利之路"]},
-    {"id": 61, "title": "拜占庭帝國:延續 1000 年的羅馬餘暉", "category": "world_civilization", "tags": ["拜占庭","羅馬"], "length_min": 14, "key_points": ["東羅馬建立","希臘火","聖索菲亞","十字軍","君士坦丁堡陷落"]},
-    {"id": 62, "title": "袁世凱稱帝:83 天皇帝夢的破滅", "category": "chinese_history", "tags": ["民國","袁世凱"], "length_min": 13, "key_points": ["竊國辛亥","二十一條","洪憲帝制","護國運動","身敗名裂"]},
-    {"id": 63, "title": "Airbnb 的崛起:把陌生人請進家門的革命", "category": "tech_history", "tags": ["Airbnb","共享"], "length_min": 12, "key_points": ["氣墊床起家","早期掙扎","全球擴張","疫情衝擊","上市"]},
-    {"id": 64, "title": "古埃及法老的詛咒:圖坦卡門墓的真相", "category": "mystery", "tags": ["埃及","法老"], "length_min": 11, "key_points": ["1922 發掘","贊助者死亡","詛咒傳說","真菌毒素","科學解釋"]},
-    {"id": 65, "title": "鴉片戰爭:大清帝國的轉折點", "category": "chinese_history", "tags": ["清朝","戰爭"], "length_min": 14, "key_points": ["林則徐銷煙","英軍北上","南京條約","香港割讓","後續衝擊"]},
-    {"id": 66, "title": "WeWork 神話破滅:480 億估值如何歸零", "category": "tech_history", "tags": ["WeWork","商業"], "length_min": 13, "key_points": ["Adam Neumann","軟銀豪賭","S-1 黑歷史","上市失敗","破產"]},
-    {"id": 67, "title": "印加帝國:被 168 個西班牙人滅國的奇蹟", "category": "world_civilization", "tags": ["印加","西班牙"], "length_min": 13, "key_points": ["皮薩羅","卡哈馬卡之戰","內戰削弱","天花","馬丘比丘"]},
-    {"id": 68, "title": "光緒之死:慈禧死前一天的離奇巧合", "category": "mystery", "tags": ["清朝","光緒"], "length_min": 12, "key_points": ["瀛台囚禁","死亡時間","現代屍檢","砒霜中毒","真兇推測"]},
-    {"id": 69, "title": "魏忠賢:大明朝最強太監的權力之路", "category": "chinese_history", "tags": ["明朝","太監"], "length_min": 13, "key_points": ["從賭徒到九千歲","東林黨爭","遍立生祠","崇禎清算","明亡之兆"]},
-    {"id": 70, "title": "Theranos 詐騙案:Elizabeth Holmes 的科技謊言", "category": "tech_history", "tags": ["Theranos","詐騙"], "length_min": 13, "key_points": ["矽谷新星","驗血神話","華爾街揭發","審判","11 年徒刑"]},
-    {"id": 71, "title": "維京人的真實面貌:不只是野蠻海盜", "category": "world_civilization", "tags": ["維京","北歐"], "length_min": 12, "key_points": ["航海技術","發現美洲","基輔羅斯","女戰士","文化遺產"]},
-    {"id": 72, "title": "靖康之恥:北宋皇室被擄北上的悲劇", "category": "chinese_history", "tags": ["宋朝","金朝"], "length_min": 13, "key_points": ["徽欽二帝","金軍南下","汴京陷落","北上慘狀","南宋建立"]},
-    {"id": 73, "title": "Zoom 的疫情奇蹟:股價暴漲 5 倍的崛起", "category": "tech_history", "tags": ["Zoom","疫情"], "length_min": 11, "key_points": ["華人創辦","遠端會議","疫情爆發","安全爭議","後疫情衰退"]},
-    {"id": 74, "title": "古希臘奧運會:祭神運動會如何成為國際盛事", "category": "world_civilization", "tags": ["希臘","奧運"], "length_min": 11, "key_points": ["宙斯祭典","裸體競技","項目演變","羅馬廢除","現代復辦"]},
-    {"id": 75, "title": "雍正帝的特務系統:粘竿處與血滴子之謎", "category": "mystery", "tags": ["清朝","特務"], "length_min": 12, "key_points": ["粘竿處組織","血滴子傳說","奏摺制度","暗殺政敵","史料考證"]},
-    {"id": 76, "title": "李鴻章:大清帝國最後的裱糊匠", "category": "chinese_history", "tags": ["清朝","李鴻章"], "length_min": 14, "key_points": ["淮軍崛起","洋務運動","甲午背鍋","馬關談判","歷史評價"]},
-    {"id": 77, "title": "Slack 的逆襲:從失敗遊戲到企業通訊霸主", "category": "tech_history", "tags": ["Slack","企業軟體"], "length_min": 12, "key_points": ["Glitch 遊戲失敗","內部工具","快速增長","Microsoft Teams","Salesforce 收購"]},
-    {"id": 78, "title": "凱撒大帝的最後一天:三月十五日的刺殺", "category": "world_civilization", "tags": ["羅馬","凱撒"], "length_min": 13, "key_points": ["獨裁官","元老院陰謀","布魯圖","23 處刀傷","共和國終結"]},
-    {"id": 79, "title": "宋太祖斧聲燭影:中國歷史最大懸案", "category": "mystery", "tags": ["宋朝","謎團"], "length_min": 13, "key_points": ["當夜記載","趙光義動機","金匱之盟疑點","母親遺命","現代研究"]},
-    {"id": 80, "title": "陳獨秀與五四運動:新文化運動的旗手", "category": "chinese_history", "tags": ["民國","五四"], "length_min": 13, "key_points": ["新青年雜誌","北大教授","共產黨創立","被開除","晚年潦倒"]},
-    {"id": 81, "title": "DeepMind 與 AlphaGo:AI 戰勝人類的歷史時刻", "category": "tech_history", "tags": ["AI","DeepMind"], "length_min": 13, "key_points": ["創辦故事","Google 收購","李世乭對戰","柯潔退役","AlphaFold"]},
-    {"id": 82, "title": "瑪雅人不是滅絕了:現代後裔如何延續千年文化", "category": "world_civilization", "tags": ["馬雅","文化"], "length_min": 11, "key_points": ["現存族群","語言保存","曆法傳承","西班牙征服","當代復興"]},
-    {"id": 83, "title": "戚繼光抗倭:明朝最強名將如何打造鴛鴦陣", "category": "chinese_history", "tags": ["明朝","軍事"], "length_min": 13, "key_points": ["倭寇之亂","戚家軍","鴛鴦陣戰術","北疆禦邊","紀效新書"]},
-    {"id": 84, "title": "Substack 與電子報復興:寫作者的新黃金時代", "category": "tech_history", "tags": ["Substack","媒體"], "length_min": 11, "key_points": ["訂閱模式","作者經濟","明星寫手","媒體衝擊","商業模式"]},
-    {"id": 85, "title": "古巴比倫:人類第一個帝國的傳奇", "category": "world_civilization", "tags": ["巴比倫","美索不達米亞"], "length_min": 12, "key_points": ["漢摩拉比法典","空中花園","新巴比倫","巴別塔","考古發現"]},
-    {"id": 86, "title": "雍正繼位:康熙真的選了他嗎?", "category": "mystery", "tags": ["清朝","雍正"], "length_min": 13, "key_points": ["遺詔疑雲","隆科多角色","年羹堯","八阿哥","歷史定論"]},
-    {"id": 87, "title": "宋徽宗:藝術天才的亡國之路", "category": "chinese_history", "tags": ["宋朝","徽宗"], "length_min": 13, "key_points": ["瘦金體","花石綱","聯金滅遼","靖康之難","北上五國城"]},
-    {"id": 88, "title": "ChatGPT 革命:OpenAI 如何改變世界", "category": "tech_history", "tags": ["AI","OpenAI"], "length_min": 14, "key_points": ["2015 創立","GPT 演進","ChatGPT 爆紅","Altman 風波","AI 軍備"]},
-    {"id": 89, "title": "東羅馬末日:1453 君士坦丁堡的陷落", "category": "world_civilization", "tags": ["拜占庭","奧斯曼"], "length_min": 14, "key_points": ["穆罕默德二世","巨炮","金角灣","最後皇帝","中世紀終結"]},
-    {"id": 90, "title": "和氏璧傳國玉璽:消失千年的中國第一國寶", "category": "mystery", "tags": ["玉璽","國寶"], "length_min": 12, "key_points": ["卞和獻玉","秦始皇刻璽","王莽摔角","唐末失蹤","下落假說"]},
-    {"id": 91, "title": "西安事變:張學良改變中國命運的 14 天", "category": "chinese_history", "tags": ["民國","西安事變"], "length_min": 14, "key_points": ["張學良楊虎城","蔣介石被扣","國共合作","抗日統一","張學良終身軟禁"]},
-    {"id": 92, "title": "Bitcoin 之父中本聰:身分至今成謎的 14 年", "category": "mystery", "tags": ["比特幣","加密貨幣"], "length_min": 13, "key_points": ["創世區塊","白皮書","消失之謎","候選人物","100 萬枚 BTC"]},
-    {"id": 93, "title": "鄭成功收復台灣:荷蘭人在熱蘭遮城的最後 9 個月", "category": "chinese_history", "tags": ["明鄭","台灣"], "length_min": 13, "key_points": ["反清復明","跨海登陸","熱蘭遮圍城","荷蘭投降","東寧王國"]},
-    {"id": 94, "title": "Stable Diffusion 與 AI 繪圖革命", "category": "tech_history", "tags": ["AI","繪圖"], "length_min": 12, "key_points": ["擴散模型","開源策略","Midjourney 競爭","版權爭議","產業衝擊"]},
-    {"id": 95, "title": "鄭和寶船到底有多大?爭議千年的真相", "category": "mystery", "tags": ["明朝","航海"], "length_min": 12, "key_points": ["明史記載","考古發現","技術可行性","學者爭議","複製計畫"]},
-    {"id": 96, "title": "二二八事件:台灣現代史的關鍵轉折", "category": "chinese_history", "tags": ["台灣","二二八"], "length_min": 14, "key_points": ["背景脈絡","事件爆發","清鄉鎮壓","白色恐怖","平反進程"]},
-    {"id": 97, "title": "Steve Jobs 的 NeXT 歲月:被趕出蘋果的 12 年", "category": "tech_history", "tags": ["Jobs","NeXT"], "length_min": 13, "key_points": ["1985 離開","NeXT 創立","Pixar 投資","蘋果回歸","遺產"]},
-    {"id": 98, "title": "戴笠之死:軍統頭子的離奇墜機", "category": "mystery", "tags": ["民國","軍統"], "length_min": 12, "key_points": ["軍統首腦","1946 墜機","各種陰謀論","蔣介石反應","軍統改組"]},
-    {"id": 99, "title": "光緒變法的 103 天:皇帝與太后的權力對決", "category": "chinese_history", "tags": ["清朝","變法"], "length_min": 13, "key_points": ["康有為公車上書","百日維新","袁世凱告密","戊戌六君子","清末新政"]},
-    {"id": 100, "title": "從 ARPANET 到網際網路:改變人類的 50 年", "category": "tech_history", "tags": ["網路","歷史"], "length_min": 14, "key_points": ["1969 第一封封包","TCP/IP","WWW 誕生","商業化","社群媒體時代"]}
+    {
+      "id": 1,
+      "title": "三國真相:諸葛亮真的那麼神嗎?史實 vs 演義的五大差距",
+      "category": "chinese_history",
+      "tags": [
+        "三國",
+        "諸葛亮",
+        "蜀漢"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "北伐評價",
+        "治蜀政績",
+        "空城計虛實",
+        "木牛流馬真相",
+        "身後評價"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Nokia 帝國的隕落:從世界第一到消失的十年",
+      "category": "tech_history",
+      "tags": [
+        "科技",
+        "Nokia",
+        "商業"
+      ],
+      "length_min": 14,
+      "key_points": [
+        "塞班系統失誤",
+        "iPhone 衝擊",
+        "CEO 決策",
+        "微軟收購",
+        "現況"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "失落的樓蘭古國:絲路上消失的神秘文明",
+      "category": "world_civilization",
+      "tags": [
+        "考古",
+        "絲路",
+        "樓蘭"
+      ],
+      "length_min": 11,
+      "key_points": [
+        "地理位置",
+        "突然消失原因",
+        "樓蘭美女",
+        "考古發現",
+        "氣候變遷"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "曹操真的是奸雄嗎?重新認識三國最被誤解的男人",
+      "category": "chinese_history",
+      "tags": [
+        "三國",
+        "曹操"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "治世之能臣",
+        "屯田制",
+        "唯才是舉",
+        "赤壁之敗",
+        "文學成就"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Intel 與 AMD 的五十年戰爭:CPU 霸權爭奪戰",
+      "category": "tech_history",
+      "tags": [
+        "科技",
+        "CPU",
+        "晶片"
+      ],
+      "length_min": 15,
+      "key_points": [
+        "1969 創業",
+        "K6 突圍",
+        "Athlon 反超",
+        "Bulldozer 失敗",
+        "Ryzen 復活"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "馬雅文明為何一夜消失?五大假說全解析",
+      "category": "world_civilization",
+      "tags": [
+        "馬雅",
+        "考古",
+        "失落文明"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "乾旱說",
+        "戰爭說",
+        "階級崩潰",
+        "環境破壞",
+        "現代後裔"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "司馬懿:隱忍 40 年扳倒曹魏的最強老狐狸",
+      "category": "chinese_history",
+      "tags": [
+        "三國",
+        "司馬懿"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "裝病拒曹操",
+        "與孔明對峙",
+        "高平陵之變",
+        "奪權路線",
+        "西晉建立"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Kodak 的死亡:第一個發明數位相機卻被它殺死",
+      "category": "tech_history",
+      "tags": [
+        "科技",
+        "Kodak",
+        "商業"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "1975 發明數位相機",
+        "保護底片業務",
+        "錯失轉型",
+        "破產 2012",
+        "教訓"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "古羅馬一日生活:你不知道的 2000 年前日常",
+      "category": "world_civilization",
+      "tags": [
+        "羅馬",
+        "古代生活"
+      ],
+      "length_min": 11,
+      "key_points": [
+        "公共浴場",
+        "羅馬大餐",
+        "奴隸制",
+        "娛樂競技",
+        "公寓生活"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "玄武門之變:李世民弒兄奪位的 24 小時",
+      "category": "chinese_history",
+      "tags": [
+        "唐朝",
+        "李世民"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "太子建成",
+        "秦王勢力",
+        "玄武門埋伏",
+        "李淵退位",
+        "貞觀之治"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Sony 的失落 30 年:從 Walkman 到迷失的科技巨人",
+      "category": "tech_history",
+      "tags": [
+        "Sony",
+        "日本科技"
+      ],
+      "length_min": 14,
+      "key_points": [
+        "Walkman 神話",
+        "Betamax 慘敗",
+        "部門內鬥",
+        "蘋果衝擊",
+        "近年復興"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "龐貝城的最後一天:火山爆發前 24 小時實錄",
+      "category": "world_civilization",
+      "tags": [
+        "龐貝",
+        "火山",
+        "羅馬"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "維蘇威噴發",
+        "居民逃難",
+        "屍體保存",
+        "壁畫藝術",
+        "考古重現"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "雍正暴斃之謎:被丹藥毒死還是被刺殺?",
+      "category": "mystery",
+      "tags": [
+        "清朝",
+        "雍正",
+        "謎團"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "呂四娘傳說",
+        "丹藥中毒",
+        "過勞死",
+        "史書沉默",
+        "歷史定位"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "微軟的逆襲:從幾乎倒閉到全球第一",
+      "category": "tech_history",
+      "tags": [
+        "微軟",
+        "Nadella"
+      ],
+      "length_min": 14,
+      "key_points": [
+        "Ballmer 時代低谷",
+        "錯失移動",
+        "Nadella 改革",
+        "Azure 雲端",
+        "AI 投資"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "亞特蘭提斯真的存在過嗎?柏拉圖的世紀之謎",
+      "category": "mystery",
+      "tags": [
+        "亞特蘭提斯",
+        "失落文明"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "柏拉圖記載",
+        "各種假說",
+        "桑托里尼",
+        "考古證據",
+        "虛構說"
+      ]
+    },
+    {
+      "id": 16,
+      "title": "鄭和下西洋:被遺忘的中國海上霸權",
+      "category": "chinese_history",
+      "tags": [
+        "明朝",
+        "鄭和"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "寶船規模",
+        "七下西洋",
+        "非洲足跡",
+        "海禁政策",
+        "為何停止"
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Blockbuster 的滅亡:錯失收購 Netflix 的代價",
+      "category": "tech_history",
+      "tags": [
+        "商業",
+        "Netflix"
+      ],
+      "length_min": 11,
+      "key_points": [
+        "1985 創業",
+        "巔峰 9000 店",
+        "Netflix 提案",
+        "串流崛起",
+        "2010 破產"
+      ]
+    },
+    {
+      "id": 18,
+      "title": "金字塔到底怎麼蓋的?最新考古發現",
+      "category": "world_civilization",
+      "tags": [
+        "埃及",
+        "金字塔"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "奴隸說破除",
+        "內部斜坡",
+        "水力運石",
+        "工人村發現",
+        "建造時間"
+      ]
+    },
+    {
+      "id": 19,
+      "title": "崇禎之死:大明王朝最後 24 小時",
+      "category": "chinese_history",
+      "tags": [
+        "明朝",
+        "崇禎"
+      ],
+      "length_min": 14,
+      "key_points": [
+        "李自成攻城",
+        "太子流亡",
+        "煤山自縊",
+        "殉國遺詔",
+        "南明餘緒"
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Tesla 的崛起:從破產邊緣到電動車霸主",
+      "category": "tech_history",
+      "tags": [
+        "Tesla",
+        "Musk"
+      ],
+      "length_min": 14,
+      "key_points": [
+        "Roadster 誕生",
+        "Model S 革命",
+        "產能地獄",
+        "Model 3 救命",
+        "全球擴張"
+      ]
+    },
+    {
+      "id": 21,
+      "title": "成吉思汗的死因之謎:七種說法哪個是真?",
+      "category": "mystery",
+      "tags": [
+        "蒙古",
+        "成吉思汗"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "墜馬說",
+        "西夏公主說",
+        "瘟疫說",
+        "暗殺說",
+        "秘葬陵墓"
+      ]
+    },
+    {
+      "id": 22,
+      "title": "唐太宗李世民的另一面:被史官美化的真相",
+      "category": "chinese_history",
+      "tags": [
+        "唐朝",
+        "李世民"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "篡改起居注",
+        "殺兄逼父",
+        "晚年昏庸",
+        "求仙丹",
+        "歷史評價"
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Yahoo 的崩潰:本可以三次買下 Google 的科技帝國",
+      "category": "tech_history",
+      "tags": [
+        "Yahoo",
+        "網路"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "1994 創業",
+        "拒絕收購 Google",
+        "錯失 Facebook",
+        "Marissa Mayer",
+        "Verizon 賤賣"
+      ]
+    },
+    {
+      "id": 24,
+      "title": "斯巴達 300 勇士的真相:電影沒告訴你的事",
+      "category": "world_civilization",
+      "tags": [
+        "希臘",
+        "戰爭",
+        "斯巴達"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "其實有上千人",
+        "戰術細節",
+        "波斯軍力",
+        "三天激戰",
+        "歷史影響"
+      ]
+    },
+    {
+      "id": 25,
+      "title": "雍正是被篡位的嗎?九子奪嫡的真實內幕",
+      "category": "mystery",
+      "tags": [
+        "清朝",
+        "雍正",
+        "奪位"
+      ],
+      "length_min": 14,
+      "key_points": [
+        "遺詔真偽",
+        "十四改于四",
+        "年羹堯隆科多",
+        "康熙真意",
+        "現代研究"
+      ]
+    },
+    {
+      "id": 26,
+      "title": "BlackBerry 的覆滅:曾經人手一台的智慧型手機霸主",
+      "category": "tech_history",
+      "tags": [
+        "BlackBerry",
+        "手機"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "實體鍵盤神話",
+        "商務神器",
+        "iPhone 衝擊",
+        "系統陳舊",
+        "退出市場"
+      ]
+    },
+    {
+      "id": 27,
+      "title": "復活節島巨石像:他們是怎麼搬動的?",
+      "category": "mystery",
+      "tags": [
+        "復活節島",
+        "考古"
+      ],
+      "length_min": 11,
+      "key_points": [
+        "摩艾石像",
+        "製作工藝",
+        "運輸假說",
+        "文明崩潰",
+        "環境警示"
+      ]
+    },
+    {
+      "id": 28,
+      "title": "明朝覆滅的真正原因:小冰河期改變了中國",
+      "category": "chinese_history",
+      "tags": [
+        "明朝",
+        "氣候"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "氣候異常",
+        "農業崩潰",
+        "農民起義",
+        "財政破產",
+        "滿清入關"
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Atari 大崩盤:電子遊戲產業差點消失的 1983",
+      "category": "tech_history",
+      "tags": [
+        "遊戲",
+        "Atari"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "ET 遊戲災難",
+        "新墨西哥掩埋",
+        "產業崩潰",
+        "任天堂崛起",
+        "現代回響"
+      ]
+    },
+    {
+      "id": 30,
+      "title": "拿破崙的最後賭注:滑鐵盧戰役完整解析",
+      "category": "world_civilization",
+      "tags": [
+        "拿破崙",
+        "戰爭"
+      ],
+      "length_min": 14,
+      "key_points": [
+        "百日王朝",
+        "威靈頓",
+        "布呂歇爾",
+        "關鍵失誤",
+        "流放聖赫勒拿"
+      ]
+    },
+    {
+      "id": 31,
+      "title": "和珅的千億家產:中國史上最大貪官如何鍊金",
+      "category": "chinese_history",
+      "tags": [
+        "清朝",
+        "和珅"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "乾隆寵信",
+        "斂財手段",
+        "家產規模",
+        "嘉慶抄家",
+        "歷史評價"
+      ]
+    },
+    {
+      "id": 32,
+      "title": "蘋果差點倒閉:Steve Jobs 回歸前的至暗時刻",
+      "category": "tech_history",
+      "tags": [
+        "蘋果",
+        "Jobs"
+      ],
+      "length_min": 14,
+      "key_points": [
+        "Jobs 被趕走",
+        "產品線混亂",
+        "90 天現金",
+        "NeXT 收購",
+        "iMac 救命"
+      ]
+    },
+    {
+      "id": 33,
+      "title": "瑪雅曆法 2012:世界末日預言的真相",
+      "category": "mystery",
+      "tags": [
+        "馬雅",
+        "預言"
+      ],
+      "length_min": 11,
+      "key_points": [
+        "長紀年曆",
+        "誤譯誤讀",
+        "天文學意義",
+        "NASA 闢謠",
+        "現代迷思"
+      ]
+    },
+    {
+      "id": 34,
+      "title": "戊戌變法 103 天:光緒皇帝的最後一搏",
+      "category": "chinese_history",
+      "tags": [
+        "清朝",
+        "變法"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "康有為",
+        "百日維新",
+        "袁世凱告密",
+        "慈禧政變",
+        "六君子就義"
+      ]
+    },
+    {
+      "id": 35,
+      "title": "Google 的誕生:兩個史丹佛學生改變世界",
+      "category": "tech_history",
+      "tags": [
+        "Google",
+        "網路"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "PageRank 演算法",
+        "車庫創業",
+        "拒絕被收購",
+        "廣告模式",
+        "壟斷之路"
+      ]
+    },
+    {
+      "id": 36,
+      "title": "通古斯大爆炸:1908 年俄羅斯的神秘巨響",
+      "category": "mystery",
+      "tags": [
+        "俄羅斯",
+        "謎團"
+      ],
+      "length_min": 11,
+      "key_points": [
+        "爆炸規模",
+        "隕石說",
+        "彗星說",
+        "反物質說",
+        "至今無定論"
+      ]
+    },
+    {
+      "id": 37,
+      "title": "甲午戰爭:北洋艦隊覆滅的真相",
+      "category": "chinese_history",
+      "tags": [
+        "清朝",
+        "戰爭"
+      ],
+      "length_min": 14,
+      "key_points": [
+        "艦隊建設",
+        "軍費被挪用",
+        "黃海海戰",
+        "威海衛之圍",
+        "馬關條約"
+      ]
+    },
+    {
+      "id": 38,
+      "title": "IBM 的轉型奇蹟:從硬體巨人到雲端服務",
+      "category": "tech_history",
+      "tags": [
+        "IBM",
+        "商業"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "大型主機時代",
+        "PC 革命衝擊",
+        "Gerstner 改革",
+        "賣 PC 給聯想",
+        "AI 投資"
+      ]
+    },
+    {
+      "id": 39,
+      "title": "巨石陣的真實用途:墓地、神殿還是天文台?",
+      "category": "world_civilization",
+      "tags": [
+        "英國",
+        "考古"
+      ],
+      "length_min": 11,
+      "key_points": [
+        "建造時間",
+        "巨石來源",
+        "各種理論",
+        "新發現遺址",
+        "儀式功能"
+      ]
+    },
+    {
+      "id": 40,
+      "title": "武則天:中國唯一女皇帝的權力之路",
+      "category": "chinese_history",
+      "tags": [
+        "唐朝",
+        "武則天"
+      ],
+      "length_min": 14,
+      "key_points": [
+        "從才人到皇后",
+        "廢王立武",
+        "酷吏政治",
+        "稱帝建周",
+        "無字碑"
+      ]
+    },
+    {
+      "id": 41,
+      "title": "Facebook 的黑暗面:從哈佛宿舍到 Cambridge Analytica",
+      "category": "tech_history",
+      "tags": [
+        "Facebook",
+        "Meta"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "創立糾紛",
+        "WhatsApp 收購",
+        "劍橋分析",
+        "元宇宙押注",
+        "Threads"
+      ]
+    },
+    {
+      "id": 42,
+      "title": "百慕達三角:科學能解釋的「神秘」海域",
+      "category": "mystery",
+      "tags": [
+        "百慕達",
+        "海洋"
+      ],
+      "length_min": 11,
+      "key_points": [
+        "失蹤事件",
+        "甲烷氣泡說",
+        "磁異常",
+        "流量統計",
+        "科學闢謠"
+      ]
+    },
+    {
+      "id": 43,
+      "title": "張騫通西域:改變世界的絲路第一人",
+      "category": "chinese_history",
+      "tags": [
+        "漢朝",
+        "絲路"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "匈奴俘虜",
+        "13 年才返國",
+        "二次出使",
+        "物產交流",
+        "歷史影響"
+      ]
+    },
+    {
+      "id": 44,
+      "title": "GoPro 的黃金與隕落:極限運動相機霸主之路",
+      "category": "tech_history",
+      "tags": [
+        "GoPro",
+        "商業"
+      ],
+      "length_min": 11,
+      "key_points": [
+        "衝浪起家",
+        "上市巔峰",
+        "無人機失敗",
+        "手機衝擊",
+        "求生策略"
+      ]
+    },
+    {
+      "id": 45,
+      "title": "亞歷山大圖書館:人類最大知識寶庫如何消失",
+      "category": "world_civilization",
+      "tags": [
+        "希臘",
+        "埃及"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "收藏規模",
+        "凱撒大火",
+        "多次焚毀",
+        "失落書籍",
+        "現代重建"
+      ]
+    },
+    {
+      "id": 46,
+      "title": "趙匡胤離奇暴斃:斧聲燭影的千年謎案",
+      "category": "mystery",
+      "tags": [
+        "宋朝",
+        "謎團"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "陳橋兵變",
+        "杯酒釋兵權",
+        "暴斃當夜",
+        "金匱之盟",
+        "趙光義繼位"
+      ]
+    },
+    {
+      "id": 47,
+      "title": "Twitter 變 X:Musk 收購背後的故事",
+      "category": "tech_history",
+      "tags": [
+        "Twitter",
+        "Musk"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "440 億收購",
+        "裁員 80%",
+        "廣告主撤離",
+        "X 改名",
+        "訂閱模式"
+      ]
+    },
+    {
+      "id": 48,
+      "title": "羅馬帝國的滅亡:不是一夜之間的真相",
+      "category": "world_civilization",
+      "tags": [
+        "羅馬",
+        "帝國"
+      ],
+      "length_min": 14,
+      "key_points": [
+        "分裂東西",
+        "蠻族入侵",
+        "內部腐敗",
+        "瘟疫",
+        "東羅馬延續"
+      ]
+    },
+    {
+      "id": 49,
+      "title": "南宋滅亡:崖山之後再無中華?",
+      "category": "chinese_history",
+      "tags": [
+        "宋朝",
+        "蒙古"
+      ],
+      "length_min": 14,
+      "key_points": [
+        "蒙古南侵",
+        "襄陽之戰",
+        "文天祥",
+        "崖山海戰",
+        "十萬殉國"
+      ]
+    },
+    {
+      "id": 50,
+      "title": "Netflix 的賭博:DVD 出租店如何稱霸串流",
+      "category": "tech_history",
+      "tags": [
+        "Netflix",
+        "串流"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "1997 創業",
+        "Blockbuster 拒絕",
+        "串流轉型",
+        "原創內容",
+        "全球擴張"
+      ]
+    },
+    {
+      "id": 51,
+      "title": "成吉思汗的征服:史上最大帝國如何建立",
+      "category": "world_civilization",
+      "tags": [
+        "蒙古",
+        "成吉思汗"
+      ],
+      "length_min": 14,
+      "key_points": [
+        "統一蒙古",
+        "西征花剌子模",
+        "版圖規模",
+        "軍事創新",
+        "遺產"
+      ]
+    },
+    {
+      "id": 52,
+      "title": "建文帝下落之謎:朱棣篡位後消失的皇帝",
+      "category": "mystery",
+      "tags": [
+        "明朝",
+        "建文帝"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "靖難之役",
+        "南京破城",
+        "出家說",
+        "海外說",
+        "鄭和搜尋"
+      ]
+    },
+    {
+      "id": 53,
+      "title": "PayPal 黑幫:矽谷最強創業團隊的故事",
+      "category": "tech_history",
+      "tags": [
+        "PayPal",
+        "矽谷"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "Musk Thiel",
+        "eBay 收購",
+        "Tesla SpaceX",
+        "LinkedIn YouTube",
+        "影響力"
+      ]
+    },
+    {
+      "id": 54,
+      "title": "波斯帝國的興衰:被忽視的古代超級強權",
+      "category": "world_civilization",
+      "tags": [
+        "波斯",
+        "帝國"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "居魯士大帝",
+        "版圖最大",
+        "希波戰爭",
+        "亞歷山大東征",
+        "薩珊王朝"
+      ]
+    },
+    {
+      "id": 55,
+      "title": "李白真的是劍客嗎?詩仙不為人知的另一面",
+      "category": "chinese_history",
+      "tags": [
+        "唐朝",
+        "李白"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "劍術造詣",
+        "殺人傳說",
+        "政治失意",
+        "賜金放還",
+        "醉死撈月"
+      ]
+    },
+    {
+      "id": 56,
+      "title": "AOL 與時代華納:史上最失敗的併購案",
+      "category": "tech_history",
+      "tags": [
+        "AOL",
+        "商業"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "2000 千億併購",
+        "泡沫破裂",
+        "文化衝突",
+        "巨額減損",
+        "2009 分家"
+      ]
+    },
+    {
+      "id": 57,
+      "title": "黑死病:改變歐洲歷史的 14 世紀大瘟疫",
+      "category": "world_civilization",
+      "tags": [
+        "瘟疫",
+        "歐洲"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "黑海起源",
+        "死亡 1/3 歐洲人",
+        "社會崩潰",
+        "文藝復興",
+        "現代啟示"
+      ]
+    },
+    {
+      "id": 58,
+      "title": "永樂大典之謎:世界最大百科全書下落何方",
+      "category": "mystery",
+      "tags": [
+        "明朝",
+        "典籍"
+      ],
+      "length_min": 11,
+      "key_points": [
+        "編纂規模",
+        "正本失蹤",
+        "副本下落",
+        "嘉靖陪葬說",
+        "現存殘本"
+      ]
+    },
+    {
+      "id": 59,
+      "title": "張居正改革:挽救大明王朝的最後機會",
+      "category": "chinese_history",
+      "tags": [
+        "明朝",
+        "改革"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "一條鞭法",
+        "考成法",
+        "萬曆新政",
+        "死後抄家",
+        "改革意義"
+      ]
+    },
+    {
+      "id": 60,
+      "title": "Uber 的瘋狂十年:從 App 到全球出行帝國",
+      "category": "tech_history",
+      "tags": [
+        "Uber",
+        "共享經濟"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "2009 創業",
+        "全球擴張",
+        "Kalanick 醜聞",
+        "上市",
+        "盈利之路"
+      ]
+    },
+    {
+      "id": 61,
+      "title": "拜占庭帝國:延續 1000 年的羅馬餘暉",
+      "category": "world_civilization",
+      "tags": [
+        "拜占庭",
+        "羅馬"
+      ],
+      "length_min": 14,
+      "key_points": [
+        "東羅馬建立",
+        "希臘火",
+        "聖索菲亞",
+        "十字軍",
+        "君士坦丁堡陷落"
+      ]
+    },
+    {
+      "id": 62,
+      "title": "袁世凱稱帝:83 天皇帝夢的破滅",
+      "category": "chinese_history",
+      "tags": [
+        "民國",
+        "袁世凱"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "竊國辛亥",
+        "二十一條",
+        "洪憲帝制",
+        "護國運動",
+        "身敗名裂"
+      ]
+    },
+    {
+      "id": 63,
+      "title": "Airbnb 的崛起:把陌生人請進家門的革命",
+      "category": "tech_history",
+      "tags": [
+        "Airbnb",
+        "共享"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "氣墊床起家",
+        "早期掙扎",
+        "全球擴張",
+        "疫情衝擊",
+        "上市"
+      ]
+    },
+    {
+      "id": 64,
+      "title": "古埃及法老的詛咒:圖坦卡門墓的真相",
+      "category": "mystery",
+      "tags": [
+        "埃及",
+        "法老"
+      ],
+      "length_min": 11,
+      "key_points": [
+        "1922 發掘",
+        "贊助者死亡",
+        "詛咒傳說",
+        "真菌毒素",
+        "科學解釋"
+      ]
+    },
+    {
+      "id": 65,
+      "title": "鴉片戰爭:大清帝國的轉折點",
+      "category": "chinese_history",
+      "tags": [
+        "清朝",
+        "戰爭"
+      ],
+      "length_min": 14,
+      "key_points": [
+        "林則徐銷煙",
+        "英軍北上",
+        "南京條約",
+        "香港割讓",
+        "後續衝擊"
+      ]
+    },
+    {
+      "id": 66,
+      "title": "WeWork 神話破滅:480 億估值如何歸零",
+      "category": "tech_history",
+      "tags": [
+        "WeWork",
+        "商業"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "Adam Neumann",
+        "軟銀豪賭",
+        "S-1 黑歷史",
+        "上市失敗",
+        "破產"
+      ]
+    },
+    {
+      "id": 67,
+      "title": "印加帝國:被 168 個西班牙人滅國的奇蹟",
+      "category": "world_civilization",
+      "tags": [
+        "印加",
+        "西班牙"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "皮薩羅",
+        "卡哈馬卡之戰",
+        "內戰削弱",
+        "天花",
+        "馬丘比丘"
+      ]
+    },
+    {
+      "id": 68,
+      "title": "光緒之死:慈禧死前一天的離奇巧合",
+      "category": "mystery",
+      "tags": [
+        "清朝",
+        "光緒"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "瀛台囚禁",
+        "死亡時間",
+        "現代屍檢",
+        "砒霜中毒",
+        "真兇推測"
+      ]
+    },
+    {
+      "id": 69,
+      "title": "魏忠賢:大明朝最強太監的權力之路",
+      "category": "chinese_history",
+      "tags": [
+        "明朝",
+        "太監"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "從賭徒到九千歲",
+        "東林黨爭",
+        "遍立生祠",
+        "崇禎清算",
+        "明亡之兆"
+      ]
+    },
+    {
+      "id": 70,
+      "title": "Theranos 詐騙案:Elizabeth Holmes 的科技謊言",
+      "category": "tech_history",
+      "tags": [
+        "Theranos",
+        "詐騙"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "矽谷新星",
+        "驗血神話",
+        "華爾街揭發",
+        "審判",
+        "11 年徒刑"
+      ]
+    },
+    {
+      "id": 71,
+      "title": "維京人的真實面貌:不只是野蠻海盜",
+      "category": "world_civilization",
+      "tags": [
+        "維京",
+        "北歐"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "航海技術",
+        "發現美洲",
+        "基輔羅斯",
+        "女戰士",
+        "文化遺產"
+      ]
+    },
+    {
+      "id": 72,
+      "title": "靖康之恥:北宋皇室被擄北上的悲劇",
+      "category": "chinese_history",
+      "tags": [
+        "宋朝",
+        "金朝"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "徽欽二帝",
+        "金軍南下",
+        "汴京陷落",
+        "北上慘狀",
+        "南宋建立"
+      ]
+    },
+    {
+      "id": 73,
+      "title": "Zoom 的疫情奇蹟:股價暴漲 5 倍的崛起",
+      "category": "tech_history",
+      "tags": [
+        "Zoom",
+        "疫情"
+      ],
+      "length_min": 11,
+      "key_points": [
+        "華人創辦",
+        "遠端會議",
+        "疫情爆發",
+        "安全爭議",
+        "後疫情衰退"
+      ]
+    },
+    {
+      "id": 74,
+      "title": "古希臘奧運會:祭神運動會如何成為國際盛事",
+      "category": "world_civilization",
+      "tags": [
+        "希臘",
+        "奧運"
+      ],
+      "length_min": 11,
+      "key_points": [
+        "宙斯祭典",
+        "裸體競技",
+        "項目演變",
+        "羅馬廢除",
+        "現代復辦"
+      ]
+    },
+    {
+      "id": 75,
+      "title": "雍正帝的特務系統:粘竿處與血滴子之謎",
+      "category": "mystery",
+      "tags": [
+        "清朝",
+        "特務"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "粘竿處組織",
+        "血滴子傳說",
+        "奏摺制度",
+        "暗殺政敵",
+        "史料考證"
+      ]
+    },
+    {
+      "id": 76,
+      "title": "李鴻章:大清帝國最後的裱糊匠",
+      "category": "chinese_history",
+      "tags": [
+        "清朝",
+        "李鴻章"
+      ],
+      "length_min": 14,
+      "key_points": [
+        "淮軍崛起",
+        "洋務運動",
+        "甲午背鍋",
+        "馬關談判",
+        "歷史評價"
+      ]
+    },
+    {
+      "id": 77,
+      "title": "Slack 的逆襲:從失敗遊戲到企業通訊霸主",
+      "category": "tech_history",
+      "tags": [
+        "Slack",
+        "企業軟體"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "Glitch 遊戲失敗",
+        "內部工具",
+        "快速增長",
+        "Microsoft Teams",
+        "Salesforce 收購"
+      ]
+    },
+    {
+      "id": 78,
+      "title": "凱撒大帝的最後一天:三月十五日的刺殺",
+      "category": "world_civilization",
+      "tags": [
+        "羅馬",
+        "凱撒"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "獨裁官",
+        "元老院陰謀",
+        "布魯圖",
+        "23 處刀傷",
+        "共和國終結"
+      ]
+    },
+    {
+      "id": 79,
+      "title": "宋太祖斧聲燭影:中國歷史最大懸案",
+      "category": "mystery",
+      "tags": [
+        "宋朝",
+        "謎團"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "當夜記載",
+        "趙光義動機",
+        "金匱之盟疑點",
+        "母親遺命",
+        "現代研究"
+      ]
+    },
+    {
+      "id": 80,
+      "title": "陳獨秀與五四運動:新文化運動的旗手",
+      "category": "chinese_history",
+      "tags": [
+        "民國",
+        "五四"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "新青年雜誌",
+        "北大教授",
+        "共產黨創立",
+        "被開除",
+        "晚年潦倒"
+      ]
+    },
+    {
+      "id": 81,
+      "title": "DeepMind 與 AlphaGo:AI 戰勝人類的歷史時刻",
+      "category": "tech_history",
+      "tags": [
+        "AI",
+        "DeepMind"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "創辦故事",
+        "Google 收購",
+        "李世乭對戰",
+        "柯潔退役",
+        "AlphaFold"
+      ]
+    },
+    {
+      "id": 82,
+      "title": "瑪雅人不是滅絕了:現代後裔如何延續千年文化",
+      "category": "world_civilization",
+      "tags": [
+        "馬雅",
+        "文化"
+      ],
+      "length_min": 11,
+      "key_points": [
+        "現存族群",
+        "語言保存",
+        "曆法傳承",
+        "西班牙征服",
+        "當代復興"
+      ]
+    },
+    {
+      "id": 83,
+      "title": "戚繼光抗倭:明朝最強名將如何打造鴛鴦陣",
+      "category": "chinese_history",
+      "tags": [
+        "明朝",
+        "軍事"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "倭寇之亂",
+        "戚家軍",
+        "鴛鴦陣戰術",
+        "北疆禦邊",
+        "紀效新書"
+      ]
+    },
+    {
+      "id": 84,
+      "title": "Substack 與電子報復興:寫作者的新黃金時代",
+      "category": "tech_history",
+      "tags": [
+        "Substack",
+        "媒體"
+      ],
+      "length_min": 11,
+      "key_points": [
+        "訂閱模式",
+        "作者經濟",
+        "明星寫手",
+        "媒體衝擊",
+        "商業模式"
+      ]
+    },
+    {
+      "id": 85,
+      "title": "古巴比倫:人類第一個帝國的傳奇",
+      "category": "world_civilization",
+      "tags": [
+        "巴比倫",
+        "美索不達米亞"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "漢摩拉比法典",
+        "空中花園",
+        "新巴比倫",
+        "巴別塔",
+        "考古發現"
+      ]
+    },
+    {
+      "id": 86,
+      "title": "雍正繼位:康熙真的選了他嗎?",
+      "category": "mystery",
+      "tags": [
+        "清朝",
+        "雍正"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "遺詔疑雲",
+        "隆科多角色",
+        "年羹堯",
+        "八阿哥",
+        "歷史定論"
+      ]
+    },
+    {
+      "id": 87,
+      "title": "宋徽宗:藝術天才的亡國之路",
+      "category": "chinese_history",
+      "tags": [
+        "宋朝",
+        "徽宗"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "瘦金體",
+        "花石綱",
+        "聯金滅遼",
+        "靖康之難",
+        "北上五國城"
+      ]
+    },
+    {
+      "id": 88,
+      "title": "ChatGPT 革命:OpenAI 如何改變世界",
+      "category": "tech_history",
+      "tags": [
+        "AI",
+        "OpenAI"
+      ],
+      "length_min": 14,
+      "key_points": [
+        "2015 創立",
+        "GPT 演進",
+        "ChatGPT 爆紅",
+        "Altman 風波",
+        "AI 軍備"
+      ]
+    },
+    {
+      "id": 89,
+      "title": "東羅馬末日:1453 君士坦丁堡的陷落",
+      "category": "world_civilization",
+      "tags": [
+        "拜占庭",
+        "奧斯曼"
+      ],
+      "length_min": 14,
+      "key_points": [
+        "穆罕默德二世",
+        "巨炮",
+        "金角灣",
+        "最後皇帝",
+        "中世紀終結"
+      ]
+    },
+    {
+      "id": 90,
+      "title": "和氏璧傳國玉璽:消失千年的中國第一國寶",
+      "category": "mystery",
+      "tags": [
+        "玉璽",
+        "國寶"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "卞和獻玉",
+        "秦始皇刻璽",
+        "王莽摔角",
+        "唐末失蹤",
+        "下落假說"
+      ]
+    },
+    {
+      "id": 91,
+      "title": "西安事變:張學良改變中國命運的 14 天",
+      "category": "chinese_history",
+      "tags": [
+        "民國",
+        "西安事變"
+      ],
+      "length_min": 14,
+      "key_points": [
+        "張學良楊虎城",
+        "蔣介石被扣",
+        "國共合作",
+        "抗日統一",
+        "張學良終身軟禁"
+      ]
+    },
+    {
+      "id": 92,
+      "title": "Bitcoin 之父中本聰:身分至今成謎的 14 年",
+      "category": "mystery",
+      "tags": [
+        "比特幣",
+        "加密貨幣"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "創世區塊",
+        "白皮書",
+        "消失之謎",
+        "候選人物",
+        "100 萬枚 BTC"
+      ]
+    },
+    {
+      "id": 93,
+      "title": "鄭成功收復台灣:荷蘭人在熱蘭遮城的最後 9 個月",
+      "category": "chinese_history",
+      "tags": [
+        "明鄭",
+        "台灣"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "反清復明",
+        "跨海登陸",
+        "熱蘭遮圍城",
+        "荷蘭投降",
+        "東寧王國"
+      ]
+    },
+    {
+      "id": 94,
+      "title": "Stable Diffusion 與 AI 繪圖革命",
+      "category": "tech_history",
+      "tags": [
+        "AI",
+        "繪圖"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "擴散模型",
+        "開源策略",
+        "Midjourney 競爭",
+        "版權爭議",
+        "產業衝擊"
+      ]
+    },
+    {
+      "id": 95,
+      "title": "鄭和寶船到底有多大?爭議千年的真相",
+      "category": "mystery",
+      "tags": [
+        "明朝",
+        "航海"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "明史記載",
+        "考古發現",
+        "技術可行性",
+        "學者爭議",
+        "複製計畫"
+      ]
+    },
+    {
+      "id": 96,
+      "title": "二二八事件:台灣現代史的關鍵轉折",
+      "category": "chinese_history",
+      "tags": [
+        "台灣",
+        "二二八"
+      ],
+      "length_min": 14,
+      "key_points": [
+        "背景脈絡",
+        "事件爆發",
+        "清鄉鎮壓",
+        "白色恐怖",
+        "平反進程"
+      ]
+    },
+    {
+      "id": 97,
+      "title": "Steve Jobs 的 NeXT 歲月:被趕出蘋果的 12 年",
+      "category": "tech_history",
+      "tags": [
+        "Jobs",
+        "NeXT"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "1985 離開",
+        "NeXT 創立",
+        "Pixar 投資",
+        "蘋果回歸",
+        "遺產"
+      ]
+    },
+    {
+      "id": 98,
+      "title": "戴笠之死:軍統頭子的離奇墜機",
+      "category": "mystery",
+      "tags": [
+        "民國",
+        "軍統"
+      ],
+      "length_min": 12,
+      "key_points": [
+        "軍統首腦",
+        "1946 墜機",
+        "各種陰謀論",
+        "蔣介石反應",
+        "軍統改組"
+      ]
+    },
+    {
+      "id": 99,
+      "title": "光緒變法的 103 天:皇帝與太后的權力對決",
+      "category": "chinese_history",
+      "tags": [
+        "清朝",
+        "變法"
+      ],
+      "length_min": 13,
+      "key_points": [
+        "康有為公車上書",
+        "百日維新",
+        "袁世凱告密",
+        "戊戌六君子",
+        "清末新政"
+      ]
+    },
+    {
+      "id": 100,
+      "title": "從 ARPANET 到網際網路:改變人類的 50 年",
+      "category": "tech_history",
+      "tags": [
+        "網路",
+        "歷史"
+      ],
+      "length_min": 14,
+      "key_points": [
+        "1969 第一封封包",
+        "TCP/IP",
+        "WWW 誕生",
+        "商業化",
+        "社群媒體時代"
+      ]
+    },
+    {
+      "id": 101,
+      "title": "太平天國之謎：洪秀全的宗教革命真相",
+      "category": "chinese_history",
+      "tags": [
+        "太平天國",
+        "洪秀全",
+        "晚清"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "起義背景",
+        "上帝天國",
+        "軍事組織",
+        "國內變革",
+        "失敗原因"
+      ]
+    },
+    {
+      "id": 102,
+      "title": "王安石變法真相：救國還是自傷？",
+      "category": "chinese_history",
+      "tags": [
+        "北宋",
+        "王安石",
+        "變法"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "新法內容",
+        "保守反彈",
+        "經濟影響",
+        "軍事改革",
+        "歷史評價"
+      ]
+    },
+    {
+      "id": 103,
+      "title": "科舉之死：古代選官制度如何崩解？",
+      "category": "chinese_history",
+      "tags": [
+        "科舉",
+        "考試制度",
+        "官僚"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "科舉起源",
+        "題制演變",
+        "社會功能",
+        "弊端顯現",
+        "廢除影響"
+      ]
+    },
+    {
+      "id": 104,
+      "title": "李自成最後三天：農民軍如何攻陷北京？",
+      "category": "chinese_history",
+      "tags": [
+        "李自成",
+        "明末",
+        "農民起義"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "起兵緣由",
+        "軍隊構成",
+        "攻城過程",
+        "崇禎反應",
+        "後續影響"
+      ]
+    },
+    {
+      "id": 105,
+      "title": "張仲景與傷寒論：中醫經典的成書真相",
+      "category": "chinese_history",
+      "tags": [
+        "醫學史",
+        "張仲景",
+        "漢朝"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "作者生平",
+        "成書背景",
+        "主要理論",
+        "臨床影響",
+        "傳抄流傳"
+      ]
+    },
+    {
+      "id": 106,
+      "title": "王昭君之謎：出塞是真選擇還是政治交易？",
+      "category": "chinese_history",
+      "tags": [
+        "漢朝",
+        "王昭君",
+        "和親"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "選美制度",
+        "出塞原因",
+        "和親效應",
+        "史書記載",
+        "民間傳說"
+      ]
+    },
+    {
+      "id": 107,
+      "title": "北伐三年：孫中山革命夢碎的關鍵真相",
+      "category": "chinese_history",
+      "tags": [
+        "民國初年",
+        "孫中山",
+        "北伐"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "時局背景",
+        "軍事路線",
+        "派系影響",
+        "外交制約",
+        "歷史評價"
+      ]
+    },
+    {
+      "id": 108,
+      "title": "王莽篡漢之謎：新朝能否保存帝國？",
+      "category": "chinese_history",
+      "tags": [
+        "王莽",
+        "西漢",
+        "政變"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "政治改革",
+        "貨幣政策",
+        "社會反應",
+        "綠林起義",
+        "朝代更替"
+      ]
+    },
+    {
+      "id": 109,
+      "title": "長平之戰真相：戰國殺戮與戰術解析",
+      "category": "chinese_history",
+      "tags": [
+        "戰國",
+        "長平",
+        "趙秦"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "戰役導火線",
+        "兵力比較",
+        "戰術過程",
+        "屠城爭議",
+        "歷史意義"
+      ]
+    },
+    {
+      "id": 110,
+      "title": "徽宗與靖康：北宋如何走向滅亡？真相梳理",
+      "category": "chinese_history",
+      "tags": [
+        "北宋",
+        "靖康之恥",
+        "宋徽宗"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "朝政腐敗",
+        "遼金壓力",
+        "軍事失利",
+        "皇室命運",
+        "史書觀點"
+      ]
+    },
+    {
+      "id": 111,
+      "title": "朱元璋的恐怖政治真相：從乞丐到皇帝的手段",
+      "category": "chinese_history",
+      "tags": [
+        "明朝",
+        "朱元璋",
+        "權術"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "出身與崛起",
+        "集權策略",
+        "法制建設",
+        "肅清異己",
+        "政策影響"
+      ]
+    },
+    {
+      "id": 112,
+      "title": "康熙之治的兩面：盛世背後的治理挑戰",
+      "category": "chinese_history",
+      "tags": [
+        "清朝",
+        "康熙",
+        "盛世"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "即位經過",
+        "政治穩定",
+        "治邊策略",
+        "經濟復甦",
+        "文化政策"
+      ]
+    },
+    {
+      "id": 113,
+      "title": "戚繼光抗倭真相：從漁村到海防名將的策略",
+      "category": "chinese_history",
+      "tags": [
+        "明朝",
+        "戚繼光",
+        "抗倭"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "海盜威脅",
+        "練兵體制",
+        "鴛鴦陣法",
+        "後勤保障",
+        "長期影響"
+      ]
+    },
+    {
+      "id": 114,
+      "title": "乾隆巡幸之謎：文化宣傳還是權力展示？",
+      "category": "chinese_history",
+      "tags": [
+        "清朝",
+        "乾隆",
+        "巡幸"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "巡幸路線",
+        "皇權象徵",
+        "文化工程",
+        "地方影響",
+        "史料解讀"
+      ]
+    },
+    {
+      "id": 115,
+      "title": "明末的海禁政策：封鎖海洋的真相與後果",
+      "category": "chinese_history",
+      "tags": [
+        "明朝",
+        "海禁",
+        "對外貿易"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "海禁起因",
+        "執行方式",
+        "走私猖獗",
+        "商人命運",
+        "國家影響"
+      ]
+    },
+    {
+      "id": 116,
+      "title": "岳飛之死：忠義英雄的冤案真相",
+      "category": "chinese_history",
+      "tags": [
+        "南宋",
+        "岳飛",
+        "冤案"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "抗金功績",
+        "朝廷矛盾",
+        "秦檜角色",
+        "《滿江紅》影響",
+        "後世評價"
+      ]
+    },
+    {
+      "id": 117,
+      "title": "鄭成功收復台灣真相：策略、外交與社會重建",
+      "category": "chinese_history",
+      "tags": [
+        "鄭成功",
+        "台灣史",
+        "荷蘭"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "軍事登陸",
+        "荷蘭防守",
+        "民族融合",
+        "經濟重建",
+        "歷史定位"
+      ]
+    },
+    {
+      "id": 118,
+      "title": "蒋介石之前：北洋軍閥時代的割據真相",
+      "category": "chinese_history",
+      "tags": [
+        "北洋軍閥",
+        "民國",
+        "割據"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "袁世凱餘波",
+        "軍閥形成",
+        "經濟與民生",
+        "外交困境",
+        "結局走向"
+      ]
+    },
+    {
+      "id": 119,
+      "title": "孟母三遷的真相：教育觀念如何形塑古代家庭？",
+      "category": "chinese_history",
+      "tags": [
+        "儒家",
+        "教育史",
+        "孟子"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "傳說來源",
+        "文化意義",
+        "家庭教育",
+        "社會階層",
+        "現代啟示"
+      ]
+    },
+    {
+      "id": 120,
+      "title": "南詔與大理國：雲南古國的興衰之謎",
+      "category": "chinese_history",
+      "tags": [
+        "雲南",
+        "南詔",
+        "大理"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "建國背景",
+        "民族融合",
+        "對外交流",
+        "國家體制",
+        "滅亡因素"
+      ]
+    },
+    {
+      "id": 121,
+      "title": "海上絲路上的江南港口：商業城市的興起真相",
+      "category": "chinese_history",
+      "tags": [
+        "絲路",
+        "港口",
+        "商業史"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "港口崛起",
+        "商品流通",
+        "外商交流",
+        "市民文化",
+        "衰落原因"
+      ]
+    },
+    {
+      "id": 122,
+      "title": "張居正改革真相：萬曆新政的成敗教訓",
+      "category": "chinese_history",
+      "tags": [
+        "張居正",
+        "明朝",
+        "改革"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "改革內容",
+        "賦役制度",
+        "財政整頓",
+        "高壓手段",
+        "長期影響"
+      ]
+    },
+    {
+      "id": 123,
+      "title": "曹操的軍事天才之謎：策略還是運氣？",
+      "category": "chinese_history",
+      "tags": [
+        "三國",
+        "曹操",
+        "軍事"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "戰役分析",
+        "用人之術",
+        "政治手腕",
+        "文治政策",
+        "形象演變"
+      ]
+    },
+    {
+      "id": 124,
+      "title": "京杭大運河的建造真相：古代工程如何連結南北？",
+      "category": "chinese_history",
+      "tags": [
+        "水利工程",
+        "運河",
+        "大運河"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "工程規模",
+        "勞動動員",
+        "運輸功能",
+        "經濟影響",
+        "維護挑戰"
+      ]
+    },
+    {
+      "id": 125,
+      "title": "和氏璧傳國玉璽之謎：傳說與史實的交織",
+      "category": "chinese_history",
+      "tags": [
+        "玉璧",
+        "秦漢",
+        "傳國璽"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "和氏璧來源",
+        "政治象徵",
+        "傳承傳說",
+        "史料漏洞",
+        "現代考察"
+      ]
+    },
+    {
+      "id": 126,
+      "title": "ENIAC 到個人電腦：計算機如何走入家庭？真相梳理",
+      "category": "tech_history",
+      "tags": [
+        "計算機史",
+        "ENIAC",
+        "PC"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "早期巨機",
+        "晶片革命",
+        "軟硬整合",
+        "個人電腦化",
+        "產業影響"
+      ]
+    },
+    {
+      "id": 127,
+      "title": "NVIDIA 崛起真相：從繪圖卡到 AI 芯片霸主",
+      "category": "tech_history",
+      "tags": [
+        "NVIDIA",
+        "GPU",
+        "AI"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "繪圖卡起家",
+        "CUDA 發展",
+        "資料中心市場",
+        "競爭策略",
+        "未來布局"
+      ]
+    },
+    {
+      "id": 128,
+      "title": "Linux 的祕密歷史：一個自由內核如何改變世界？",
+      "category": "tech_history",
+      "tags": [
+        "Linux",
+        "自由軟體",
+        "開源"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "起源故事",
+        "GPL 授權",
+        "社群模式",
+        "商業採用",
+        "生態影響"
+      ]
+    },
+    {
+      "id": 129,
+      "title": "WWW 與網際網路之謎：Tim Berners‑Lee 的發明真相",
+      "category": "tech_history",
+      "tags": [
+        "WWW",
+        "網際網路",
+        "Berners‑Lee"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "發明背景",
+        "超文本概念",
+        "早期實踐",
+        "普及過程",
+        "現代影響"
+      ]
+    },
+    {
+      "id": 130,
+      "title": "ARM 架構崛起：低功耗如何贏得行動世界？",
+      "category": "tech_history",
+      "tags": [
+        "ARM",
+        "晶片",
+        "行動"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "設計理念",
+        "授權模式",
+        "行動市場",
+        "生態系統",
+        "未來挑戰"
+      ]
+    },
+    {
+      "id": 131,
+      "title": "從 PDA 到智慧手機：Palm 的沒落真相",
+      "category": "tech_history",
+      "tags": [
+        "Palm",
+        "PDA",
+        "手機史"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "市場起伏",
+        "軟體生態",
+        "商業決策",
+        "競爭壓力",
+        "品牌消亡"
+      ]
+    },
+    {
+      "id": 132,
+      "title": "GPS 的誕生真相：軍事技術如何變成民用必備？",
+      "category": "tech_history",
+      "tags": [
+        "GPS",
+        "衛星",
+        "定位"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "研發背景",
+        "軍民雙用",
+        "系統演進",
+        "應用普及",
+        "社會影響"
+      ]
+    },
+    {
+      "id": 133,
+      "title": "智慧音箱之路：從語音助手到家庭中樞的歷史",
+      "category": "tech_history",
+      "tags": [
+        "語音助理",
+        "智慧家居",
+        "AI"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "技術突破",
+        "商業模式",
+        "隱私討論",
+        "生態鏈整合",
+        "未來趨勢"
+      ]
+    },
+    {
+      "id": 134,
+      "title": "三星的轉型真相：從貿易商到科技巨人的策略",
+      "category": "tech_history",
+      "tags": [
+        "三星",
+        "企業史",
+        "科技"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "早期產業",
+        "多角化策略",
+        "質量崛起",
+        "全球布局",
+        "品牌挑戰"
+      ]
+    },
+    {
+      "id": 135,
+      "title": "網路泡沫之謎：2000 年代初繁榮如何崩解？",
+      "category": "tech_history",
+      "tags": [
+        "網路泡沫",
+        "資本市場",
+        "科技史"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "投資狂潮",
+        "商業模式疑問",
+        "崩盤過程",
+        "倖存者教訓",
+        "市場重建"
+      ]
+    },
+    {
+      "id": 136,
+      "title": "Nokia 教訓真相：當機與文化如何奪走王座？",
+      "category": "tech_history",
+      "tags": [
+        "Nokia",
+        "手機史",
+        "企業文化"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "市場霸主",
+        "技術路線",
+        "管理問題",
+        "智能轉型失敗",
+        "教訓反思"
+      ]
+    },
+    {
+      "id": 137,
+      "title": "區塊鏈從比特幣到金融重構的真相",
+      "category": "tech_history",
+      "tags": [
+        "區塊鏈",
+        "比特幣",
+        "金融科技"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "技術原理",
+        "貨幣創新",
+        "應用場景",
+        "監管挑戰",
+        "未來想像"
+      ]
+    },
+    {
+      "id": 138,
+      "title": "特斯拉電動化真相：從創新到產業影響的十年",
+      "category": "tech_history",
+      "tags": [
+        "Tesla",
+        "電動車",
+        "產業"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "設計理念",
+        "生產挑戰",
+        "超級充電網",
+        "市場效應",
+        "供應鏈變革"
+      ]
+    },
+    {
+      "id": 139,
+      "title": "軟體即服務的崛起：SaaS 如何改變企業運作？",
+      "category": "tech_history",
+      "tags": [
+        "SaaS",
+        "雲端",
+        "商業模式"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "概念起源",
+        "收費模式",
+        "企業採用",
+        "競爭態勢",
+        "長期影響"
+      ]
+    },
+    {
+      "id": 140,
+      "title": "從石墨到石墨烯：材料革命的發現真相",
+      "category": "tech_history",
+      "tags": [
+        "石墨烯",
+        "材料科學",
+        "發現"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "發現經過",
+        "物理特性",
+        "應用潛力",
+        "產業化挑戰",
+        "科學爭議"
+      ]
+    },
+    {
+      "id": 141,
+      "title": "古蘇美爾城市之謎：人類最早城市如何形成？",
+      "category": "world_civilization",
+      "tags": [
+        "蘇美爾",
+        "美索不達米亞",
+        "城市"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "城市萌芽",
+        "灌溉農業",
+        "神權政治",
+        "文字發明",
+        "社會分化"
+      ]
+    },
+    {
+      "id": 142,
+      "title": "古埃及紙草書之謎：知識如何跨越千年保存？",
+      "category": "world_civilization",
+      "tags": [
+        "古埃及",
+        "紙草書",
+        "文化"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "紙草製作",
+        "文獻內容",
+        "保存技術",
+        "宗教文本",
+        "現代解讀"
+      ]
+    },
+    {
+      "id": 143,
+      "title": "腓尼基人與字母真相：誰改寫了書寫史？",
+      "category": "world_civilization",
+      "tags": [
+        "腓尼基",
+        "字母",
+        "古代貿易"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "航海貿易",
+        "字母發明",
+        "文化傳播",
+        "希臘採用",
+        "影響深遠"
+      ]
+    },
+    {
+      "id": 144,
+      "title": "印度河文明之謎：城市為何突然消失？",
+      "category": "world_civilization",
+      "tags": [
+        "印度河",
+        "哈拉帕",
+        "古文明"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "城市規劃",
+        "排水系統",
+        "貿易網絡",
+        "衰落假說",
+        "考古發現"
+      ]
+    },
+    {
+      "id": 145,
+      "title": "馬其頓與希臘化時代：亞歷山大之後的世界真相",
+      "category": "world_civilization",
+      "tags": [
+        "亞歷山大",
+        "希臘化",
+        "帝國"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "東征意義",
+        "王國分裂",
+        "文化融合",
+        "城市建設",
+        "長期影響"
+      ]
+    },
+    {
+      "id": 146,
+      "title": "大英帝國的經濟真相：如何靠貿易建立全球體系？",
+      "category": "world_civilization",
+      "tags": [
+        "大英帝國",
+        "商業",
+        "殖民"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "工業革命",
+        "海上霸權",
+        "貿易網絡",
+        "殖民經濟",
+        "全球影響"
+      ]
+    },
+    {
+      "id": 147,
+      "title": "阿茲特克文明之謎：首都特諾奇提特蘭的日常與崩解",
+      "category": "world_civilization",
+      "tags": [
+        "阿茲特克",
+        "墨西哥",
+        "古文明"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "建城奇蹟",
+        "農業技術",
+        "宗教祭儀",
+        "西班牙入侵",
+        "文化遺產"
+      ]
+    },
+    {
+      "id": 148,
+      "title": "絲綢之路的另一面：小城如何連結大文明？真相",
+      "category": "world_civilization",
+      "tags": [
+        "絲路",
+        "中亞",
+        "貿易"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "中轉城市",
+        "商品流通",
+        "文化交流",
+        "宗教傳播",
+        "治安與保護"
+      ]
+    },
+    {
+      "id": 149,
+      "title": "印加道路網的建造真相：山地帝國如何通行無阻？",
+      "category": "world_civilization",
+      "tags": [
+        "印加",
+        "道路",
+        "安第斯"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "道路設計",
+        "橋梁工程",
+        "傳訊系統",
+        "食物供應",
+        "行政效率"
+      ]
+    },
+    {
+      "id": 150,
+      "title": "奧斯曼帝國興衰真相：多民族帝國如何治理？",
+      "category": "world_civilization",
+      "tags": [
+        "奧斯曼",
+        "帝國",
+        "治理"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "建立過程",
+        "行政制度",
+        "宗教政策",
+        "軍事改革",
+        "分裂原因"
+      ]
+    },
+    {
+      "id": 151,
+      "title": "漢諾威與貝多芬：歐洲音樂如何走出宮廷？真相",
+      "category": "world_civilization",
+      "tags": [
+        "音樂史",
+        "歐洲文化",
+        "貝多芬"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "宮廷機制",
+        "市民文化",
+        "作曲革新",
+        "演出制度",
+        "社會影響"
+      ]
+    },
+    {
+      "id": 152,
+      "title": "撒哈拉商隊之謎：沙漠如何支持龐大貿易？",
+      "category": "world_civilization",
+      "tags": [
+        "撒哈拉",
+        "商隊",
+        "非洲"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "商品種類",
+        "交通路線",
+        "駱駝技術",
+        "城鎮興衰",
+        "文化交流"
+      ]
+    },
+    {
+      "id": 153,
+      "title": "文藝復興的起源真相：為何義大利先行？",
+      "category": "world_civilization",
+      "tags": [
+        "文藝復興",
+        "義大利",
+        "文化史"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "城邦經濟",
+        "古典復興",
+        "美術革新",
+        "贊助制度",
+        "思想傳播"
+      ]
+    },
+    {
+      "id": 154,
+      "title": "蒙古帝國的通信網：驛站如何支撐全球征服？",
+      "category": "world_civilization",
+      "tags": [
+        "蒙古",
+        "驛站",
+        "帝國"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "驛站系統",
+        "軍事調度",
+        "情報網絡",
+        "經濟效益",
+        "文化交流"
+      ]
+    },
+    {
+      "id": 155,
+      "title": "阿拉伯黃金時代之謎：學術如何在中世繁榮？",
+      "category": "world_civilization",
+      "tags": [
+        "伊斯蘭",
+        "黃金時代",
+        "科學"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "知識翻譯",
+        "學校體系",
+        "醫學成就",
+        "數學發展",
+        "傳承路徑"
+      ]
+    },
+    {
+      "id": 156,
+      "title": "美索不達米亞法律真相：漢摩拉比法典的現實作用",
+      "category": "world_civilization",
+      "tags": [
+        "漢摩拉比",
+        "法律史",
+        "古文明"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "法典內容",
+        "社會控制",
+        "刑罰制度",
+        "執行機制",
+        "歷史影響"
+      ]
+    },
+    {
+      "id": 157,
+      "title": "西非帝國崛起真相：加納、馬里與貿易黃金路",
+      "category": "world_civilization",
+      "tags": [
+        "西非",
+        "馬里帝國",
+        "加納"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "貿易網絡",
+        "金鹽交換",
+        "帝國治理",
+        "馬里興起",
+        "文化遺產"
+      ]
+    },
+    {
+      "id": 158,
+      "title": "羅馬公共衛生之謎：下水道與浴場如何改變城市？",
+      "category": "world_civilization",
+      "tags": [
+        "古羅馬",
+        "衛生",
+        "城市"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "基礎設施",
+        "供水系統",
+        "公共浴場",
+        "疾病控制",
+        "社會影響"
+      ]
+    },
+    {
+      "id": 159,
+      "title": "復活節島的崩落真相：生態與社會如何相互摧毀？",
+      "category": "world_civilization",
+      "tags": [
+        "復活節島",
+        "生態崩潰",
+        "摩艾"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "森林耗盡",
+        "運輸技術",
+        "內戰假說",
+        "歐洲接觸",
+        "生態教訓"
+      ]
+    },
+    {
+      "id": 160,
+      "title": "十字軍東征的真相：宗教戰爭還是政治計算？",
+      "category": "world_civilization",
+      "tags": [
+        "十字軍",
+        "中世紀",
+        "宗教"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "發動原因",
+        "軍事路線",
+        "經濟動機",
+        "文化衝擊",
+        "長期影響"
+      ]
+    },
+    {
+      "id": 161,
+      "title": "秦始皇陵之謎：兵馬俑背後的建造真相",
+      "category": "mystery",
+      "tags": [
+        "秦始皇陵",
+        "兵馬俑",
+        "考古"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "發掘歷程",
+        "工匠技術",
+        "陪葬制度",
+        "墓葬結構",
+        "保護挑戰"
+      ]
+    },
+    {
+      "id": 162,
+      "title": "建文帝下落之謎：被殺、出逃還是另有其人？",
+      "category": "mystery",
+      "tags": [
+        "建文帝",
+        "靖難之役",
+        "消失"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "靖難背景",
+        "史料矛盾",
+        "尋帝傳說",
+        "鄭和說法",
+        "現代研究"
+      ]
+    },
+    {
+      "id": 163,
+      "title": "成吉思汗之死之謎：戰傷、病逝還是暗殺？",
+      "category": "mystery",
+      "tags": [
+        "成吉思汗",
+        "死亡之謎",
+        "蒙古"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "史料記載",
+        "戰場情況",
+        "墓地未解",
+        "各種假說",
+        "考古進展"
+      ]
+    },
+    {
+      "id": 164,
+      "title": "亞特蘭提斯之謎：柏拉圖故事的真實根源？",
+      "category": "mystery",
+      "tags": [
+        "亞特蘭提斯",
+        "柏拉圖",
+        "失落文明"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "柏拉圖文本",
+        "地理假說",
+        "考古證據",
+        "虛構論點",
+        "現代解讀"
+      ]
+    },
+    {
+      "id": 165,
+      "title": "木乃伊的咒語之謎：古埃及葬俗如何被誤讀？",
+      "category": "mystery",
+      "tags": [
+        "古埃及",
+        "木乃伊",
+        "葬俗"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "防腐技術",
+        "宗教信仰",
+        "陪葬品類",
+        "現代誤解",
+        "保護倫理"
+      ]
+    },
+    {
+      "id": 166,
+      "title": "南海沉船之謎：瓷器與貿易網絡的潛在證據",
+      "category": "mystery",
+      "tags": [
+        "沉船",
+        "海上考古",
+        "瓷器"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "沉船分布",
+        "貨物分析",
+        "年代判定",
+        "貿易路線",
+        "保護難題"
+      ]
+    },
+    {
+      "id": 167,
+      "title": "宋太祖斧聲燭影之謎：夜半血案的多種解讀",
+      "category": "mystery",
+      "tags": [
+        "宋朝",
+        "斧聲燭影",
+        "懸案"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "史料描述",
+        "動機分析",
+        "金匱爭議",
+        "母訓傳說",
+        "現代詮釋"
+      ]
+    },
+    {
+      "id": 168,
+      "title": "失落的樓蘭城再探之謎：乾燥與文化流變的證據",
+      "category": "mystery",
+      "tags": [
+        "樓蘭",
+        "絲路",
+        "考古"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "遺址發現",
+        "環境變遷",
+        "文化遺存",
+        "書寫材料",
+        "消失原因"
+      ]
+    },
+    {
+      "id": 169,
+      "title": "鋼鐵君主之死：拿破崙伊勒島最後十天之謎",
+      "category": "mystery",
+      "tags": [
+        "拿破崙",
+        "聖赫勒拿",
+        "死亡之謎"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "被放逐過程",
+        "健康記錄",
+        "毒殺說法",
+        "屍檢證據",
+        "歷史結論"
+      ]
+    },
+    {
+      "id": 170,
+      "title": "馬雅曆法與滅亡之謎：曆法錯讀還是文化轉型？",
+      "category": "mystery",
+      "tags": [
+        "馬雅",
+        "曆法",
+        "文明衰落"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "曆法結構",
+        "2012 誤讀",
+        "城市衰退",
+        "氣候因素",
+        "考古新證"
+      ]
+    },
+    {
+      "id": 171,
+      "title": "光緒之死之謎：皇帝悶死還是毒殺？",
+      "category": "mystery",
+      "tags": [
+        "光緒",
+        "死亡之謎",
+        "清朝"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "死亡記錄",
+        "政治環境",
+        "毒物檢驗",
+        "傳聞來源",
+        "現代評價"
+      ]
+    },
+    {
+      "id": 172,
+      "title": "永樂大典下落之謎：世界最大百科如何消失？",
+      "category": "mystery",
+      "tags": [
+        "永樂大典",
+        "典籍失落",
+        "明朝"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "編纂規模",
+        "流傳路徑",
+        "焚毀事件",
+        "殘篇發現",
+        "保護困難"
+      ]
+    },
+    {
+      "id": 173,
+      "title": "瑪雅城市一夜荒廢之謎：內戰還是環境崩解？",
+      "category": "mystery",
+      "tags": [
+        "瑪雅",
+        "城市衰落",
+        "考古"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "城鎮分布",
+        "人口變動",
+        "乾旱證據",
+        "政治瓦解",
+        "最新研究"
+      ]
+    },
+    {
+      "id": 174,
+      "title": "龐貝最後一天之謎：火山爆發前的城市節奏",
+      "category": "mystery",
+      "tags": [
+        "龐貝",
+        "維蘇威",
+        "最後一天"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "噴發時間線",
+        "市民反應",
+        "保存機制",
+        "社會生活",
+        "考古啟示"
+      ]
+    },
+    {
+      "id": 175,
+      "title": "李鴻章鍵盤之謎：晚清外交中不可見的手段",
+      "category": "mystery",
+      "tags": [
+        "李鴻章",
+        "晚清外交",
+        "交涉"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "外交技巧",
+        "西方互動",
+        "內部阻力",
+        "條約角色",
+        "歷史評價"
+      ]
+    },
+    {
+      "id": 176,
+      "title": "殷墟占卜骨的祕密：商朝如何解讀未來？",
+      "category": "mystery",
+      "tags": [
+        "商朝",
+        "甲骨文",
+        "占卜"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "占卜流程",
+        "文字記錄",
+        "社會用途",
+        "宗教信仰",
+        "考古發現"
+      ]
+    },
+    {
+      "id": 177,
+      "title": "復活節島巨石像之謎：摩艾如何被運走？",
+      "category": "mystery",
+      "tags": [
+        "復活節島",
+        "摩艾",
+        "建築技術"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "石像切割",
+        "運輸假說",
+        "祭祀功能",
+        "生態影響",
+        "現代實驗"
+      ]
+    },
+    {
+      "id": 178,
+      "title": "鄭和寶船之謎：真有那麼大艘船嗎？",
+      "category": "mystery",
+      "tags": [
+        "鄭和",
+        "寶船",
+        "航海"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "文獻記載",
+        "船型探討",
+        "物資補給",
+        "外國見證",
+        "考古線索"
+      ]
+    },
+    {
+      "id": 179,
+      "title": "昭君出塞之謎：畫像造假還是真正選擇？",
+      "category": "mystery",
+      "tags": [
+        "王昭君",
+        "傳說",
+        "史料"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "宮廷畫像",
+        "選妃制度",
+        "史書比較",
+        "後世演繹",
+        "文化意義"
+      ]
+    },
+    {
+      "id": 180,
+      "title": "黑死病傳入歐洲之謎：路徑與影響如何定論？",
+      "category": "mystery",
+      "tags": [
+        "黑死病",
+        "中世紀",
+        "疫情史"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "傳播路線",
+        "病原討論",
+        "社會衝擊",
+        "經濟後果",
+        "史料證據"
+      ]
+    },
+    {
+      "id": 181,
+      "title": "羅馬帝國最後一夜之謎：帝國如何一步步消亡？",
+      "category": "mystery",
+      "tags": [
+        "羅馬",
+        "滅亡之謎",
+        "古史"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "經濟因素",
+        "軍事壓力",
+        "政治內耗",
+        "民族遷徙",
+        "學界爭論"
+      ]
+    },
+    {
+      "id": 182,
+      "title": "木匠與王朝：宋徽宗畫派失落之謎",
+      "category": "mystery",
+      "tags": [
+        "宋徽宗",
+        "畫派",
+        "文化史"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "藝術風格",
+        "宮廷收藏",
+        "入侵破壞",
+        "流失路徑",
+        "現代追回"
+      ]
+    },
+    {
+      "id": 183,
+      "title": "百慕達三角真相：自然還是巧合？",
+      "category": "mystery",
+      "tags": [
+        "百慕達",
+        "海難",
+        "科學"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "失蹤案例",
+        "氣候因素",
+        "導航問題",
+        "調查報告",
+        "理性解釋"
+      ]
+    },
+    {
+      "id": 184,
+      "title": "巨石陣用途之謎：天文台、祭壇還是記憶場？",
+      "category": "mystery",
+      "tags": [
+        "巨石陣",
+        "史前遺址",
+        "天文"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "建造技術",
+        "排列特色",
+        "儀式功能",
+        "考古證據",
+        "多重解釋"
+      ]
+    },
+    {
+      "id": 185,
+      "title": "鄭和下西洋停止之謎：政策回頭的真相",
+      "category": "mystery",
+      "tags": [
+        "鄭和",
+        "海禁",
+        "政策變化"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "資源考量",
+        "朝廷派系",
+        "外部壓力",
+        "貿易效益",
+        "史料分析"
+      ]
+    },
+    {
+      "id": 186,
+      "title": "塔漢古文明之謎：中南美失落城市的秘密",
+      "category": "mystery",
+      "tags": [
+        "失落城市",
+        "考古",
+        "文明"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "遺址發現",
+        "遷徙證據",
+        "環境因素",
+        "文化遺存",
+        "學術爭議"
+      ]
+    },
+    {
+      "id": 187,
+      "title": "紫禁城宮廷筆記之謎：幕後文書揭示的真相",
+      "category": "mystery",
+      "tags": [
+        "紫禁城",
+        "宮廷史",
+        "文書"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "筆記來源",
+        "日常記錄",
+        "政務線索",
+        "史料價值",
+        "真偽辨識"
+      ]
+    },
+    {
+      "id": 188,
+      "title": "康有為改革夢碎之謎：戊戌變法的不可逆點？",
+      "category": "mystery",
+      "tags": [
+        "戊戌變法",
+        "康有為",
+        "光緒"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "改革內容",
+        "保守阻力",
+        "帝國反應",
+        "事變過程",
+        "歷史評價"
+      ]
+    },
+    {
+      "id": 189,
+      "title": "黃金面具之謎：古文明權力象徵的來源",
+      "category": "mystery",
+      "tags": [
+        "黃金面具",
+        "墓葬",
+        "文化象徵"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "出土分布",
+        "製作技術",
+        "社會象徵",
+        "保護問題",
+        "跨文化比較"
+      ]
+    },
+    {
+      "id": 190,
+      "title": "漢武帝對外擴張真相：開拓邊疆還是政治需要？",
+      "category": "mystery",
+      "tags": [
+        "漢武帝",
+        "對外政策",
+        "西域"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "對匈奴戰事",
+        "絲路開拓",
+        "外交政策",
+        "內政連動",
+        "歷史影響"
+      ]
+    },
+    {
+      "id": 191,
+      "title": "絲綢的全球之謎：從中國到羅馬的貿易真相",
+      "category": "world_civilization",
+      "tags": [
+        "絲綢",
+        "貿易史",
+        "古代交流"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "生產技術",
+        "路線形成",
+        "中間商角色",
+        "需求擴散",
+        "文化交流"
+      ]
+    },
+    {
+      "id": 192,
+      "title": "文明中的女性力量之謎：從女王到女祭司的角色",
+      "category": "world_civilization",
+      "tags": [
+        "女性史",
+        "古文明",
+        "權力"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "女王典範",
+        "祭司角色",
+        "政治影響",
+        "社會限制",
+        "文化記錄"
+      ]
+    },
+    {
+      "id": 193,
+      "title": "城市起源比較真相：尼羅、幼發拉底與長江旁的差異",
+      "category": "world_civilization",
+      "tags": [
+        "城市起源",
+        "比較史",
+        "古文明"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "環境條件",
+        "農業技術",
+        "河流重要",
+        "社會組織",
+        "文明路徑"
+      ]
+    },
+    {
+      "id": 194,
+      "title": "貨幣發明之謎：怎樣的需求催生了金屬貨幣？",
+      "category": "world_civilization",
+      "tags": [
+        "貨幣史",
+        "經濟史",
+        "金屬貨幣"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "早期交易",
+        "物物交換",
+        "金屬鑄造",
+        "標準化作用",
+        "經濟影響"
+      ]
+    },
+    {
+      "id": 195,
+      "title": "奴隸制度的全球比較真相：經濟如何依賴強制勞動？",
+      "category": "world_civilization",
+      "tags": [
+        "奴隸制度",
+        "比較史",
+        "經濟"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "制度類型",
+        "經濟功能",
+        "法律規範",
+        "反抗與逃跑",
+        "廢除過程"
+      ]
+    },
+    {
+      "id": 196,
+      "title": "宗教建築的形制之謎：神殿如何反映社會結構？",
+      "category": "world_civilization",
+      "tags": [
+        "宗教建築",
+        "考古",
+        "文化"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "形式演變",
+        "象徵意義",
+        "建築技術",
+        "公共功能",
+        "保存問題"
+      ]
+    },
+    {
+      "id": 197,
+      "title": "航海科技革命真相：磁羅盤與船舶如何改變世界？",
+      "category": "world_civilization",
+      "tags": [
+        "航海史",
+        "羅盤",
+        "地理發現"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "導航問題",
+        "技術突破",
+        "航程延伸",
+        "貿易擴展",
+        "文明碰撞"
+      ]
+    },
+    {
+      "id": 198,
+      "title": "儒法道三教互動之謎：中國思想如何塑造社會？",
+      "category": "world_civilization",
+      "tags": [
+        "思想史",
+        "儒家",
+        "道教"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "教義差異",
+        "政治作用",
+        "文化融合",
+        "社會實踐",
+        "長期影響"
+      ]
+    },
+    {
+      "id": 199,
+      "title": "農業革命比較真相：新石器如何改變人類命運？",
+      "category": "world_civilization",
+      "tags": [
+        "新石器",
+        "農業革命",
+        "人類史"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "馴化作物",
+        "定居生活",
+        "人口增長",
+        "社會分化",
+        "技術傳播"
+      ]
+    },
+    {
+      "id": 200,
+      "title": "城市防禦與城牆之謎：古代如何兼顧安全與發展？",
+      "category": "world_civilization",
+      "tags": [
+        "城牆",
+        "防禦",
+        "城市"
+      ],
+      "length_min": 9,
+      "key_points": [
+        "城牆功能",
+        "建造技術",
+        "攻防演變",
+        "經濟負擔",
+        "轉型用途"
+      ]
+    }
   ]
 }
