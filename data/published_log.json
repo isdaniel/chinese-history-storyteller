@@ -1600,6 +1600,26 @@
         "近代史",
         "思想史"
       ]
+    },
+    {
+      "id": 81,
+      "published_at": "2026-07-25T22:01:09.823244+00:00",
+      "title": "從棋盤到蛋白質：DeepMind、AlphaGo 與 AI 改變世界的瞬間",
+      "description": "摘要：本片回溯 DeepMind 的創立、被 Google 收購的轉捩、AlphaGo 與李世乭、柯潔的對局，以及 AlphaFold 對科學的衝擊。透過畫面化敘述，我們探討技術、文化與倫理的交會。章節時間軸（預留）：00:00 創辦之初；01:10 Google 收購；02:40 AlphaGo 崛起；04:10 李世乭對局回顧；05:40 柯潔與世代交替；07:10 AlphaFold 的科學革命；08:30 現代啟示與反思。",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0081.mp3",
+      "youtube_url": "https://youtu.be/8q4pqICEsfs",
+      "size_bytes": 12835053,
+      "duration_str": "08:54",
+      "tags": [
+        "DeepMind",
+        "AlphaGo",
+        "AI歷史",
+        "李世乭",
+        "柯潔",
+        "AlphaFold",
+        "科技紀錄",
+        "機器學習"
+      ]
     }
   ]
 }

@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 24 Jul 2026 22:09:51 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2026 22:01:09 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>從棋盤到蛋白質：DeepMind、AlphaGo 與 AI 改變世界的瞬間</title>
+      <description>摘要：本片回溯 DeepMind 的創立、被 Google 收購的轉捩、AlphaGo 與李世乭、柯潔的對局，以及 AlphaFold 對科學的衝擊。透過畫面化敘述，我們探討技術、文化與倫理的交會。章節時間軸（預留）：00:00 創辦之初；01:10 Google 收購；02:40 AlphaGo 崛起；04:10 李世乭對局回顧；05:40 柯潔與世代交替；07:10 AlphaFold 的科學革命；08:30 現代啟示與反思。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0081.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0081.mp3" length="12835053" type="audio/mpeg"/>
+      <pubDate>Sat, 25 Jul 2026 22:01:09 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>08:54</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>陳獨秀與五四：新文化的旗手與歷史的兩面</title>
       <description>陳獨秀如何從一位救國青年，成為新文化運動的核心人物？本片透過新青年雜誌、北京大學教席、共產黨創立到被開除與晚年潦倒的曲折人生，勾勒一位思想巨人的光影。探索思想如何改變時代，也如何被時代改寫。 00:00 引子與時代背景 01:10 少年與早期經歷 03:20 《新青年》與新文化運動 05:40 北大教席與思想實踐 07:50 五四運動與政治轉向 10:10 參與創黨與黨內路線 12:30 被開除與思想孤立 14:40 晚年、評價與現代啟示</description>
