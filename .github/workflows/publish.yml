@@ -52,19 +52,19 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
       - name: Azure login (OIDC)
-        uses: azure/login@v2
+        uses: azure/login@v3
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'
           cache: 'pip'
@@ -136,7 +136,7 @@ jobs:
 
       - name: Upload artifacts (debug)
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: episode-debug-${{ github.run_id }}
           path: |
@@ -166,13 +166,13 @@ jobs:
 
     steps:
       - name: Checkout (latest main with publish commit)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
           ref: main
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'
           cache: 'pip'
@@ -208,7 +208,7 @@ jobs:
 
       - name: Azure login (OIDC)
         if: steps.check.outputs.skip == 'false' && steps.pr_check.outputs.skip == 'false'
-        uses: azure/login@v2
+        uses: azure/login@v3
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
@@ -225,7 +225,7 @@ jobs:
 
       - name: 開 PR (peter-evans/create-pull-request)
         if: steps.check.outputs.skip == 'false' && steps.pr_check.outputs.skip == 'false'
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: replenish-topics/run-${{ github.run_id }}
