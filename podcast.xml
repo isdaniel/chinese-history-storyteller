@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 26 Jul 2026 22:03:34 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2026 22:11:49 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>戚繼光抗倭：鴛鴦陣如何鍛造明朝最強戚家軍</title>
+      <description>摘要：從海岸烽火到北疆邊陲，戚繼光以紀律與創新擊退倭寇，創造鴛鴦陣與戚家軍的傳奇。本片回溯16世紀中葉的亂世脈絡，探討戰術、治理與軍事思想的傳承。章節：00:00 引子與時代背景 01:10 倭寇之亂的真相 03:00 戚繼光崛起與戚家軍 04:40 鴛鴦陣的構成與運作 06:20 紀效新書與制度創新 07:50 北疆禦邊與晚年 08:40 現代啟示與反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0083.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0083.mp3" length="11324781" type="audio/mpeg"/>
+      <pubDate>Mon, 27 Jul 2026 22:11:49 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>07:51</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>瑪雅人並未消失：千年文明如何由後裔延續與復興</title>
       <description>瑪雅文明並非史書裡的斷章，而是在現代鄉鎮、語言和祭儀中延續的生命。前100字摘要：我們從古典期的金字塔走到今日的市集，探討現存族群、語言保存、曆法傳承、與西班牙征服後的斷裂與重建，以及當代復興運動如何讓千年文化復聲。章節時間戳（預留）：0:00 開場與命題；1:10 現存族群與地理分佈；2:40 語言的存續與教育；4:10 曆法與天文傳承；5:40 西班牙征服與社會衝擊；7:10 20世紀的壓迫與復興；8:40 當代文化與藝術；10:10 現代啟示與反思。</description>
