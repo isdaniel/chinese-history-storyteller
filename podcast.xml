@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 28 Jul 2026 22:14:23 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 22:02:41 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>古巴比倫：人類第一個帝國的傳奇與啟示</title>
+      <description>古巴比倫的崛起、榮光與遺跡，從漢摩拉比法典到空中花園，帶你穿越兩千多年的文明痕跡。前半段以歷史脈絡還原古巴比倫的城市與制度，後半段檢視考古發現與現代意義，邀你反思權力、法律與文化記憶。00:00 開場引子 01:10 城市與地理 03:00 漢摩拉比法典解讀 05:10 空中花園與傳說 06:40 新巴比倫與尼布甲尼撒 08:20 巴別塔傳說與語言 10:00 考古發現 11:30 現代啟示與反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0085.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0085.mp3" length="12900717" type="audio/mpeg"/>
+      <pubDate>Wed, 29 Jul 2026 22:02:41 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>08:57</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Substack 與電子報復興：寫作者的新黃金時代</title>
       <description>摘要：從紙本時代到社群洪流，電子報如何在 2010s 復興，Substack 與訂閱模式如何重塑作者經濟與媒體生態，明星寫手、商業模式與現代啟示一併檢視。本文兼具歷史脈絡與當代觀察，適合關心寫作、媒體與創作者經濟的你。
