@@ -1740,6 +1740,26 @@
         "宋朝歷史",
         "中國藝術史"
       ]
+    },
+    {
+      "id": 88,
+      "published_at": "2026-08-01T22:01:34.003269+00:00",
+      "title": "ChatGPT 革命：OpenAI 如何改變世界 • AI 時代的轉捩點",
+      "description": "摘要：從 2015 年創立的理想出發，到 GPT 系列的快速演進，再到 ChatGPT 的爆紅與 Altman 風波，本片回溯 OpenAI 的技術脈絡與社會影響，檢視AI軍備競賽的風險與治理挑戰，並提供當代啟示。章節時間標示為預留，便於影片編排。\n00:00 開場與導引\n01:10 OpenAI 的起點與理想（2015）\n03:30 GPT 演進：從 GPT-1 到 GPT-4 的技術跳躍\n06:10 ChatGPT 爆紅：普及化與應用場景\n08:40 Altman 風波與治理問題\n11:20 AI 軍備競賽與國際局勢\n13:50 社會影響：勞動、教育與倫理\n16:20 現代啟示與反思",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0088.mp3",
+      "youtube_url": "https://youtu.be/AxOiKF5Ry24",
+      "size_bytes": 14731821,
+      "duration_str": "10:13",
+      "tags": [
+        "ChatGPT",
+        "OpenAI",
+        "人工智慧歷史",
+        "GPT演進",
+        "AI治理",
+        "科技紀錄",
+        "Altman風波",
+        "AI軍備競賽"
+      ]
     }
   ]
 }
