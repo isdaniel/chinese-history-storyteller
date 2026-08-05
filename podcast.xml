@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 04 Aug 2026 22:18:03 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2026 22:22:05 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>中本聰：比特幣之父的消失與未解之謎（14 年）</title>
+      <description>中本聰的身分至今成謎，從創世區塊到神祕消失，這段歷史既是科技傳奇，也是人性與信任的實驗。前100字摘要：一個署名、一篇白皮書、一次創世區塊的挖出，與數百萬美元的沉默比特幣，構成了現代金融最耐人尋味的謎團。接下來的章節將依序還原事件時間線、關鍵技術、主要候選人物、消失的細節與未解之謎，並從中提出現代啟示。 時間軸章節（預留時間戳）：00:00 Hook與背景｜01:10 創世區塊與區塊鏈雛形｜02:50 白皮書與去中心化設計｜04:20 早期行動與社群互動｜05:40 消失之謎｜07:00 候選人物與證據比較｜08:30 100 萬枚 BTC 的意義｜09:40 現代啟示與反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0092.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0092.mp3" length="13663341" type="audio/mpeg"/>
+      <pubDate>Wed, 05 Aug 2026 22:22:05 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>09:29</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>西安事變：張學良改變中國命運的14天——扣留蔣介石與抗日轉機</title>
       <description>摘要：1936年12月，陝西一場僅十四天的衝突，讓中國由內戰走向有限合作。張學良、楊虎城扣留蔣介石，促成抗日統一與國共第二次合作，卻換來張學良終身被軟禁的命運。本片用史料與畫面還原那場左右中國命運的歷史抉擇。
