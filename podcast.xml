@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 07 Aug 2026 01:16:29 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 21:43:55 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>Stable Diffusion 與 AI 繪圖革命：從擴散模型到產業衝擊</title>
+      <description>摘要：從擴散模型的數學美感到開源策略的擴散效應，本片回顧 Stable Diffusion 如何引爆 AI 繪圖革命，並解析 Midjourney 的競爭、版權爭議及對創意產業的衝擊與啟示。 章節時間戳（預留）：00:00 Hook與視覺想像 ｜ 01:10 擴散模型原理 ｜ 02:50 Latent Diffusion 與效能革新 ｜ 04:40 開源策略與社群生態 ｜ 06:20 Midjourney 的市場位置 ｜ 07:40 版權爭議與法律挑戰 ｜ 09:10 產業影響與工作型態 ｜ 11:00 現代啟示與反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0094.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0094.mp3" length="14412717" type="audio/mpeg"/>
+      <pubDate>Fri, 07 Aug 2026 21:43:55 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>10:00</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>鄭成功收復台灣：熱蘭遮城的最後九個月（從圍城到東寧王國）</title>
       <description>一場跨海復國的行動，如何在九個月內改寫台灣的命運？本片以鄭成功收復台灣為主線，聚焦荷蘭人在熱蘭遮城的最後九個月，細緻描繪圍城、攻堅、投降與政權更迭的關鍵時刻。前面為事件摘要與時間軸，後段分章節探討軍事、社會與現代啟示。

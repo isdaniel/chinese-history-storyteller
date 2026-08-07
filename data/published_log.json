@@ -1860,6 +1860,26 @@
         "台灣史",
         "反清復明"
       ]
+    },
+    {
+      "id": 94,
+      "published_at": "2026-08-07T21:43:55.517668+00:00",
+      "title": "Stable Diffusion 與 AI 繪圖革命：從擴散模型到產業衝擊",
+      "description": "摘要：從擴散模型的數學美感到開源策略的擴散效應，本片回顧 Stable Diffusion 如何引爆 AI 繪圖革命，並解析 Midjourney 的競爭、版權爭議及對創意產業的衝擊與啟示。 章節時間戳（預留）：00:00 Hook與視覺想像 ｜ 01:10 擴散模型原理 ｜ 02:50 Latent Diffusion 與效能革新 ｜ 04:40 開源策略與社群生態 ｜ 06:20 Midjourney 的市場位置 ｜ 07:40 版權爭議與法律挑戰 ｜ 09:10 產業影響與工作型態 ｜ 11:00 現代啟示與反思",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0094.mp3",
+      "youtube_url": "https://youtu.be/18K8E_y4tf8",
+      "size_bytes": 14412717,
+      "duration_str": "10:00",
+      "tags": [
+        "Stable Diffusion",
+        "AI 繪圖",
+        "擴散模型",
+        "開源",
+        "Midjourney",
+        "版權爭議",
+        "AI 產業衝擊",
+        "生成式 AI"
+      ]
     }
   ]
 }
