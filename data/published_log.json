@@ -1920,6 +1920,26 @@
         "公視風",
         "羅輯思維式說書"
       ]
+    },
+    {
+      "id": 97,
+      "published_at": "2026-08-10T21:48:58.936188+00:00",
+      "title": "被趕出的十二年：Steve Jobs 的 NeXT 歲月與科技遺產",
+      "description": "從被逐出蘋果到創立 NeXT、入主 Pixar，再到回歸改寫科技史。前100字摘要：這部片講述 1985 年被辭退的 Steve Jobs，如何在失落中重整旗鼓，創辦 NeXT 與投資 Pixar，塑造未來作業系統與設計語言，最後回歸蘋果並留下跨世代影響。章節時間戳（預留）：00:00 引子與背景；01:20 1985 年衝突；03:00 NeXT 起步；04:30 NeXT 技術與產品；06:00 投資 Pixar 與動畫革新；07:30 蘋果收購與回歸；08:30 遺產與反思。",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0097.mp3",
+      "youtube_url": "https://youtu.be/F0NIh4T2y7w",
+      "size_bytes": 15451821,
+      "duration_str": "10:43",
+      "tags": [
+        "Steve Jobs",
+        "NeXT",
+        "Pixar",
+        "蘋果歷史",
+        "科技史",
+        "作業系統",
+        "創業故事",
+        "設計美學"
+      ]
     }
   ]
 }
