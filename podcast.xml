@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 10 Aug 2026 21:48:58 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 21:51:54 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>戴笠之死：軍統頭子的離奇墜機與未解謎團</title>
+      <description>摘要：1946 年，軍統首腦戴笠在一場突如其來的墜機事故中喪生，留下重重疑問與各方陰謀論。本片回顧事件經過、當時蔣介石的反應、各類說法的源流，以及軍統如何在震盪中改組與轉型。透過史料與多方觀點，嘗試還原一個複雜時代的片段，並探討權力、情報與不確定性的現代啟示。 章節時間軸（預留）：00:00 開場與事件概述 01:20 戴笠生平與軍統興起 03:40 墜機當日的已知事實 06:00 各種陰謀論的起源 08:30 蔣介石與國民政府的反應 10:50 軍統的改組與人事變動 13:20 歷史評價與未解之謎 15:40 現代啟示與反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0098.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0098.mp3" length="14297517" type="audio/mpeg"/>
+      <pubDate>Tue, 11 Aug 2026 21:51:54 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>09:55</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>被趕出的十二年：Steve Jobs 的 NeXT 歲月與科技遺產</title>
       <description>從被逐出蘋果到創立 NeXT、入主 Pixar，再到回歸改寫科技史。前100字摘要：這部片講述 1985 年被辭退的 Steve Jobs，如何在失落中重整旗鼓，創辦 NeXT 與投資 Pixar，塑造未來作業系統與設計語言，最後回歸蘋果並留下跨世代影響。章節時間戳（預留）：00:00 引子與背景；01:20 1985 年衝突；03:00 NeXT 起步；04:30 NeXT 技術與產品；06:00 投資 Pixar 與動畫革新；07:30 蘋果收購與回歸；08:30 遺產與反思。</description>
