@@ -1980,6 +1980,26 @@
         "清末新政",
         "戊戌六君子"
       ]
+    },
+    {
+      "id": 100,
+      "published_at": "2026-08-13T21:51:31.159715+00:00",
+      "title": "從 ARPANET 到網際網路：改變人類的 50 年（回顧與省思）",
+      "description": "半世紀的網路史，是技術如何改變社會的縮影。從 1969 年第一封封包的傳輸，到 TCP/IP 的標準化、WWW 的誕生、再到商業化與社群媒體時代，這是一條關於發明、開放與意料之外後果的路徑。前半段摘要：快速回顧關鍵里程碑與技術轉折；後半段摘要：社會影響、商業化過程與當代啟示。章節時間戳（預留）：00:00 引子 01:10 ARPANET 初始 03:05 封包與第一封訊息 04:30 TCP/IP 標準化 05:50 WWW 誕生 07:20 商業化浪潮 08:40 社群媒體與當代啟示",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0100.mp3",
+      "youtube_url": "https://youtu.be/HR8ZPk-bJKM",
+      "size_bytes": 14442093,
+      "duration_str": "10:01",
+      "tags": [
+        "ARPANET",
+        "網際網路史",
+        "TCP/IP",
+        "WWW",
+        "網路商業化",
+        "社群媒體",
+        "科技史",
+        "數位社會"
+      ]
     }
   ]
 }
