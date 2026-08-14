@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 13 Aug 2026 21:51:31 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 21:30:54 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>太平天國之謎：洪秀全的宗教革命真相</title>
+      <description>太平天國非僅一場農民起義，而是一場宗教與政治交織的革命嘗試。這段敘事回溯洪秀全如何以「上帝天國」為號召、建立軍政組織、推行社會改革，並剖析失敗原因與對近代中國的啟示。章節：00:00 起始鉤子與時代背景；01:15 洪秀全與上帝異象；03:00 軍事體系與天朝制度；05:15 國內改革與社會實驗；07:00 內部矛盾與外部壓力；08:30 滅亡經過與歷史評價；09:30 現代啟示與反思。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0101.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0101.mp3" length="11952045" type="audio/mpeg"/>
+      <pubDate>Fri, 14 Aug 2026 21:30:54 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>08:17</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>從 ARPANET 到網際網路：改變人類的 50 年（回顧與省思）</title>
       <description>半世紀的網路史，是技術如何改變社會的縮影。從 1969 年第一封封包的傳輸，到 TCP/IP 的標準化、WWW 的誕生、再到商業化與社群媒體時代，這是一條關於發明、開放與意料之外後果的路徑。前半段摘要：快速回顧關鍵里程碑與技術轉折；後半段摘要：社會影響、商業化過程與當代啟示。章節時間戳（預留）：00:00 引子 01:10 ARPANET 初始 03:05 封包與第一封訊息 04:30 TCP/IP 標準化 05:50 WWW 誕生 07:20 商業化浪潮 08:40 社群媒體與當代啟示</description>
@@ -1198,16 +1208,6 @@
       <pubDate>Thu, 07 May 2026 00:23:10 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>07:03</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>三國真相：諸葛亮真的那麼神嗎？史實 vs 演義的五大差距</title>
-      <description>諸葛亮在民間與小說中近乎神化，但史料與演義有多大落差？本片以北伐評價、治蜀政績、空城計、木牛流馬與身後評價為脈絡，拆解五大常見誤解，還原更貼近史實的諸葛亮。00:00 開場與問題提出 01:40 一、北伐的真相 04:20 二、治蜀的政績 07:00 三、空城計虛實 09:10 四、木牛流馬的技術 11:00 五、身後評價與現代啟示</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0001.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0001.mp3" length="6960429" type="audio/mpeg"/>
-      <pubDate>Wed, 06 May 2026 16:10:15 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>04:49</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
