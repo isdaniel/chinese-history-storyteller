@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 15 Aug 2026 21:26:36 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2026 21:26:21 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>科舉之死：古代選官制度如何崩解？—從制度起源到廢除的真相</title>
+      <description>摘要：科舉曾是中國延續千年的選拔制度，如何從社會秩序的支柱演變為難以修補的制度性危機？本片追溯科舉起源、題制演變、社會功能與弊端顯現，並剖析其走向廢止的關鍵因素與對現代的啟示。章節時間軸（預留）：00:00 開場與問題提出；01:10 科舉起源與早期型態；03:30 題制演變與八股文興起；06:00 科舉的社會功能；08:20 制度弊端逐漸顯現；11:00 政治與社會動盪下的轉折；13:30 廢除與近代影響；16:20 現代啟示與總結。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0103.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0103.mp3" length="11915181" type="audio/mpeg"/>
+      <pubDate>Sun, 16 Aug 2026 21:26:21 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>08:16</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>王安石變法真相：救國還是自傷？——宋代變革的得失與啟示</title>
       <description>王安石變法，千古爭議：是真正的救國良方，還是自傷式改革？本片以史料為基，帶您穿越北宋都城與田野，逐條檢視新法內容、保守派反彈、經濟與軍事影響，並回到今日，討論治理與改革的現代啟示。前100字摘要：王安石自1069年起推行新法，目的是以法制和財政改革挽救國家危機；然而改革觸動既得利益，引發官僚、士大夫及地方勢力的強烈抵抗，最終得失交織。章節時間戳（預留）：00:00 引子與時代背景 01:20 新法概要與目的 03:10 青苗法、均輸法、募役法詳解 05:00 保守反彈與黨爭 06:30 經濟社會影響 07:40 軍事改革與邊防實情 08:40 歷史評價 09:30 現代啟示與反思</description>
@@ -1189,18 +1199,6 @@
       <pubDate>Fri, 08 May 2026 21:59:32 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>05:28</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>失落的樓蘭古國：絲路上消逝的沙海文明</title>
-      <description>樓蘭，曾經坐落於塔里木盆地東北邊緣的綠洲城邦，在絲路上閃爍過短暫而璀璨的光芒。本片帶您穿越千年沙海，重訪樓蘭的地理、考古、傳說與消失之謎。前半段梳理發現與遺址，後半段探討氣候與人為交織的滅亡原因，最後提出對現代環境與文明脆弱性的反思。
-
-00:00 開場引題 01:30 樓蘭地理與交通位置 03:20 樓蘭城邦生活想像 05:10 樓蘭美女與文獻記載 07:00 考古發現與出土文物 09:00 突然消失的可能原因 10:00 氣候變遷與人類選擇 11:00 現代啟示與反思</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0003.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0003.mp3" length="9263277" type="audio/mpeg"/>
-      <pubDate>Fri, 08 May 2026 00:04:58 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>06:25</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
