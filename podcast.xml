@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 17 Aug 2026 21:33:15 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2026 21:33:35 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>張仲景與《傷寒論》：解碼中醫經典的成書真相與當代啟示</title>
+      <description>張仲景與《傷寒論》的成書，是中醫史上一段既有傳奇又充滿學術謎團的篇章。本片深入作者生平、時代背景、主要理論與臨床影響，同時追尋文本的傳抄流傳路徑與現代啟示。前半段帶您回到東漢末年的戰亂與疫病，理解一位醫家如何在混亂中觀察、總結、寫就不朽著作；後半段解析《傷寒論》的核心理論、臨床價值與千年流傳的文本演變，並反思現代醫療與傳統智慧的對話。 00:00 開場與議題引介 01:10 張仲景的生平與時代 03:40 成書背景：疫病與醫療體系 06:20 主要理論：六經辨證與方藥體系 09:00 臨床影響：古代到近代的實踐 11:30 傳抄流傳與文本分歧 14:10 爭議與學術探討 16:30 現代啟示與給觀眾的反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0105.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0105.mp3" length="13192749" type="audio/mpeg"/>
+      <pubDate>Tue, 18 Aug 2026 21:33:35 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>09:09</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>李自成最後三天：農民軍如何攻陷北京？</title>
       <description>摘要：1644 年春，李自成率領起義軍在最後三日攻克北京，崇禎帝自縊，明朝北平淪陷，這一連串事件如何發生？本片詳述起兵緣由、軍隊構成、攻城過程、崇禎的反應與後續影響，並提出現代啟示。章節：00:00 開場與背景／02:00 起兵緣由／04:00 農民軍構成／06:00 進逼北京／08:30 攻城過程／11:00 崇禎反應與自縊／13:00 後續影響與吳三桂／15:00 現代啟示與反思。</description>
@@ -1189,16 +1199,6 @@
       <pubDate>Sun, 10 May 2026 21:53:39 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>10:10</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Intel 與 AMD 的五十年戰爭：從創業到復活的CPU霸權之路</title>
-      <description>五十年來的晶片戰爭，並非只有速度和核心數，更是策略、研發與市場的角力史。摘要：本片以 1969 年 AMD 創立為起點，穿越 K6 的突圍、Athlon 的逆襲、Bulldozer 的挫敗，到 Ryzen 的東山再起，還原一場科技產業的長期競爭與啟示。章節時間戳（預留）：00:00 開場鉤子 / 01:00 AMD 創業背景 / 03:00 x86 生態與 Intel 優勢 / 05:00 K6 與市場突圍 / 07:00 Athlon 反超與技術攻勢 / 09:00 Bulldozer 設計失誤 / 11:00 Ryzen 復活與生態回歸 / 13:00 現代啟示與反思</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0005.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0005.mp3" length="11345517" type="audio/mpeg"/>
-      <pubDate>Sat, 09 May 2026 23:58:23 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>07:52</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
