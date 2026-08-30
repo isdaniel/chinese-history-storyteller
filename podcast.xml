@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 29 Aug 2026 23:11:32 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2026 23:16:10 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,26 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>岳飛之死：忠義英雄的冤案真相（忠與權的對峙）</title>
+      <description>摘要：岳飛——南宋最具象徵性的抗金將領，他的軍功、被誣陷致死，以及《滿江紅》在民間的流傳，構成一段穿越世紀的忠義悲歌。影片將從戰場、朝堂與史料爭議三面，重建那一段既有鏡頭感又兼具史實的歷史場景，並引出對當代政治與個人抉擇的反思。
+
+章節時間戳（預留）
+00:00 - 01:10 開場與時代背景
+01:10 - 02:40 岳飛的成長與軍事才能
+02:40 - 04:10 抗金戰績與兵法風格
+04:10 - 05:40 朝廷內部的政治角力
+05:40 - 07:10 秦檜的角色與審判過程
+07:10 - 08:30 《滿江紅》的傳說與情感象徵
+08:30 - 09:20 後世評價與文學、藝術紀念
+09:20 - 09:50 現代啟示與反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0116.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0116.mp3" length="13402989" type="audio/mpeg"/>
+      <pubDate>Sun, 30 Aug 2026 23:16:10 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>09:18</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>封鎖海洋的真相：明末海禁、走私與國運的隱秘交織</title>
       <description>摘要：明末海禁並非單一政策，而是政治、防禦、經濟多重壓力下的產物；它如何被執行、如何刺激走私、又如何改寫商人與國家的命運，是一段值得重訪的歷史。透過時代脈絡、地緣矛盾與個人故事，本片解構海禁的來龍去脈與當代啟示。 章節時間戳（預留）：00:00 引子與主題；01:20 海禁起因脈絡；03:10 執行手段與沿海生活；05:00 走私網絡與外國勢力；06:40 商人命運與社會影響；08:20 國家財政與軍事後果；10:00 地方反抗與滲透；11:30 現代啟示與反思。</description>
@@ -1220,16 +1240,6 @@
       <pubDate>Fri, 22 May 2026 22:18:41 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>11:20</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>鄭和下西洋：被遺忘的中國海上霸權（從寶船到非洲）</title>
-      <description>摘要：明代鄭和七次下西洋，巨型寶船劃破印度洋，抵達東南亞、南亞直到東非海岸，展現一段被後世忽視的海上霸權與交流史。本片梳理寶船規模、七下西洋路徑、在非洲的足跡、明朝海禁政策與航海中止的原因，並反思這段史事對今日的啟示。章節時間戳（預留）：00:00 引子與背景 01:00 寶船規模想像 02:30 七下西洋總覽 04:20 非洲沿岸的足跡 05:50 與外邦的互動與禮儀 07:10 海禁政策與朝廷內部角力 08:20 為何最終停止 09:00 現代啟示與反思</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0016.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0016.mp3" length="12958317" type="audio/mpeg"/>
-      <pubDate>Thu, 21 May 2026 22:30:17 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>08:59</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
