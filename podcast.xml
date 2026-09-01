@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 01 Sep 2026 00:27:36 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 23:10:49 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>蒋介石之前：北洋軍閥時代的割據真相 — 從袁世凱到地方諸侯的中國</title>
+      <description>摘要：北洋軍閥時代並非單一混亂，而是一場由袁世凱遺緒、軍政融合、經濟重整與外交壓力交織的歷史。這段看似分崩離析的年代，實則孕育出中國近代國家形態與地方治理的深刻樣貌。本片以史實為據，描繪軍閥如何在矛盾中建立權力、維持財政、面對外國列強，並探討其對現代中國的啟示。 章節時間戳（預留）：00:00 Hook與時代輪廓 01:10 袁世凱的遺緒 03:30 軍閥的形成與勢力分布 05:50 經濟與民生的困境 08:20 外交與列強的角力 10:40 地方治理與軍政結合 13:00 衝突、結局與新秩序 15:30 現代啟示與反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0118.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0118.mp3" length="14085549" type="audio/mpeg"/>
+      <pubDate>Tue, 01 Sep 2026 23:10:49 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>09:46</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>鄭成功收復台灣真相：軍事、外交與社會重建的全景解讀</title>
       <description>摘要：本片重構鄭成功（1624–1662）從集結兵力、軍事登陸，到與荷蘭人談判、與原住民互動，以及隨後的社會與經濟重建。透過史料與學界爭議並陳，還原一個既是軍事行動，也是政權重建的歷史事件。章節時間戳（預留）：00:00 引子與背景；01:10 集結與出征；02:50 登陸戰術分析；04:30 荷蘭防守與外交；06:00 民族融合與治理；07:30 經濟復興策略；08:50 歷史定位與爭議；10:30 現代啟示與反思。</description>
@@ -1230,16 +1240,6 @@
       <pubDate>Sun, 24 May 2026 22:04:38 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>08:26</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>金字塔到底怎麼蓋的？最新考古發現與顛覆性解讀</title>
-      <description>摘要：金字塔建造不是靠奴隸堆出來，也不只是簡單拉石塊。最新考古與工程研究顯示：工人村遺址、內部斜坡假說、水力運石與精密組織，都改寫我們對古埃及的想像。影片用考古證據與工程邏輯，還原那段跨世紀的建築奇蹟。章節時間戳（預留）：00:00 開場與問題提出；01:10 奴隸說的崩解；02:40 工人村與社會組織；04:15 內部斜坡與外部痕跡；05:50 水力與河道運石；07:20 建造時間與工期計算；08:30 現代啟示與反思。</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0018.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0018.mp3" length="14089581" type="audio/mpeg"/>
-      <pubDate>Sat, 23 May 2026 22:03:53 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>09:47</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
