@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 03 Sep 2026 23:11:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 22:56:19 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>海上絲路上的江南港口：商業城市的興起真相</title>
+      <description>摘要：從宋元到明清，江南的港口如何從江河交會處的碼頭，發展成為連結世界的商業城市？本片梳理港口崛起的地理與制度條件、商品流通的具體路徑、外商與地方社會的互動、市民文化的形成，以及最終走向衰落的複合原因，試圖還原一條被浪潮與政策共同塑形的歷史脈絡。章節時間戳（預留）：00:00 開場鉤子；01:10 江南港口的地理與早期萌芽；03:20 商品流通與貿易網絡；05:30 外商交流與多元社群；07:40 市民文化與城市生活；09:50 港口治理與商業機構；12:10 衰落原因與轉折；14:30 現代啟示與反思。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0121.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0121.mp3" length="15628077" type="audio/mpeg"/>
+      <pubDate>Fri, 04 Sep 2026 22:56:19 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>10:51</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>南詔與大理國：雲南古國的興衰之謎 — 從邊陲到王朝的形塑</title>
       <description>摘要：從七世紀的崛起到十三世紀的沒落，南詔與後來的大理國是雲南高原上最重要的政治體。這部旁白將帶你穿越時空，理解它們如何在民族融合、對外交流與制度創新中崛起，又如何在內憂外患與時代巨變中走向終結。章節包含建國背景、民族交織、外交經略、國家機制、文化經濟、滅亡因素與對現代的啟示。
@@ -1230,16 +1240,6 @@
       <pubDate>Wed, 27 May 2026 22:45:30 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>07:08</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>成吉思汗之死：七種說法哪個最可信？（真相與迷霧）</title>
-      <description>成吉思汗的死亡，千年謎團未解：是墜馬、暗殺、瘟疫，還是更多不為人知的可能？前100字摘要：從蒙元史料、漢地記載到西夏傳說，我們梳理七種主流與邊緣說法，評估證據與疑點，並探討為何一位征服者的死亡能成為歷史政治的棋子。章節時間戳（預留）：0:00 Hook與背景、1:10 墜馬說與史料、2:40 西夏公主說解析、4:10 瘟疫與疾病可能、5:40 暗殺與政治動機、7:10 秘葬與陵墓傳說、8:20 其他說法彙整、9:30 現代啟示與反思。</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0021.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0021.mp3" length="19004013" type="audio/mpeg"/>
-      <pubDate>Tue, 26 May 2026 22:38:44 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>13:11</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
