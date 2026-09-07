@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 06 Sep 2026 22:52:56 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 23:24:58 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,25 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>京杭大運河的建造真相：古代工程如何連結南北？</title>
+      <description>京杭大運河不是一條天然河流，而是一段段被人力縫合起來的南北動脈。本片梳理大運河自隋唐始建、宋元明清的擴充與維護，揭示工程規模、動員方式、運輸與經濟影響，以及長期維護的難題與現代啟示。
+
+00:00 開場與引言
+01:10 隋朝規劃與工程雛形
+03:40 勞動動員：人力、年齡與制度
+06:20 運輸功能：漕運、商流與軍事
+09:00 經濟影響：糧食、城鎮與市場
+11:30 維護挑戰：泥沙、洪水與治理
+14:10 技術演進：閘門、橋梁與疏浚
+16:40 現代啟示與反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0124.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0124.mp3" length="14955885" type="audio/mpeg"/>
+      <pubDate>Mon, 07 Sep 2026 23:24:58 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>10:23</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>曹操的軍事天才之謎：策略還是運氣？——從官渡到赤壁的權謀與轉折</title>
       <description>摘要：曹操是三國時代最具爭議的軍事家與政治家。本片從戰役分析、用人之術、政治手腕到文治政策與形象演變，剖析他成功背後的策略與偶然因素，並提出現代啟示。章節預覽：00:00 引子與問題設定 01:00 官渡之戰解析 02:30 赤壁前的戰略錯誤 04:00 曹操的用人之術 05:30 政治與文治政策 06:30 形象如何被塑造 07:30 現代啟示與反思 8段旁白，帶你完整理解曹操如何在亂世中建構霸業，以及哪些屬於策略、哪些靠運氣。</description>
@@ -1230,16 +1249,6 @@
       <pubDate>Sat, 30 May 2026 22:09:15 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>09:09</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>斯巴達300勇士的真相：電影沒告訴你的歷史全貌</title>
-      <description>摘要：我們熟悉的《300壯士》是一部視覺張力十足的電影，但真實的溫泉關之戰，比電影更複雜也更真實。這支影片將拆解人數謠言、戰術細節、波斯軍力估算、三天激戰的過程與戰後影響，還有對現代的啟示。總結史料，還原一段被浪漫化的歷史。 00:00 開場與問題提出 01:00 泉關地理與時代背景 02:10 參戰兵力的真相 03:40 斯巴達與希臘聯軍的準備 05:00 三天激戰逐日還原 06:20 波斯軍力與後勤解析 07:30 戰役後的歷史影響 08:40 現代啟示與結語</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0024.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0024.mp3" length="11388717" type="audio/mpeg"/>
-      <pubDate>Fri, 29 May 2026 22:43:35 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>07:54</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
