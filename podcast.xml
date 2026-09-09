@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 08 Sep 2026 23:20:54 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 23:09:19 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>從 ENIAC 到個人電腦：計算機如何走入家庭？真相梳理</title>
+      <description>摘要：從龐大的真空管巨機，到晶片革命、軟硬整合與個人電腦的普及，本片條理分明地還原計算機如何從實驗室走向客廳的過程，並探討對產業與社會的長期影響。前半段回顧歷史脈絡與技術跳躍，後半段聚焦商業模式、文化變遷與現代啟示。章節時間戳（預留）：00:00 Hook 與背景、01:20 ENIAC 與巨型計算、03:40 晶片革命的契機、06:10 軟體與硬體的相互塑造、08:30 個人電腦化浪潮、11:00 產業重組與生態、13:30 案例透視：蘋果與 IBM、16:00 現代啟示與反思。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0126.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0126.mp3" length="13518189" type="audio/mpeg"/>
+      <pubDate>Wed, 09 Sep 2026 23:09:19 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>09:23</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>和氏璧與傳國玉璽之謎：從古玉到政治象徵的千年流轉</title>
       <description>摘要：一塊玉，如何在春秋戰國的刀光劍影中成為權力的符碼？本片梳理和氏璧的發現傳說、完璧歸趙、被刻為傳國玉璽的說法與史料漏洞，並帶你看現代考古與文獻如何重構這段斷裂的歷史。章節時間戳待影片配速微調：00:00 引子與畫面 01:20 和氏璧的起源傳說 03:40 政治象徵的形成 06:00 完璧歸趙的史料呈現 08:20 秦朝與傳國玉璽的關聯 10:40 漏洞與爭議 13:00 現代考察方法 15:20 現代啟示與反思</description>
@@ -1230,25 +1240,6 @@
       <pubDate>Mon, 01 Jun 2026 23:14:37 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>09:15</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>BlackBerry 的覆滅：從商務神器到消失的鍵盤王國</title>
-      <description>摘要：曾經每個辦公室桌上、每位主管口袋裡的那一台小黑機，如何在十年內從不可取代變成邊緣記憶？本片回顧 BlackBerry 的崛起與覆滅：實體鍵盤的神話、商務生態、iPhone 的衝擊、系統陳舊與市場退出，並從中抽取對現代科技的反思。
-章節時間戳（預留）：
-00:00 Hook 與導入
-01:10 RIM 與 BlackBerry 的崛起
-03:40 實體鍵盤與商務文化
-06:20 iPhone 衝擊與轉捩點
-09:00 系統與生態的裂縫
-11:30 逐步退出市場的關鍵決策
-14:20 後續授權與品牌殘影
-16:00 現代啟示與反思</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0026.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0026.mp3" length="13317165" type="audio/mpeg"/>
-      <pubDate>Mon, 01 Jun 2026 00:09:01 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>09:14</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
