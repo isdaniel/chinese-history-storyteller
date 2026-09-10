@@ -2520,6 +2520,26 @@
         "科技產業",
         "數位化"
       ]
+    },
+    {
+      "id": 127,
+      "published_at": "2026-09-10T23:09:19.951176+00:00",
+      "title": "NVIDIA 崛起真相：從繪圖卡到 AI 芯片霸主",
+      "description": "一部穿越遊戲顯示晶片到現代 AI 資料中心的商業史。從 1990 年代的 GeForce 影像革新、CUDA 平台的戰略布局，到資料中心市場的突圍與與競爭者的拉鋸，這支影片揭示 NVIDIA 如何從繪圖卡製造商躋身AI芯片霸主，並對未來佈局做出深度解讀。章節時間戳（示意）：00:00 Hook 與背景、01:15 創業與早期產品、03:30 GPU 的遊戲革命、05:50 CUDA 的誕生與生態、08:10 資料中心的攻勢、10:40 競爭策略解析、13:00 產業挑戰與監管、15:20 現代啟示與反思。",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0127.mp3",
+      "youtube_url": "https://youtu.be/GUDMg7qZOao",
+      "size_bytes": 14605101,
+      "duration_str": "10:08",
+      "tags": [
+        "NVIDIA",
+        "GPU",
+        "CUDA",
+        "AI 芯片",
+        "資料中心",
+        "科技史",
+        "晶片競爭",
+        "商業策略"
+      ]
     }
   ]
 }
