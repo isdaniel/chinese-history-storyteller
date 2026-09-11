@@ -2540,6 +2540,26 @@
         "晶片競爭",
         "商業策略"
       ]
+    },
+    {
+      "id": 128,
+      "published_at": "2026-09-11T23:06:45.052619+00:00",
+      "title": "Linux 的祕密歷史：自由內核如何改變世界？",
+      "description": "從一個芬蘭學生的好奇心，到改寫整個科技產業的自由工程。這段影片帶你回到 1991 年，拆解 Linux 的起源、GPL 的力量、社群如何運作，以及商業與生態如何在這場運動中重塑彼此。本文兼具歷史脈絡與當代反思，適合關注科技與社會交會的觀眾。\n\n00:00 開場與導引\n01:10 起源故事：林納斯與 Minix 的對話\n03:40 GPL 與自由軟體哲學\n06:10 社群模式：貢獻、治理與衝突\n08:50 商業採用：從伺服器到企業級支援\n11:30 生態影響：雲端、行動與物聯網\n14:00 現代啟示與反思\n",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0128.mp3",
+      "youtube_url": "https://youtu.be/2hSc2DD44CU",
+      "size_bytes": 11086317,
+      "duration_str": "07:41",
+      "tags": [
+        "Linux",
+        "自由軟體",
+        "GPL",
+        "科技史",
+        "開源社群",
+        "Linus Torvalds",
+        "企業採用",
+        "網路生態"
+      ]
     }
   ]
 }
