@@ -2560,6 +2560,26 @@
         "企業採用",
         "網路生態"
       ]
+    },
+    {
+      "id": 129,
+      "published_at": "2026-09-12T23:00:39.737869+00:00",
+      "title": "WWW 與網際網路之謎：Tim Berners‑Lee 的發明真相與現代啟示",
+      "description": "摘要：本片探究萬維網（WWW）背後的真相，還原 Tim Berners‑Lee 在歐洲核子研究組織（CERN）提出超文本的歷史脈絡，從早期實作到全球普及，以及對當代網路生態的深遠影響。影片帶您穿越 1980 至 1990 年代的實驗室、伺服器與簡陋瀏覽器，理解一個看似簡單的連結如何改變資訊與權力的分配。\n\n章節時間戳（預留）：\n00:00 開場與核心問句\n01:10 發明背景：CERN 與學術通訊的困境\n03:30 超文本概念的萌發\n05:40 早期實踐：第一個網站、伺服器與瀏覽器\n07:20 普及過程：開放標準與網路經濟的加速\n09:10 現代影響：隱私、平台與資訊生態\n11:00 給觀眾的反思與行動建議",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0129.mp3",
+      "youtube_url": "https://youtu.be/iIFJv2fEzYs",
+      "size_bytes": 15840045,
+      "duration_str": "10:59",
+      "tags": [
+        "Tim Berners-Lee",
+        "萬維網",
+        "網際網路史",
+        "超文本",
+        "CERN",
+        "科技史",
+        "網路文化",
+        "資訊時代"
+      ]
     }
   ]
 }
