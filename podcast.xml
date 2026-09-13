@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 12 Sep 2026 23:00:39 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Sep 2026 22:59:34 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>ARM 架構崛起：低功耗如何贏得行動世界？－晶片革命的設計、授權與生態啟示</title>
+      <description>ARM 如何從一個英國小公司，憑藉簡潔設計與授權模式，改寫行動運算的規則？本片用嚴謹史料與畫面想像，梳理 ARM 的設計理念、商業模式、行動市場崛起、以及生態系統與未來挑戰，並提出給現代科技人的反思。前 100 字摘要：ARM 以低功耗與簡約指令集，成為行動裝置核心；授權而非製造，催生百家廠商與豐富生態。章節時間戳（預留）：00:00 Hook與背景、01:10 設計哲學、03:00 授權模式、04:40 行動市場、06:20 生態系統、07:40 技術進化、08:50 未來挑戰、10:20 現代啟示。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0130.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0130.mp3" length="12023469" type="audio/mpeg"/>
+      <pubDate>Sun, 13 Sep 2026 22:59:34 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>08:20</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>WWW 與網際網路之謎：Tim Berners‑Lee 的發明真相與現代啟示</title>
       <description>摘要：本片探究萬維網（WWW）背後的真相，還原 Tim Berners‑Lee 在歐洲核子研究組織（CERN）提出超文本的歷史脈絡，從早期實作到全球普及，以及對當代網路生態的深遠影響。影片帶您穿越 1980 至 1990 年代的實驗室、伺服器與簡陋瀏覽器，理解一個看似簡單的連結如何改變資訊與權力的分配。
@@ -1240,24 +1250,6 @@
       <pubDate>Fri, 05 Jun 2026 22:29:16 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>11:01</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>拿破崙的最後賭注：滑鐵盧戰役完整解析 — 百日王朝的終局與教訓</title>
-      <description>滑鐵盧不只是一次戰役，而是帝國夢想的最後賭注。本片以史實為基礎，解析從百日王朝到拿破崙被流放聖赫勒拿的關鍵時刻，重點聚焦威靈頓與布呂歇爾的角色、戰場上的關鍵失誤與決策，並探討對現代領導與風險管理的啟示。前半段鋪陳背景與軍事布局，後半段重現戰場節點與指揮錯失，最後給出歷史與當代的反思。
-
-00:00 引入：一場改變歐洲的賭注
-01:10 百日王朝的重返與歐洲聯軍的反應
-03:00 戰役前的地形、兵力與指揮體系
-05:20 威靈頓的戰略與布呂歇爾的行動時序
-07:10 戰場關鍵失誤：通信、等待與雨後停戰
-09:00 結局：拿破崙被流放聖赫勒拿與其歷史意義
-09:30 現代啟示與給觀眾的反思</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0030.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0030.mp3" length="11443437" type="audio/mpeg"/>
-      <pubDate>Thu, 04 Jun 2026 22:34:31 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>07:56</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
