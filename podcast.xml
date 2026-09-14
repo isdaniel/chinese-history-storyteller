@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 13 Sep 2026 22:59:34 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Sep 2026 23:48:41 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>從 PDA 到智慧手機：Palm 的沒落真相 — 軟體、生態與商業失衡的教訓</title>
+      <description>Palm 曾是掌上電腦時代的代名詞，如何從市場霸主走向消失，只是一個品牌衰落的故事？摘要：本片追溯 Palm 的崛起與沒落，解析市場起伏、軟體生態、關鍵商業決策與競爭壓力，並提出現代企業與消費者的啟示。章節時間戳（預留）：00:00 開場與引子 01:10 Palm 的誕生與黃金期 02:40 軟體生態與開發者社群 04:20 與手機廠商與電信業的關係 06:00 關鍵決策與錯失機會 07:30 品牌形象的流失 08:40 現代啟示與反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0131.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0131.mp3" length="11214765" type="audio/mpeg"/>
+      <pubDate>Mon, 14 Sep 2026 23:48:41 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>07:47</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>ARM 架構崛起：低功耗如何贏得行動世界？－晶片革命的設計、授權與生態啟示</title>
       <description>ARM 如何從一個英國小公司，憑藉簡潔設計與授權模式，改寫行動運算的規則？本片用嚴謹史料與畫面想像，梳理 ARM 的設計理念、商業模式、行動市場崛起、以及生態系統與未來挑戰，並提出給現代科技人的反思。前 100 字摘要：ARM 以低功耗與簡約指令集，成為行動裝置核心；授權而非製造，催生百家廠商與豐富生態。章節時間戳（預留）：00:00 Hook與背景、01:10 設計哲學、03:00 授權模式、04:40 行動市場、06:20 生態系統、07:40 技術進化、08:50 未來挑戰、10:20 現代啟示。</description>
@@ -1230,26 +1240,6 @@
       <pubDate>Sat, 06 Jun 2026 22:13:02 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>11:21</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>和珅的千億家產：乾隆寵臣如何鍊金？（歷史真相與現代啟示）</title>
-      <description>乾隆時期最具爭議的人物之一：和珅。他究竟如何從一名翰林出身，成為擁有千億家產的權貴？本片以嚴謹史料與畫面化敘事，重建和珅的崛起、斂財手法、家產規模與嘉慶抄家過程，並在結尾提出對當代的反思與啟示。前半段還原歷史場景；後半段拆解傳聞與真實，檢視權力、法制與財富的交織。
-
-章節時間戳（預留）:
-00:00 開場與命題
-01:10 乾隆時代背景與寵信緣由
-02:40 和珅仕途與官職網絡
-04:20 斂財手段：賄賂、壟斷與遣產技巧
-06:00 家產規模如何估算與爭議
-07:20 嘉慶抄家與法律程序
-08:10 歷史評價與不同觀點
-08:50 現代啟示與結語</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0031.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0031.mp3" length="15867693" type="audio/mpeg"/>
-      <pubDate>Fri, 05 Jun 2026 22:29:16 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>11:01</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
