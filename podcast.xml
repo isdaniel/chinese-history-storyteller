@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 17 Sep 2026 23:26:55 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Sep 2026 23:10:07 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,26 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>網路泡沫之謎：2000 年代初繁榮如何崩解？（從狂熱到重建）</title>
+      <description>摘要：九年一瞬，網路從烏托邦走到寒冬。這段影片回溯 1990 年代末到 2002 年的網路泡沫：資金狂潮、商業模式的脆弱性、爆裂的崩盤過程，以及倖存者如何重建市場並留下的教訓。透過盤點重要事件與公司命運，帶你更清晰看見那場熱潮如何改變科技投資的規則。
+
+章節時間戳（預留）：
+00:00 開場與引子
+01:10 投資狂潮的起點
+03:45 商業模式與流量迷思
+06:20 崩盤的序曲與高峰崩解
+09:05 崩盤高潮：2000–2002 年間的市場洗牌
+11:40 倖存者與轉型案例
+14:20 市場重建與新秩序的出現
+16:50 現代啟示與反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0135.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0135.mp3" length="13989357" type="audio/mpeg"/>
+      <pubDate>Fri, 18 Sep 2026 23:10:07 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>09:42</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>三星的轉型真相：從貿易商到科技巨人（策略與啟示）</title>
       <description>摘要：從1938年一間以貿易和雜貨起家的小公司，到成為全球半導體與手機龍頭，三星的轉型之路充滿機遇、挫折與策略抉擇。本片探討早期產業基礎、多角化策略、品質革命、全球佈局與品牌挑戰，並從中抽取對現代企業的啟示。
@@ -1240,16 +1260,6 @@
       <pubDate>Wed, 10 Jun 2026 23:04:40 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>08:37</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Google 的誕生：兩個史丹佛學生如何改寫世界（PageRank、車庫創業到壟斷之路）</title>
-      <description>從一張論文到全球搜尋引擎帝國的崛起：兩名史丹佛學生以 PageRank 演算法撬動資訊世界，從車庫起步、拒絕收購，到以廣告商業模式擴張市場，最終走上壟斷爭議的道路。前100字摘要：本片回溯 1996 年的學術萌芽、1998 年的車庫創業、早期的商業抉擇與業務演進，並解析 PageRank 的技術核心與後來的反壟斷議題，提供現代創業與科技治理的反思。 章節時間戳（預留）：00:00 Hook與背景；01:10 PageRank 的原理；02:50 學術到創業；04:30 車庫與早期團隊；06:00 拒絕收購與獨立之路；07:20 廣告模式的崛起；08:30 壟斷的爭議；09:30 現代啟示與反思。</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0035.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0035.mp3" length="12402477" type="audio/mpeg"/>
-      <pubDate>Tue, 09 Jun 2026 22:36:44 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>08:36</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
