@@ -2700,6 +2700,26 @@
         "金融史",
         "市場重建"
       ]
+    },
+    {
+      "id": 136,
+      "published_at": "2026-09-19T22:50:11.169225+00:00",
+      "title": "Nokia 教訓真相：當機與文化如何奪走王座？— 從巔峰到失落的技術轉型啟示",
+      "description": "摘要：曾經的手機霸主如何在短短十年被翻轉？從硬體王國、系統路線、企業文化到管理決策，本片拆解 Nokia 智能轉型的關鍵節點與可學之處，並提出現代企業的反思。 00:00 Hook與導入 01:10 Nokia 的崛起與市場霸主地位 03:40 技術路線與 Symbian 的困局 06:20 文化與管理的隱性問題 09:00 MeeGo、Elop 與邁向微軟 11:40 市場回應與生態失守 14:10 關鍵時間點的決策拆解 16:50 現代啟示與給觀眾的反思",
+      "audio_url": "https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0136.mp3",
+      "youtube_url": "https://youtu.be/Ef6UOk3J6pw",
+      "size_bytes": 12304557,
+      "duration_str": "08:32",
+      "tags": [
+        "Nokia",
+        "科技史",
+        "商業教訓",
+        "智能手機",
+        "Symbian",
+        "Elop",
+        "企業文化",
+        "技術轉型"
+      ]
     }
   ]
 }
