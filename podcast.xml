@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 19 Sep 2026 22:50:11 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Sep 2026 23:03:13 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>區塊鏈：從比特幣到金融重構的真相 — 技術、貨幣與監管的博弈</title>
+      <description>區塊鏈從比特幣的白皮書開始，如何走向改變金融的想像？本片用技術與歷史的脈絡，解析共識、加密、代幣經濟與監管挑戰，並探討未來可能的重構路徑。前半段聚焦技術原理與貨幣創新，後半段討論應用場景、監管難題與社會啟示。章節時間戳（預留）00:00 引子與背景 01:10 技術原理 02:40 貨幣創新 04:10 初期應用 05:40 金融重構案例 07:10 監管挑戰 08:30 未來想像與結語</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0137.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0137.mp3" length="12407661" type="audio/mpeg"/>
+      <pubDate>Sun, 20 Sep 2026 23:03:13 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>08:36</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Nokia 教訓真相：當機與文化如何奪走王座？— 從巔峰到失落的技術轉型啟示</title>
       <description>摘要：曾經的手機霸主如何在短短十年被翻轉？從硬體王國、系統路線、企業文化到管理決策，本片拆解 Nokia 智能轉型的關鍵節點與可學之處，並提出現代企業的反思。 00:00 Hook與導入 01:10 Nokia 的崛起與市場霸主地位 03:40 技術路線與 Symbian 的困局 06:20 文化與管理的隱性問題 09:00 MeeGo、Elop 與邁向微軟 11:40 市場回應與生態失守 14:10 關鍵時間點的決策拆解 16:50 現代啟示與給觀眾的反思</description>
@@ -1250,16 +1260,6 @@
       <pubDate>Fri, 12 Jun 2026 22:37:12 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>09:04</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>甲午戰爭：北洋艦隊覆滅的真相 — 軍費、腐敗與海戰教訓</title>
-      <description>摘要：甲午戰爭不只是戰場上砲聲隆隆的故事，而是國家建設、財政管理與現代化意志的鏡像。本片梳理北洋艦隊的興起與衰亡，探討艦隊建設理念、軍費挪用、黃海海戰與威海衛之圍，最後回到馬關條約的沉重代價與現代啟示。 章節時標（預留）：00:00 開場與背景、01:10 北洋艦隊的誕生、02:40 艦隊建設與技術、04:20 軍費挪用與內部腐敗、06:00 黃海海戰詳解、07:30 威海衛之圍與覆滅、08:40 馬關條約的後果、09:30 現代啟示與反思。</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0037.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0037.mp3" length="13628781" type="audio/mpeg"/>
-      <pubDate>Thu, 11 Jun 2026 23:06:31 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>09:27</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
