@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 22 Sep 2026 00:02:21 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 23:36:44 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,26 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>軟體即服務的崛起：SaaS 如何重塑企業運作與競爭格局</title>
+      <description>摘要：從主機房到雲端平台，SaaS 如何改變企業採購、組織流程與市場競爭？本片回溯概念起源、收費模式演進、企業採用案例與長期影響，並以現代啟示作結，引導企業與從業者思考未來策略與治理問題。
+
+章節時間戳（預留）：
+0:00 開場與概念起源
+1:30 收費模式演進
+3:30 企業採用與轉型實務
+5:30 典型案例與行業差異
+7:00 競爭態勢與生態系統
+8:30 風險、治理與法規面向
+10:00 長期影響與技術路徑
+11:30 現代啟示與給觀眾的反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0139.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0139.mp3" length="12812589" type="audio/mpeg"/>
+      <pubDate>Tue, 22 Sep 2026 23:36:44 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>08:53</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>特斯拉電動化真相：從創新到產業影響的十年</title>
       <description>本片以十年視角解構特斯拉如何改寫汽車、能源與供應鏈規則。前一百字摘要：從設計理念到量產挑戰、超級充電網擴張、市場與供應鏈的連鎖改變，我們既追溯歷史脈絡，也提出現代啟示，為想理解電動化浪潮的你，提供事實與判讀。章節時間戳（預留）：00:00 開場與設計理念；01:30 初期生產與挑戰；03:15 超級充電網；04:50 市場效應；06:20 供應鏈變革；07:40 競爭與法規；08:30 現代啟示與反思。</description>
@@ -1241,25 +1261,6 @@
       <pubDate>Sun, 14 Jun 2026 22:22:56 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>08:20</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>巨石陣的真實用途：墓地、神殿還是天文台？揭開四千年前的謎團</title>
-      <description>巨石陣，英格蘭平原上孤立的石林，四千多年來吸引無數猜想：它是墓地、祭壇，還是古代天文台？本片以考古證據、地質分析與最新遺址發現為線索，帶你穿越新石器時代的工藝、儀式與觀象思維。前半段匯整建造時間與巨石來源，後半段比較各種理論並說明新近發現如何改寫理解，最後提出現代對話與反思。
-
-00:00 開場與核心疑問
-01:10 建造時間與文化脈絡
-02:45 巨石來源與搬運技術
-04:15 墓地證據：人骨與葬儀
-05:40 天文觀測說的支持與批評
-07:05 新發現遺址如何改變謎題
-08:20 儀式功能的多重層次
-09:30 現代啟示與結語</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0039.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0039.mp3" length="11983725" type="audio/mpeg"/>
-      <pubDate>Sat, 13 Jun 2026 22:13:55 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>08:19</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
