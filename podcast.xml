@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 20 Sep 2026 23:03:13 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 00:02:21 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>特斯拉電動化真相：從創新到產業影響的十年</title>
+      <description>本片以十年視角解構特斯拉如何改寫汽車、能源與供應鏈規則。前一百字摘要：從設計理念到量產挑戰、超級充電網擴張、市場與供應鏈的連鎖改變，我們既追溯歷史脈絡，也提出現代啟示，為想理解電動化浪潮的你，提供事實與判讀。章節時間戳（預留）：00:00 開場與設計理念；01:30 初期生產與挑戰；03:15 超級充電網；04:50 市場效應；06:20 供應鏈變革；07:40 競爭與法規；08:30 現代啟示與反思。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0138.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0138.mp3" length="15651693" type="audio/mpeg"/>
+      <pubDate>Tue, 22 Sep 2026 00:02:21 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>10:52</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>區塊鏈：從比特幣到金融重構的真相 — 技術、貨幣與監管的博弈</title>
       <description>區塊鏈從比特幣的白皮書開始，如何走向改變金融的想像？本片用技術與歷史的脈絡，解析共識、加密、代幣經濟與監管挑戰，並探討未來可能的重構路徑。前半段聚焦技術原理與貨幣創新，後半段討論應用場景、監管難題與社會啟示。章節時間戳（預留）00:00 引子與背景 01:10 技術原理 02:40 貨幣創新 04:10 初期應用 05:40 金融重構案例 07:10 監管挑戰 08:30 未來想像與結語</description>
@@ -1250,16 +1260,6 @@
       <pubDate>Sat, 13 Jun 2026 22:13:55 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>08:19</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>IBM 的轉型奇蹟：從大型主機到雲端與 AI 的重生</title>
-      <description>IBM 如何在硬體王朝瓦解後完成企業級轉型？本片回顧大型主機時代、PC 革命衝擊、Lou Gerstner 的改革，以及賣 PC 給聯想與投入 AI／雲端的關鍵決策。前100字摘要：透過歷史脈絡與企業內部變革，解構 IBM 從製造業巨人到服務與軟體生態的轉變，揭示組織生存的策略與啟示。章節時間戳（預留）：00:00 序幕與主題；01:10 大型主機的黃金時代；02:40 PC 革命的衝擊；04:20 1990s 危機與文化問題；06:00 Gerstner 的拯救；07:40 出售 PC 給聯想；08:40 AI 與雲端的新賭注；09:40 現代啟示與反思。</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0038.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0038.mp3" length="13059117" type="audio/mpeg"/>
-      <pubDate>Fri, 12 Jun 2026 22:37:12 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>09:04</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
