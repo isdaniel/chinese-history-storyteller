@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 24 Sep 2026 23:54:14 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 23:57:33 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>古埃及紙草書之謎：跨越千年的知識保存與現代解讀</title>
+      <description>古埃及的紙草書承載了宗教、法典與日常知識，如何在沙漠與墳墓之中保存千年？本文以紙草的製作、文獻內容、保存技術與現代科學解讀為線索，揭開一卷卷古老書頁的秘密。00:00 Hook與概覽 01:10 紙草植物與製作工藝 02:50 抄寫與書寫系統 04:30 宗教文本與死者之書 06:10 保存技術與墓葬環境 07:40 現代科學與影像學 08:50 爭議與真偽檢驗 10:20 結語與現代啟示</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0142.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0142.mp3" length="14631021" type="audio/mpeg"/>
+      <pubDate>Fri, 25 Sep 2026 23:57:33 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>10:09</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>古蘇美爾城市之謎：從沼澤到城邦的五大關鍵</title>
       <description>前100字摘要：兩千多年以前，幼發拉底與底格里斯之間的平原上，第一批城市悄然成形。這不是偶然，而是灌溉、水利、神權與文字交織的結果。本片以嚴謹史料與畫面化敘述，解讀古蘇美爾城市萌芽的五大核心因素，並從中提出對現代城市的啟示。章節時間戳（預留）：00:00 城市的第一眼 01:10 治水與農業 02:40 權力與神殿 04:10 文字的誕生 05:40 社會分化與勞役 07:10 城邦間的競爭 08:20 當代反思與啟示</description>
@@ -1232,25 +1242,6 @@
       <pubDate>Wed, 17 Jun 2026 22:48:44 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>11:04</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>百慕達三角：科學如何看透那片被神話籠罩的海域</title>
-      <description>摘要：百慕達三角長久以來被視為不可解的海域，本片以科學為鏡，梳理失蹤事件、理論提出與統計數據，帶你從傳說回到證據。前半段回顧經典案例與傳聞，後半段拆解甲烷氣泡、磁異常等假設，並以流量與事故統計做比較，最後給出現代啟示。
-
-00:00 開場與引子
-01:10 經典失蹤事件回顧：Flight 19、USS Cyclops 等
-03:40 傳說與大眾想像的形成
-05:20 甲烷氣泡與海水密度理論解析
-07:00 磁異常與導航誤差的科學檢視
-08:30 流量統計與事故率比較
-09:40 科學闢謠與仍待解的問題
-11:00 現代啟示與反思</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0042.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0042.mp3" length="12307437" type="audio/mpeg"/>
-      <pubDate>Tue, 16 Jun 2026 23:04:46 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>08:32</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
