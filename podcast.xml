@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 03 Oct 2026 23:43:29 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 23:57:38 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>漢諾威與貝多芬：歐洲音樂如何走出宮廷？真相揭秘</title>
+      <description>從漢諾威選侯的宮廷到維也納的市民音樂廳，歐洲古典音樂如何從專屬王室的奢華走向市民的大眾文化？本片以宮廷機制、市民文化、作曲革新、演出制度與社會影響五大線索，勾勒18至19世紀音樂轉型的真實路徑，並探討貝多芬與前輩間的關係如何成為轉捩點。章節時間戳（預留）：0:00 引子、1:20 漢諾威的宮廷樂隊、3:40 宮廷的限制與流動、6:00 市民文化與咖啡館、8:30 作曲革新與出版、11:00 新的演出制度、13:30 音樂與政治社會影響、16:00 現代啟示與反思。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0151.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0151.mp3" length="13645485" type="audio/mpeg"/>
+      <pubDate>Sun, 04 Oct 2026 23:57:38 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>09:28</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>奧斯曼帝國興衰真相：多民族帝國如何治理？</title>
       <description>奧斯曼從草原崛起成為橫跨三洲的多民族帝國，如何以制度維繫統治？本片從建立、行政、宗教政策、軍事改革到分裂原因，重構一個複雜世界的治理邏輯，並提出今日啟示。 00:00 引言與興起 01:30 建國與疆域擴張 03:40 行政與省制 05:50 宗教多元與米利特制度 07:40 軍事改革與衰落轉折 09:10 分裂與外力介入 11:20 現代啟示與反思</description>
@@ -1235,16 +1245,6 @@
       <pubDate>Fri, 26 Jun 2026 22:18:01 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>08:33</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>成吉思汗的征服：從草原統一到史上最大帝國（簡史與啟示）</title>
-      <description>成吉思汗如何從一個被逐出部落的少年，築起史上最大連續帝國？本片帶你回到12至13世紀的蒙古草原與中亞戰場，解析統一蒙古、西征花剌子模、軍事創新、版圖規模與深遠遺產。前100字摘要：從鐵蹄與弓弩之間，看見制度、情報與物流如何構成持久征服；既是暴力的勝利，也是組織與制度的革命。章節時間戳（預留）：00:00 開場與導引；01:10 蒙古草原的少年與宿命；03:20 統一之路；05:40 西征花剌子模；07:50 軍事創新與組織；10:10 版圖與治理；12:30 遺產與影響；14:20 現代啟示與反思。</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0051.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0051.mp3" length="13503789" type="audio/mpeg"/>
-      <pubDate>Thu, 25 Jun 2026 22:33:44 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>09:22</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
