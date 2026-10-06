@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 04 Oct 2026 23:57:38 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 01:54:25 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>撒哈拉商隊之謎：沙漠如何支持龐大貿易？──從駱駝到城鎮的流動帝國</title>
+      <description>摘要：撒哈拉，看似無垠荒漠，卻孕育出連結撒哈拉以南非洲與地中海世界的龐大商隊體系。本片追溯商品種類、交通路線、駱駝技術、城鎮興衰與文化交流，試圖還原那條在風吹沙中仍然流動的經濟脈絡。透過歷史、考古與旅行記述的交織，揭示沙漠如何被人類智慧與技術轉化為貿易的舞台。 章節時間預留：00:00 引入與問題設置；01:05 貨物與經濟脈絡；02:20 路線與地理挑戰；03:40 駱駝技術與行軍智慧；05:00 城鎮的興衰與社會結構；06:20 文化交流與宗教影響；07:40 考古與史料的限制；08:30 現代啟示與反思。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0152.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0152.mp3" length="16189677" type="audio/mpeg"/>
+      <pubDate>Tue, 06 Oct 2026 01:54:25 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>11:14</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>漢諾威與貝多芬：歐洲音樂如何走出宮廷？真相揭秘</title>
       <description>從漢諾威選侯的宮廷到維也納的市民音樂廳，歐洲古典音樂如何從專屬王室的奢華走向市民的大眾文化？本片以宮廷機制、市民文化、作曲革新、演出制度與社會影響五大線索，勾勒18至19世紀音樂轉型的真實路徑，並探討貝多芬與前輩間的關係如何成為轉捩點。章節時間戳（預留）：0:00 引子、1:20 漢諾威的宮廷樂隊、3:40 宮廷的限制與流動、6:00 市民文化與咖啡館、8:30 作曲革新與出版、11:00 新的演出制度、13:30 音樂與政治社會影響、16:00 現代啟示與反思。</description>
@@ -1235,16 +1245,6 @@
       <pubDate>Sat, 27 Jun 2026 22:09:18 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>08:22</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>建文帝下落之謎：從靖難之役到鄭和的搜尋（揭秘消失的皇帝）</title>
-      <description>摘要：建文帝朱允炆在靖難之役後突然消失，南京被破、史料斷裂，流傳出出家、海外等多種說法，鄭和下西洋也被視為搜尋的一部分。本片梳理史實、還原畫面、評估各種論點，並提出現代反思。章節：00:00 開場勾引｜02:00 靖難之役回顧｜04:00 南京破城與史料斷裂｜06:00 出家說與地方傳說｜08:00 海外說與朝貢航線｜10:00 鄭和搜尋的可能性｜12:00 各派說法評估｜14:00 現代啟示與結語</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0052.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0052.mp3" length="12326445" type="audio/mpeg"/>
-      <pubDate>Fri, 26 Jun 2026 22:18:01 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>08:33</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
