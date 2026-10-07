@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 06 Oct 2026 01:54:25 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 00:30:54 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,23 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>文藝復興的起源真相：為何義大利先行？——城邦、古典、贊助與革新</title>
+      <description>摘要：為何文藝復興不是從北歐或法蘭西，而是先在義大利綻放？本片從城邦經濟、古典文化再生、美術革新、贊助制度與思想傳播五個關鍵切入，還原那段光景背後的因緣與啟示。接著分段探討佛羅倫斯、威尼斯、米蘭等地的實際場景、人物與制度，並提出對當代社會的反思與借鏡。
+00:00 引子與問題提出
+01:20 義大利的地理與城邦經濟基礎
+03:15 古典文本與文化再生的路徑
+05:10 美術革新與技術突破的現場
+07:05 贊助制度如何塑造藝術生態
+08:50 思想與印刷術的傳播加速
+10:30 現代啟示與總結</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0153.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0153.mp3" length="16880877" type="audio/mpeg"/>
+      <pubDate>Wed, 07 Oct 2026 00:30:54 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>11:43</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>撒哈拉商隊之謎：沙漠如何支持龐大貿易？──從駱駝到城鎮的流動帝國</title>
       <description>摘要：撒哈拉，看似無垠荒漠，卻孕育出連結撒哈拉以南非洲與地中海世界的龐大商隊體系。本片追溯商品種類、交通路線、駱駝技術、城鎮興衰與文化交流，試圖還原那條在風吹沙中仍然流動的經濟脈絡。透過歷史、考古與旅行記述的交織，揭示沙漠如何被人類智慧與技術轉化為貿易的舞台。 章節時間預留：00:00 引入與問題設置；01:05 貨物與經濟脈絡；02:20 路線與地理挑戰；03:40 駱駝技術與行軍智慧；05:00 城鎮的興衰與社會結構；06:20 文化交流與宗教影響；07:40 考古與史料的限制；08:30 現代啟示與反思。</description>
@@ -1235,16 +1252,6 @@
       <pubDate>Sun, 28 Jun 2026 22:10:06 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>08:33</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>PayPal 黑幫：矽谷最強創業團隊的崛起與影響（Musk、Thiel 到 eBay 收購）</title>
-      <description>從矽谷車庫到全球支付舞台，PayPal 黑幫如何改寫科技創業規則與人脈生態？本片回溯 1998-2002 年 PayPal 的創立、內部鬥爭、2002 年被 eBay 收購的關鍵，以及其成員如何在 Tesla、SpaceX、LinkedIn、YouTube 等項目發揮長遠影響。前 100 字摘要：透過人物、場景與決策的微觀刻畫，揭示一群工程師與創業家的雄心與手法，並探討他們如何形塑後矽谷時代的創業文化。 章節時間戳（預留）：00:00 開場與背景｜01:10 早期創業與技術｜02:40 團隊文化與衝突｜04:10 eBay 收購過程｜05:40 Musk、Thiel 的分歧與合作｜07:10 成員去向：Tesla、SpaceX、LinkedIn、YouTube｜08:00 影響力與現代啟示｜09:00 結語與反思。</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0053.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0053.mp3" length="12053421" type="audio/mpeg"/>
-      <pubDate>Sat, 27 Jun 2026 22:09:18 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>08:22</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
