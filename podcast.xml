@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 07 Oct 2026 00:30:54 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 00:45:50 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,25 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>蒙古帝國的通信網：驛站如何支撐全球征服？</title>
+      <description>蒙古帝國並非僅靠騎射與鐵腕統治而成就全球擴張，驛站系統是隱形的帝國動脈。本片解構九至十四世紀的驛站（Yam）如何促成軍事調度、情報收集、商貿流通與文化交流，並探討給現代社會的啟示。前半段重現驛站運作與組織結構，中段分析其對戰爭與經濟的影響，後半則以跨文化視角解讀知識與信使的流動。
+
+00:00 Hook與導入
+01:15 驛站的起源與組織（Yam）
+03:40 軍事調度：速度如何改寫戰場
+06:05 情報網：信使、密碼與偵察
+08:30 經濟效益與貿易通道
+10:50 文化交流與知識傳播
+13:10 現代啟示與反思
+15:00 片尾</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0154.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0154.mp3" length="10535085" type="audio/mpeg"/>
+      <pubDate>Thu, 08 Oct 2026 00:45:50 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>07:18</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>文藝復興的起源真相：為何義大利先行？——城邦、古典、贊助與革新</title>
       <description>摘要：為何文藝復興不是從北歐或法蘭西，而是先在義大利綻放？本片從城邦經濟、古典文化再生、美術革新、贊助制度與思想傳播五個關鍵切入，還原那段光景背後的因緣與啟示。接著分段探討佛羅倫斯、威尼斯、米蘭等地的實際場景、人物與制度，並提出對當代社會的反思與借鏡。
@@ -1242,16 +1261,6 @@
       <pubDate>Mon, 29 Jun 2026 22:21:24 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>08:35</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>波斯帝國的興衰：被忽視的古代超級強權</title>
-      <description>摘要：從居魯士大帝的鐵血與仁政，到波斯版圖的頂峰、希波戰爭的拉鋸、亞歷山大東征的終局，再到薩珊王朝的復興與終焉。本片帶你穿梭千年沙場與宮殿，重探那個塑造歐亞古代秩序的帝國，以及它留給今日的啟示。章節：00:00 開場與居魯士大帝；01:15 帝國擴張與行政體系；02:50 希波戰爭與波斯的挑戰；04:30 霸業頂峰與多元治理；06:10 亞歷山大東征與滅亡；07:30 薩珊王朝的復興；08:40 波斯文化與宗教傳承；09:30 現代啟示與反思。</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0054.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0054.mp3" length="12334509" type="audio/mpeg"/>
-      <pubDate>Sun, 28 Jun 2026 22:10:06 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>08:33</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
