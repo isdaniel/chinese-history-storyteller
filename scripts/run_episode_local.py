@@ -91,7 +91,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--topic-id", type=_positive_int, required=True,
                         help="data/topics_queue.json 的題材 id (同時是集數資料夾編號)")
     parser.add_argument("--short", action="store_true", help="約 2 分鐘、2 段旁白、最多 8 張圖,省時省錢")
-    parser.add_argument("--style", choices=("ink", "cinematic"), default="ink")
+    parser.add_argument("--style", choices=("ink", "cinematic"), default="cinematic")
     parser.add_argument("--from-stage", choices=STAGES)
     parser.add_argument("--only", choices=STAGES, help="只跑這一階段 (同時給 --from-stage 時以 --only 為準)")
     parser.add_argument("--limit-seconds", type=_positive_seconds, default=None,

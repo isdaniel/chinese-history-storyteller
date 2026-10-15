@@ -127,7 +127,7 @@ def test_main_writes_shots_and_report(monkeypatch, tmp_path):
     monkeypatch.setattr(plan_shots, "make_client", lambda: client)
     assert plan_shots.main(7) == 0
     shots = json.loads((ep / "shots.json").read_text(encoding="utf-8"))
-    assert shots["style"] == "ink" and len(shots["beats"]) == 4
+    assert shots["style"] == "cinematic" and len(shots["beats"]) == 4
     assert (ep / "plan_report.json").exists()
 
 
@@ -298,12 +298,12 @@ def test_main_passes_max_images_to_the_planner(monkeypatch, tmp_path):
 
 
 def test_main_honours_visual_style(monkeypatch, tmp_path):
-    monkeypatch.setenv("VISUAL_STYLE", "cinematic")
+    monkeypatch.setenv("VISUAL_STYLE", "ink")
     monkeypatch.delenv("MAX_IMAGES", raising=False)
     client = FakeClient([BIBLE, content("b1", "b2", "pA"), content("b3", "b4", "pB")])
     ep = prepare_episode(monkeypatch, tmp_path, 11, client)
     assert plan_shots.main(11) == 0
-    assert json.loads((ep / "shots.json").read_text(encoding="utf-8"))["style"] == "cinematic"
+    assert json.loads((ep / "shots.json").read_text(encoding="utf-8"))["style"] == "ink"
 
 
 def test_max_images_defaults_to_24_and_reads_the_environment(monkeypatch):

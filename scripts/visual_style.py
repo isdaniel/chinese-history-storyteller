@@ -8,7 +8,7 @@ STYLE_SUFFIXES = {
     "cinematic": (", cinematic realistic historical scene, natural lighting, shallow depth of field, "
                   "muted film color grading, no text, no captions, no watermark, 16:9 aspect"),
 }
-DEFAULT_STYLE = "ink"
+DEFAULT_STYLE = "cinematic"
 
 
 def current_style() -> str:

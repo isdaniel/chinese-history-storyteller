@@ -40,13 +40,14 @@ def test_job_timeout_allows_slow_image_generation():
     assert PUBLISH["jobs"]["publish"]["timeout-minutes"] == 120
 
 
-def test_manual_run_inputs_exist_and_default_to_the_safe_choices():
+def test_manual_run_inputs_exist_and_default_to_shots_and_cinematic():
     inputs = TRIGGERS["workflow_dispatch"]["inputs"]
-    assert inputs["video_mode"]["default"] == "slideshow" and "shots" in inputs["video_mode"]["options"]
-    assert inputs["visual_style"]["options"] == ["ink", "cinematic"]
+    assert inputs["video_mode"]["default"] == "shots" and "slideshow" in inputs["video_mode"]["options"]
+    assert inputs["visual_style"]["options"] == ["ink", "cinematic"] and inputs["visual_style"]["default"] == "cinematic"
     assert inputs["publish_podcast"]["type"] == "boolean" and inputs["publish_podcast"]["default"] is True
     env = PUBLISH["jobs"]["publish"]["env"]
-    assert "inputs.video_mode || 'slideshow'" in env["VIDEO_MODE"]
+    assert "inputs.video_mode || 'shots'" in env["VIDEO_MODE"]
+    assert "inputs.visual_style || 'cinematic'" in env["VISUAL_STYLE"]
     assert env["MAX_IMAGES"] == "24"
 
 
@@ -408,11 +409,17 @@ def test_video_composition_goes_straight_to_the_slideshow_builder_by_default(sli
 
 # --- trigger inputs, job environment, and the untouched replenish job -------------------------------------------------
 
-def test_scheduled_runs_keep_the_production_defaults():
+def test_scheduled_runs_use_shots_and_cinematic_by_default():
     env = PUBLISH["jobs"]["publish"]["env"]
     assert TRIGGERS["schedule"] == [{"cron": "0 21 * * *"}]
-    assert evaluate(env["VIDEO_MODE"], "schedule") == "slideshow"
-    assert evaluate(env["VISUAL_STYLE"], "schedule") == "ink"
+    assert evaluate(env["VIDEO_MODE"], "schedule") == "shots"
+    assert evaluate(env["VISUAL_STYLE"], "schedule") == "cinematic"
+    # a manual run left on its defaults behaves like the schedule; choosing the old slideshow / ink still works
+    inputs = TRIGGERS["workflow_dispatch"]["inputs"]
+    assert evaluate(env["VIDEO_MODE"], "workflow_dispatch", video_mode=inputs["video_mode"]["default"]) == "shots"
+    assert evaluate(env["VISUAL_STYLE"], "workflow_dispatch", visual_style=inputs["visual_style"]["default"]) == "cinematic"
+    assert evaluate(env["VIDEO_MODE"], "workflow_dispatch", video_mode="slideshow") == "slideshow"
+    assert evaluate(env["VISUAL_STYLE"], "workflow_dispatch", visual_style="ink") == "ink"
     assert evaluate(env["YOUTUBE_PRIVACY"], "schedule") == "public"
 
 
@@ -872,7 +879,7 @@ def test_readme_documents_every_video_variable_and_the_code_reads_each_one():
     documented = {name for row in rows for name in re.findall(r"`([A-Z][A-Z0-9_]+)`", row[0])}
     assert documented == DOCUMENTED_ENV
     assert documented <= env_names_read_by_scripts()
-    assert {"`slideshow` (預設)", "`shots`"} <= {row[0] for row in rows}
+    assert {"`shots` (預設)", "`slideshow`"} <= {row[0] for row in rows}
 
 
 def test_readme_defaults_match_the_code(monkeypatch):
@@ -973,7 +980,7 @@ def first_shots_run_section():
 
 
 def readme_row(name):
-    return next(row for row in table_rows(video_section()) if row[0] == f"`{name}`")
+    return next(row for row in table_rows(video_section()) if row[0] in (f"`{name}`", f"`{name}` (預設)"))
 
 
 TEST_RUN_FACTS = ["`upload_youtube.py`", "仍會", "`unlisted`", "`private`", "`published_log.json`", "同一個題目",
@@ -1012,10 +1019,10 @@ def test_the_documented_test_run_behaviour_is_what_the_workflow_does():
 
 
 @pytest.mark.parametrize("doc", [readme, manual_setup], ids=["README", "MANUAL_SETUP"])
-def test_the_ten_to_fifteen_minute_figure_is_labelled_as_the_slideshow_one(doc):
-    lines = [line for line in doc().splitlines() if "等 ~10-15 分鐘" in line]
+def test_the_wait_time_figures_are_labelled_per_mode(doc):
+    lines = [line for line in doc().splitlines() if "等 ~60–90 分鐘" in line]
     assert len(lines) == 1
-    assert "`slideshow`" in lines[0] and "`shots`" in lines[0] and "60–90 分鐘" in lines[0]
+    assert "預設的 `shots` 模式" in lines[0] and "`slideshow` 模式約 ~10-15 分鐘" in lines[0]
 
 
 def test_readme_promises_automatic_degradation_only_for_the_render_step():
@@ -1052,9 +1059,13 @@ def test_manual_setup_checklist_lists_every_lettered_section_in_order():
     assert dict(items)["F"] == BUDGET_TITLE and dict(items)["G"] == FIRST_RUN_TITLE
 
 
-def test_docs_keep_the_schedule_on_slideshow_until_the_manual_trials_pass():
-    assert "排程觸發仍使用 `slideshow`" in readme()
-    assert "才把排程預設改為 `shots`" in manual_setup()
+def test_docs_say_the_schedule_runs_shots_with_cinematic_and_how_to_go_back():
+    assert "排程觸發預設使用 `shots` + `cinematic`" in readme()
+    assert "手動執行時選 `video_mode=slideshow`" in readme()
+    assert "排程預設已是 `shots` + `cinematic`" in manual_setup()
+    assert "手動執行時選 `video_mode=slideshow`" in manual_setup()
+    assert "當天就不會有影片" in readme()
+    assert "才把排程預設改為" not in manual_setup()
 
 
 @pytest.mark.parametrize("doc", ["README.md", "docs/MANUAL_SETUP.md"])

@@ -15,17 +15,17 @@ on:
           - unlisted
           - private
       video_mode:
-        description: '影片模式 (slideshow=舊的圖片輪播, shots=逐句分鏡)'
+        description: '影片模式 (shots=逐句分鏡, slideshow=舊的圖片輪播)'
         required: false
-        default: 'slideshow'
+        default: 'shots'
         type: choice
         options:
           - slideshow
           - shots
       visual_style:
-        description: '視覺風格 (只在 shots 模式使用)'
+        description: '視覺風格 (cinematic=寫實, ink=水墨)'
         required: false
-        default: 'ink'
+        default: 'cinematic'
         type: choice
         options:
           - ink

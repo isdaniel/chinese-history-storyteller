@@ -15,10 +15,12 @@ def test_cinematic_suffix_forbids_text():
     assert "cinematic" in vs.style_suffix("cinematic") and "no text" in vs.style_suffix("cinematic")
 
 
-def test_current_style_reads_env_and_defaults_to_ink(monkeypatch):
+def test_current_style_reads_env_and_defaults_to_cinematic(monkeypatch):
     monkeypatch.delenv("VISUAL_STYLE", raising=False)
-    assert vs.current_style() == "ink"
+    assert vs.current_style() == "cinematic" == vs.DEFAULT_STYLE
     monkeypatch.setenv("VISUAL_STYLE", "")
+    assert vs.current_style() == "cinematic"
+    monkeypatch.setenv("VISUAL_STYLE", "ink")
     assert vs.current_style() == "ink"
     monkeypatch.setenv("VISUAL_STYLE", "cinematic")
     assert vs.current_style() == "cinematic"

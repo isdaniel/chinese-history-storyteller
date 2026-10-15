@@ -284,17 +284,18 @@ def test_main_defaults_to_the_slideshow_with_one_image_per_section(monkeypatch, 
     assert seen["timeout"] == 180.0
     assert (ep_dir / "img_01.png").exists() and (ep_dir / "img_02.png").exists()
     assert not (ep_dir / "image_report.json").exists() and not (ep_dir / "img_s1.png").exists()
-    assert client.images.prompts[0].startswith("sec1") and "ink painting" in client.images.prompts[0]
+    assert client.images.prompts[0].startswith("sec1") and "cinematic realistic" in client.images.prompts[0]
     assert sleeps == [40, 40] and bounds == [(0, 10), (0, 10)]
 
 
-def test_slideshow_uses_the_visual_style_from_the_environment(monkeypatch, episode_env, sleeps):
+@pytest.mark.parametrize("style,phrase", [("ink", "ink painting"), ("cinematic", "cinematic realistic")])
+def test_slideshow_uses_the_visual_style_from_the_environment(monkeypatch, episode_env, sleeps, style, phrase):
     write_script(common.get_episode_dir(9), sections=1)
-    monkeypatch.setenv("VISUAL_STYLE", "cinematic")
+    monkeypatch.setenv("VISUAL_STYLE", style)
     client = RecordingImageClient([png()])
     patch_client(monkeypatch, client)
     gi.main(9)
-    assert "cinematic realistic" in client.images.prompts[0]
+    assert phrase in client.images.prompts[0]
 
 
 def test_slideshow_skips_existing_images_without_sleeping(monkeypatch, episode_env, sleeps):

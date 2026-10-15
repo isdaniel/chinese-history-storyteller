@@ -1563,8 +1563,13 @@ def test_main_runs_every_stage_in_order_with_the_environment_set(runner, capsys)
 
 def test_main_without_short_leaves_the_short_mode_variables_alone(runner):
     assert local.main(["--topic-id", "3"]) == 0
-    assert os.environ["VISUAL_STYLE"] == "ink"
+    assert os.environ["VISUAL_STYLE"] == "cinematic"
     assert not set(local.SHORT_MODE_ENV) & set(os.environ)
+
+
+def test_main_style_ink_is_still_selectable(runner):
+    assert local.main(["--topic-id", "3", "--style", "ink"]) == 0
+    assert os.environ["VISUAL_STYLE"] == "ink"
 
 
 @pytest.fixture

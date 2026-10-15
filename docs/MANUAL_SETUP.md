@@ -330,7 +330,7 @@ GitHub repo → **Settings → Secrets and variables → Actions → New reposit
 2. 左邊選 **Publish Episode** workflow
 3. 右上 **Run workflow**:
    - 把 privacy 設為 **`unlisted`** (測試時不公開)
-4. 等 ~10-15 分鐘 (預設的 `slideshow` 模式;`shots` 模式約 60–90 分鐘)
+4. 等 ~60–90 分鐘 (預設的 `shots` 模式;`slideshow` 模式約 ~10-15 分鐘)
 5. 檢查:
    - YouTube Studio 是否有新影片
    - Repo 是否多了一個 commit ` Publish episode 1`
@@ -371,7 +371,7 @@ Visual Studio 訂閱的抵用額有支出上限,滿了會讓**整條 pipeline (O
    - 完整長度的 `shots` 測試約需 60–90 分鐘。
    - `MAX_IMAGES` 是軟上限:需要的場景數超過上限時,最多放寬到 1.5 倍 (預設 24 張 → 最多 36 張),會記一則 warning,且 `plan_report.json` 的 `budget.exceeded` 為 true;超過 1.5 倍才整集改用保底規劃。
 3. 下載 artifact `episode-review-*`,檢視 `contact_sheet.png` 的字幕是否為繁體字形 (Linux 的 Noto Sans CJK TC 索引預設為 3,不對時設定 `SUBTITLE_FONT_INDEX`),並確認 `video_report.json` 的 `duration_ok` 為 true、備援鏡頭 ≤ 10%。
-4. 連續 3–5 集沒問題後,才把排程預設改為 `shots` (P2,另行處理)。
+4. 排程預設已是 `shots` + `cinematic` (`publish.yml` 的 `VIDEO_MODE` / `VISUAL_STYLE` 備用值);要暫時退回舊的圖片輪播,手動執行時選 `video_mode=slideshow`。
 
 ---
 
