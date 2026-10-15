@@ -70,8 +70,8 @@ jobs:
       PODCAST_LANGUAGE: ${{ secrets.PODCAST_LANGUAGE }}
       PODCAST_CATEGORY: ${{ secrets.PODCAST_CATEGORY }}
       DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-      VIDEO_MODE: ${{ inputs.video_mode || 'slideshow' }}
-      VISUAL_STYLE: ${{ inputs.visual_style || 'ink' }}
+      VIDEO_MODE: ${{ inputs.video_mode || 'shots' }}
+      VISUAL_STYLE: ${{ inputs.visual_style || 'cinematic' }}
       MAX_IMAGES: '24'
 
     steps:
