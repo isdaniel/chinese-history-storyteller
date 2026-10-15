@@ -13,11 +13,11 @@ import subprocess
 import sys
 from pathlib import Path
 
-from common import get_episode_dir, load_json, setup_logging
+from common import ffmpeg_bin, get_episode_dir, load_json, setup_logging
 
 log = setup_logging("build_video")
 
-FFMPEG = os.environ.get("FFMPEG_BIN", "ffmpeg")
+FFMPEG = ffmpeg_bin()
 
 W, H, FPS = 1920, 1080, 30
 
@@ -55,16 +55,21 @@ def write_srt(timings: dict, out_path: Path) -> None:
     log.info("字幕寫入 %s (%d 條)", out_path.name, len(cues))
 
 
-def build_image_clip(img_path: Path, duration: float, out_path: Path) -> None:
-    """單張圖 + Ken Burns 縮放 → 無聲影片片段。"""
+def clip_filter(duration: float) -> str:
+    """單張圖的 Ken Burns 濾鏡:等比例裁切成 16:9 (不拉伸),整段時間內置中緩慢放大到 1.15 倍。"""
     zoom_frames = max(1, int(duration * FPS))
-    vf = (
-        f"scale=2400:1350,zoompan=z='min(zoom+0.0008,1.15)':"
+    return (
+        "scale=2400:1350:force_original_aspect_ratio=increase,crop=2400:1350,"
+        f"zoompan=z='1+0.15*on/{zoom_frames}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
         f"d={zoom_frames}:s={W}x{H}:fps={FPS},format=yuv420p"
     )
+
+
+def build_image_clip(img_path: Path, duration: float, out_path: Path) -> None:
+    """單張圖 + Ken Burns 縮放 → 無聲影片片段。"""
     subprocess.run([
         FFMPEG, "-y", "-loop", "1", "-i", str(img_path),
-        "-t", f"{duration:.3f}", "-vf", vf, "-r", str(FPS),
+        "-t", f"{duration:.3f}", "-vf", clip_filter(duration), "-r", str(FPS),
         "-c:v", "libx264", "-preset", "veryfast", "-pix_fmt", "yuv420p",
         str(out_path),
     ], check=True, capture_output=True)

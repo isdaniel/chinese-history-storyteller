@@ -2,6 +2,7 @@
 import json
 import logging
 import os
+import shutil
 from pathlib import Path
 from datetime import datetime, timezone
 
@@ -38,6 +39,21 @@ def env(key: str, default: str | None = None, required: bool = True) -> str:
     return val or ""
 
 
+def ffmpeg_bin() -> str:
+    """ffmpeg 路徑:FFMPEG_BIN > PATH 上的 ffmpeg > imageio-ffmpeg 內建檔 (本機開發用)。"""
+    configured = os.environ.get("FFMPEG_BIN")
+    if configured:
+        return configured
+    found = shutil.which("ffmpeg")
+    if found:
+        return found
+    try:
+        import imageio_ffmpeg
+        return imageio_ffmpeg.get_ffmpeg_exe()
+    except ImportError:
+        return "ffmpeg"
+
+
 def load_json(path: Path) -> dict:
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
@@ -58,6 +74,12 @@ def get_episode_dir(episode_id: int) -> Path:
 def pick_next_topic() -> dict:
     """從 queue 取下一個未發布題材。剩餘量低於閾值時發 Discord 警告。"""
     queue = load_json(DATA_DIR / "topics_queue.json")
+    override = os.environ.get("TOPIC_ID")
+    if override:
+        for topic in queue["topics"]:
+            if topic["id"] == int(override):
+                return topic
+        raise RuntimeError(f"TOPIC_ID={override} 不在題材庫")
     log = load_json(DATA_DIR / "published_log.json")
     published_ids = {entry["id"] for entry in log["published"]}
 

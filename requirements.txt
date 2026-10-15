@@ -1,4 +1,4 @@
-openai>=1.55.0
+openai>=1.106.0
 azure-identity>=1.19.0
 azure-cognitiveservices-speech>=1.40.0
 azure-storage-blob>=12.20.0,<12.29.0
@@ -11,3 +11,4 @@ Pillow>=10.3.0
 python-dotenv>=1.0.0
 feedgen>=1.0.0
 mutagen>=1.47.0
+numpy>=1.26
