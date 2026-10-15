@@ -28,6 +28,8 @@
   - [ ] D2. 設定所有 Secrets
   - [ ] D3. 首次手動觸發 workflow 測試
 - [ ] **E. (選用) Discord 通知**
+- [ ] **F. Azure 預算警示 (建議)**
+- [ ] **G. 第一次在 GitHub 上跑分鏡模式**
 
 ---
 
@@ -328,7 +330,7 @@ GitHub repo → **Settings → Secrets and variables → Actions → New reposit
 2. 左邊選 **Publish Episode** workflow
 3. 右上 **Run workflow**:
    - 把 privacy 設為 **`unlisted`** (測試時不公開)
-4. 等 ~10-15 分鐘
+4. 等 ~10-15 分鐘 (預設的 `slideshow` 模式;`shots` 模式約 60–90 分鐘)
 5. 檢查:
    - YouTube Studio 是否有新影片
    - Repo 是否多了一個 commit ` Publish episode 1`
@@ -346,6 +348,30 @@ GitHub repo → **Settings → Secrets and variables → Actions → New reposit
 1. Discord 頻道 → 設定 → 整合 → Webhook → 新建
 2. 複製 Webhook URL
 3. 設為 secret `DISCORD_WEBHOOK_URL`
+
+---
+
+## F. Azure 預算警示 (建議)
+
+Visual Studio 訂閱的抵用額有支出上限,滿了會讓**整條 pipeline (OpenAI、Speech、Blob) 一起停止**。分鏡模式每集約 $2–3 (圖片約 $1.5–2),皆為估計值,請先設定警示:
+
+1. Azure 入口網站 → Cost Management + Billing → Budgets → Add。
+2. Scope 選訂閱、Amount 填 `100` (USD)、重置週期 Monthly。
+3. Alert conditions:Actual 80% 與 100%,收件人填你的信箱。
+4. 上線一週後,用 Cost Management 的 Cost analysis 篩選 `Azure OpenAI` 核對實際單張圖片費用,必要時調整 `IMAGE_UNIT_COST_USD` 與 `MAX_IMAGES`。`MAX_IMAGES` 是軟上限 (見 G):遇到需要更多場景的長集數,最多放寬到 1.5 倍 (預設 24 張 → 最多 36 張),估算單集費用上限時請以這個張數計算。
+
+---
+
+## G. 第一次在 GitHub 上跑分鏡模式
+
+1. 先在本機完成 dry-run 並確認成品 (見 README「本機 dry-run」)。
+2. Actions → Publish Episode → Run workflow:`video_mode=shots`、`privacy=private`、取消勾選 `publish_podcast`。要注意:
+   - 取消勾選 `publish_podcast` 只會略過 Podcast 發布與 RSS 提交;`upload_youtube.py` 仍會上傳影片到 YouTube,可見度為所選的 `privacy` (預設 `unlisted`,測試請選 `private`),所以測試執行也會建立一支 (私人) 影片。
+   - 沒有發布 Podcast,`published_log.json` 就不會更新,下一次排程會再選到同一個題目。
+   - 完整長度的 `shots` 測試約需 60–90 分鐘。
+   - `MAX_IMAGES` 是軟上限:需要的場景數超過上限時,最多放寬到 1.5 倍 (預設 24 張 → 最多 36 張),會記一則 warning,且 `plan_report.json` 的 `budget.exceeded` 為 true;超過 1.5 倍才整集改用保底規劃。
+3. 下載 artifact `episode-review-*`,檢視 `contact_sheet.png` 的字幕是否為繁體字形 (Linux 的 Noto Sans CJK TC 索引預設為 3,不對時設定 `SUBTITLE_FONT_INDEX`),並確認 `video_report.json` 的 `duration_ok` 為 true、備援鏡頭 ≤ 10%。
+4. 連續 3–5 集沒問題後,才把排程預設改為 `shots` (P2,另行處理)。
 
 ---
 

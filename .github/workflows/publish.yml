@@ -14,6 +14,27 @@ on:
           - public
           - unlisted
           - private
+      video_mode:
+        description: '影片模式 (slideshow=舊的圖片輪播, shots=逐句分鏡)'
+        required: false
+        default: 'slideshow'
+        type: choice
+        options:
+          - slideshow
+          - shots
+      visual_style:
+        description: '視覺風格 (只在 shots 模式使用)'
+        required: false
+        default: 'ink'
+        type: choice
+        options:
+          - ink
+          - cinematic
+      publish_podcast:
+        description: '是否發布 Podcast 並更新 RSS / 發布紀錄 (測試時取消勾選)'
+        required: false
+        default: true
+        type: boolean
 
 permissions:
   contents: write   # 為了 commit 更新後的 podcast.xml + log
@@ -23,13 +44,13 @@ permissions:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
 
     env:
       AZURE_OPENAI_ENDPOINT: ${{ secrets.AZURE_OPENAI_ENDPOINT }}
       AZURE_OPENAI_GPT_DEPLOYMENT: ${{ secrets.AZURE_OPENAI_GPT_DEPLOYMENT }}
       AZURE_OPENAI_IMAGE_DEPLOYMENT: ${{ secrets.AZURE_OPENAI_IMAGE_DEPLOYMENT }}
-      AZURE_OPENAI_API_VERSION: ${{ secrets.AZURE_OPENAI_API_VERSION }}
+      AZURE_OPENAI_API_VERSION: ${{ secrets.AZURE_OPENAI_API_VERSION || '2024-10-21' }}
       AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
       AZURE_SPEECH_RESOURCE_ID: ${{ secrets.AZURE_SPEECH_RESOURCE_ID }}
       AZURE_SPEECH_CUSTOM_DOMAIN: ${{ secrets.AZURE_SPEECH_CUSTOM_DOMAIN }}
@@ -49,6 +70,9 @@ jobs:
       PODCAST_LANGUAGE: ${{ secrets.PODCAST_LANGUAGE }}
       PODCAST_CATEGORY: ${{ secrets.PODCAST_CATEGORY }}
       DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      VIDEO_MODE: ${{ inputs.video_mode || 'slideshow' }}
+      VISUAL_STYLE: ${{ inputs.visual_style || 'ink' }}
+      MAX_IMAGES: '24'
 
     steps:
       - name: Checkout
@@ -73,7 +97,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg fonts-noto-cjk
-          # 驗證 ffmpeg 含 libx264 (build_video.py 需要)
+          # 驗證 ffmpeg 含 libx264 (影片合成需要)
           ffmpeg -hide_banner -encoders 2>/dev/null | grep -q libx264 || {
             echo "ERROR: ffmpeg without libx264 — install ffmpeg-full or build with --enable-libx264"
             exit 1
@@ -88,29 +112,40 @@ jobs:
         working-directory: scripts
         run: python generate_script.py
 
+      - name: TTS 語音合成 + 逐子句時間 (Azure Speech)
+        working-directory: scripts
+        run: python synthesize_speech.py
+
+      - name: 規劃分鏡 (shots 模式)
+        working-directory: scripts
+        run: python plan_shots.py
+
       - name: 生成插畫 (gpt-image-2)
         working-directory: scripts
         run: python generate_images.py
 
-      - name: TTS 語音合成 (Azure Speech)
+      - name: 聚焦定位 (shots 模式)
         working-directory: scripts
-        run: python synthesize_speech.py
+        run: python ground_focus.py
 
-      - name: 影片合成 (FFmpeg)
+      - name: 影片合成
         working-directory: scripts
-        run: python build_video.py
+        run: python make_video.py
 
       - name: 上傳 YouTube
         working-directory: scripts
         run: python upload_youtube.py
 
       - name: 發布 Podcast (Azure Blob + RSS)
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.publish_podcast }}
         working-directory: scripts
         run: python publish_podcast.py
 
       - name: 通知 Discord
         if: always()
         working-directory: scripts
+        env:
+          PUBLISH_PODCAST: ${{ github.event_name != 'workflow_dispatch' || inputs.publish_podcast }}
         run: python notify.py
         continue-on-error: true
 
@@ -122,6 +157,7 @@ jobs:
           }" "$DISCORD_WEBHOOK_URL" || true
 
       - name: Commit & Push 更新後的 RSS 與 log
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.publish_podcast }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -134,11 +170,28 @@ jobs:
             echo "No changes to commit."
           fi
 
+      - name: Upload review artifacts (縮圖總表與報告)
+        if: always()
+        uses: actions/upload-artifact@v5
+        with:
+          name: episode-review-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            output/**/contact_sheet.png
+            output/**/video_report.json
+            output/**/plan_report.json
+            output/**/image_report.json
+            output/**/ground_report.json
+            output/**/shots.json
+            output/**/timings.json
+            output/**/subtitles.srt
+          if-no-files-found: ignore
+          retention-days: 14
+
       - name: Upload artifacts (debug)
         if: failure()
         uses: actions/upload-artifact@v5
         with:
-          name: episode-debug-${{ github.run_id }}
+          name: episode-debug-${{ github.run_id }}-${{ github.run_attempt }}
           path: |
             output/
             !output/**/*.mp4

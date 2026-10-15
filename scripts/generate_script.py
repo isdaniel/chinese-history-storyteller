@@ -7,22 +7,27 @@ import json
 import sys
 from pathlib import Path
 
-from azure.identity import DefaultAzureCredential, get_bearer_token_provider
-from openai import AzureOpenAI
-
 from common import (
     DATA_DIR, TEMPLATES_DIR, env, get_episode_dir, load_json,
     pick_next_topic, save_json, setup_logging,
 )
+from llm_client import make_client
 
 log = setup_logging("generate_script")
 
 
 def resolve_length_min(topic: dict) -> int:
-    """Clamp queue 內 length_min 至目標 8~10 分鐘區間 (TARGET_LENGTH_MIN 可覆寫上限)。"""
+    """Clamp queue 內 length_min 至目標 8~10 分鐘區間 (TARGET_LENGTH_MIN 可覆寫上限,MIN_LENGTH_MIN 可覆寫下限,本機短版測試用)。"""
     raw_length_min = topic.get("length_min", 12)
     target_min = int(env("TARGET_LENGTH_MIN", "9"))
-    return max(8, min(10, min(raw_length_min, target_min)))
+    lowest = int(env("MIN_LENGTH_MIN", "8"))
+    return max(lowest, min(10, min(raw_length_min, target_min)))
+
+
+def required_sections() -> int:
+    """腳本至少要有幾段才算有效 (MIN_SECTIONS 可覆寫,本機短版測試用)。"""
+    default = max(4, int(env("SECTIONS_PER_EPISODE", "8")) - 2)
+    return int(env("MIN_SECTIONS", str(default)))
 
 
 def build_prompt(topic: dict) -> str:
@@ -54,18 +59,10 @@ def build_prompt(topic: dict) -> str:
 
 
 def generate(topic: dict) -> dict:
-    token_provider = get_bearer_token_provider(
-        DefaultAzureCredential(), "https://cognitiveservices.azure.com/.default"
-    )
     # max_retries=5:SDK 內建會 honor 429 的 Retry-After header 做指數退避
     # timeout=300:gpt-5-mini reasoning 可能跑很久,給寬裕上限
-    client = AzureOpenAI(
-        azure_ad_token_provider=token_provider,
-        api_version=env("AZURE_OPENAI_API_VERSION", "2024-10-21"),
-        azure_endpoint=env("AZURE_OPENAI_ENDPOINT"),
-        max_retries=5,
-        timeout=300.0,
-    )
+    # 有設 AZURE_OPENAI_API_VERSION 時行為與舊版相同;本機沒設時走 v1 路徑
+    client = make_client(timeout=300.0)
     deployment = env("AZURE_OPENAI_GPT_DEPLOYMENT", "gpt-5-mini")
 
     log.info("呼叫 Azure OpenAI (deployment=%s) 生成腳本…", deployment)
@@ -92,7 +89,7 @@ def generate(topic: dict) -> dict:
         )
     script = json.loads(content)
 
-    if "sections" not in script or len(script["sections"]) < max(4, int(env("SECTIONS_PER_EPISODE", "8")) - 2):
+    if "sections" not in script or len(script["sections"]) < required_sections():
         raise RuntimeError(f"腳本格式錯誤,sections 不足: {script.keys()}")
 
     # 字數檢查:旁白總字數應接近目標,否則影片會明顯短於 length_min

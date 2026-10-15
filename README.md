@@ -233,10 +233,52 @@ gh secret list -R $REPO
 1. 進到 GitHub repo → **Actions** tab
 2. 選 **Publish Episode** workflow
 3. 點 **Run workflow** → privacy 選 `unlisted` (先不公開)
-4. 等 ~10-15 分鐘
+4. 等 ~10-15 分鐘 (預設的 `slideshow` 模式;`shots` 模式約 60–90 分鐘)
 5. 檢查 YouTube 後台是否有新影片、`podcast.xml` 是否更新
 
 ---
+
+## 影片合成模式
+
+| `VIDEO_MODE` | 說明 |
+|---|---|
+| `slideshow` (預設) | 每段旁白一張圖,Ken Burns 效果 (舊流程) |
+| `shots` | 逐子句分鏡:程式依配音時間切鏡頭、LLM 決定畫面內容、字卡在旁白說到時出現、字幕用真實時間;渲染失敗時自動降級為 `slideshow`;規劃、產圖、聚焦階段失敗則該次執行失敗 (不會有影片) |
+
+`shots` 模式相關環境變數:
+
+| 變數 | 預設 | 說明 |
+|---|---|---|
+| `VISUAL_STYLE` | `ink` | `ink` 水墨 / `cinematic` 寫實 |
+| `MAX_IMAGES` | `24` | 每集圖片張數上限 (場景最多 4 個鏡頭,每集下限約 20 張);這是軟上限:需要的場景數超過時最多放寬到 1.5 倍,會記一則 warning,`plan_report.json` 的 `budget.exceeded` 為 true |
+| `IMAGE_THROTTLE_SEC` | `30` | 兩張圖之間的等待秒數 (gpt-image-2 為 2 RPM) |
+| `IMAGE_STAGE_MAX_SEC` | `3600` | 產圖階段的時間上限 (秒);超過或連續 3 張因服務錯誤失敗就停止呼叫圖片服務,其餘場景改用備援圖,避免服務異常時拖到工作逾時 |
+| `IMAGE_UNIT_COST_USD` | `0.06` | 通知訊息裡估算成本用的單張價格 (估計值) |
+| `RENDER_WORKERS` | `min(4, CPU 數)` | 並行渲染的程序數 |
+| `VIDEO_CRF` | `22` | H.264 品質 (越小越大檔) |
+| `SUBTITLE_FONT_FILE` / `SUBTITLE_FONT_INDEX` | 自動搜尋 | 字幕字型檔與 `.ttc` 內的索引 (Noto Sans CJK TC = 3) |
+
+### 本機 dry-run (不上傳、不更新 RSS、不寫發布紀錄)
+
+```bash
+az login
+cp .env.example .env     # 再依 .env.example 的說明填入 AZURE_* 端點 (不含金鑰)
+python scripts/run_episode_local.py --topic-id 161 --short                # 約 2 分鐘的短版
+python scripts/run_episode_local.py --topic-id 161 --from-stage images    # 從某階段重跑
+python scripts/run_episode_local.py --topic-id 161 --only video --limit-seconds 30
+```
+
+成品在 `output/ep0161/`:`final.mp4`、`contact_sheet.png` (鏡頭縮圖總表)、`video_report.json`、`plan_report.json`、`image_report.json`、`subtitles.srt`。
+
+### GitHub Actions 手動測試
+
+Actions → Publish Episode → Run workflow:`video_mode=shots`、`privacy=private`、取消勾選 `publish_podcast`。完成後從 artifact `episode-review-*` 下載縮圖總表與報告。排程觸發仍使用 `slideshow`。
+
+測試執行要注意:
+
+- 取消勾選 `publish_podcast` 只會略過 Podcast 發布與 RSS 提交;`upload_youtube.py` 仍會上傳影片到 YouTube,可見度為所選的 `privacy` (預設 `unlisted`,測試請選 `private`),所以測試執行也會在頻道上建立一支 (私人) 影片。
+- 沒有發布 Podcast,`published_log.json` 就不會更新,下一次排程會再選到同一個題目。
+- 完整長度的 `shots` 測試約需 60–90 分鐘 (步驟 6 的 ~10-15 分鐘是 `slideshow` 的時間)。
 
 ## 常見問題
 

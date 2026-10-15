@@ -1,0 +1,55 @@
+name: Tests
+
+on:
+  push:
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - 'templates/**'
+      - 'requirements*.txt'
+      - 'pytest.ini'
+      - '.github/workflows/test.yml'
+      - '.github/workflows/publish.yml'
+      - 'README.md'
+      - '.env.example'
+      - 'docs/MANUAL_SETUP.md'
+  pull_request:
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - 'templates/**'
+      - 'requirements*.txt'
+      - 'pytest.ini'
+      - '.github/workflows/test.yml'
+      - '.github/workflows/publish.yml'
+      - 'README.md'
+      - '.env.example'
+      - 'docs/MANUAL_SETUP.md'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install FFmpeg + 中文字型
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-noto-cjk
+
+      - name: Install Python deps
+        run: pip install -r requirements.txt -r requirements-dev.txt
+
+      - name: Run tests
+        run: python -m pytest -q
