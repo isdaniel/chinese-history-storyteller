@@ -113,6 +113,8 @@ def main(argv=None) -> int:
     if SCRIPTS_DIR not in sys.path:
         sys.path.insert(0, SCRIPTS_DIR)
     os.environ.update(build_env(args.topic_id, args.short, args.style))
+    # 本機驗證要看到分鏡階段的錯誤:預設不降級 (想測降級流程時自己設 SHOTS_STRICT=0)
+    os.environ.setdefault("SHOTS_STRICT", "1")
     # dotenv 不會覆蓋已存在的變數:設成空字串,本機 .env 裡的真實 webhook 就不會在 dry-run 時收到降級/備援警報
     os.environ["DISCORD_WEBHOOK_URL"] = ""
     for stage in stages:

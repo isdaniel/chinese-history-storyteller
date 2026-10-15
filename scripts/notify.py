@@ -3,6 +3,7 @@ import math
 import os
 import sys
 
+import shots_guard
 from common import get_episode_dir, load_json, notify_discord, setup_logging
 
 log = setup_logging("notify")
@@ -107,10 +108,28 @@ def _video_part(report: dict):
     return ",".join(pieces) or None
 
 
+DEGRADED_STAGES = {stage: shots_guard.STAGE_NAMES[stage] for stage in ("plan", "images", "render")}
+
+
+def _degraded_part(ep_dir) -> str | None:
+    marker = shots_guard.read_marker(ep_dir)
+    if marker is None:
+        return None
+    name = DEGRADED_STAGES.get(marker.get("stage"))
+    return f"分鏡降級 ({name})" if name else "分鏡降級"
+
+
 def summarize_run(ep_dir) -> str:
     """本集製作統計 (圖片張數與估算成本與中止原因、規劃保底段數、聚焦失敗鏡頭數、渲染時間、備援鏡頭數、渲染品質疑慮);
     沒有報告或報告壞掉時略過該項,絕不拋例外。"""
     parts = []
+    try:
+        degraded = _degraded_part(ep_dir)
+    except Exception as exc:
+        log.warning("shots_degraded.json 摘要失敗,略過 (%s: %s)", type(exc).__name__, exc)
+        degraded = None
+    if degraded:
+        parts.append(degraded)
     for name, describers in (("image_report.json", (_image_part, _image_stop_part)),
                              ("plan_report.json", (_plan_part,)), ("ground_report.json", (_ground_part,)),
                              ("video_report.json", (_video_part,))):

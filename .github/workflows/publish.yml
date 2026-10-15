@@ -181,6 +181,7 @@ jobs:
             output/**/plan_report.json
             output/**/image_report.json
             output/**/ground_report.json
+            output/**/shots_degraded.json
             output/**/shots.json
             output/**/timings.json
             output/**/subtitles.srt

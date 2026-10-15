@@ -50,3 +50,29 @@ def test_topic_id_override_unknown_raises(monkeypatch, tmp_path):
     monkeypatch.setenv("TOPIC_ID", "99")
     with pytest.raises(RuntimeError):
         common.pick_next_topic()
+
+
+def test_save_json_replaces_the_file_atomically(tmp_path):
+    path = tmp_path / "data.json"
+    common.save_json(path, {"a": "中文"})
+    assert json.loads(path.read_text(encoding="utf-8")) == {"a": "中文"}
+    assert [p.name for p in tmp_path.iterdir()] == ["data.json"], "no temporary file is left behind"
+    common.save_json(path, {"a": 2})
+    assert json.loads(path.read_text(encoding="utf-8")) == {"a": 2}
+
+
+def test_a_failed_save_keeps_the_previous_file_and_leaves_no_temporary_file(tmp_path):
+    path = tmp_path / "data.json"
+    common.save_json(path, {"keep": "me"})
+    with pytest.raises(TypeError):
+        common.save_json(path, {"bad": object()})
+    assert json.loads(path.read_text(encoding="utf-8")) == {"keep": "me"}
+    assert [p.name for p in tmp_path.iterdir()] == ["data.json"]
+
+
+def test_an_interrupted_save_is_cleaned_up_too(tmp_path, monkeypatch):
+    path = tmp_path / "data.json"
+    monkeypatch.setattr(common.json, "dump", lambda *a, **k: (_ for _ in ()).throw(KeyboardInterrupt()))
+    with pytest.raises(KeyboardInterrupt):
+        common.save_json(path, {"a": 1})
+    assert list(tmp_path.iterdir()) == []

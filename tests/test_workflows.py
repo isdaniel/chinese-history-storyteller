@@ -79,9 +79,9 @@ WORKFLOWS = ROOT / ".github" / "workflows"
 PIPELINE = ["generate_script.py", "synthesize_speech.py", "plan_shots.py", "generate_images.py", "ground_focus.py",
             "make_video.py", "upload_youtube.py", "publish_podcast.py", "notify.py"]
 REVIEW_FILES = ["contact_sheet.png", "video_report.json", "plan_report.json", "image_report.json",
-                "ground_report.json", "shots.json", "timings.json", "subtitles.srt"]
+                "ground_report.json", "shots_degraded.json", "shots.json", "timings.json", "subtitles.srt"]
 DOCUMENTED_ENV = {"VIDEO_MODE", "VISUAL_STYLE", "MAX_IMAGES", "IMAGE_THROTTLE_SEC", "IMAGE_STAGE_MAX_SEC", "IMAGE_UNIT_COST_USD",
-                  "RENDER_WORKERS", "VIDEO_CRF", "SUBTITLE_FONT_FILE", "SUBTITLE_FONT_INDEX"}
+                  "SHOTS_STAGE_ATTEMPTS", "SHOTS_STRICT", "RENDER_WORKERS", "VIDEO_CRF", "SUBTITLE_FONT_FILE", "SUBTITLE_FONT_INDEX"}
 PUBLISH_STEP_NAMES = [
     "Checkout", "Azure login (OIDC)", "Setup Python", "Install FFmpeg + 中文字型", "Install Python deps",
     "生成腳本 (Azure OpenAI GPT)", "TTS 語音合成 + 逐子句時間 (Azure Speech)", "規劃分鏡 (shots 模式)",
@@ -380,6 +380,7 @@ def test_shots_mode_is_what_switches_planning_and_grounding_on(module_name, monk
     module = importlib.import_module(module_name)
     monkeypatch.setattr(common, "OUTPUT_DIR", tmp_path)
     monkeypatch.setenv("VIDEO_MODE", "shots")
+    monkeypatch.setenv("SHOTS_STRICT", "1")   # 非 strict 時階段會重試後降級,錯誤不會往外拋
     monkeypatch.setattr(module, "make_client", _unexpected)
     with pytest.raises(OSError):   # reached the real work: the empty episode folder has no script.json / shots.json
         module.main(321)
@@ -1025,13 +1026,39 @@ def test_the_wait_time_figures_are_labelled_per_mode(doc):
     assert "預設的 `shots` 模式" in lines[0] and "`slideshow` 模式約 ~10-15 分鐘" in lines[0]
 
 
-def test_readme_promises_automatic_degradation_only_for_the_render_step():
+def test_readme_describes_the_retry_and_degrade_ladder():
     text = readme_row("shots")[1]
     assert "渲染失敗時自動降級為 `slideshow`" in text
-    assert all(word in text for word in ("規劃", "產圖", "聚焦", "該次執行失敗"))
-    assert "失敗時自動降級" not in text.replace("渲染失敗時自動降級", "")
-    for part in ("規劃分鏡", "生成插畫", "聚焦定位"):   # nothing in the workflow absorbs a failure of these steps
+    assert "規劃、產圖階段會先重試,仍失敗也降級為 `slideshow`" in text
+    assert "聚焦失敗則鏡頭維持置中、照常渲染" in text
+    assert "該次執行失敗" not in text
+    # the ladder lives in the scripts, not in the workflow: the steps themselves must stay plain (a step that
+    # silently continued on error would hide failures that the scripts did not choose to absorb)
+    for part in ("規劃分鏡", "生成插畫", "聚焦定位"):
         assert "continue-on-error" not in named_step(part) and "if" not in named_step(part), part
+
+
+def test_docs_describe_the_degrade_marker_and_its_settings():
+    import shots_guard
+    assert shots_guard.MARKER == "shots_degraded.json"
+    assert shots_guard.DEFAULT_ATTEMPTS == 3 and shots_guard.RETRY_BASE_SEC == 30
+    assert readme_row("SHOTS_STAGE_ATTEMPTS")[1] == "`3`" and "1–5" in readme_row("SHOTS_STAGE_ATTEMPTS")[2]
+    assert shots_guard.MAX_ATTEMPTS == 5
+    assert "`SHOTS_STRICT=0`" in readme_row("SHOTS_STRICT")[2]
+    assert "`shots_degraded.json`" in readme() and "`shots_degraded.json`" in manual_setup()
+    assert "Discord 會收到通知" in readme() and "Discord 也會收到通知" in manual_setup()
+
+
+def test_the_documented_time_limits_are_the_ones_the_guard_enforces():
+    import shots_guard
+    text = readme()
+    limits = shots_guard.STAGE_MAX_SEC
+    assert f"規劃 {limits['plan'] // 60} 分鐘、產圖 {limits['images'] // 60} 分鐘、聚焦 {limits['ground'] // 60} 分鐘" in text
+    assert f"跑超過 {shots_guard.RETRY_MAX_ATTEMPT_SEC // 60} 分鐘才失敗" in text
+    assert "120 分鐘的工作逾時" in text and PUBLISH["jobs"]["publish"]["timeout-minutes"] == 120
+    assert "手動執行也不是 strict" in text and "`shots_degraded.json`" in text
+    assert "規劃、產圖降級為 `slideshow`,聚焦則略過" in readme_row("SHOTS_STAGE_ATTEMPTS")[2]
+    assert "規劃或產圖階段重試後仍失敗、或渲染失敗" in manual_setup()
 
 
 def test_documented_noto_font_index_is_the_one_the_code_uses():
@@ -1064,7 +1091,8 @@ def test_docs_say_the_schedule_runs_shots_with_cinematic_and_how_to_go_back():
     assert "手動執行時選 `video_mode=slideshow`" in readme()
     assert "排程預設已是 `shots` + `cinematic`" in manual_setup()
     assert "手動執行時選 `video_mode=slideshow`" in manual_setup()
-    assert "當天就不會有影片" in readme()
+    assert "規劃或產圖重試後仍失敗、或渲染失敗,當天會自動降級為圖片輪播,workflow 照常完成" in readme()
+    assert "當天就不會有影片" not in readme()
     assert "才把排程預設改為" not in manual_setup()
 
 
@@ -1149,7 +1177,7 @@ def test_env_example_marks_the_legacy_variables_that_no_script_reads_as_unused()
 # --- CI skip guard (tests/conftest.py) -----------------------------------------------------------------------------------
 # A runner that lacks ffmpeg or a CJK font would otherwise skip every render test and stay green.
 
-GUARDED_SKIP_REASONS = ("ffmpeg is not available", "no CJK font installed")
+GUARDED_SKIP_REASONS = ("ffmpeg is not available", "no CJK font installed", "SIGALRM is not available")
 GUARD_MESSAGE = "tests skipped for missing tools"
 FFMPEG_SKIP = "def test_render(ffmpeg_exe):\n    pass\n"
 FONT_SKIP = 'import pytest\n\n\ndef test_render():\n    pytest.skip("no CJK font installed")\n'

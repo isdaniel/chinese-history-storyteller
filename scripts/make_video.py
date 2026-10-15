@@ -16,6 +16,7 @@ import sys
 
 import build_video
 import render_video
+import shots_guard
 from common import get_episode_dir, load_json, notify_discord, setup_logging
 from generate_images import _write_fallback
 
@@ -178,6 +179,14 @@ def _degrade_to_slideshow(episode_id: int, ep_dir, exc: Exception) -> int:
         reason = reason[:ALERT_REASON_CHARS - 1] + "…"
     log.error("分鏡渲染失敗 (%s),降級為圖片輪播", reason, exc_info=exc)
     notify_discord(f"Episode {episode_id}: 分鏡渲染失敗,已降級為圖片輪播。原因: {reason}")
+    try:   # 讓製作統計與 review artifact 看得到這次是渲染失敗而降級
+        shots_guard.write_marker(ep_dir, "render", reason, 1)
+    except OSError as exc:
+        log.warning("無法寫入 %s: %s", shots_guard.MARKER, exc)
+    return _build_slideshow(episode_id, ep_dir)
+
+
+def _build_slideshow(episode_id: int, ep_dir) -> int:
     _discard_render_outputs(ep_dir)
     try:
         make_slideshow_inputs(ep_dir)
@@ -190,6 +199,13 @@ def main(episode_id: int) -> int:
     if os.environ.get("VIDEO_MODE", "slideshow") != "shots":
         return build_video.main(episode_id)
     ep_dir = get_episode_dir(episode_id)
+    marker = shots_guard.read_marker(ep_dir)
+    if marker is not None and marker.get("stage") == "render":
+        shots_guard.clear_marker(ep_dir)   # 上次是渲染失敗 (本機重跑):這次重新嘗試渲染
+        marker = None
+    if marker is not None:   # 前面的分鏡階段已降級並發過通知,這裡不重複發
+        log.error("分鏡階段 %s 已降級 (%s),直接組裝圖片輪播", marker.get("stage"), marker.get("error"))
+        return _build_slideshow(episode_id, ep_dir)
     if not (ep_dir / "shots.json").exists():
         raise RuntimeError("VIDEO_MODE=shots 但找不到 shots.json,請先執行 plan_shots.py")
     _discard_render_outputs(ep_dir)

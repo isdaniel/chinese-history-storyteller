@@ -15,6 +15,7 @@ from pathlib import Path
 
 from common import env, get_episode_dir, load_json, save_json, setup_logging
 from llm_client import make_client
+import shots_guard
 from retry import _is_retryable_status, with_backoff
 from visual_style import current_style, style_suffix
 
@@ -190,13 +191,9 @@ def stage_max_sec() -> float:
     return value if value > 0 and math.isfinite(value) else DEFAULT_IMAGE_STAGE_MAX_SEC
 
 
-def main(episode_id: int) -> int:
+def _shots_images(episode_id: int, ep_dir: Path) -> None:
     client = make_client(timeout=180.0)
     deployment = env("AZURE_OPENAI_IMAGE_DEPLOYMENT", "gpt-image-2")
-    if os.environ.get("VIDEO_MODE", "slideshow") != "shots":
-        return main_slideshow(episode_id, client, deployment)
-
-    ep_dir = get_episode_dir(episode_id)
     shots = load_json(ep_dir / "shots.json")
     retried = discard_fallback_images(shots, ep_dir)
     if retried:
@@ -210,6 +207,24 @@ def main(episode_id: int) -> int:
                                    max_stage_sec=stage_max_sec())
     save_json(ep_dir / "image_report.json", report)
     log.info("圖片完成:生成 %d、跳過 %d、備援 %d", report["generated"], report["skipped"], report["fallback"])
+
+
+def main(episode_id: int) -> int:
+    shots_mode = os.environ.get("VIDEO_MODE", "slideshow") == "shots"
+    ep_dir = get_episode_dir(episode_id) if shots_mode else None
+    if shots_mode and shots_guard.is_degraded(ep_dir):
+        log.warning("分鏡規劃已降級,改用舊流程為每段旁白各產一張圖")
+        shots_mode = False
+    if not shots_mode:
+        client = make_client(timeout=180.0)
+        return main_slideshow(episode_id, client, env("AZURE_OPENAI_IMAGE_DEPLOYMENT", "gpt-image-2"))
+    if not shots_guard.run_stage("images", episode_id, ep_dir, lambda: _shots_images(episode_id, ep_dir)):
+        # 已降級。一張場景圖都沒有 (通常是還沒開始產圖就失敗) 時改走舊流程每段一張圖,否則整支輪播會是同一張備用圖;
+        # 已經有場景圖時,make_video 會直接沿用它們。
+        if not any(ep_dir.glob("img_s*.png")):
+            log.warning("分鏡產圖已降級且沒有任何場景圖,改用舊流程為每段旁白各產一張圖")
+            return main_slideshow(episode_id, make_client(timeout=180.0),
+                                  env("AZURE_OPENAI_IMAGE_DEPLOYMENT", "gpt-image-2"))
     return 0
 
 

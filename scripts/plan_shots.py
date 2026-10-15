@@ -9,6 +9,7 @@ import sys
 
 import beats as beats_mod
 import shot_plan
+import shots_guard
 from common import env, get_episode_dir, load_json, save_json, setup_logging
 from llm_client import chat_json, make_client
 from visual_style import current_style
@@ -149,11 +150,7 @@ def plan_episode(client, script, timings, style, image_limit):
     return shots, report
 
 
-def main(episode_id: int) -> int:
-    if os.environ.get("VIDEO_MODE", "slideshow") != "shots":
-        log.info("VIDEO_MODE is not 'shots'; skipping shot planning")
-        return 0
-    ep_dir = get_episode_dir(episode_id)
+def _plan_once(ep_dir) -> None:
     script = load_json(ep_dir / "script.json")
     timings = load_json(ep_dir / "timings.json")
     if not timings.get("units"):
@@ -163,6 +160,15 @@ def main(episode_id: int) -> int:
     save_json(ep_dir / "plan_report.json", report)
     log.info("planned %d beats in %d scenes (%d overlays, %d fallback sections)", report["beats"],
              report["scenes"], report["overlays"], sum(s["fallback"] for s in report["sections"]))
+
+
+def main(episode_id: int) -> int:
+    if os.environ.get("VIDEO_MODE", "slideshow") != "shots":
+        log.info("VIDEO_MODE is not 'shots'; skipping shot planning")
+        return 0
+    ep_dir = get_episode_dir(episode_id)
+    shots_guard.clear_marker(ep_dir)   # 規劃是第一個分鏡階段:重新規劃就是重新開始,清掉上次的降級標記
+    shots_guard.run_stage("plan", episode_id, ep_dir, lambda: _plan_once(ep_dir))
     return 0
 
 

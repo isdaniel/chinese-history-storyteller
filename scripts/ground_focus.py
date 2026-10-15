@@ -4,6 +4,7 @@ import math
 import os
 import sys
 
+import shots_guard
 from common import get_episode_dir, load_json, save_json, setup_logging
 from llm_client import chat_json, make_client
 
@@ -69,11 +70,7 @@ def run(client, shots: dict, ep_dir, skip_scenes=()) -> dict:
     return {"grounded": grounded, "missing": missing}
 
 
-def main(episode_id: int) -> int:
-    if os.environ.get("VIDEO_MODE", "slideshow") != "shots":
-        log.info("VIDEO_MODE is not 'shots'; skipping focus grounding")
-        return 0
-    ep_dir = get_episode_dir(episode_id)
+def _ground_once(ep_dir) -> None:
     shots = load_json(ep_dir / "shots.json")
     try:
         image_report = load_json(ep_dir / "image_report.json")
@@ -84,6 +81,18 @@ def main(episode_id: int) -> int:
     save_json(ep_dir / "shots.json", shots)
     save_json(ep_dir / "ground_report.json", report)
     log.info("聚焦定位:%d 個鏡頭已定位,%d 個維持置中", report["grounded"], len(report["missing"]))
+
+
+def main(episode_id: int) -> int:
+    if os.environ.get("VIDEO_MODE", "slideshow") != "shots":
+        log.info("VIDEO_MODE is not 'shots'; skipping focus grounding")
+        return 0
+    ep_dir = get_episode_dir(episode_id)
+    if shots_guard.is_degraded(ep_dir):
+        log.warning("分鏡已降級,略過聚焦定位")
+        return 0
+    # 聚焦只影響構圖:重試後仍失敗就讓鏡頭維持置中,不降級整集
+    shots_guard.run_stage("ground", episode_id, ep_dir, lambda: _ground_once(ep_dir), fatal=False)
     return 0
 
 

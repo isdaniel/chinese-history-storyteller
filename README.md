@@ -243,7 +243,7 @@ gh secret list -R $REPO
 | `VIDEO_MODE` | 說明 |
 |---|---|
 | `slideshow` | 每段旁白一張圖,Ken Burns 效果 (舊流程);程式完全沒設定 `VIDEO_MODE` 時走這個 |
-| `shots` (預設) | 逐子句分鏡:程式依配音時間切鏡頭、LLM 決定畫面內容、字卡在旁白說到時出現、字幕用真實時間;渲染失敗時自動降級為 `slideshow`;規劃、產圖、聚焦階段失敗則該次執行失敗 (不會有影片) |
+| `shots` (預設) | 逐子句分鏡:程式依配音時間切鏡頭、LLM 決定畫面內容、字卡在旁白說到時出現、字幕用真實時間;渲染失敗時自動降級為 `slideshow`;規劃、產圖階段會先重試,仍失敗也降級為 `slideshow`;聚焦失敗則鏡頭維持置中、照常渲染 |
 
 `shots` 模式相關環境變數:
 
@@ -253,6 +253,8 @@ gh secret list -R $REPO
 | `MAX_IMAGES` | `24` | 每集圖片張數上限 (場景最多 4 個鏡頭,每集下限約 20 張);這是軟上限:需要的場景數超過時最多放寬到 1.5 倍,會記一則 warning,`plan_report.json` 的 `budget.exceeded` 為 true |
 | `IMAGE_THROTTLE_SEC` | `30` | 兩張圖之間的等待秒數 (gpt-image-2 為 2 RPM) |
 | `IMAGE_STAGE_MAX_SEC` | `3600` | 產圖階段的時間上限 (秒);超過或連續 3 張因服務錯誤失敗就停止呼叫圖片服務,其餘場景改用備援圖,避免服務異常時拖到工作逾時 |
+| `SHOTS_STAGE_ATTEMPTS` | `3` | 規劃、產圖、聚焦各階段出錯時的最多嘗試次數 (1–5,間隔 30、60 秒…);用完仍失敗:規劃、產圖降級為 `slideshow`,聚焦則略過 |
+| `SHOTS_STRICT` | 未設定 | 設成 `1` 時重試用完仍失敗就直接拋出錯誤、不降級;本機 runner 預設為 `1`,要測降級流程請設 `SHOTS_STRICT=0` |
 | `IMAGE_UNIT_COST_USD` | `0.06` | 通知訊息裡估算成本用的單張價格 (估計值) |
 | `RENDER_WORKERS` | `min(4, CPU 數)` | 並行渲染的程序數 |
 | `VIDEO_CRF` | `22` | H.264 品質 (越小越大檔) |
@@ -273,12 +275,13 @@ python scripts/run_episode_local.py --topic-id 161 --only video --limit-seconds 
 ### GitHub Actions 手動測試
 
 Actions → Publish Episode → Run workflow:`video_mode=shots`、`privacy=private`、取消勾選 `publish_podcast`。完成後從 artifact `episode-review-*` 下載縮圖總表與報告。排程觸發預設使用 `shots` + `cinematic` (`publish.yml` 的 `VIDEO_MODE` / `VISUAL_STYLE` 備用值);要退回舊的圖片輪播,手動執行時選 `video_mode=slideshow`。
-排程執行時,規劃、產圖、聚焦階段若失敗,當天就不會有影片;只有渲染失敗會自動降級為圖片輪播。
+排程執行時,規劃、產圖、聚焦階段若出錯會先重試 (`SHOTS_STAGE_ATTEMPTS`,預設 3 次,間隔 30、60 秒)。單次嘗試有時限 (規劃 30 分鐘、產圖 70 分鐘、聚焦 15 分鐘,只在 Linux 的 GitHub Actions 生效);超時、或跑超過 10 分鐘才失敗,就不再重試而直接降級,避免拖過 120 分鐘的工作逾時。規劃或產圖重試後仍失敗、或渲染失敗,當天會自動降級為圖片輪播,workflow 照常完成 (前提是舊流程的產圖與組裝本身沒有問題):Discord 會收到通知,製作統計會寫「分鏡降級」,review artifact 裡的 `shots_degraded.json` 記著失敗的階段與原因。聚焦重試後仍失敗只會讓鏡頭維持置中,並發一則 Discord 通知。
 
 測試執行要注意:
 
 - 取消勾選 `publish_podcast` 只會略過 Podcast 發布與 RSS 提交;`upload_youtube.py` 仍會上傳影片到 YouTube,可見度為所選的 `privacy` (預設 `unlisted`,測試請選 `private`),所以測試執行也會在頻道上建立一支 (私人) 影片。
 - 沒有發布 Podcast,`published_log.json` 就不會更新,下一次排程會再選到同一個題目。
+- 手動執行也不是 strict:分鏡階段出錯同樣會降級而不是讓 job 變紅,所以測試 `shots` 時請看 artifact 裡有沒有 `shots_degraded.json`。
 - 完整長度的 `shots` 測試約需 60–90 分鐘 (步驟 6 的 ~10-15 分鐘是 `slideshow` 的時間)。
 
 ## 常見問題

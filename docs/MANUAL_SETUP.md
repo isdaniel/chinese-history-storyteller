@@ -371,7 +371,8 @@ Visual Studio 訂閱的抵用額有支出上限,滿了會讓**整條 pipeline (O
    - 完整長度的 `shots` 測試約需 60–90 分鐘。
    - `MAX_IMAGES` 是軟上限:需要的場景數超過上限時,最多放寬到 1.5 倍 (預設 24 張 → 最多 36 張),會記一則 warning,且 `plan_report.json` 的 `budget.exceeded` 為 true;超過 1.5 倍才整集改用保底規劃。
 3. 下載 artifact `episode-review-*`,檢視 `contact_sheet.png` 的字幕是否為繁體字形 (Linux 的 Noto Sans CJK TC 索引預設為 3,不對時設定 `SUBTITLE_FONT_INDEX`),並確認 `video_report.json` 的 `duration_ok` 為 true、備援鏡頭 ≤ 10%。
-4. 排程預設已是 `shots` + `cinematic` (`publish.yml` 的 `VIDEO_MODE` / `VISUAL_STYLE` 備用值);要暫時退回舊的圖片輪播,手動執行時選 `video_mode=slideshow`。
+4. 若 artifact 裡有 `shots_degraded.json`,代表規劃或產圖階段重試後仍失敗、或渲染失敗,該次已自動降級為圖片輪播,檔案內記著失敗的階段與原因;Discord 也會收到通知。看到它就先處理原因,再考慮要不要補跑。
+5. 排程預設已是 `shots` + `cinematic` (`publish.yml` 的 `VIDEO_MODE` / `VISUAL_STYLE` 備用值);要暫時退回舊的圖片輪播,手動執行時選 `video_mode=slideshow`。
 
 ---
 

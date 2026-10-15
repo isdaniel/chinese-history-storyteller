@@ -135,6 +135,7 @@ def test_main_requires_units(monkeypatch, tmp_path):
     import common
     monkeypatch.setattr(common, "OUTPUT_DIR", tmp_path)
     monkeypatch.setenv("VIDEO_MODE", "shots")
+    monkeypatch.setenv("SHOTS_STRICT", "1")   # 非 strict 時這個錯誤會被重試後降級 (見 test_shots_guard.py)
     ep = common.get_episode_dir(8)
     (ep / "script.json").write_text(json.dumps(SCRIPT), encoding="utf-8")
     (ep / "timings.json").write_text(json.dumps({"sections": [], "total": 0}), encoding="utf-8")
