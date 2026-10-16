@@ -590,7 +590,7 @@ def test_the_alarm_handler_raises_a_stage_timeout(tmp_path, fake_signal, sleeps,
         captured["handler"](fake_signal.SIGALRM, None)
 
 
-@pytest.mark.parametrize("stage,seconds", [("plan", 1800), ("images", 4200), ("ground", 900)])
+@pytest.mark.parametrize("stage,seconds", [("plan", 1800), ("images", 5400), ("ground", 900)])
 def test_every_stage_has_its_own_default_limit(tmp_path, fake_signal, sleeps, alerts, stage, seconds):
     sg.run_stage(stage, 7, tmp_path, failing(0))
     assert fake_signal.timer[0] == (0, seconds) and sg.STAGE_MAX_SEC[stage] == seconds

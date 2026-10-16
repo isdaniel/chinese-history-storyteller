@@ -17,6 +17,7 @@ from visual_style import current_style
 log = setup_logging("plan_shots")
 
 MAX_ATTEMPTS = 4
+SOFT_CAP_FACTOR = 2   # MAX_IMAGES 是軟上限:需要的場景數最多可放寬到幾倍
 
 
 def max_images() -> int:
@@ -86,10 +87,10 @@ def _fallback_prompt(section: dict) -> str:
 
 
 def scene_budgets(beat_counts, image_limit):
-    """MAX_IMAGES 是軟上限:最少需要的場景數超過上限但不超過 1.5 倍時照常規劃 (多留 2 個場景的餘裕),
+    """MAX_IMAGES 是軟上限:最少需要的場景數超過上限但不超過 2 倍時照常規劃 (多留 2 個場景的餘裕),
     再超過才整集改用保底計畫。回傳 (各段場景上限 | None, 寫進 plan_report 的 budget)。"""
     needed = sum(math.ceil(c / shot_plan.MAX_BEATS_PER_SCENE) for c in beat_counts)
-    ceiling = image_limit * 3 // 2
+    ceiling = image_limit * SOFT_CAP_FACTOR
     exceeded = needed > image_limit
     if needed > ceiling:
         log.warning("MAX_IMAGES=%d is too small: at least %d scenes are needed; "

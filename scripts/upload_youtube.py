@@ -16,6 +16,9 @@ from retry import with_backoff
 
 log = setup_logging("upload_youtube")
 
+# 固定宣告「不含變造或合成內容」。YouTube 仍可能依自己的偵測或頻道的上傳預設加上「由 AI 生成」標籤,不受此欄位控制。
+CONTAINS_SYNTHETIC_MEDIA = False
+
 
 def get_credentials() -> Credentials:
     return Credentials(
@@ -40,6 +43,26 @@ def build_description(script: dict, timings: dict) -> str:
     return base + "\n".join(chapters)
 
 
+def build_body(script: dict, timings: dict, privacy: str) -> dict:
+    return {
+        "snippet": {
+            "title": script["title"][:100],
+            "description": build_description(script, timings)[:5000],
+            "tags": script.get("tags", [])[:15],
+            "categoryId": "22",  # People & Blogs (歷史內容適用,Education=27 也可)
+            "defaultLanguage": "zh-Hant",
+            "defaultAudioLanguage": "zh-Hant",
+        },
+        "status": {
+            "privacyStatus": privacy,
+            "selfDeclaredMadeForKids": False,
+            "license": "youtube",
+            "embeddable": True,
+            "containsSyntheticMedia": CONTAINS_SYNTHETIC_MEDIA,
+        },
+    }
+
+
 def main(episode_id: int) -> int:
     ep_dir = get_episode_dir(episode_id)
     script = load_json(ep_dir / "script.json")
@@ -50,22 +73,8 @@ def main(episode_id: int) -> int:
 
     youtube = build("youtube", "v3", credentials=get_credentials())
 
-    body = {
-        "snippet": {
-            "title": script["title"][:100],
-            "description": build_description(script, timings)[:5000],
-            "tags": script.get("tags", [])[:15],
-            "categoryId": "22",  # People & Blogs (歷史內容適用,Education=27 也可)
-            "defaultLanguage": "zh-Hant",
-            "defaultAudioLanguage": "zh-Hant",
-        },
-        "status": {
-            "privacyStatus": os.environ.get("YOUTUBE_PRIVACY", "public"),
-            "selfDeclaredMadeForKids": False,
-            "license": "youtube",
-            "embeddable": True,
-        },
-    }
+    body = build_body(script, timings, os.environ.get("YOUTUBE_PRIVACY", "public"))
+    log.info("宣告 containsSyntheticMedia=%s", str(body["status"]["containsSyntheticMedia"]).lower())
 
     log.info("開始上傳: %s (%.1f MB)", video_path.name, video_path.stat().st_size / 1e6)
     media = MediaFileUpload(str(video_path), mimetype="video/mp4",

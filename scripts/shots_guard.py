@@ -6,7 +6,7 @@
 - ground (非 fatal):只發 Discord,鏡頭維持置中,影片照常渲染。
 SHOTS_STRICT=1 時 (本機 runner 預設) 重試用完會直接拋出最後一個例外,不降級,方便驗證時看到問題。
 
-時間保護 (工作逾時是 120 分鐘,掛住的呼叫不會自己丟例外):
+時間保護 (工作逾時是 180 分鐘,掛住的呼叫不會自己丟例外):
 - 每次嘗試有時限 (STAGE_MAX_SEC),用 SIGALRM 中斷,只在 POSIX 的主執行緒有效 (GitHub Actions 是 Linux);
 - 「慢失敗」(超時,或一次嘗試跑了 RETRY_MAX_ATTEMPT_SEC 秒以上才失敗) 不再重試,直接降級,
   避免長階段一再重跑把後面降級用的時間吃光。
@@ -31,7 +31,7 @@ RETRY_BASE_SEC = 30
 RETRY_MAX_ATTEMPT_SEC = 600
 REASON_CHARS = 500
 STAGE_NAMES = {"plan": "規劃", "images": "產圖", "ground": "聚焦", "render": "渲染"}
-STAGE_MAX_SEC = {"plan": 1800, "images": 4200, "ground": 900}
+STAGE_MAX_SEC = {"plan": 1800, "images": 5400, "ground": 900}
 _TRUE = {"1", "true", "yes", "on"}
 
 

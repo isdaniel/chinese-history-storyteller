@@ -10,7 +10,6 @@ STYLE_SUFFIXES = {
 }
 DEFAULT_STYLE = "cinematic"
 
-
 def current_style() -> str:
     style = os.environ.get("VISUAL_STYLE") or DEFAULT_STYLE
     if style not in STYLE_SUFFIXES:

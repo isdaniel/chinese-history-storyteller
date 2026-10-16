@@ -97,11 +97,11 @@ def test_a_failing_bible_call_does_not_stop_planning():
 
 def test_too_small_image_budget_falls_back_without_calling_the_planner():
     client = FakeClient([BIBLE])
-    shots, report = plan_shots.plan_episode(client, SCRIPT, timings(), "ink", 1)
+    shots, report = plan_shots.plan_episode(client, SCRIPT, timings(), "ink", 0)   # 2 scenes needed, ceiling 2 * 0
     assert len(client.calls) == 1
     assert all(s["fallback"] for s in report["sections"])
     assert len(shots["scenes"]) == 2
-    assert report["budget"] == {"limit": 1, "needed": 2, "used": None, "exceeded": True}
+    assert report["budget"] == {"limit": 0, "needed": 2, "used": None, "exceeded": True}
 
 
 def test_segmentation_failure_degrades_to_one_beat_per_unit():
@@ -351,11 +351,15 @@ SOFT_CAP_CASES = [
     pytest.param([4] * 7, 8, 8, id="needed below the limit"),
     pytest.param([4] * 8, 8, 8, id="needed == limit"),
     pytest.param([4] * 9, 8, 11, id="needed == limit + 1: two spare scenes"),
-    pytest.param([4] * 11, 8, 12, id="needed + 2 is clipped to the ceiling"),
-    pytest.param([4] * 12, 8, 12, id="needed == ceiling"),
-    pytest.param([4] * 13, 8, None, id="needed == ceiling + 1: every section falls back"),
-    pytest.param([4] * 4, 3, 4, id="odd limit: the ceiling is floor(1.5 * 3) = 4"),
-    pytest.param([4] * 5, 3, None, id="odd limit: 5 is above floor(4.5)"),
+    pytest.param([4] * 15, 8, 16, id="needed + 2 is clipped to the ceiling (twice the limit)"),
+    pytest.param([4] * 16, 8, 16, id="needed == ceiling"),
+    pytest.param([4] * 17, 8, None, id="needed == ceiling + 1: every section falls back"),
+    pytest.param([4] * 6, 3, 6, id="odd limit: the ceiling is 2 * 3 = 6"),
+    pytest.param([4] * 7, 3, None, id="odd limit: 7 is above 6"),
+    pytest.param([4] * 31, 24, 33, id="the real episode: 31 scenes needed against 24, planned with 33"),
+    pytest.param([4] * 46, 24, 48, id="24 -> 48: needed + 2 is clipped to 48"),
+    pytest.param([4] * 48, 24, 48, id="24 -> 48: needed == 48"),
+    pytest.param([4] * 49, 24, None, id="24 -> 48: 49 scenes fall back"),
     pytest.param([9] * 8, 24, 24, id="review probe: 8 sections of 9 beats fit exactly"),
     pytest.param([9] * 7 + [13], 24, 27, id="review probe: one long section no longer drops the episode"),
 ]
@@ -400,9 +404,9 @@ def test_exceeding_the_cap_logs_by_how_much_and_the_limit_used(caplog):
 
 
 def test_exceeding_the_ceiling_logs_the_fallback(caplog):
-    messages = plan_warnings(caplog, [4] * 13, 8)
+    messages = plan_warnings(caplog, [4] * 17, 8)
     assert len(messages) == 1
-    assert "MAX_IMAGES=8 is too small: at least 13 scenes are needed" in messages[0]
+    assert "MAX_IMAGES=8 is too small: at least 17 scenes are needed" in messages[0]
     assert "every section falls back" in messages[0]
 
 
@@ -414,6 +418,6 @@ def test_main_reads_max_images_for_the_soft_cap(monkeypatch, tmp_path):
     (ep / "timings.json").write_text(json.dumps(make_timings([2, 2, 2]), ensure_ascii=False), encoding="utf-8")
     assert plan_shots.main(12) == 0
     report = read_report(ep)
-    assert report["budget"] == {"limit": 2, "needed": 3, "used": 3, "exceeded": True}
+    assert report["budget"] == {"limit": 2, "needed": 3, "used": 4, "exceeded": True}
     assert not any(s["fallback"] for s in report["sections"])
     assert len(json.loads((ep / "shots.json").read_text(encoding="utf-8"))["scenes"]) == 3

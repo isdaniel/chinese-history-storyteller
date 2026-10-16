@@ -250,9 +250,9 @@ gh secret list -R $REPO
 | 變數 | 預設 | 說明 |
 |---|---|---|
 | `VISUAL_STYLE` | `cinematic` | `cinematic` 寫實 / `ink` 水墨 |
-| `MAX_IMAGES` | `24` | 每集圖片張數上限 (場景最多 4 個鏡頭,每集下限約 20 張);這是軟上限:需要的場景數超過時最多放寬到 1.5 倍,會記一則 warning,`plan_report.json` 的 `budget.exceeded` 為 true |
+| `MAX_IMAGES` | `24` | 每集圖片張數上限 (場景最多 4 個鏡頭,每集下限約 20 張);這是軟上限:需要的場景數超過時最多放寬到 2 倍 (預設 24 張 → 最多 48 張),會記一則 warning,`plan_report.json` 的 `budget.exceeded` 為 true |
 | `IMAGE_THROTTLE_SEC` | `30` | 兩張圖之間的等待秒數 (gpt-image-2 為 2 RPM) |
-| `IMAGE_STAGE_MAX_SEC` | `3600` | 產圖階段的時間上限 (秒);超過或連續 3 張因服務錯誤失敗就停止呼叫圖片服務,其餘場景改用備援圖,避免服務異常時拖到工作逾時 |
+| `IMAGE_STAGE_MAX_SEC` | `4500` | 產圖階段的時間上限 (秒);超過或連續 3 張因服務錯誤失敗就停止呼叫圖片服務,其餘場景改用備援圖,避免服務異常時拖到工作逾時 |
 | `SHOTS_STAGE_ATTEMPTS` | `3` | 規劃、產圖、聚焦各階段出錯時的最多嘗試次數 (1–5,間隔 30、60 秒…);用完仍失敗:規劃、產圖降級為 `slideshow`,聚焦則略過 |
 | `SHOTS_STRICT` | 未設定 | 設成 `1` 時重試用完仍失敗就直接拋出錯誤、不降級;本機 runner 預設為 `1`,要測降級流程請設 `SHOTS_STRICT=0` |
 | `IMAGE_UNIT_COST_USD` | `0.06` | 通知訊息裡估算成本用的單張價格 (估計值) |
@@ -275,7 +275,7 @@ python scripts/run_episode_local.py --topic-id 161 --only video --limit-seconds 
 ### GitHub Actions 手動測試
 
 Actions → Publish Episode → Run workflow:`video_mode=shots`、`privacy=private`、取消勾選 `publish_podcast`。完成後從 artifact `episode-review-*` 下載縮圖總表與報告。排程觸發預設使用 `shots` + `cinematic` (`publish.yml` 的 `VIDEO_MODE` / `VISUAL_STYLE` 備用值);要退回舊的圖片輪播,手動執行時選 `video_mode=slideshow`。
-排程執行時,規劃、產圖、聚焦階段若出錯會先重試 (`SHOTS_STAGE_ATTEMPTS`,預設 3 次,間隔 30、60 秒)。單次嘗試有時限 (規劃 30 分鐘、產圖 70 分鐘、聚焦 15 分鐘,只在 Linux 的 GitHub Actions 生效);超時、或跑超過 10 分鐘才失敗,就不再重試而直接降級,避免拖過 120 分鐘的工作逾時。規劃或產圖重試後仍失敗、或渲染失敗,當天會自動降級為圖片輪播,workflow 照常完成 (前提是舊流程的產圖與組裝本身沒有問題):Discord 會收到通知,製作統計會寫「分鏡降級」,review artifact 裡的 `shots_degraded.json` 記著失敗的階段與原因。聚焦重試後仍失敗只會讓鏡頭維持置中,並發一則 Discord 通知。
+排程執行時,規劃、產圖、聚焦階段若出錯會先重試 (`SHOTS_STAGE_ATTEMPTS`,預設 3 次,間隔 30、60 秒)。單次嘗試有時限 (規劃 30 分鐘、產圖 90 分鐘、聚焦 15 分鐘,只在 Linux 的 GitHub Actions 生效);超時、或跑超過 10 分鐘才失敗,就不再重試而直接降級,避免拖過 180 分鐘的工作逾時。規劃或產圖重試後仍失敗、或渲染失敗,當天會自動降級為圖片輪播,workflow 照常完成 (前提是舊流程的產圖與組裝本身沒有問題):Discord 會收到通知,製作統計會寫「分鏡降級」,review artifact 裡的 `shots_degraded.json` 記著失敗的階段與原因。聚焦重試後仍失敗只會讓鏡頭維持置中,並發一則 Discord 通知。
 
 測試執行要注意:
 
@@ -312,7 +312,6 @@ refresh token 失效 (Testing 模式 7 天閒置會過期)。重跑 `python scri
 題材庫已預先準備 100 集 (約 1 年份),在 `data/topics_queue.json`。
 
 ### YouTube 政策合規
-- AI 揭露:在 Studio 設定預設揭露 "Altered Content"
 - **不要** 標記 `selfDeclaredMadeForKids: true` (歷史內容受眾為成人)
 - 控制發布頻率,避免被判定為 Content Farm
 - 第 8 段強制包含「現代啟示」原創觀點

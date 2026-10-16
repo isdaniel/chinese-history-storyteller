@@ -358,7 +358,7 @@ Visual Studio 訂閱的抵用額有支出上限,滿了會讓**整條 pipeline (O
 1. Azure 入口網站 → Cost Management + Billing → Budgets → Add。
 2. Scope 選訂閱、Amount 填 `100` (USD)、重置週期 Monthly。
 3. Alert conditions:Actual 80% 與 100%,收件人填你的信箱。
-4. 上線一週後,用 Cost Management 的 Cost analysis 篩選 `Azure OpenAI` 核對實際單張圖片費用,必要時調整 `IMAGE_UNIT_COST_USD` 與 `MAX_IMAGES`。`MAX_IMAGES` 是軟上限 (見 G):遇到需要更多場景的長集數,最多放寬到 1.5 倍 (預設 24 張 → 最多 36 張),估算單集費用上限時請以這個張數計算。
+4. 上線一週後,用 Cost Management 的 Cost analysis 篩選 `Azure OpenAI` 核對實際單張圖片費用,必要時調整 `IMAGE_UNIT_COST_USD` 與 `MAX_IMAGES`。`MAX_IMAGES` 是軟上限 (見 G):遇到需要更多場景的長集數,最多放寬到 2 倍 (預設 24 張 → 最多 48 張),估算單集費用上限時請以這個張數計算。
 
 ---
 
@@ -369,7 +369,7 @@ Visual Studio 訂閱的抵用額有支出上限,滿了會讓**整條 pipeline (O
    - 取消勾選 `publish_podcast` 只會略過 Podcast 發布與 RSS 提交;`upload_youtube.py` 仍會上傳影片到 YouTube,可見度為所選的 `privacy` (預設 `unlisted`,測試請選 `private`),所以測試執行也會建立一支 (私人) 影片。
    - 沒有發布 Podcast,`published_log.json` 就不會更新,下一次排程會再選到同一個題目。
    - 完整長度的 `shots` 測試約需 60–90 分鐘。
-   - `MAX_IMAGES` 是軟上限:需要的場景數超過上限時,最多放寬到 1.5 倍 (預設 24 張 → 最多 36 張),會記一則 warning,且 `plan_report.json` 的 `budget.exceeded` 為 true;超過 1.5 倍才整集改用保底規劃。
+   - `MAX_IMAGES` 是軟上限:需要的場景數超過上限時,最多放寬到 2 倍 (預設 24 張 → 最多 48 張),會記一則 warning,且 `plan_report.json` 的 `budget.exceeded` 為 true;超過 1.5 倍才整集改用保底規劃。
 3. 下載 artifact `episode-review-*`,檢視 `contact_sheet.png` 的字幕是否為繁體字形 (Linux 的 Noto Sans CJK TC 索引預設為 3,不對時設定 `SUBTITLE_FONT_INDEX`),並確認 `video_report.json` 的 `duration_ok` 為 true、備援鏡頭 ≤ 10%。
 4. 若 artifact 裡有 `shots_degraded.json`,代表規劃或產圖階段重試後仍失敗、或渲染失敗,該次已自動降級為圖片輪播,檔案內記著失敗的階段與原因;Discord 也會收到通知。看到它就先處理原因,再考慮要不要補跑。
 5. 排程預設已是 `shots` + `cinematic` (`publish.yml` 的 `VIDEO_MODE` / `VISUAL_STYLE` 備用值);要暫時退回舊的圖片輪播,手動執行時選 `video_mode=slideshow`。

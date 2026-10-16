@@ -37,7 +37,7 @@ def test_pipeline_order_puts_tts_before_planning_and_images():
 
 
 def test_job_timeout_allows_slow_image_generation():
-    assert PUBLISH["jobs"]["publish"]["timeout-minutes"] == 120
+    assert PUBLISH["jobs"]["publish"]["timeout-minutes"] == 180
 
 
 def test_manual_run_inputs_exist_and_default_to_shots_and_cinematic():
@@ -986,7 +986,7 @@ def readme_row(name):
 
 TEST_RUN_FACTS = ["`upload_youtube.py`", "仍會", "`unlisted`", "`private`", "`published_log.json`", "同一個題目",
                   "60–90 分鐘"]
-SOFT_CAP_FACTS = ["`MAX_IMAGES`", "軟上限", "1.5 倍", "`budget.exceeded`"]
+SOFT_CAP_FACTS = ["`MAX_IMAGES`", "軟上限", "2 倍", "`budget.exceeded`"]
 
 
 @pytest.mark.parametrize("doc", [readme_test_run_section, first_shots_run_section], ids=["README", "MANUAL_SETUP-G"])
@@ -1005,7 +1005,7 @@ def test_the_soft_cap_is_documented_where_images_are_budgeted():
     for fact in SOFT_CAP_FACTS:
         assert fact in first_shots_run_section(), fact
     budget_start, budget_end = section_bounds(manual_setup(), "F", BUDGET_TITLE)
-    assert "軟上限" in manual_setup()[budget_start:budget_end] and "1.5 倍" in manual_setup()[budget_start:budget_end]
+    assert "軟上限" in manual_setup()[budget_start:budget_end] and "2 倍" in manual_setup()[budget_start:budget_end]
     assert {"budget", "exceeded"} <= dict_keys_written_by(SCRIPTS / "plan_shots.py")   # the key the docs point at
 
 
@@ -1055,7 +1055,7 @@ def test_the_documented_time_limits_are_the_ones_the_guard_enforces():
     limits = shots_guard.STAGE_MAX_SEC
     assert f"規劃 {limits['plan'] // 60} 分鐘、產圖 {limits['images'] // 60} 分鐘、聚焦 {limits['ground'] // 60} 分鐘" in text
     assert f"跑超過 {shots_guard.RETRY_MAX_ATTEMPT_SEC // 60} 分鐘才失敗" in text
-    assert "120 分鐘的工作逾時" in text and PUBLISH["jobs"]["publish"]["timeout-minutes"] == 120
+    assert "180 分鐘的工作逾時" in text and PUBLISH["jobs"]["publish"]["timeout-minutes"] == 180
     assert "手動執行也不是 strict" in text and "`shots_degraded.json`" in text
     assert "規劃、產圖降級為 `slideshow`,聚焦則略過" in readme_row("SHOTS_STAGE_ATTEMPTS")[2]
     assert "規劃或產圖階段重試後仍失敗、或渲染失敗" in manual_setup()
@@ -1243,3 +1243,16 @@ def test_every_skip_in_the_suite_is_one_the_ci_guard_fails_on():
     for name, use in uses:
         reason = re.fullmatch(r'pytest\.skip\("(.+)"\)', use)
         assert reason and reason.group(1) in GUARDED_SKIP_REASONS, f"{name}: {use} is not covered by the CI guard"
+
+# --- YouTube AI disclosure (status.containsSyntheticMedia) ---------------------------------------------------------------
+
+def test_the_upload_always_declares_no_synthetic_media_and_the_docs_say_so():
+    import upload_youtube
+    assert upload_youtube.CONTAINS_SYNTHETIC_MEDIA is False
+    text = readme()
+    assert "固定送 `status.containsSyntheticMedia: false` (不宣告)" in text
+    assert "YouTube 仍可能依自己的偵測、C2PA 中繼資料或頻道的上傳預設加上「由 AI 生成」標籤" in text
+    assert "是否揭露由頻道擁有者負責" in text
+    assert "會自動向 YouTube 宣告" not in readme_row("VISUAL_STYLE")[2]
+    source = read(SCRIPTS / "upload_youtube.py")
+    assert source.count("containsSyntheticMedia") >= 2 and "is_realistic" not in source

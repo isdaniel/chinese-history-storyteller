@@ -462,7 +462,7 @@ def breaker_errors(caplog):
 
 def test_the_failure_limit_is_three():
     assert gi.MAX_CONSECUTIVE_FAILURES == 3
-    assert gi.DEFAULT_IMAGE_STAGE_MAX_SEC == 3600
+    assert gi.DEFAULT_IMAGE_STAGE_MAX_SEC == 4500
 
 
 def test_a_normal_run_reports_that_it_did_not_stop_early(tmp_path):
@@ -640,7 +640,7 @@ def test_the_consecutive_failure_reason_wins_when_both_limits_are_reached(tmp_pa
 
 def test_the_defaults_are_one_hour_on_the_real_monotonic_clock(tmp_path):
     params = inspect.signature(gi.generate_scene_images).parameters
-    assert params["max_stage_sec"].default == 3600 and params["clock"].default is time.monotonic
+    assert params["max_stage_sec"].default == 4500 and params["clock"].default is time.monotonic
     client, report, _ = run_many(tmp_path, 3, [png()] * 3)
     assert len(client.images.prompts) == 3 and report["stopped_early"] is None
 
@@ -662,8 +662,8 @@ def stage_caps(monkeypatch):
 
 
 @pytest.mark.parametrize("configured,expected", [
-    (None, 3600), ("", 3600), ("900", 900), ("90.5", 90.5), (" 120 ", 120),
-    ("junk", 3600), ("0", 3600), ("-5", 3600), ("nan", 3600), ("inf", 3600), ("1e999", 3600)])
+    (None, 4500), ("", 4500), ("900", 900), ("90.5", 90.5), (" 120 ", 120),
+    ("junk", 4500), ("0", 4500), ("-5", 4500), ("nan", 4500), ("inf", 4500), ("1e999", 4500)])
 def test_main_reads_the_stage_cap_from_the_environment(monkeypatch, episode_env, sleeps, stage_caps,
                                                          configured, expected):
     ep_dir = common.get_episode_dir(20)
