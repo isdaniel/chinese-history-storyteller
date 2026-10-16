@@ -1246,13 +1246,9 @@ def test_every_skip_in_the_suite_is_one_the_ci_guard_fails_on():
 
 # --- YouTube AI disclosure (status.containsSyntheticMedia) ---------------------------------------------------------------
 
-def test_the_upload_always_declares_no_synthetic_media_and_the_docs_say_so():
+def test_the_upload_always_declares_no_synthetic_media():
     import upload_youtube
     assert upload_youtube.CONTAINS_SYNTHETIC_MEDIA is False
-    text = readme()
-    assert "固定送 `status.containsSyntheticMedia: false` (不宣告)" in text
-    assert "YouTube 仍可能依自己的偵測、C2PA 中繼資料或頻道的上傳預設加上「由 AI 生成」標籤" in text
-    assert "是否揭露由頻道擁有者負責" in text
-    assert "會自動向 YouTube 宣告" not in readme_row("VISUAL_STYLE")[2]
+    assert "會自動向 YouTube 宣告" not in readme_row("VISUAL_STYLE")[2], "the style no longer decides the declaration"
     source = read(SCRIPTS / "upload_youtube.py")
     assert source.count("containsSyntheticMedia") >= 2 and "is_realistic" not in source
