@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 20 Oct 2026 00:44:09 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 00:14:07 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>南海沉船之謎：瓷器與古代貿易網絡的暗流</title>
+      <description>摘要：從南海海域發現的沉船殘骸與瓷器碎片，逐步拼出一幅跨世紀的海上貿易圖譜。本片探討沉船分布、貨物分析、年代判定、可能的貿易路線與保護難題，並從考古與歷史學角度尋求解答。章節包括沉船地點總覽、瓷器種類與來源、年代學方法、航路重建、國際貿易網絡、保護與法律困境、實地發現案例，以及對現代的啟示。 00:00 開場與引題。01:10 沉船分布與海域背景。03:50 瓷器與貨物分析。06:40 年代判定方法。09:20 貿易路線推演。12:00 國際網絡與文獻對應。15:30 保護難題與法律框架。18:40 現代啟示與反思。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0166.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0166.mp3" length="12654764" type="audio/mpeg"/>
+      <pubDate>Wed, 21 Oct 2026 00:14:07 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>08:47</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>木乃伊的咒語之謎：古埃及葬俗如何被誤讀？</title>
       <description>古埃及木乃伊與葬俗，從防腐技術到宗教信仰，從陪葬品到現代倫理誤讀，揭開長達數千年的文化誤會與當代反思。收錄考古發現、古埃及咒語與博物館保護爭議。00:00 引言與疑問。01:20 防腐術的科學與歷史。03:40 死者復生信仰與咒語形式。06:00 陪葬品的社會意義。08:10 現代誤讀與媒體想像。10:30 博物館保存與倫理困境。12:50 現代啟示與反思。</description>
@@ -1252,25 +1262,6 @@
       <pubDate>Sat, 11 Jul 2026 21:56:11 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>08:37</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>WeWork 神話破滅：從 480 億到歸零的真相（Adam Neumann、軟銀與 S‑1 案）</title>
-      <description>摘要：這是關於 WeWork 如何從矚目獨角獸變成商業教材的故事。從 Adam Neumann 的創業魅力、S‑1 曝光的黑歷史、軟銀的豪賭到 IPO 破局與最終重整與破產，這段傳奇包含對創業與資本的深刻提醒。
-章節時間預留：
-0:00 Hook 與背景
-1:10 Adam Neumann 的創世敘事
-2:40 WeWork 的商業模式與擴張
-4:15 S‑1 曝光與公司治理問題
-6:00 軟銀的豪賭與估值泡沫
-7:30 2019 IPO 失敗與後續協議
-8:40 2023 破產與企業重組
-10:00 現代啟示與觀眾反思</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0066.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0066.mp3" length="16564653" type="audio/mpeg"/>
-      <pubDate>Fri, 10 Jul 2026 22:09:13 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>11:30</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
