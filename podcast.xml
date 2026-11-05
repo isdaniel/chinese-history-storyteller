@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 04 Nov 2026 01:45:24 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 01:43:13 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>昭君出塞之謎：畫像造假還是真正選擇？</title>
+      <description>摘要：從漢元帝到匈奴單于，從宮廷畫像到史書筆錄，昭君出塞這段歷史在二千年裡被不斷解讀與加工。本片以宮廷畫像、選妃制度、史書比較與後世文學為線索，追尋是真相還是傳說，並探討其對文化與現代身分的啟示。 章節時間預留 00:00 引子與問題 01:10 宮廷畫像與皇室政治 03:30 選妃制度的制度化力量 05:20 史書記載的差異與跡證 07:10 後世文學與戲曲的再創作 08:40 情感與權力的複合解讀 10:10 現代啟示與反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0179.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0179.mp3" length="7671212" type="audio/mpeg"/>
+      <pubDate>Thu, 05 Nov 2026 01:43:13 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>05:19</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>鄭和寶船之謎：真有那麼大艘船嗎？探究文獻、考古與外國見證</title>
       <description>摘要：鄭和下西洋的寶船長久以來被描繪為世界上最巨大的木造帆船之一。本片從文獻記載、船型考據、補給問題、外國見證到考古線索逐一拆解，追尋真相並提出現代啟示。本片適合喜愛歷史謎團與海洋考古的觀眾。 00:00 開場與問題提出。01:10 明代文獻與尺寸記載分析。03:40 船型結構與造船技術探討。06:00 長途物資補給與航行組織。08:20 外國使節與航海者的目擊報告。10:30 考古發現與沉船證據。12:50 爭議總結與當代啟示。15:00 結語與反思。</description>
@@ -1233,16 +1243,6 @@
       <pubDate>Fri, 24 Jul 2026 22:09:51 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>07:16</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>宋太祖斧聲燭影：中國歷史最大懸案（宋朝宮廷未解之謎）</title>
-      <description>摘要：北宋開國皇帝趙匡胤逝世之夜，斧聲與燭影之間，歷史留下了不可泯滅的懸念——是自然亡故，還是人為篡奪？本片以當夜記載、趙光義的可能動機、金匱之盟的疑點、母親遺命的影響與現代研究為線索，逐步還原這段被史料與傳說交織的真相。章節時間戳（預留）：00:00 開場與懸念 / 01:20 當夜記載分析 / 03:10 趙光義的動機探討 / 04:50 金匱之盟真相 / 06:30 母命與繼承壓力 / 07:50 現代史學觀點 / 08:40 給觀眾的反思。歡迎訂閱、留言分享你對歷史謎案的看法。</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0079.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0079.mp3" length="13989357" type="audio/mpeg"/>
-      <pubDate>Thu, 23 Jul 2026 22:11:53 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>09:42</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
