@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 11 Nov 2026 01:37:29 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 02:49:05 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>塔漢古文明之謎：中南美失落城市的秘密與啟示</title>
+      <description>塔漢古文明的遺址與碎片，像是被時間埋藏的謎語。前 100 字摘要：本片帶您穿越中南美洲叢林與高原，追尋塔漢古文明的發現歷程、遷徙線索、環境變遷、文化遺存與學術爭議，並試圖從碎片中讀懂現代人面對環境與移動的啟示。影片章節時間戳預留：00:00 引子與發現背景。01:20 主要遺址描述。03:10 考古發掘與年代測定。05:00 遷徙與人口變動證據。06:40 環境因素與氣候變遷。08:20 文化遺存與祭儀器物。10:00 學術爭議與不同詮釋。11:40 現代啟示與反思。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0186.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0186.mp3" length="13014764" type="audio/mpeg"/>
+      <pubDate>Thu, 12 Nov 2026 02:49:05 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>09:02</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>鄭和下西洋停止之謎：政策回頭的真相與啟示</title>
       <description>鄭和七下西洋的壯闊與意義，到底為何在 1430 年代突然止步。前半段濃縮背景與航次實錄，後半段深入資源考量、朝廷派系、外部壓力與貿易效益的交錯影響。透過史料比對與多角解讀，嘗試拼出一個更務實的答案，並從中反思國家政策與資源分配的現代議題。 00:00 引子與疑問。02:00 鄭和航次概覽與規模。04:00 明初政治與內外情勢。06:00 資源與經濟成本分析。08:30 朝廷派系與文化衝突。11:00 外部威脅與貿易實利。13:30 史料對話與爭議辨析。16:00 現代啟示與結語。</description>
@@ -1222,17 +1232,6 @@
       <pubDate>Fri, 31 Jul 2026 22:13:28 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>09:57</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>雍正繼位謎雲：康熙真的選了他？（遺詔、隆科多與八阿哥的權力角力）</title>
-      <description>摘要：康熙二十六年駕崩後，雍正帝的登基一路伴隨著遺詔疑雲、權臣隆科多的身影、年羹堯的命運與八阿哥的陰影。本片回溯史料與傳說，解析繼位過程的爭議與可能真相。
-章節時間：00:00 開場與背景／01:10 遺詔傳說解析／03:00 隆科多的角色／04:30 年羹堯與軍權糾葛／06:00 八阿哥與黨爭／07:30 歷史學界定論／08:30 現代啟示與反思</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0086.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0086.mp3" length="10832877" type="audio/mpeg"/>
-      <pubDate>Thu, 30 Jul 2026 22:12:32 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>07:31</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
