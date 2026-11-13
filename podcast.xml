@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 12 Nov 2026 02:49:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 02:19:06 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>紫禁城宮廷筆記之謎：幕後文書揭示的真相</title>
+      <description>摘要：一疊看似無名的宮廷筆記如何改寫我們對紫禁城日常與政務的理解。這部影片穿越清宮檔案與私人手札，追索筆記來源、內容類型、政務線索與真偽辨識方法，並探討這些零碎記錄的史料價值與對現代治理的啟示。章節時間預留如下，實際長度約九分鐘。00:00 引子與懸念00:45 筆記的發現地與年代01:30 筆記的來源線索02:30 日常記錄的細節03:45 政務線索如何出現05:00 鑑定真偽的方法06:15 史料價值與局限07:15 現代啟示與結語</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0187.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0187.mp3" length="14258924" type="audio/mpeg"/>
+      <pubDate>Fri, 13 Nov 2026 02:19:06 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>09:54</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>塔漢古文明之謎：中南美失落城市的秘密與啟示</title>
       <description>塔漢古文明的遺址與碎片，像是被時間埋藏的謎語。前 100 字摘要：本片帶您穿越中南美洲叢林與高原，追尋塔漢古文明的發現歷程、遷徙線索、環境變遷、文化遺存與學術爭議，並試圖從碎片中讀懂現代人面對環境與移動的啟示。影片章節時間戳預留：00:00 引子與發現背景。01:20 主要遺址描述。03:10 考古發掘與年代測定。05:00 遷徙與人口變動證據。06:40 環境因素與氣候變遷。08:20 文化遺存與祭儀器物。10:00 學術爭議與不同詮釋。11:40 現代啟示與反思。</description>
@@ -1213,25 +1223,6 @@
       <pubDate>Sat, 01 Aug 2026 22:01:34 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>10:13</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>宋徽宗：藝術天才的亡國之路｜瘦金體、花石綱與靖康劫難</title>
-      <description>宋徽宗（趙佶），一位在繪畫與書法達到極致的皇帝，同時也在政治與財政上留下難以抹去的裂痕。這部影片從他的瘦金體書法與花石綱的奢華收藏，梳理到聯金滅遼、靖康之難與北上五國城的悲劇，試圖理解天才與王朝命運如何交織成一段歷史悲歌。前段為摘要，後段列出章節時間戳（預留）。
-
-00:00 開場與引子
-01:10 瘦金體的誕生與審美權力
-03:40 花石綱與宮廷奢華的經濟代價
-06:20 聯金滅遼：成就或錯判？
-08:50 靖康之難：汴京的崩塌
-11:30 北上五國城與亡國後的流離
-13:50 後世評價與史家爭論
-16:10 現代啟示與反思</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0087.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0087.mp3" length="14331501" type="audio/mpeg"/>
-      <pubDate>Fri, 31 Jul 2026 22:13:28 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>09:57</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
