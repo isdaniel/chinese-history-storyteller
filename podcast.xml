@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 13 Nov 2026 02:19:06 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 01:44:21 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>康有為的改革夢碎之謎：戊戌變法是否有不可逆點？</title>
+      <description>1898 年的短暫春天如何在數十天內變成冬夜。本片重構康有為與光緒帝的改革藍圖、保守勢力的阻力、朝廷內外的反應以及政變當日的關鍵細節，並追問是否存在無法回頭的不可逆點。章節時間軸預留如下，供導覽使用並方便複查史料來源和注釋。00:00 開場與問題引導。01:10 康有為與變法藍圖。03:50 保守派的組織與策略。06:40 帝國權力的回應。09:20 事變當日過程。12:00 戊戌六君子與處置。14:30 歷史評價的分歧。17:00 現代啟示與反思。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0188.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0188.mp3" length="8737388" type="audio/mpeg"/>
+      <pubDate>Sat, 14 Nov 2026 01:44:21 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>06:04</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>紫禁城宮廷筆記之謎：幕後文書揭示的真相</title>
       <description>摘要：一疊看似無名的宮廷筆記如何改寫我們對紫禁城日常與政務的理解。這部影片穿越清宮檔案與私人手札，追索筆記來源、內容類型、政務線索與真偽辨識方法，並探討這些零碎記錄的史料價值與對現代治理的啟示。章節時間預留如下，實際長度約九分鐘。00:00 引子與懸念00:45 筆記的發現地與年代01:30 筆記的來源線索02:30 日常記錄的細節03:45 政務線索如何出現05:00 鑑定真偽的方法06:15 史料價值與局限07:15 現代啟示與結語</description>
@@ -1205,24 +1215,6 @@
       <pubDate>Sun, 02 Aug 2026 21:59:46 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>08:18</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>ChatGPT 革命：OpenAI 如何改變世界 • AI 時代的轉捩點</title>
-      <description>摘要：從 2015 年創立的理想出發，到 GPT 系列的快速演進，再到 ChatGPT 的爆紅與 Altman 風波，本片回溯 OpenAI 的技術脈絡與社會影響，檢視AI軍備競賽的風險與治理挑戰，並提供當代啟示。章節時間標示為預留，便於影片編排。
-00:00 開場與導引
-01:10 OpenAI 的起點與理想（2015）
-03:30 GPT 演進：從 GPT-1 到 GPT-4 的技術跳躍
-06:10 ChatGPT 爆紅：普及化與應用場景
-08:40 Altman 風波與治理問題
-11:20 AI 軍備競賽與國際局勢
-13:50 社會影響：勞動、教育與倫理
-16:20 現代啟示與反思</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0088.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0088.mp3" length="14731821" type="audio/mpeg"/>
-      <pubDate>Sat, 01 Aug 2026 22:01:34 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>10:13</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
