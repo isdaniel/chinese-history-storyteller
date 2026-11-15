@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 14 Nov 2026 01:44:21 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 01:04:47 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>黃金面具之謎：從出土到象徵的古文明權力故事</title>
+      <description>摘要：黃金面具遍佈歐亞非與美洲古墓，其來源技術與社會意義至今仍富爭議。本片追溯出土分布、製作工藝、權力象徵與保護困境，並以跨文化比較勾勒人類如何以黃金為權力命名。記者式考古與人文旁白並進，帶來九分鐘的歷史沉思。 章節時間戳預留 00:00 引言與問題提出 01:10 出土分布概述 02:40 製作技術細探 04:20 社會象徵與宗教功能 05:50 保存與盜掘問題 07:10 代表性案例比較 08:20 現代啟示與反思</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0189.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0189.mp3" length="10501676" type="audio/mpeg"/>
+      <pubDate>Sun, 15 Nov 2026 01:04:47 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>07:17</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>康有為的改革夢碎之謎：戊戌變法是否有不可逆點？</title>
       <description>1898 年的短暫春天如何在數十天內變成冬夜。本片重構康有為與光緒帝的改革藍圖、保守勢力的阻力、朝廷內外的反應以及政變當日的關鍵細節，並追問是否存在無法回頭的不可逆點。章節時間軸預留如下，供導覽使用並方便複查史料來源和注釋。00:00 開場與問題引導。01:10 康有為與變法藍圖。03:50 保守派的組織與策略。06:40 帝國權力的回應。09:20 事變當日過程。12:00 戊戌六君子與處置。14:30 歷史評價的分歧。17:00 現代啟示與反思。</description>
@@ -1197,24 +1207,6 @@
       <pubDate>Mon, 03 Aug 2026 22:18:17 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>14:31</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>東羅馬末日：1453 君士坦丁堡的陷落 — 巨炮、金角灣與中世紀的終章</title>
-      <description>1453 年的春天，君士坦丁堡在長達千年的帝國陰影下經歷最後一役：穆罕默德二世的攻城、巨砲的轟鳴、金角灣的海戰，與最後皇帝的殞落。這段歷史不只是城牆倒塌，而是文明轉捩、軍事技術與國際秩序改變的象徵。本片帶你回到城牆腳下，重現那幾個關鍵日夜，挖掘史料與傳說，並思考其對今日世界的啟示。
-
-00:00 開場與背景概述
-01:20 穆罕默德二世的崛起與戰略
-03:00 巨砲與攻城技術革新
-04:40 城牆之外：海戰與金角灣的角力
-06:10 君士坦丁十一世與城內的人們
-07:30 城破那夜：最後幾個瞬間（史料與傳說）
-08:40 中世紀的結束與現代啟示</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0089.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0089.mp3" length="11958381" type="audio/mpeg"/>
-      <pubDate>Sun, 02 Aug 2026 21:59:46 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>08:18</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
