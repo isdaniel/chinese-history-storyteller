@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 15 Nov 2026 01:04:47 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 01:05:37 +0000</lastBuildDate>
     <itunes:author>Storyteller</itunes:author>
     <itunes:category text="History"/>
     <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
@@ -18,6 +18,16 @@
     </itunes:owner>
     <itunes:summary>AI 自動製作的中文歷史說書 Podcast</itunes:summary>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>漢武帝對外擴張真相：邊疆開拓還是政治算盤？</title>
+      <description>漢武帝對外擴張究竟是為了國土、貿易還是朝堂權力的需要，這段旁白帶你回到公元前2世紀的中國北方與西域，重看匈奴戰事、絲路開拓與外交內政的交織。前半節解析軍事與外交的事實，後半節探討政策動機與長期影響，並提出現代啟示。章節時間戳預留：00:00 開場與命題；01:05 匈奴的威脅與漢初邊防；02:30 漢武的遠征與衛青之功；04:00 霍去病的沙場與代郡戰略；05:30 行政與財政的壓力；07:00 丝路開拓與西域都護；08:15 歷史影響總結；09:00 現代反思與啟示。</description>
+      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0190.mp3</guid>
+      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0190.mp3" length="6913196" type="audio/mpeg"/>
+      <pubDate>Mon, 16 Nov 2026 01:05:37 +0000</pubDate>
+      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
+      <itunes:duration>04:48</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>黃金面具之謎：從出土到象徵的古文明權力故事</title>
       <description>摘要：黃金面具遍佈歐亞非與美洲古墓，其來源技術與社會意義至今仍富爭議。本片追溯出土分布、製作工藝、權力象徵與保護困境，並以跨文化比較勾勒人類如何以黃金為權力命名。記者式考古與人文旁白並進，帶來九分鐘的歷史沉思。 章節時間戳預留 00:00 引言與問題提出 01:10 出土分布概述 02:40 製作技術細探 04:20 社會象徵與宗教功能 05:50 保存與盜掘問題 07:10 代表性案例比較 08:20 現代啟示與反思</description>
@@ -1185,28 +1195,6 @@
       <pubDate>Tue, 04 Aug 2026 22:18:03 +0000</pubDate>
       <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
       <itunes:duration>08:18</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>和氏璧傳國玉璽：消失千年的中國第一國寶（探秘卞和、秦璽、王莽與唐末謎團）</title>
-      <description>摘要：一塊玉石如何改寫天下王權的象徵？從春秋卞和的獻玉，到秦始皇以之鑄刻傳國璽，再到王莽、唐末亂世的流轉與消失，和氏璧穿越千年，成為歷史、政治與神話交織的物件。本片以史料與學術爭議為脈絡，呈現和氏璧的可視化想像與若干合理假說，並邀您思考文化遺產與國家象徵的今天意義。
-
-章節時間軸（預留）：
-0:00 開場與導引
-1:10 卞和與發現和氏璧的傳說
-3:40 和氏璧成為秦國傳國之物的過程
-6:20 秦始皇刻璽與璽的象徵演變
-9:00 王莽時期的摔角與史書記載（爭議）
-11:40 唐末群雄與和氏璧的最後確切記錄
-14:30 下落假說：分裂、收藏、毀壞、海外流散
-17:50 文物如何成為現代社會的反思與借鏡
-19:30 結語與現代啟示
-</description>
-      <guid isPermaLink="false">https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0090.mp3</guid>
-      <enclosure url="https://stgstorytelleraihistory.blob.core.windows.net/podcast-episodes/ep0090.mp3" length="20923245" type="audio/mpeg"/>
-      <pubDate>Mon, 03 Aug 2026 22:18:17 +0000</pubDate>
-      <itunes:image href="https://isdaniel.github.io/chinese-history-storyteller/cover.jpg"/>
-      <itunes:duration>14:31</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
